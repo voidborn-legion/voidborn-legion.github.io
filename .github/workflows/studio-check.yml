@@ -20,4 +20,6 @@ jobs:
       - run: npm ci
       - run: npm run studio:check -- --check-anchors
       - run: npm run studio:test
-      - run: npm run build
+      - run: npm run studio:build
+      - if: startsWith(github.ref, 'refs/heads/draft/') == false
+        run: npm run build

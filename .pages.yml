@@ -65,6 +65,14 @@ content:
       - name: body
         label: Inhalt
         type: rich-text
+      - name: gameData
+        label: Spieldatentabelle (optional)
+        type: select
+        description: Die Tabelle erscheint zusätzlich zum Text. Sie zeigt nur geprüfte und ausdrücklich veröffentlichte Datensätze.
+        options:
+          values:
+            - name: pets
+              label: Pets & Spezieskenntnis
   - name: editor-help
     label: Editor-Hilfe
     type: file

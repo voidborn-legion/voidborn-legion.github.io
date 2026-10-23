@@ -805,6 +805,12 @@
         },
         "verification": {
           "$ref": "#/$defs/verification"
+        },
+        "publication": {
+          "enum": [
+            "draft",
+            "published"
+          ]
         }
       },
       "required": [

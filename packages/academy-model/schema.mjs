@@ -65,3 +65,5 @@ export const schema = {
     })
   }
 };
+// Optional for compatibility with v1 fixtures; absence always means draft.
+schema.$defs.gameValue.properties.publication = { enum: ['draft', 'published'] };

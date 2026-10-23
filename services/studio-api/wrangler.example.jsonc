@@ -1,0 +1,11 @@
+{
+  "name": "voidborn-studio-api",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "STUDIO_ORIGIN": "https://voidborn-legion.github.io",
+    "DRAFT_BRANCH": "draft/studio-pets-workspace"
+  },
+  "triggers": {"crons": ["*/30 * * * *"]}
+}

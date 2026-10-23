@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T00:00:00Z",
+  "title": "Design System: Voidborn Academy Studio",
+  "extensions": {
+    "colorMeta": {
+      "gold": {"role": "primary", "displayName": "Legionsgold"},
+      "night": {"role": "neutral", "displayName": "Arbeitsnacht"},
+      "ivory": {"role": "neutral", "displayName": "Elfenbein"}
+    },
+    "typographyMeta": {
+      "brand": {"displayName": "Marke", "purpose": "Cinzel nur für die Studio-Marke."},
+      "body": {"displayName": "Arbeitstext", "purpose": "Guide-Inhalt im visuellen Editor."}
+    },
+    "shadows": [],
+    "motion": [
+      {"name": "control-transition", "value": "background-color .15s ease-out, color .15s ease-out", "purpose": "Links und Schaltflächen; nur ohne reduzierte Bewegung."},
+      {"name": "dialog-entry", "value": "transform: translateY(7px) to translateY(0); .16s ease-out", "purpose": "Dialogeintritt; nur ohne reduzierte Bewegung."}
+    ],
+    "breakpoints": [{"name": "compact-desktop", "value": "1180px"}, {"name": "mobile", "value": "760px"}]
+  },
+  "components": [
+    {
+      "name": "Entwurfsaktion", "kind": "button", "refersTo": "button-primary",
+      "description": "Hauptaktion zum Speichern eines Entwurfs.",
+      "html": "<button class=\"studio-primary\">Entwurf speichern</button>",
+      "css": ".studio-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px 'Source Sans 3',sans-serif;min-height:43px;padding:9px 17px;border:1px solid var(--gold,#d7b777);border-radius:5px;background:var(--gold,#d7b777);color:#151b22;cursor:pointer;white-space:nowrap}.studio-primary:hover{background:#ebd1a0;color:#10151c}.studio-primary:focus-visible{outline:2px solid var(--gold,#d7b777);outline-offset:3px}.studio-primary:disabled{opacity:.45;cursor:not-allowed}@media(prefers-reduced-motion:no-preference){.studio-primary{transition:background-color .15s ease-out,color .15s ease-out}}"
+    },
+    {
+      "name": "Beschriftetes Eingabefeld", "kind": "input", "refersTo": "input",
+      "description": "Dunkles Arbeitsfeld mit sichtbarem Label.",
+      "html": "<label class=\"studio-label\">Titel<input class=\"studio-input\" value=\"Pets &amp; Spezieskenntnis\"></label>",
+      "css": ".studio-label{display:flex;flex-direction:column;gap:7px;color:#eeeae2;font:15px 'Source Sans 3',sans-serif}.studio-input{font:16px 'Source Sans 3',sans-serif;color:#eeeae2;background:#141e29;border:1px solid #414d5c;padding:10px 12px;border-radius:4px;min-height:42px}.studio-input:focus-visible{outline:2px solid var(--gold,#d7b777);outline-offset:3px}"
+    },
+    {
+      "name": "Ausgewählter Navigationspunkt", "kind": "nav", "refersTo": "navigation-selected",
+      "description": "Warme Auswahlfläche innerhalb der Nacht-Navigation.",
+      "html": "<button class=\"studio-nav\" aria-current=\"page\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><rect width=\"7\" height=\"9\" x=\"3\" y=\"3\" rx=\"1\"/><rect width=\"7\" height=\"5\" x=\"14\" y=\"3\" rx=\"1\"/><rect width=\"7\" height=\"9\" x=\"14\" y=\"12\" rx=\"1\"/><rect width=\"7\" height=\"5\" x=\"3\" y=\"16\" rx=\"1\"/></svg>Dashboard</button>",
+      "css": ".studio-nav{display:flex;align-items:center;gap:8px;min-height:47px;padding:10px 14px;border:1px solid transparent;border-radius:5px;background:#29271f;color:#f0d7a4;font:16px 'Source Sans 3',sans-serif;cursor:pointer}.studio-nav:hover{background:#222d3a;color:#fff}.studio-nav:focus-visible{outline:2px solid var(--gold,#d7b777);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Nächtlicher Legionsatlas — redaktionelle Arbeitsfläche",
+    "overview": "Das Studio erweitert die Voidborn-Identität um eine ruhige Arbeitsoberfläche. Nachtflächen, Elfenbein und sparsames Gold verbinden Orientierung mit lesbarer redaktioneller Arbeit. Diese Konventionen gelten nur für studio/.",
+    "keyCharacteristics": ["Dauerhafte Navigation", "Listen und Tabellen", "Sichtbarer Entwurfsstatus", "Source Sans 3 als Arbeitsschrift"],
+    "rules": [
+      {"name": "Gold as Wayfinding", "body": "Gold priorisiert Handlungen und Orientierung; lange Texte bleiben elfenbeinfarben.", "section": "colors"},
+      {"name": "Working Voice", "body": "Cinzel bleibt an der Marke; Arbeitsinhalte verwenden Source Sans 3.", "section": "typography"}
+    ],
+    "dos": ["Do lokalen Zugriffs- und Entwurfsstatus sichtbar halten.", "Do Fokus, Labels und reduzierte Bewegung erhalten."],
+    "donts": ["Don't Veröffentlichung oder freigeschaltete Anmeldung suggerieren.", "Don't ungeprüfte Werte als bestätigt darstellen."]
+  }
+}
