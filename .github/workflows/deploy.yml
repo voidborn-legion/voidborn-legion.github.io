@@ -25,7 +25,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
+      - run: npm run build:release
+        env:
+          VITE_STUDIO_API_ORIGIN: https://voidborn-studio-api.officialchackk.workers.dev
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
