@@ -18,5 +18,7 @@
   "collapsibleSyntax": "vitepress-details",
   "privateEditorialRepository": null,
   "publicRepositoryWarning": "Drafts, branches, issues and history are public. Never store confidential editorial comments here.",
-  "workflow": "Publish Academy"
+  "workflow": "Publish Academy",
+  "pluginPackage": "aion-2-academy-manager",
+  "pluginVersion": "0.1.0"
 }
