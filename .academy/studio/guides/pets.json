@@ -193,9 +193,16 @@
       "body": "Bitte den zugehörigen Titel im aktuellen EU-Client bestätigen. Die Aussage bleibt bis dahin ungeprüft.",
       "authorId": "local-owner",
       "status": "open",
-      "replies": [],
+      "replies": [
+        {
+          "id": "reply:70ae9fc6-5492-4e66-a085-ee9287ae3bb7",
+          "authorId": "local-owner",
+          "body": "Als offene Prüfung übernommen. Es wurden keine Spielwerte als bestätigt markiert.",
+          "createdAt": "2026-10-23T14:01:20Z"
+        }
+      ],
       "createdAt": "2026-10-23T14:00:04Z",
-      "updatedAt": "2026-10-23T14:00:04Z",
+      "updatedAt": "2026-10-23T14:01:20Z",
       "history": []
     }
   ],
