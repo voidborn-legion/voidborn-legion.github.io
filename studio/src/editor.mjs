@@ -23,10 +23,21 @@ export const AcademyBox = Node.create({
       return { type: 'academyBox', raw, kind: match[2], title: match[3] || '', tokens: lexer.blockTokens(rest.slice(0, end.index).trim()) };
     }
   },
-  parseMarkdown(token, helpers) { return { type: 'academyBox', attrs: { kind: token.kind, title: token.title }, content: helpers.parseChildren(token.tokens || []) }; },
-  renderMarkdown(node, helpers) { return `::: ${node.attrs.kind} ${node.attrs.title}\n\n${helpers.renderChildren(node.content, '\n\n')}\n\n:::`; }
+  parseMarkdown(token, helpers) {
+    const marker = /<!-- academy-screenshot:(screenshot:[a-f0-9-]{36}) -->/.exec(token.raw || '');
+    if (marker && token.kind==='info' && /^Screenshot fehlt: /.test(token.title)) return { type: 'academyScreenshot', attrs: { id: marker[1], title: token.title.replace(/^Screenshot fehlt:\s*/, ''), description: token.raw.split('\n').slice(1).join('\n').replace(marker[0], '').replace(/\n:{3,}\s*$/, '').trim() } };
+    return { type: 'academyBox', attrs: { kind: token.kind, title: token.title }, content: helpers.parseChildren(token.tokens || []) };
+  },
+  renderMarkdown(node, helpers) { const inner=helpers.renderChildren(node.content, '\n\n');const longest=Math.max(2,...[...inner.matchAll(/^(:{3,})/gm)].map(m=>m[1].length));const fence=':'.repeat(longest+1);return `${fence} ${node.attrs.kind} ${node.attrs.title}\n\n${inner}\n\n${fence}`; }
+});
+export const AcademyScreenshot = Node.create({
+  name: 'academyScreenshot', group: 'block', atom: true, draggable: true,
+  addAttributes() { return { id: { default: '' }, title: { default: '' }, description: { default: '' } }; },
+  parseHTML() { return [{ tag: 'div[data-screenshot-id]', getAttrs: el => ({ id: el.dataset.screenshotId, title: el.dataset.title, description: el.dataset.description }) }]; },
+  renderHTML({ node }) { return ['div', { 'data-screenshot-id': node.attrs.id, 'data-title': node.attrs.title, 'data-description': node.attrs.description, class: 'screenshot-placeholder', contenteditable: 'false' }, ['strong', {}, 'Bild fehlt: ' + node.attrs.title], ['p', {}, node.attrs.description]]; },
+  renderMarkdown(node) { return `::: info Screenshot fehlt: ${node.attrs.title}\n\n${node.attrs.description}\n\n<!-- academy-screenshot:${node.attrs.id} -->\n\n:::`; }
 });
 export function extensions(imageSource = src => src) {
   const StudioImage=Image.extend({renderHTML({HTMLAttributes}){return ['img',{...HTMLAttributes,src:imageSource(HTMLAttributes.src)}];}});
-  return [StarterKit.configure({ heading: { levels: [1,2,3] }, link: { openOnClick: false, protocols: ['https', 'http'] } }), TableKit.configure({ table: { resizable: false } }), StudioImage.configure({ allowBase64: false }), TaskList, TaskItem.configure({ nested: true }), AcademyBox, Markdown];
+  return [StarterKit.configure({ heading: { levels: [1,2,3] }, link: { openOnClick: false, protocols: ['https', 'http'] } }), TableKit.configure({ table: { resizable: false } }), StudioImage.configure({ allowBase64: false }), TaskList, TaskItem.configure({ nested: true }), AcademyBox, AcademyScreenshot, Markdown];
 }

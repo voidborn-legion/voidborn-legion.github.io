@@ -67,6 +67,16 @@ Es wurde kein Cloudflare-Projekt, keine Datenbank und keine GitHub App angelegt.
 
 ## Primärquellen zur gewählten Architektur
 
+### Ergänzungen nach dem ersten Benutzertest
+
+- Screenshot-Zeilen nehmen per Drag & Drop genau ein PNG/JPEG/WebP bis 2 MB entgegen. Der Uploaddialog bleibt für Alternativtext und Bildunterschrift vor dem Speichern offen; der vorhandene Dateiauswahldialog bleibt als Alternative erhalten.
+- Der Guide-Wähler nennt Suche, Thema/Kategorie und einzelnen Guide getrennt. Ein Thema darf mehrere Guides enthalten. Filter wählen den ersten passenden Guide nur dann automatisch, wenn keine ungespeicherten Änderungen bestehen.
+- Bildplatzhalter lassen sich an der Schreibposition einfügen. Guide-Text, Titel und Platzhalter-Metadaten werden atomar gespeichert; ein fehlgeschlagener Auftrag setzt die temporäre Einfügung zurück. Die stabile ID bleibt im Markdown als nicht sichtbarer Kommentar innerhalb des Platzhalterblocks erhalten.
+- Verschachtelte Boxen verwenden längere äußere Markdown-Begrenzungen. Beim Ersetzen eines Bildplatzhalters bleibt der umgebende Text erhalten.
+- „Zur Stelle“ erkennt Box-Titel, formatierte Textpassagen und neue Platzhalter-IDs, scrollt das Ziel in die Bildschirmmitte und markiert es vorübergehend. Mehrdeutige Stellen werden nicht willkürlich ausgewählt.
+- 21 lokale Tests bestanden, darunter neue Fälle für verschachtelte Boxen, Texte mit Formatierung, Dateiprüfung, atomare Einfügung, Titelerhalt und Wiederverwendung im umgebenden Text. Studio-Bau bestanden. Eine erneute visuelle Browserkontrolle wurde durch den Browser-Sicherheitsfilter blockiert; der ergänzende Review deckt Quellcode und getestetes Verhalten ab.
+- Auf diesem Rechner ist Cloudflare noch nicht authentifiziert. Der vorbereitete OAuth-Login benötigt manuelle Freigabe für Account-/Benutzerinformationen, Worker-Skripte und D1. Der Zugriff wird im Windows-Anmeldespeicher abgelegt. Noch keine Hosting-Ressourcen angelegt oder veröffentlicht.
+
 - [GitHub Pages als statischer Hostingdienst](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [GitHub: PKCE für OAuth und GitHub Apps](https://github.blog/changelog/2025-07-14-pkce-support-for-oauth-and-github-app-authentication/)
 - [Cloudflare Workers: aktuelle Ressourcenlimits](https://developers.cloudflare.com/workers/platform/limits/)

@@ -7,10 +7,9 @@ const now = () => new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
 const requireText = (s, label, max = 5000) => { if (typeof s !== 'string' || !s.trim() || s.length > max) throw new Error(`${label} fehlt oder ist zu lang.`); return s.trim(); };
 const slug = s => { if (!/^[a-z0-9][a-z0-9-]{1,60}$/.test(s)) throw new Error('Bitte einen kurzen Namen aus Kleinbuchstaben, Zahlen und Bindestrichen verwenden.'); return s; };
 const replaceScreenshot=(body,quote,image,caption='')=>{
- const escaped=quote.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
- const block=new RegExp(`::: info [^\\n]*${escaped}[^\\n]*\\n[\\s\\S]*?\\n:::`);
+ const blocks=[...body.matchAll(/^(:{3,}) info [^\n]*\n/gm)].map(start=>{const rest=body.slice(start.index+start[0].length);const end=new RegExp(`^${start[1]}[ \\t]*$`,'m').exec(rest);return end?body.slice(start.index,start.index+start[0].length+end.index+end[0].length):null;}).filter(Boolean).filter(block=>block.includes(quote)).sort((a,b)=>a.length-b.length);
  const insertion=`\n\n${image}\n\n${caption}\n`;
- return block.test(body)?body.replace(block,insertion):body.replace(quote,quote+insertion);
+ return blocks.length?body.replace(blocks[0],insertion):body.replace(quote,quote+insertion);
 };
 
 export function readWorkspace(repo) {
@@ -113,6 +112,18 @@ export function runCommand(repo, input, actorId = 'local-owner') {
     }
     case 'task.add': bundleFor().tasks.push({ id: uid('task'), title: requireText(input.title, 'Aufgabe', 200), anchor: input.quote ? anchor(input.quote) : null, status: 'open', kind: 'general', sourceIds: [], history: [] }); break;
     case 'task.status': snapshot = setTaskStatus(snapshot, input.id, input.status, event('task-status-changed')); break;
+    case 'screenshot.insert': {
+      const b=bundleFor();
+      if(!/^screenshot:[a-f0-9-]{36}$/.test(input.id||''))throw new Error('Ungültige Platzhalter-ID.');
+      const marker=`<!-- academy-screenshot:${input.id} -->`;
+      if(typeof input.body!=='string'||input.body.length>500000||input.body.split(marker).length!==2||guide.body.includes(marker))throw new Error('Der neue Bildplatzhalter ist nicht eindeutig im Text vorhanden.');
+      const title=requireText(input.title,'Bildtitel',160),description=requireText(input.description,'Bildbeschreibung');
+      const raw=matter.stringify(input.body,{...guide.frontmatter,title:input.guideTitle===undefined?guide.title:requireText(input.guideTitle,'Guide-Titel',160),status:'draft',updated:now().slice(0,10)});
+      const bytes=Buffer.from(raw);
+      const blobSha=createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
+      b.placeholders.push({id:input.id,title,description,anchor:{kind:'text',sectionId:null,quote:marker,prefix:'',suffix:'',targetId:null,baseCommitSha:state.head,baseBlobSha:blobSha},status:'missing',assetId:null,sourceIds:[],history:[event('screenshot-inserted')]});
+      files[guide.path]=raw;break;
+    }
     case 'screenshot.add': {
       const b = bundleFor(); b.placeholders.push({ id: uid('screenshot'), title: requireText(input.title, 'Bildtitel', 160), description: requireText(input.description, 'Bildbeschreibung'), anchor: anchor(input.quote), status: 'missing', assetId: null, sourceIds: [], history: [] }); break;
     }
