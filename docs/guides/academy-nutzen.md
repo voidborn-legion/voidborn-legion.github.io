@@ -35,11 +35,10 @@ Bei Spielwerten sollen Quelle, Spielversion und Region stehen. Eine Zahl aus ein
 
 Empfehlungen der Academy werden als solche bezeichnet. Das betrifft zum Beispiel die Frage, ab welchem Pet-Wert wir einen Roll behalten würden. Diese Empfehlung ist etwas anderes als der mögliche Min-/Max-Wert im Spiel.
 
-### Was bedeutet „Guide folgt“?
+::: details Was bedeutet „Guide folgt“?
 
 Die Seite zeigt bisher nur, welche Inhalte dort vorgesehen sind. Der vollständige Beitrag ist noch nicht übernommen. Du solltest daraus keine konkreten Spielwerte oder Build-Empfehlungen ableiten.
-
-
+:::
 
 ## Bilder und Quellen
 
