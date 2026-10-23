@@ -213,11 +213,11 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "**EU-Werte prüfen:**",
+        "quote": "Alle Zahlen benötigen einen Abgleich mit dem aktuellen EU-Client.",
         "prefix": "",
         "suffix": "",
         "targetId": null,
-        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseCommitSha": "c9335fef6d266aa3652aff064ea8c44570ed2131",
         "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
       },
       "status": "open",
@@ -225,7 +225,117 @@
       "sourceIds": [
         "source:pets-guide"
       ],
-      "history": []
+      "history": [
+        {
+          "id": "event:30d9ebb7-4b71-4af3-8355-7e77bc87e9a3",
+          "action": "legacy-task-migrated",
+          "actorId": "local-owner",
+          "at": "2026-10-23T14:01:27Z",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "task:legacy-0f429b9389724502",
+      "title": "Slot-Bezeichnungen prüfen: Kritischer Treffer (Wertebereich fehlt), LP-Erhöhung und Spezial-Schadensresistenz mit exakter deutscher Client-Bezeichnung kontrollieren.",
+      "anchor": null,
+      "status": "open",
+      "kind": "verification",
+      "sourceIds": [],
+      "history": [
+        {
+          "id": "event:240669e0-d805-4804-ba04-ed46422eb145",
+          "action": "legacy-task-migrated",
+          "actorId": "local-owner",
+          "at": "2026-10-23T14:01:27Z",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "task:legacy-eba5ee03672603d8",
+      "title": "Rollen-Tabellen ergänzen: Templer, Kleriker, Kantor-Support und PvP separat anhand geeigneter Global-Guides prüfen.",
+      "anchor": null,
+      "status": "open",
+      "kind": "verification",
+      "sourceIds": [],
+      "history": [
+        {
+          "id": "event:07c35dc0-6bec-48ec-8a80-dc445064e553",
+          "action": "legacy-task-migrated",
+          "actorId": "local-owner",
+          "at": "2026-10-23T14:01:27Z",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "task:legacy-dc89a0a690663a74",
+      "title": "Kubus-Belohnung bestätigen: 1.000 Seelenkristalle pro verstecktem Kubus im Global/EU-Client nachsehen.",
+      "anchor": null,
+      "status": "open",
+      "kind": "verification",
+      "sourceIds": [],
+      "history": [
+        {
+          "id": "event:2572e493-cd88-4b54-b58f-49958d76053f",
+          "action": "legacy-task-migrated",
+          "actorId": "local-owner",
+          "at": "2026-10-23T14:01:27Z",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "task:legacy-8915745b20f5df1b",
+      "title": "Questlog-Funktionen prüfen: Nähehinweis und genaue Overlay-Einstellungen anhand aktueller Screenshots bestätigen.",
+      "anchor": null,
+      "status": "open",
+      "kind": "verification",
+      "sourceIds": [],
+      "history": [
+        {
+          "id": "event:3552cb7d-38c7-432b-accc-3dbacb8bd2c0",
+          "action": "legacy-task-migrated",
+          "actorId": "local-owner",
+          "at": "2026-10-23T14:01:27Z",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "task:legacy-4b8e6787feebbb88",
+      "title": "Weitere Screenshots: Alle fünf Bretter auf Stufe 10, Audioeinstellungen, niedriger Roll als Gegenbeispiel und Auto-Analyse mit Verbrauchsanzeige ergänzen.",
+      "anchor": null,
+      "status": "open",
+      "kind": "verification",
+      "sourceIds": [],
+      "history": [
+        {
+          "id": "event:588881d1-5706-4a9a-84f9-c9acf47e81d5",
+          "action": "legacy-task-migrated",
+          "actorId": "local-owner",
+          "at": "2026-10-23T14:01:27Z",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "task:legacy-a94b48f24bd87fb2",
+      "title": "Creator-Unterschiede vergleichen: Abweichende Fubgun-/Aragon-Prioritäten bei Cognia, Varia und Präzisionswerten dokumentieren.",
+      "anchor": null,
+      "status": "open",
+      "kind": "verification",
+      "sourceIds": [],
+      "history": [
+        {
+          "id": "event:e52ebf14-883f-460d-981f-aada5fd1f977",
+          "action": "legacy-task-migrated",
+          "actorId": "local-owner",
+          "at": "2026-10-23T14:01:27Z",
+          "note": ""
+        }
+      ]
     }
   ]
 }

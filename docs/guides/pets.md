@@ -1,15 +1,17 @@
 ---
 title: Pets & Spezieskenntnis
-description: Pet-Sammlung, fünf Spezieskenntnis-Bretter, versteckte Kuben und Analysewerte für PvE-DPS.
+description: >-
+  Pet-Sammlung, fünf Spezieskenntnis-Bretter, versteckte Kuben und Analysewerte
+  für PvE-DPS.
 author: Voidborn Academy
 status: draft
 review: pending
 updated: '2026-10-23'
 sources:
   - title: AION 2 Guides – Pets und Spezieskenntnis (Aragon/Fubgun)
-    url: https://aion2-guides.info/en/pets/
+    url: 'https://aion2-guides.info/en/pets/'
   - title: Questlog – AION 2 Desktop-App
-    url: https://questlog.gg/aion-2/en-nc/app
+    url: 'https://questlog.gg/aion-2/en-nc/app'
 ---
 
 # Pets & Spezieskenntnis
@@ -155,17 +157,6 @@ Für diese Rollen gibt es **noch keine bestätigten neun-Slot-Tabellen oder Slot
 Studio-Platzhalter „Tank-/Heal-Prioritäten – Beispiel“ (ID `a02d9251-bbda-4c2e-85a2-107019d6fb2f`).
 :::
 
-## Redaktionelle Prüfliste
-
-Die folgenden Punkte stammen aus den offenen Korrekturkommentaren des Discord-Studios und sind **noch nicht erledigt**:
-
-- [ ] **EU-Werte prüfen:** Min-/Max-Bereiche und Academy-Stoppschwellen anhand von Client-Screenshots abgleichen. Die Stoppschwellen weiterhin als Empfehlung kennzeichnen.
-- [ ] **Slot-Bezeichnungen prüfen:** Kritischer Treffer (Wertebereich fehlt), LP-Erhöhung und Spezial-Schadensresistenz mit exakter deutscher Client-Bezeichnung kontrollieren.
-- [ ] **Rollen-Tabellen ergänzen:** Templer, Kleriker, Kantor-Support und PvP separat anhand geeigneter Global-Guides prüfen.
-- [ ] **Kubus-Belohnung bestätigen:** 1.000 Seelenkristalle pro verstecktem Kubus im Global/EU-Client nachsehen.
-- [ ] **Questlog-Funktionen prüfen:** Nähehinweis und genaue Overlay-Einstellungen anhand aktueller Screenshots bestätigen.
-- [ ] **Weitere Screenshots:** Alle fünf Bretter auf Stufe 10, Audioeinstellungen, niedriger Roll als Gegenbeispiel und Auto-Analyse mit Verbrauchsanzeige ergänzen.
-- [ ] **Creator-Unterschiede vergleichen:** Abweichende Fubgun-/Aragon-Prioritäten bei Cognia, Varia und Präzisionswerten dokumentieren.
 
 ## Quellen und Herkunft
 
