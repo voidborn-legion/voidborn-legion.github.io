@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Alle Guides
 
-<GuideMeta />
-
 Hier findest du die Themen der Academy. Die Spielguides werden noch aus dem Discord übernommen. Du kannst dir schon ansehen, [wie die Guides aufgebaut sind](./academy-nutzen).
 
 ## Loslegen

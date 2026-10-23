@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Leveling
 
-<GuideMeta />
-
 Hauptquests, Freischaltungen und Ausrüstung beim Leveln.
 
 ::: info Dieser Guide kommt noch

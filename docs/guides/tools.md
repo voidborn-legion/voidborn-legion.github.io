@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Tools & Overlays
 
-<GuideMeta />
-
 Karten, Charakter-Tools und Overlay-Einstellungen.
 
 ::: info Dieser Guide kommt noch

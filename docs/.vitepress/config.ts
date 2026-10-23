@@ -1,5 +1,20 @@
 import { defineConfig } from 'vitepress'
 import categories from '../../data/categories.json'
+import { readFileSync, readdirSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+import { join } from 'node:path'
+
+const docsRoot = fileURLToPath(new URL('../', import.meta.url))
+function findDrafts(folder: string): string[] {
+  return readdirSync(folder, { withFileTypes: true }).flatMap(entry => {
+    if (entry.name.startsWith('.')) return []
+    const path = join(folder,entry.name)
+    if (entry.isDirectory()) return findDrafts(path)
+    if (!entry.name.endsWith('.md')) return []
+    const frontmatter = /^---\r?\n([\s\S]*?)\r?\n---/.exec(readFileSync(path,'utf8'))?.[1] || ''
+    return /^status:\s*['"]?draft['"]?\s*$/m.test(frontmatter) ? [path.slice(docsRoot.length).replaceAll('\\','/')] : []
+  })
+}
 
 export default defineConfig({
   lang: 'de-DE',
@@ -9,6 +24,7 @@ export default defineConfig({
   cleanUrls: false,
   appearance: 'force-dark',
   lastUpdated: true,
+  srcExclude: findDrafts(docsRoot),
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/crest.svg' }], ['meta', { name: 'theme-color', content: '#0b1017' }]],
   themeConfig: {
     logo: '/crest.svg',

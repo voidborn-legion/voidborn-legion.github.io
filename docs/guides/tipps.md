@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Tipps & Engpässe
 
-<GuideMeta />
-
 Was du bei fehlenden Kinah, Steinen oder Materialien prüfen kannst.
 
 ::: info Dieser Guide kommt noch

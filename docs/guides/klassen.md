@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Klassen & Builds
 
-<GuideMeta />
-
 Skills, Stigmas und Ausrüstung für deine Klasse.
 
 ::: info Dieser Guide kommt noch

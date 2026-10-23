@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Daily & Weekly
 
-<GuideMeta />
-
 Aufladungen, Wochenlimits und Reset-Zeiten.
 
 ::: info Dieser Guide kommt noch

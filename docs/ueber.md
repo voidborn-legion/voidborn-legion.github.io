@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Über die Academy
 
-<GuideMeta />
-
 Hier entsteht die Website zu unserer AION 2 Academy im Discord. Wir wollen die Guides leichter auffindbar machen und Tabellen, Bilder und Querverweise besser nutzen.
 
 ## Was du hier schon findest

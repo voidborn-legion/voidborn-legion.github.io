@@ -9,8 +9,6 @@ updated: '2026-10-23'
 
 # Den passenden Guide finden
 
-<GuideMeta />
-
 Du suchst eine Route fürs Leveln, willst deinen Gearscore verbessern oder ein einzelnes System verstehen? Die Academy ist nach diesen Fragen aufgeteilt.
 
 ::: info Die Spielguides folgen noch

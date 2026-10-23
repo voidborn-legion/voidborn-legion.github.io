@@ -1,0 +1,100 @@
+media:
+  input: docs/public/images/uploads
+  output: /images/uploads
+  rename: safe
+  categories: [image]
+
+content:
+  - name: guides
+    label: Guides
+    type: collection
+    path: docs/guides
+    format: yaml-frontmatter
+    exclude: [index.md]
+    fields:
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: description
+        label: Kurzbeschreibung
+        type: text
+      - name: author
+        label: Autor
+        type: string
+        default: Voidborn Academy
+      - name: updated
+        label: Aktualisiert
+        type: date
+      - name: status
+        label: Veröffentlichung
+        type: select
+        default: draft
+        options:
+          values:
+            - label: Entwurf (nicht auf der Website)
+              value: draft
+            - label: Veröffentlicht
+              value: published
+      - name: review
+        label: Prüfstatus
+        type: select
+        default: orientation
+        options:
+          values:
+            - label: Guide folgt
+              value: orientation
+            - label: Website-Hilfe
+              value: help
+            - label: Inhalt noch prüfen
+              value: pending
+            - label: Geprüft
+              value: verified
+      - name: sources
+        label: Quellen
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Titel
+            type: string
+          - name: url
+            label: Link
+            type: string
+      - name: body
+        label: Inhalt
+        type: rich-text
+  - name: categories
+    label: Themen
+    type: file
+    path: data/categories.json
+    format: json
+    list: true
+    fields:
+      - name: slug
+        label: URL-Name
+        type: string
+        readonly: true
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: description
+        label: Beschreibung
+        type: text
+      - name: group
+        label: Bereich
+        type: select
+        options:
+          values: [start, growth, combat, routine]
+      - name: keywords
+        label: Suchbegriffe
+        type: string
+      - name: icon
+        label: Icon
+        type: string
+        readonly: true
+
+settings:
+  content:
+    merge: true

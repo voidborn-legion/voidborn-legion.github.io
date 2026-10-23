@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Gearscore-Progression
 
-<GuideMeta />
-
 GS-Stufen, Dungeonzugänge und die nächsten Upgrades.
 
 ::: info Dieser Guide kommt noch

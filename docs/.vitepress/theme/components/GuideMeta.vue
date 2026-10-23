@@ -2,6 +2,7 @@
 import { useData } from 'vitepress'
 import { computed } from 'vue'
 const { frontmatter } = useData()
+const reviewLabel = computed(() => ({ orientation:'Guide folgt', help:'Website-Hilfe', pending:'Noch nicht fachlich geprüft', verified:'Geprüft' }[frontmatter.value.review] || 'Noch nicht fachlich geprüft'))
 const dateLabel = computed(() => {
   const raw = frontmatter.value.updated
   if (!raw) return ''
@@ -10,4 +11,4 @@ const dateLabel = computed(() => {
   return Number.isNaN(date.getTime()) ? '' : new Intl.DateTimeFormat('de-DE',{ dateStyle:'medium',timeZone:'UTC' }).format(date)
 })
 </script>
-<template><div class="guide-meta"><span>{{frontmatter.author || 'Voidborn Academy'}}</span><span class="guide-status">{{frontmatter.review === 'orientation' ? 'Guide folgt' : 'Website-Hilfe'}}</span><time v-if="dateLabel" :datetime="String(frontmatter.updated)">{{dateLabel}}</time></div></template>
+<template><div class="guide-meta"><span>{{frontmatter.author || 'Voidborn Academy'}}</span><span class="guide-status">{{reviewLabel}}</span><time v-if="dateLabel" :datetime="String(frontmatter.updated)">{{dateLabel}}</time></div></template>

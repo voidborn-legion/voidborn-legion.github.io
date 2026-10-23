@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # PvE & PvP
 
-<GuideMeta />
-
 Unterschiede bei Rollen, Builds und benötigten Werten.
 
 ::: info Dieser Guide kommt noch

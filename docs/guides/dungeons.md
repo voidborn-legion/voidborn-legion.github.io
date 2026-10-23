@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Dungeons & Aktivitäten
 
-<GuideMeta />
-
 Bossmechaniken, Vorbereitung und Belohnungen.
 
 ::: info Dieser Guide kommt noch

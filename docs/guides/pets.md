@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Pets & Spezieskenntnis
 
-<GuideMeta />
-
 Pets sammeln, Bretter ausbauen und Analysewerte vergleichen.
 
 ::: info Dieser Guide kommt noch

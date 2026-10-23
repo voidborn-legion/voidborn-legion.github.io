@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Ausrüstung & Seelenbindung
 
-<GuideMeta />
-
 Verstärkung, Vererbung, Arkana und Neuwürfe.
 
 ::: info Dieser Guide kommt noch

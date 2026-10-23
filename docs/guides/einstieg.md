@@ -8,8 +8,6 @@ updated: '2026-10-23'
 
 # Einstieg & Grundlagen
 
-<GuideMeta />
-
 Die wichtigsten Begriffe und Systeme für den Anfang.
 
 ::: info Dieser Guide kommt noch
