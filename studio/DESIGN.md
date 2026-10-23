@@ -130,10 +130,16 @@ Kleine Radien halten die Arbeitsfläche präzise. Statusmarken und Eingabefelder
 - **Hauptaktion:** Goldfläche, dunkle Schrift, Gewicht 600; mindestens 43px hoch. Speichern benennt ausdrücklich den Entwurf. Deaktivierte Aktionen haben reduzierte Deckkraft und keinen aktiven Zeiger.
 - **Listen und Tabellen:** Offene Zeilen mit unteren Trennlinien. Titel, Zuordnung, Status und Aktion bleiben gemeinsam lesbar. Tabellenköpfe verwenden eine erhöhte Nachtfläche.
 - **Eingaben:** Sichtbare Labels, dunkle Füllung, feine helle Grenze und mindestens 42px Höhe. Suche kombiniert Lupe und Textfeld. Lange Inhalte dürfen umbrechen.
+- **Guide-Auswahl:** Drei beschriftete Feldgruppen trennen „Guide suchen“, „Thema (Kategorie)“ und „Guide öffnen“. Ein Hilfesatz erklärt die Beziehung zwischen Thema und Beitrag. Die Lupe bleibt neben dem Suchtext in einer eigenen horizontalen Gruppe; globale Formularlabels dürfen sie nicht darüber verschieben. Auswahlfelder sind 44px hoch. Am mittleren Breakpoint belegt „Guide öffnen“ die ganze Reihe, mobil folgt es dem einspaltigen Raster.
 - **Guide-Editor:** Umrandete Arbeitsfläche, klebende Werkzeugleiste, visuelle und Markdown-Ansicht. Status und Speichern stehen am Titel; Kommentar- und Verwaltungsaktionen im Kontext. Ungespeicherte Änderungen bleiben sichtbar.
+- **Bildplatzhalter:** Ein eigener, verschiebbarer Inhaltsblock zeigt „Bild fehlt“, Titel und Beschreibung auf getönter Fläche mit gestrichelter Grenze. Einfügen erfolgt an der gemerkten Schreibposition und speichert den aktuellen Guide samt Titel und Zuordnung gemeinsam als Entwurf. Verschachtelte redaktionelle Boxen behalten beim Markdown-Wechsel getrennte Begrenzungen.
+- **Bildzuordnung und Sprungziele:** Jede Screenshot-Zeile bietet einen sichtbaren Ziehhinweis und eine Upload-Schaltfläche. Beim Überziehen erhält die Zeile eine gestrichelte goldene Kontur; eine abgelegte gültige Datei öffnet den bestehenden Zuordnungsdialog mit Dateiname, Alternativtext und Bildunterschrift. „Zur Stelle“ zentriert eine eindeutig gefundene Textstelle, Box, einen Platzhalter oder ein Bild und markiert sie 4,5 Sekunden mit Goldkontur. Fehlende oder mehrdeutige Ziele erhalten eine erklärende Meldung.
 - **Redaktionelle Box:** Getönte Fläche mit Titel und Grenze. Warnung und Gefahr verwenden die warme Warnfläche. Details zeigen einen Richtungsmarker vor dem Titel.
 - **Dialog:** Maximal 600px breit und 90vh hoch mit eigenem Scrollbereich; mobil 95vh. Titel, beschriftete Felder, Abbrechen und Entwurfsaktion bilden die feste Reihenfolge.
 - **Zustände:** Leere Bereiche erklären den tatsächlichen Datenstand. Fehler bieten den vorhandenen Wiederholungsweg. Der lokale Zugriff wird ausdrücklich benannt; Speichern ist kein Veröffentlichen.
+- **Spieldaten-Hilfe:** Der Leerzustand erklärt gemeinsam gepflegte Spielwerte für Guide-Tabellen anhand von Brett, Slot und Min-/Max-Wert. Academy-Empfehlungen bleiben getrennt; ungeprüfte Entwurfswerte werden als solche benannt. Normaler Guide-Text benötigt diesen Bereich nicht.
+
+Die ergänzten Arbeitskonventionen wurden aus dem Quelltext erfasst. Eine erneute visuelle Prüfung im Browser war durch dessen Sicherheitsrichtlinie blockiert; daraus folgt keine visuelle Freigabe.
 
 ## Do's and Don'ts
 

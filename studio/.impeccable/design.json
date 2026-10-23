@@ -45,9 +45,13 @@
     "keyCharacteristics": ["Dauerhafte Navigation", "Listen und Tabellen", "Sichtbarer Entwurfsstatus", "Source Sans 3 als Arbeitsschrift"],
     "rules": [
       {"name": "Gold as Wayfinding", "body": "Gold priorisiert Handlungen und Orientierung; lange Texte bleiben elfenbeinfarben.", "section": "colors"},
-      {"name": "Working Voice", "body": "Cinzel bleibt an der Marke; Arbeitsinhalte verwenden Source Sans 3.", "section": "typography"}
+      {"name": "Working Voice", "body": "Cinzel bleibt an der Marke; Arbeitsinhalte verwenden Source Sans 3.", "section": "typography"},
+      {"name": "Beschriftete Guide-Auswahl", "body": "Suche, Thema (Kategorie) und Guide öffnen sind getrennte Feldgruppen. Die Lupe bleibt horizontal neben dem Suchtext; ein Hilfesatz erklärt Thema und Beitrag.", "section": "components"},
+      {"name": "Sichtbare Bildarbeit", "body": "Bildplatzhalter sind eigene Inhaltsblöcke mit Titel und Beschreibung. Jede Screenshot-Zeile bietet Ziehhinweis und Upload-Schaltfläche; eine gültige abgelegte Datei öffnet den Zuordnungsdialog. Eindeutige Sprungziele werden zentriert und 4,5 Sekunden mit Goldkontur markiert.", "section": "components"},
+      {"name": "Erklärte Spieldaten", "body": "Die Hilfe erklärt gemeinsame Spielwerte für Guide-Tabellen, getrennte Empfehlungen und den ungeprüften Entwurfsstand.", "section": "components"}
     ],
     "dos": ["Do lokalen Zugriffs- und Entwurfsstatus sichtbar halten.", "Do Fokus, Labels und reduzierte Bewegung erhalten."],
-    "donts": ["Don't Veröffentlichung oder freigeschaltete Anmeldung suggerieren.", "Don't ungeprüfte Werte als bestätigt darstellen."]
+    "donts": ["Don't Veröffentlichung oder freigeschaltete Anmeldung suggerieren.", "Don't ungeprüfte Werte als bestätigt darstellen."],
+    "inspectionNote": "Die ergänzten Arbeitskonventionen wurden ausschließlich aus dem Quelltext erfasst. Eine erneute Browserprüfung war durch dessen Sicherheitsrichtlinie blockiert; keine visuelle Freigabe."
   }
 }

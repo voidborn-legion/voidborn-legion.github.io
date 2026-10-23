@@ -39,6 +39,22 @@ test('real Git transactions share browser/manager data, reject conflicts and pre
   assert.ok(s.guides.find(g=>g.id==='guide:pets').body.includes(asset.path.slice('docs/public'.length)));
   assert.ok(!s.guides.find(g=>g.id==='guide:pets').body.includes('Screenshot fehlt: Pet-Sammlung'));
   assert.equal(s.dashboard.missingScreenshots.length,4);
+  const insertedId='screenshot:11111111-1111-4111-8111-111111111111';
+  const marker=`<!-- academy-screenshot:${insertedId} -->`;
+  const currentBody=s.guides.find(g=>g.id==='guide:pets').body;
+  send({op:'screenshot.insert',guideId:'guide:pets',id:insertedId,title:'Synthetic insertion',guideTitle:'Unsaved title retained',description:'Synthetic description',body:`:::: info Outer context\n\nSynthetic before.\n\n::: info Screenshot fehlt: Synthetic insertion\n\nSynthetic description\n\n${marker}\n\n:::\n\nSynthetic after.\n\n::::\n\n${currentBody}`});
+  assert.equal(s.dashboard.missingScreenshots.length,5);
+  assert.ok(s.guides.find(g=>g.id==='guide:pets').body.startsWith(':::: info Outer context'));
+  assert.equal(s.guides.find(g=>g.id==='guide:pets').title,'Unsaved title retained');
+  const insertionHead=s.head;
+  assert.throws(()=>runCommand(repo,{op:'screenshot.insert',guideId:'guide:pets',id:insertedId,title:'Invalid duplicate',description:'Test',body:marker+marker,expectedHead:s.head}),/nicht eindeutig/);
+  assert.equal(repo.head(),insertionHead);
+  send({op:'screenshot.reuse',id:insertedId,assetId:asset.id});
+  assert.equal(s.dashboard.missingScreenshots.length,4);
+  assert.ok(!s.guides.find(g=>g.id==='guide:pets').body.includes(marker));
+  assert.ok(s.guides.find(g=>g.id==='guide:pets').body.includes('Synthetic before.'));
+  assert.ok(s.guides.find(g=>g.id==='guide:pets').body.includes('Synthetic after.'));
+  assert.ok(s.guides.find(g=>g.id==='guide:pets').body.includes(':::: info Outer context'));
   assert.equal(repo.git(['rev-parse','HEAD']).trim(),fixture);
  } finally {
   if(!resolve(root).startsWith(resolve(tmpdir())+sep)||!basename(root).startsWith('voidborn-studio-test-'))throw new Error('Unsafe test cleanup path');
