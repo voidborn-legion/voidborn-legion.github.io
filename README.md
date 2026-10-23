@@ -26,10 +26,10 @@ Keine privaten Redaktionskommentare, Zugangsdaten oder unbearbeiteten Studio-Exp
 
 ## Pages CMS
 
-Die Konfiguration in `.pages.yml` bereitet Guides, Themen und Bild-Uploads vor. Bei https://app.pagescms.org/ mit GitHub anmelden und die Pages-CMS-App für die Organisation `voidborn-legion` ausschließlich auf `voidborn-legion.github.io` beschränken. Anmeldung und Berechtigung sind noch nicht abgeschlossen; ein Speichern über den Editor ist noch nicht getestet.
+Die Konfiguration in `.pages.yml` bereitet Guides, Themen und Bild-Uploads vor. Bei https://app.pagescms.org/ mit GitHub anmelden. Anmeldung und Repository-Zugriff sind eingerichtet. Am 23.10.2026 wurde die Website-Hilfe im CMS geändert und gespeichert; der resultierende GitHub-Actions-Lauf und die Änderung auf der öffentlichen Website wurden erfolgreich geprüft. Bild-Uploads und neue Einträge sind noch nicht separat getestet.
 
-Neue Guides benötigen einen Veröffentlichungs- und Prüfstatus. `published` veröffentlicht eine Seite; `draft` hält sie von der Website fern. `pending` kennzeichnet noch ungeprüfte Inhalte. Die Verträglichkeit erweiterter Markdown-Blöcke mit dem visuellen Editor muss vor der ersten Inhaltsmigration geprüft werden.
+Neue Guides benötigen einen Veröffentlichungs- und Prüfstatus. `published` veröffentlicht eine Seite; `draft` hält sie von der Website fern. `pending` kennzeichnet noch ungeprüfte Inhalte. Der visuelle Editor entfernt HTML-Tags wie `details` und `summary` bereits beim Laden. Deshalb keine HTML-Klappboxen in CMS-gepflegten Guides verwenden; die Website-Hilfe nutzt stattdessen eine normale Zwischenüberschrift. Tabellen, Links und der vorhandene VitePress-Infoblock blieben beim getesteten Speichern erhalten. Weitere erweiterte Blöcke vor ihrer Verwendung einzeln prüfen.
 
 ## Weitere Phasen
 
-GitHub Pages und Actions sind eingerichtet. Als Nächstes: Pages-CMS-Anmeldung und Bearbeitung testen, danach Manager-Plugin und geprüfte Migration. Keine eigene Server- oder Tunnel-Abhängigkeit für die öffentliche Website.
+GitHub Pages, Actions und die CMS-Bearbeitung bestehender Guides sind geprüft. Als Nächstes: Manager-Plugin und geprüfte Migration. Keine eigene Server- oder Tunnel-Abhängigkeit für die öffentliche Website.
