@@ -40,20 +40,6 @@ content:
         label: Prüfstatus
         type: select
         required: true
-        options:
-          values:
-            - label: Guide folgt
-              name: orientation
-            - label: Website-Hilfe
-              name: help
-            - label: Inhalt noch prüfen
-              name: pending
-            - label: Geprüft
-              name: verified
-      - name: sources
-        label: Quellen
-        type: object
-        list: true
         description: |
           **Markdown-Legende für den Inhalt**
 
@@ -82,6 +68,20 @@ content:
           **Text und Links:** `**fett**` · `*kursiv*` · `[Linktext](https://beispiel.de)` · `[Pets-Guide](./pets)`
 
           Jede `:::`-Begrenzung steht in einer eigenen Zeile. Im CMS bleiben die Box-Markierungen sichtbar; auf der Website erscheinen die fertigen Boxen. Keine HTML-Tags `<details>` oder `<summary>` verwenden.
+        options:
+          values:
+            - label: Guide folgt
+              name: orientation
+            - label: Website-Hilfe
+              name: help
+            - label: Inhalt noch prüfen
+              name: pending
+            - label: Geprüft
+              name: verified
+      - name: sources
+        label: Quellen
+        type: object
+        list: true
         fields:
           - name: title
             label: Titel
