@@ -64,6 +64,7 @@ content:
       - name: body
         label: Inhalt
         type: rich-text
+        description: 'Klappbox: In Source eine Zeile „::: details Titel“, darunter den Inhalt und zum Abschluss eine eigene Zeile „:::“ einfügen. Im Editor bleiben diese Markierungen sichtbar; die Website zeigt die fertige Klappbox. Keine HTML-Tags details/summary verwenden.'
   - name: categories
     label: Themen
     type: file

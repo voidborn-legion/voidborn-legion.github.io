@@ -32,4 +32,17 @@ Neue Guides benötigen einen Veröffentlichungs- und Prüfstatus. `published` ve
 
 ## Weitere Phasen
 
+### Klappboxen im CMS
+
+Für Klappboxen die VitePress-Markdown-Syntax verwenden. Sie blieb beim Wechsel zwischen Source und Editor sowie beim Speichern im CMS erhalten:
+
+```md
+::: details Überschrift der Klappbox
+
+Hier steht der ausklappbare Inhalt.
+:::
+```
+
+Im visuellen CMS-Editor erscheinen die Markierungen als Text. Erst die Website stellt sie als aufklappbare Box dar. HTML-Tags `details` und `summary` werden vom CMS entfernt und sind dafür ungeeignet.
+
 GitHub Pages, Actions und die CMS-Bearbeitung bestehender Guides sind geprüft. Als Nächstes: Manager-Plugin und geprüfte Migration. Keine eigene Server- oder Tunnel-Abhängigkeit für die öffentliche Website.
