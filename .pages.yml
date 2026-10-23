@@ -22,34 +22,34 @@ content:
       - name: author
         label: Autor
         type: string
-        default: Voidborn Academy
       - name: updated
         label: Aktualisiert
         type: date
       - name: status
         label: Veröffentlichung
         type: select
-        default: draft
+        required: true
+        description: Entwürfe fehlen auf der Website, sind aber im öffentlichen Repository sichtbar.
         options:
           values:
             - label: Entwurf (nicht auf der Website)
-              value: draft
+              name: draft
             - label: Veröffentlicht
-              value: published
+              name: published
       - name: review
         label: Prüfstatus
         type: select
-        default: orientation
+        required: true
         options:
           values:
             - label: Guide folgt
-              value: orientation
+              name: orientation
             - label: Website-Hilfe
-              value: help
+              name: help
             - label: Inhalt noch prüfen
-              value: pending
+              name: pending
             - label: Geprüft
-              value: verified
+              name: verified
       - name: sources
         label: Quellen
         type: object
