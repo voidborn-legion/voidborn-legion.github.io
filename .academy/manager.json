@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "repository": "voidborn-legion/voidborn-legion.github.io",
+  "branch": "main",
+  "siteUrl": "https://voidborn-legion.github.io/",
+  "guidesPath": "docs/guides",
+  "categoriesPath": "data/categories.json",
+  "mediaPath": "docs/public/images/uploads",
+  "mediaUrlPrefix": "/images/uploads/",
+  "publishedStatus": "published",
+  "draftStatus": "draft",
+  "reviewStates": [
+    "orientation",
+    "help",
+    "pending",
+    "verified"
+  ],
+  "collapsibleSyntax": "vitepress-details",
+  "privateEditorialRepository": null,
+  "publicRepositoryWarning": "Drafts, branches, issues and history are public. Never store confidential editorial comments here.",
+  "workflow": "Publish Academy"
+}
