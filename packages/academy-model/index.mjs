@@ -27,13 +27,14 @@ export function validateSnapshot(snapshot) {
     if (guide.categoryId !== null) requireRef(categoryIds, guide.categoryId);
   }
   const bundleGuides = new Set();
+  const allAssetIds = new Set(bundles.flatMap(b => b.assets).map(a => a.id));
   for (const bundle of bundles) {
     requireRef(guideIds, bundle.guideId);
     if (bundleGuides.has(bundle.guideId)) throw new Error(`Duplicate guide bundle: ${bundle.guideId}`);
     bundleGuides.add(bundle.guideId);
     const sections = new Set(bundle.sections.map(x => x.id));
-    const assets = new Set(bundle.assets.map(x => x.id));
-    const targets = new Set([...assets, ...valueIds]);
+    const assets = allAssetIds;
+    const targets = new Set([...allAssetIds, ...valueIds]);
     const anchor = value => {
       if (value.sectionId !== null) requireRef(sections, value.sectionId);
       if (value.targetId !== null) requireRef(targets, value.targetId);
@@ -121,7 +122,7 @@ export function assignAsset(snapshot, placeholderId, asset, event) {
   const next = clone(snapshot);
   const bundle = next.bundles.find(b => b.placeholders.some(x => x.id === placeholderId));
   if (!bundle) throw new Error('Unknown placeholder');
-  const existing = bundle.assets.find(x => x.id === asset.id);
+  const existing = next.bundles.flatMap(b => b.assets).find(x => x.id === asset.id);
   if (existing && JSON.stringify(existing) !== JSON.stringify(asset)) throw new Error('Asset ID already has different metadata');
   if (!existing) bundle.assets.push(asset);
   const placeholder = bundle.placeholders.find(x => x.id === placeholderId);

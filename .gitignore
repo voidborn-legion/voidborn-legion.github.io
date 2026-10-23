@@ -4,3 +4,9 @@ docs/.vitepress/dist/
 .impeccable/review/
 *.log
 .taste-skill/
+studio-dist/
+.wrangler/
+.dev.vars
+.env*.local
+studio/qa-mobile.html
+studio/qa-desktop.html
