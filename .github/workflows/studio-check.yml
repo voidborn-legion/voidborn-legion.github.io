@@ -1,0 +1,23 @@
+name: Check Studio foundation
+on:
+  push:
+    branches: ['dev/**', 'draft/**']
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run studio:check -- --check-anchors
+      - run: npm run studio:test
+      - run: npm run build

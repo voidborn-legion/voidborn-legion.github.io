@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:pets",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/pets-spezieskenntnis-migration",
+    "commitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+    "blobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+  },
+  "sections": [
+    {
+      "id": "section:pets-start",
+      "title": "Schnellstart: Die sinnvolle Reihenfolge",
+      "anchor": {
+        "kind": "section",
+        "sectionId": null,
+        "quote": "## Schnellstart: Die sinnvolle Reihenfolge",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      }
+    },
+    {
+      "id": "section:pets-cubes",
+      "title": "Seelenkristalle durch versteckte Kuben",
+      "anchor": {
+        "kind": "section",
+        "sectionId": null,
+        "quote": "## Seelenkristalle durch versteckte Kuben",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      }
+    },
+    {
+      "id": "section:pets-analysis",
+      "title": "Analyse und Fixieren: Erst die wichtigen Slots",
+      "anchor": {
+        "kind": "section",
+        "sectionId": null,
+        "quote": "## Analyse und Fixieren: Erst die wichtigen Slots",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      }
+    },
+    {
+      "id": "section:pets-slot-four",
+      "title": "Slot 4: Die fünf Bretter im Vergleich",
+      "anchor": {
+        "kind": "section",
+        "sectionId": null,
+        "quote": "## Slot 4: Die fünf Bretter im Vergleich",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      }
+    },
+    {
+      "id": "section:pets-roles",
+      "title": "Tank, Heiler, Kantor und PvP",
+      "anchor": {
+        "kind": "section",
+        "sectionId": null,
+        "quote": "## Tank, Heiler, Kantor und PvP",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      }
+    }
+  ],
+  "assets": [],
+  "placeholders": [
+    {
+      "id": "screenshot:d5eb68c7-24a1-4763-b316-152c6ad93c5a",
+      "title": "Pet-Sammlung",
+      "description": "Pets auf Level 3 und Fortschritt der Spezieskenntnis.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": "section:pets-start",
+        "quote": "Screenshot fehlt: Pet-Sammlung",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    },
+    {
+      "id": "screenshot:1314ff8c-9722-4cf7-9aa7-ad89d42c3114",
+      "title": "Kubus und Overlay",
+      "description": "Kubus, Questlog-Nähehinweis und Audioeinstellungen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": "section:pets-cubes",
+        "quote": "Screenshots fehlen: Kubus und Overlay",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    },
+    {
+      "id": "screenshot:05c499da-b415-4614-bab5-dd0a597196e0",
+      "title": "Auto-Analyse",
+      "description": "Slot-Auswahl, Zielwerte und Materialverbrauch.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": "section:pets-analysis",
+        "quote": "Screenshot fehlt: Auto-Analyse",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    },
+    {
+      "id": "screenshot:ce0ca839-45d4-4991-9f6f-9b742e4c5def",
+      "title": "Fixierter Roll",
+      "description": "Cognia Slot 4 mit sichtbar fixiertem Slot; echtes Bild fehlt.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": "section:pets-slot-four",
+        "quote": "Screenshot fehlt: Guter fixierter Roll",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    },
+    {
+      "id": "screenshot:a02d9251-bbda-4c2e-85a2-107019d6fb2f",
+      "title": "Tank- und Heiler-Beispiele",
+      "description": "Geeignete Effekte nach Prüfung der jeweiligen Klasse.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": "section:pets-roles",
+        "quote": "Screenshot fehlt: Tank- und Heiler-Beispiele",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    }
+  ],
+  "comments": [],
+  "tasks": [
+    {
+      "id": "task:pets-eu-values",
+      "title": "EU-Werte und vorläufige Stoppschwellen prüfen",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "**EU-Werte prüfen:**",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "09919b170c8aadffa6ae67856efce23265e62ecd",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      },
+      "status": "open",
+      "kind": "verification",
+      "sourceIds": [
+        "source:pets-guide"
+      ],
+      "history": []
+    }
+  ]
+}

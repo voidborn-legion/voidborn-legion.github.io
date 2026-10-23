@@ -1,0 +1,122 @@
+{
+  "categories": [
+    {
+      "id": "category:einstieg",
+      "slug": "einstieg"
+    },
+    {
+      "id": "category:leveling",
+      "slug": "leveling"
+    },
+    {
+      "id": "category:progression",
+      "slug": "progression"
+    },
+    {
+      "id": "category:dungeons",
+      "slug": "dungeons"
+    },
+    {
+      "id": "category:ausruestung",
+      "slug": "ausruestung"
+    },
+    {
+      "id": "category:pets",
+      "slug": "pets"
+    },
+    {
+      "id": "category:klassen",
+      "slug": "klassen"
+    },
+    {
+      "id": "category:pve-pvp",
+      "slug": "pve-pvp"
+    },
+    {
+      "id": "category:checklisten",
+      "slug": "checklisten"
+    },
+    {
+      "id": "category:tools",
+      "slug": "tools"
+    },
+    {
+      "id": "category:tipps",
+      "slug": "tipps"
+    }
+  ],
+  "guides": [
+    {
+      "id": "guide:academy-nutzen",
+      "path": "docs/guides/academy-nutzen.md",
+      "categoryId": null,
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:ausruestung",
+      "path": "docs/guides/ausruestung.md",
+      "categoryId": "category:ausruestung",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:checklisten",
+      "path": "docs/guides/checklisten.md",
+      "categoryId": "category:checklisten",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:dungeons",
+      "path": "docs/guides/dungeons.md",
+      "categoryId": "category:dungeons",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:einstieg",
+      "path": "docs/guides/einstieg.md",
+      "categoryId": "category:einstieg",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:klassen",
+      "path": "docs/guides/klassen.md",
+      "categoryId": "category:klassen",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:leveling",
+      "path": "docs/guides/leveling.md",
+      "categoryId": "category:leveling",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:pets",
+      "path": "docs/guides/pets.md",
+      "categoryId": "category:pets",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:progression",
+      "path": "docs/guides/progression.md",
+      "categoryId": "category:progression",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:pve-pvp",
+      "path": "docs/guides/pve-pvp.md",
+      "categoryId": "category:pve-pvp",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:tipps",
+      "path": "docs/guides/tipps.md",
+      "categoryId": "category:tipps",
+      "lifecycle": "active"
+    },
+    {
+      "id": "guide:tools",
+      "path": "docs/guides/tools.md",
+      "categoryId": "category:tools",
+      "lifecycle": "active"
+    }
+  ]
+}
