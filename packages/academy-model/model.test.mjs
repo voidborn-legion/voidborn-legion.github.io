@@ -1,8 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { loadSnapshot } from './repository.mjs';
+import { execFileSync } from 'node:child_process';
 import { validateSnapshot, dashboard, resolveAnchor, setTaskStatus, assignAsset, planSave, addComment, replyToComment } from './index.mjs';
-const fixture = () => loadSnapshot(process.cwd());
+// Unit fixtures must not depend on an author's evolving content branch.
+const baselineRef = 'bf6bff0f965308eef59d5fccfafd98d9ded40452';
+const readBaseline = path => JSON.parse(execFileSync('git', ['show', `${baselineRef}:${path}`], { encoding: 'utf8' }));
+const baseline = validateSnapshot({ schemaVersion: 1, catalog: readBaseline('.academy/studio/catalog.json'), sources: readBaseline('data/sources.json'), bundles: [readBaseline('.academy/studio/guides/pets.json')], gameValues: readBaseline('data/game/pets.json').records });
+const fixture = () => structuredClone(baseline);
 const timestamp = '2026-10-23T12:00:00Z';
 const event = { id: 'event:test-status', action: 'task-status-changed', actorId: 'test-user', at: timestamp, note: 'Synthetic unit test; not persisted' };
 
