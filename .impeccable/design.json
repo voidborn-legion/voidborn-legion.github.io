@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T11:48:54.681147+00:00",
+  "title": "Design System: Voidborn Academy",
+  "extensions": {
+    "colorMeta": {
+      "legion-gold": {
+        "role": "primary",
+        "displayName": "Legion Gold",
+        "tonalRamp": [
+          "oklch(15% 0.0901 83.93)",
+          "oklch(26% 0.0901 83.93)",
+          "oklch(38% 0.0901 83.93)",
+          "oklch(49% 0.0901 83.93)",
+          "oklch(61% 0.0901 83.93)",
+          "oklch(72% 0.0901 83.93)",
+          "oklch(84% 0.0901 83.93)",
+          "oklch(95% 0.0901 83.93)"
+        ]
+      },
+      "gold-hover": {
+        "role": "primary",
+        "displayName": "Gold Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0687 85.72)",
+          "oklch(26% 0.0687 85.72)",
+          "oklch(38% 0.0687 85.72)",
+          "oklch(49% 0.0687 85.72)",
+          "oklch(61% 0.0687 85.72)",
+          "oklch(72% 0.0687 85.72)",
+          "oklch(84% 0.0687 85.72)",
+          "oklch(95% 0.0687 85.72)"
+        ]
+      },
+      "gold-deep": {
+        "role": "primary",
+        "displayName": "Gold Deep",
+        "tonalRamp": [
+          "oklch(15% 0.0867 82.37)",
+          "oklch(26% 0.0867 82.37)",
+          "oklch(38% 0.0867 82.37)",
+          "oklch(49% 0.0867 82.37)",
+          "oklch(61% 0.0867 82.37)",
+          "oklch(72% 0.0867 82.37)",
+          "oklch(84% 0.0867 82.37)",
+          "oklch(95% 0.0867 82.37)"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "tonalRamp": [
+          "oklch(15% 0.0167 256.84)",
+          "oklch(26% 0.0167 256.84)",
+          "oklch(38% 0.0167 256.84)",
+          "oklch(49% 0.0167 256.84)",
+          "oklch(61% 0.0167 256.84)",
+          "oklch(72% 0.0167 256.84)",
+          "oklch(84% 0.0167 256.84)",
+          "oklch(95% 0.0167 256.84)"
+        ]
+      },
+      "night-alt": {
+        "role": "neutral",
+        "displayName": "Night Alt",
+        "tonalRamp": [
+          "oklch(15% 0.0210 254.94)",
+          "oklch(26% 0.0210 254.94)",
+          "oklch(38% 0.0210 254.94)",
+          "oklch(49% 0.0210 254.94)",
+          "oklch(61% 0.0210 254.94)",
+          "oklch(72% 0.0210 254.94)",
+          "oklch(84% 0.0210 254.94)",
+          "oklch(95% 0.0210 254.94)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0238 251.54)",
+          "oklch(26% 0.0238 251.54)",
+          "oklch(38% 0.0238 251.54)",
+          "oklch(49% 0.0238 251.54)",
+          "oklch(61% 0.0238 251.54)",
+          "oklch(72% 0.0238 251.54)",
+          "oklch(84% 0.0238 251.54)",
+          "oklch(95% 0.0238 251.54)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Surface Raised",
+        "tonalRamp": [
+          "oklch(15% 0.0293 253.06)",
+          "oklch(26% 0.0293 253.06)",
+          "oklch(38% 0.0293 253.06)",
+          "oklch(49% 0.0293 253.06)",
+          "oklch(61% 0.0293 253.06)",
+          "oklch(72% 0.0293 253.06)",
+          "oklch(84% 0.0293 253.06)",
+          "oklch(95% 0.0293 253.06)"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Ivory",
+        "tonalRamp": [
+          "oklch(15% 0.0096 93.57)",
+          "oklch(26% 0.0096 93.57)",
+          "oklch(38% 0.0096 93.57)",
+          "oklch(49% 0.0096 93.57)",
+          "oklch(61% 0.0096 93.57)",
+          "oklch(72% 0.0096 93.57)",
+          "oklch(84% 0.0096 93.57)",
+          "oklch(95% 0.0096 93.57)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0197 255.55)",
+          "oklch(26% 0.0197 255.55)",
+          "oklch(38% 0.0197 255.55)",
+          "oklch(49% 0.0197 255.55)",
+          "oklch(61% 0.0197 255.55)",
+          "oklch(72% 0.0197 255.55)",
+          "oklch(84% 0.0197 255.55)",
+          "oklch(95% 0.0197 255.55)"
+        ]
+      },
+      "quiet": {
+        "role": "neutral",
+        "displayName": "Quiet",
+        "tonalRamp": [
+          "oklch(15% 0.0267 250.03)",
+          "oklch(26% 0.0267 250.03)",
+          "oklch(38% 0.0267 250.03)",
+          "oklch(49% 0.0267 250.03)",
+          "oklch(61% 0.0267 250.03)",
+          "oklch(72% 0.0267 250.03)",
+          "oklch(84% 0.0267 250.03)",
+          "oklch(95% 0.0267 250.03)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0317 252.34)",
+          "oklch(26% 0.0317 252.34)",
+          "oklch(38% 0.0317 252.34)",
+          "oklch(49% 0.0317 252.34)",
+          "oklch(61% 0.0317 252.34)",
+          "oklch(72% 0.0317 252.34)",
+          "oklch(84% 0.0317 252.34)",
+          "oklch(95% 0.0317 252.34)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Legionstitel",
+        "purpose": "Hero-Titel mit Cinzel."
+      },
+      "body": {
+        "displayName": "Lesetext",
+        "purpose": "Guide-Fließtext und Arbeitsstimme."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "surface-transition",
+        "value": "background 0.2s ease",
+        "purpose": "Tonale Hover-Rückmeldung; bei Reduced Motion deaktiviert."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "640px"
+      },
+      {
+        "name": "tablet",
+        "value": "960px"
+      },
+      {
+        "name": "wide",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Hauptaktion",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Goldene Hauptaktion.",
+      "html": "<a class=\"ds-primary\" href=\"#guide\">Dein Einstieg in AION 2 →</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;min-height:48px;background:#d7b777;color:#10151c;padding:12px 22px;border-radius:5px;font:600 16px \"Source Sans 3\",sans-serif;text-decoration:none;transition:background .2s}.ds-primary:hover{background:#ecd5a4} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Textaktion",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Leiser ergänzender Weg.",
+      "html": "<a class=\"ds-text\" href=\"#themen\">Guides entdecken ↓</a>",
+      "css": ".ds-text{display:inline-flex;align-items:center;min-height:48px;color:#e4e8ee;font:17px \"Source Sans 3\",sans-serif;text-decoration:none}.ds-text:hover{color:#ecd5a4} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Themenfilter",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Filterknopf mit sichtbarem Auswahlzustand.",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"false\">Kampf &amp; Klassen</button>",
+      "css": ".ds-filter{font:16px \"Source Sans 3\",sans-serif;cursor:pointer;border-radius:5px;padding:10px 16px;background:transparent;color:#b4bdc9;border:1px solid #2c3948;min-height:44px}.ds-filter:hover{color:#f0eee7;border-color:#8190a0}.ds-filter[aria-pressed=true]{background:#d7b777;color:#10151c;border-color:#d7b777} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Themenkarte",
+      "kind": "card",
+      "refersTo": "topic-card",
+      "description": "Ganzflächiger Themenlink.",
+      "html": "<a class=\"ds-card\" href=\"#guide\"><strong>Dein Einstieg</strong><p>Grundlagen für deinen nächsten Schritt.</p><span>Thema öffnen →</span></a>",
+      "css": ".ds-card{display:flex;flex-direction:column;padding:28px;min-height:250px;background:#121b25;border-radius:12px;color:#f0eee7;text-decoration:none;font-family:\"Source Sans 3\",sans-serif;transition:background .2s}.ds-card:hover{background:#1b2836}.ds-card strong{font-size:22px;line-height:1.3}.ds-card p{font-size:17px;line-height:1.6;color:#b4bdc9;margin-top:10px}.ds-card span{color:#d7b777;font-size:15px;padding-top:24px;margin-top:auto} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Routineverweis",
+      "kind": "nav",
+      "refersTo": "button-text",
+      "description": "Ruhige Linkzeile für wiederkehrende Aufgaben.",
+      "html": "<a class=\"ds-routine\" href=\"#routine\"><small>Tägliche Routine</small><span>Daily-Aufgaben ↗</span></a>",
+      "css": ".ds-routine{display:flex;flex-direction:column;padding:20px 0;border-bottom:1px solid #2c3948;gap:7px;text-decoration:none;font-family:\"Source Sans 3\",sans-serif}.ds-routine small{color:#b4bdc9;font-size:15px}.ds-routine span{color:#f0eee7;font-size:21px}.ds-routine:hover span{color:#d7b777} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Nächtlicher Legionsatlas",
+    "overview": "Ein nächtlicher Legionsatlas: atmosphärisch im Einstieg, präzise in der Orientierung und ruhig beim Lesen. Dunkle blaue Flächen, elfenbeinfarbene Schrift und sparsam eingesetztes Gold verbinden die Academy mit Voidborn. Die originale Fantasy-Zitadelle trägt die Stimmung; sie ist kein Beleg für Spielmechaniken.\n\nDie Website ist eine technische Vorschau vor der Discord-Migration. Hinweisflächen und Guide-Platzhalter kennzeichnen diesen Stand sichtbar. Das System übernimmt VitePress-Leseführung und lokale Suche, während die Startseite zwei Einstiegswege, filterbare Themen und zurückhaltende Routineverweise anbietet.",
+    "keyCharacteristics": [
+      "Nächtliche Flächen mit klarer Lesbarkeit",
+      "Cinzel als Akzent, Source Sans 3 als Arbeitsstimme",
+      "Gold für Orientierung und ausgewählte Aktionen",
+      "Tonal geschichtete Karten ohne schwebende Effekte"
+    ],
+    "rules": [
+      {
+        "name": "Gold as Wayfinding",
+        "body": "Gold priorisiert Aktionen und Orientierung; lange Lesetexte bleiben elfenbeinfarben.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do die originale Zitadelle als Atmosphäre verwenden und Text durch dunkle Verläufe lesbar halten.",
+      "Do sichtbaren Tastaturfokus und mindestens 44px hohe Filterziele erhalten.",
+      "Do Vorschau- und Migrationsstatus klar sichtbar halten.",
+      "Do die reduzierte Bewegung respektieren."
+    ],
+    "donts": [
+      "Don’t Spielmechaniken durch atmosphärische Bilder belegen.",
+      "Don’t offizielle Spieloberflächen, Siegel oder unbelegte Fortschrittswerte imitieren.",
+      "Don’t Cinzel für lange Fließtexte einsetzen."
+    ]
+  }
+}
