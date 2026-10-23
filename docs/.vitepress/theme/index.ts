@@ -1,4 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
+import Layout from './Layout.vue'
 import AcademyHome from './components/AcademyHome.vue'
 import AcademyIcon from './components/AcademyIcon.vue'
 import GuideMeta from './components/GuideMeta.vue'
@@ -10,6 +11,7 @@ import './style.css'
 
 export default {
   extends: DefaultTheme,
+  Layout,
   enhanceApp({ app }) {
     app.component('AcademyHome', AcademyHome)
     app.component('AcademyIcon', AcademyIcon)

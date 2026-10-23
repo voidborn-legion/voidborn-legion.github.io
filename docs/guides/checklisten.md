@@ -1,32 +1,31 @@
 ---
-title: Daily- & Weekly-Checklisten
+title: Daily & Weekly
 author: Voidborn Academy
 status: published
 review: orientation
-updated: '23.10.2026'
+updated: '2026-10-23'
 ---
 
-# Daily- & Weekly-Checklisten
+# Daily & Weekly
 
 <GuideMeta />
 
-Wiederkehrende Aufgaben im Blick behalten und den nächsten Run planen.
+Aufladungen, Wochenlimits und Reset-Zeiten.
 
-::: info Der vollständige Guide folgt
-Diese Themenseite zeigt die geplante Struktur. Die Inhalte aus unserer Discord-Academy sind noch nicht übernommen und fachlich geprüft.
+::: info Dieser Guide kommt noch
+Der Beitrag liegt bisher in unserer Discord-Academy. Wir übernehmen ihn mit den dazugehörigen Bildern und prüfen die Angaben vor der Veröffentlichung.
 :::
 
-## Tägliche Routine
+## Geplante Inhalte
 
-Hier werden tägliche Aufladungen, gespeicherte Versuche und wiederkehrende Aufgaben getrennt dargestellt.
+- Tägliche Aufladungen und gespeicherte Versuche
+- Wochenlimits und Reset-Zeiten
+- Verweise auf die ausführlichen Guides
 
 ## Wöchentliche Routine
 
-Wochenlimits und Reset-Zeiten werden mit Region und Zeitzone dokumentiert.
+Die Wochenaufgaben bekommen einen eigenen Abschnitt mit Reset-Zeit und Zeitzone.
 
-## Quellen und Prüfstatus
+## Bis dahin
 
-Beim Übernehmen ergänzen wir Quellen, Bilder und den jeweiligen Spielstand. Offene Prüfungen bleiben sichtbar; diese Vorschau enthält keine verbindlichen Spielwerte.
-
-[Alle Themen ansehen](./) · [Über die Academy](/ueber)
-
+In der [Themenübersicht](./) findest du die anderen Bereiche. [So ist die Academy aufgebaut](./academy-nutzen).

@@ -2,29 +2,29 @@
 title: Über die Academy
 author: Voidborn Academy
 status: published
-review: orientation
-updated: '23.10.2026'
+review: help
+updated: '2026-10-23'
 ---
 
-# Gemeinsam Wissen aufbauen
+# Über die Academy
 
 <GuideMeta />
 
-Die AION 2 Academy von Voidborn wird aus unserer bestehenden Discord-Academy zu einem eigenständigen Wiki weiterentwickelt. Ziel ist ein klarer Weg von deiner Frage zur passenden Erklärung: mit lesbaren Guides, Bildern, Querverweisen und später interaktiven Tabellen.
+Hier entsteht die Website zu unserer AION 2 Academy im Discord. Wir wollen die Guides leichter auffindbar machen und Tabellen, Bilder und Querverweise besser nutzen.
 
 ## Was du hier schon findest
 
-Die erste Version zeigt die geplanten Themen, Navigation, Suche und das neue Layout. Die Themenseiten helfen bei der Orientierung. Sie sind noch keine vollständig übernommenen Spielguides.
+Du kannst die Themenstruktur, Suche und [eine Beispielseite](/guides/academy-nutzen) ausprobieren. Die Spielguides selbst liegen bisher im Discord und sind hier noch nicht übernommen.
 
 ## Was als Nächstes folgt
 
-Die vorhandenen Inhalte werden mit ihren Quellen und Bildern geprüft und übernommen. Dabei unterscheiden wir belegte Spielwerte, versionsabhängige Angaben und redaktionelle Empfehlungen. Nicht geprüfte Zahlen werden nicht als verbindliche Fakten dargestellt.
+Wir übernehmen die Beiträge mit ihren Bildern und Quellen. Offene Fragen prüfen wir vor der Veröffentlichung. Empfehlungen der Academy werden als Empfehlungen gekennzeichnet.
 
 Die vorhandene Discord-Academy bleibt währenddessen erhalten.
 
 ## Quellen und Bilder
 
-Quellen sollen direkt beim jeweiligen Guide stehen. Bei Screenshots werden Herkunft und Kontext dokumentiert. Das atmosphärische Titelmotiv ist eine eigens erzeugte Fantasy-Illustration und zeigt keine belegte AION-2-Spielszene.
+Quellen stehen später direkt beim Guide. Screenshots erhalten eine Bildunterschrift und Angaben zur Herkunft. Das Titelmotiv ist eine KI-generierte Fantasy-Illustration.
 
 ## Unabhängiges Fanprojekt
 

@@ -1,13 +1,13 @@
 [
-  {"slug":"einstieg","title":"Einstieg & Grundlagen","description":"Ankommen, Systeme verstehen und deinen Weg ins Spiel finden.","group":"start","icon":"compass"},
-  {"slug":"leveling","title":"Leveling-Guide","description":"Die Route durch Story, Freischaltungen und die ersten Ausrüstungsentscheidungen.","group":"start","icon":"route"},
-  {"slug":"progression","title":"Gearscore-Progression","description":"Das nächste Ziel erkennen und Verbesserungen sinnvoll priorisieren.","group":"growth","icon":"stairs"},
-  {"slug":"dungeons","title":"Dungeons & Aktivitäten","description":"Vorbereitung, Belohnungen und Mechaniken an einem Ort.","group":"combat","icon":"gate"},
-  {"slug":"ausruestung","title":"Ausrüstung & Seelenbindung","description":"Verstärkung, Vererbung, Arkana und passende Ausrüstungswerte.","group":"growth","icon":"shield"},
-  {"slug":"pets","title":"Pets & Spezieskenntnis","description":"Sammlung, Analyse und die Werte deiner Spezieskenntnis-Bretter.","group":"growth","icon":"spark"},
-  {"slug":"klassen","title":"Klassen & Builds","description":"Deine Rolle, deine Fähigkeiten und die passende Spielweise.","group":"combat","icon":"swords"},
-  {"slug":"pve-pvp","title":"PvE & PvP","description":"Empfehlungen nach Spielmodus und Rolle unterscheiden.","group":"combat","icon":"flag"},
-  {"slug":"checklisten","title":"Daily- & Weekly-Checklisten","description":"Wiederkehrende Aufgaben im Blick behalten und den nächsten Run planen.","group":"routine","icon":"check"},
-  {"slug":"tools","title":"Tools & Overlays","description":"Karten, externe Hilfen und nützliche Werkzeuge einordnen.","group":"routine","icon":"tool"},
-  {"slug":"tipps","title":"Tipps & Tricks","description":"Praktische Antworten, wenn Ressourcen knapp sind oder Fortschritt stockt.","group":"routine","icon":"light"}
+  {"slug":"einstieg","title":"Einstieg & Grundlagen","description":"Die wichtigsten Begriffe und Systeme für den Anfang.","group":"start","icon":"compass","keywords":"anfänger neu start basis"},
+  {"slug":"leveling","title":"Leveling","description":"Hauptquests, Freischaltungen und Ausrüstung beim Leveln.","group":"start","icon":"route","keywords":"story level quest stigma daevanion"},
+  {"slug":"progression","title":"Gearscore-Progression","description":"GS-Stufen, Dungeonzugänge und die nächsten Upgrades.","group":"growth","icon":"stairs","keywords":"gs gear score roadmap fortschritt"},
+  {"slug":"dungeons","title":"Dungeons & Aktivitäten","description":"Bossmechaniken, Vorbereitung und Belohnungen.","group":"combat","icon":"gate","keywords":"boss dungeon expedition transzendenz"},
+  {"slug":"ausruestung","title":"Ausrüstung & Seelenbindung","description":"Verstärkung, Vererbung, Arkana und Neuwürfe.","group":"growth","icon":"shield","keywords":"gear arcana rollen reroll werte manasteine"},
+  {"slug":"pets","title":"Pets & Spezieskenntnis","description":"Pets sammeln, Bretter ausbauen und Analysewerte vergleichen.","group":"growth","icon":"spark","keywords":"pet species brett slot analyse min max"},
+  {"slug":"klassen","title":"Klassen & Builds","description":"Skills, Stigmas und Ausrüstung für deine Klasse.","group":"combat","icon":"swords","keywords":"kantor kleriker templer gladiator assassine jäger zauberer beschwörer rotation"},
+  {"slug":"pve-pvp","title":"PvE & PvP","description":"Unterschiede bei Rollen, Builds und benötigten Werten.","group":"combat","icon":"flag","keywords":"abyss arena tank heal dps"},
+  {"slug":"checklisten","title":"Daily & Weekly","description":"Aufladungen, Wochenlimits und Reset-Zeiten.","group":"routine","icon":"check","keywords":"täglich wöchentlich daily weekly reset aufgaben"},
+  {"slug":"tools","title":"Tools & Overlays","description":"Karten, Charakter-Tools und Overlay-Einstellungen.","group":"routine","icon":"tool","keywords":"questlog karte map dps meter overlay"},
+  {"slug":"tipps","title":"Tipps & Engpässe","description":"Was du bei fehlenden Kinah, Steinen oder Materialien prüfen kannst.","group":"routine","icon":"light","keywords":"kina kinah ressourcen material bottleneck farmen"}
 ]

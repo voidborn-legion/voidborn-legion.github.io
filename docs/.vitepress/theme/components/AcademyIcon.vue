@@ -1,6 +1,7 @@
 <script setup lang="ts">
 defineProps<{ name: string }>()
 const paths: Record<string,string> = {
+ search: 'M10.5 3a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Zm5.3 12.8L22 22',
  compass: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM16 8l-2.5 5.5L8 16l2.5-5.5L16 8Z',
  route: 'M5 5h9a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h10M5 2v6m11 10 3 3-3 3',
  stairs: 'M3 20h6v-6h6V8h6M3 9l6-6m-6 0h6v6',

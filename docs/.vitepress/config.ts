@@ -4,7 +4,7 @@ import categories from '../../data/categories.json'
 export default defineConfig({
   lang: 'de-DE',
   title: 'Voidborn Academy',
-  description: 'Die AION 2 Academy der Voidborn-Legion. Guides, Systeme und Orientierung für deinen nächsten Schritt.',
+  description: 'AION 2 Guides der Voidborn-Legion zu Leveling, Gearscore, Ausrüstung, Dungeons und Pets.',
   base: '/',
   cleanUrls: false,
   appearance: 'force-dark',
@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Pets & Spezies', link: '/guides/pets' },
       { text: 'Checklisten', link: '/guides/checklisten' }
     ],
-    sidebar: [{ text: 'Die Academy', items: [{ text: 'Übersicht', link: '/guides/' }, ...categories.map(c => ({ text: c.title, link: `/guides/${c.slug}` }))] }],
+    sidebar: [{ text: 'Guides', items: [{ text: 'Übersicht', link: '/guides/' }, { text: 'So nutzt du die Academy', link: '/guides/academy-nutzen' }, ...categories.map(c => ({ text: c.title, link: `/guides/${c.slug}` }))] }],
     search: { provider: 'local', options: { locales: { root: { translations: { button: { buttonText: 'Academy durchsuchen', buttonAriaLabel: 'Academy durchsuchen' }, modal: { noResultsText: 'Keine passenden Guides gefunden.', resetButtonTitle: 'Suche zurücksetzen', backButtonTitle: 'Suche schließen', displayDetails: 'Details anzeigen', footer: { selectText: 'öffnen', navigateText: 'navigieren', closeText: 'schließen' } } } } } } },
     outline: { label: 'Auf dieser Seite', level: [2, 3] },
     docFooter: { prev: 'Vorheriger Guide', next: 'Nächster Guide' },

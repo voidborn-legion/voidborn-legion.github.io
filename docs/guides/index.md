@@ -3,21 +3,21 @@ title: Alle Themen
 author: Voidborn Academy
 status: published
 review: orientation
-updated: '23.10.2026'
+updated: '2026-10-23'
 ---
 
-# Finde deinen nächsten Schritt
+# Alle Guides
 
 <GuideMeta />
 
-Diese Übersicht zeigt die geplante Struktur unserer Academy. Die vollständigen Discord-Guides werden in einer späteren Etappe übernommen und geprüft.
+Hier findest du die Themen der Academy. Die Spielguides werden noch aus dem Discord übernommen. Du kannst dir schon ansehen, [wie die Guides aufgebaut sind](./academy-nutzen).
 
 ## Loslegen
 
 - [Einstieg & Grundlagen](./einstieg) – Orientierung in der Academy.
 - [Leveling-Guide](./leveling) – Story, Freischaltungen und Vorbereitung.
 
-## Charakter entwickeln
+## Ausrüstung & Pets
 
 - [Gearscore-Progression](./progression) – Ziele und sinnvolle Prioritäten.
 - [Ausrüstung & Seelenbindung](./ausruestung) – Systeme hinter deinen Upgrades.

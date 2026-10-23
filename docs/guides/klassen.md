@@ -3,26 +3,25 @@ title: Klassen & Builds
 author: Voidborn Academy
 status: published
 review: orientation
-updated: '23.10.2026'
+updated: '2026-10-23'
 ---
 
 # Klassen & Builds
 
 <GuideMeta />
 
-Deine Rolle, deine Fähigkeiten und die passende Spielweise.
+Skills, Stigmas und Ausrüstung für deine Klasse.
 
-::: info Der vollständige Guide folgt
-Diese Themenseite zeigt die geplante Struktur. Die Inhalte aus unserer Discord-Academy sind noch nicht übernommen und fachlich geprüft.
+::: info Dieser Guide kommt noch
+Der Beitrag liegt bisher in unserer Discord-Academy. Wir übernehmen ihn mit den dazugehörigen Bildern und prüfen die Angaben vor der Veröffentlichung.
 :::
 
-## Was der Guide behandeln wird
+## Geplante Inhalte
 
-Deine Rolle, deine Fähigkeiten und die passende Spielweise. Die Inhalte werden mit passenden Unterthemen, Bildern und Querverweisen aufbereitet.
+- Skills und Stigmas
+- Rollen und Rotationen
+- Ausrüstung passend zu Klasse und Spielmodus
 
-## Quellen und Prüfstatus
+## Bis dahin
 
-Beim Übernehmen ergänzen wir Quellen, Bilder und den jeweiligen Spielstand. Offene Prüfungen bleiben sichtbar; diese Vorschau enthält keine verbindlichen Spielwerte.
-
-[Alle Themen ansehen](./) · [Über die Academy](/ueber)
-
+In der [Themenübersicht](./) findest du die anderen Bereiche. [So ist die Academy aufgebaut](./academy-nutzen).

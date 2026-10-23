@@ -3,26 +3,25 @@ title: PvE & PvP
 author: Voidborn Academy
 status: published
 review: orientation
-updated: '23.10.2026'
+updated: '2026-10-23'
 ---
 
 # PvE & PvP
 
 <GuideMeta />
 
-Empfehlungen nach Spielmodus und Rolle unterscheiden.
+Unterschiede bei Rollen, Builds und benötigten Werten.
 
-::: info Der vollständige Guide folgt
-Diese Themenseite zeigt die geplante Struktur. Die Inhalte aus unserer Discord-Academy sind noch nicht übernommen und fachlich geprüft.
+::: info Dieser Guide kommt noch
+Der Beitrag liegt bisher in unserer Discord-Academy. Wir übernehmen ihn mit den dazugehörigen Bildern und prüfen die Angaben vor der Veröffentlichung.
 :::
 
-## Was der Guide behandeln wird
+## Geplante Inhalte
 
-Empfehlungen nach Spielmodus und Rolle unterscheiden. Die Inhalte werden mit passenden Unterthemen, Bildern und Querverweisen aufbereitet.
+- PvE- und PvP-Builds auseinanderhalten
+- Werte für Schaden, Heilung und Überleben
+- Verweise auf die jeweiligen Klassenguides
 
-## Quellen und Prüfstatus
+## Bis dahin
 
-Beim Übernehmen ergänzen wir Quellen, Bilder und den jeweiligen Spielstand. Offene Prüfungen bleiben sichtbar; diese Vorschau enthält keine verbindlichen Spielwerte.
-
-[Alle Themen ansehen](./) · [Über die Academy](/ueber)
-
+In der [Themenübersicht](./) findest du die anderen Bereiche. [So ist die Academy aufgebaut](./academy-nutzen).

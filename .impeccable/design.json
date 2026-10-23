@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-23T11:48:54.681147+00:00",
+  "generatedAt": "2026-10-23T12:05:53.602426+00:00",
   "title": "Design System: Voidborn Academy",
   "extensions": {
     "colorMeta": {
@@ -157,16 +157,252 @@
           "oklch(84% 0.0317 252.34)",
           "oklch(95% 0.0317 252.34)"
         ]
+      },
+      "action-ink": {
+        "role": "neutral",
+        "displayName": "Action Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0162 256.83)",
+          "oklch(26% 0.0162 256.83)",
+          "oklch(38% 0.0162 256.83)",
+          "oklch(49% 0.0162 256.83)",
+          "oklch(61% 0.0162 256.83)",
+          "oklch(72% 0.0162 256.83)",
+          "oklch(84% 0.0162 256.83)",
+          "oklch(95% 0.0162 256.83)"
+        ]
+      },
+      "entry-cool": {
+        "role": "neutral",
+        "displayName": "Entry Cool",
+        "tonalRamp": [
+          "oklch(15% 0.0291 241.06)",
+          "oklch(26% 0.0291 241.06)",
+          "oklch(38% 0.0291 241.06)",
+          "oklch(49% 0.0291 241.06)",
+          "oklch(61% 0.0291 241.06)",
+          "oklch(72% 0.0291 241.06)",
+          "oklch(84% 0.0291 241.06)",
+          "oklch(95% 0.0291 241.06)"
+        ]
+      },
+      "entry-cool-hover": {
+        "role": "neutral",
+        "displayName": "Entry Cool Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0387 239.39)",
+          "oklch(26% 0.0387 239.39)",
+          "oklch(38% 0.0387 239.39)",
+          "oklch(49% 0.0387 239.39)",
+          "oklch(61% 0.0387 239.39)",
+          "oklch(72% 0.0387 239.39)",
+          "oklch(84% 0.0387 239.39)",
+          "oklch(95% 0.0387 239.39)"
+        ]
+      },
+      "entry-warm": {
+        "role": "neutral",
+        "displayName": "Entry Warm",
+        "tonalRamp": [
+          "oklch(15% 0.0143 101.40)",
+          "oklch(26% 0.0143 101.40)",
+          "oklch(38% 0.0143 101.40)",
+          "oklch(49% 0.0143 101.40)",
+          "oklch(61% 0.0143 101.40)",
+          "oklch(72% 0.0143 101.40)",
+          "oklch(84% 0.0143 101.40)",
+          "oklch(95% 0.0143 101.40)"
+        ]
+      },
+      "entry-warm-hover": {
+        "role": "neutral",
+        "displayName": "Entry Warm Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0253 98.09)",
+          "oklch(26% 0.0253 98.09)",
+          "oklch(38% 0.0253 98.09)",
+          "oklch(49% 0.0253 98.09)",
+          "oklch(61% 0.0253 98.09)",
+          "oklch(72% 0.0253 98.09)",
+          "oklch(84% 0.0253 98.09)",
+          "oklch(95% 0.0253 98.09)"
+        ]
+      },
+      "search-surface": {
+        "role": "neutral",
+        "displayName": "Search Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0282 248.97)",
+          "oklch(26% 0.0282 248.97)",
+          "oklch(38% 0.0282 248.97)",
+          "oklch(49% 0.0282 248.97)",
+          "oklch(61% 0.0282 248.97)",
+          "oklch(72% 0.0282 248.97)",
+          "oklch(84% 0.0282 248.97)",
+          "oklch(95% 0.0282 248.97)"
+        ]
+      },
+      "filter-surface": {
+        "role": "neutral",
+        "displayName": "Filter Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0254 251.25)",
+          "oklch(26% 0.0254 251.25)",
+          "oklch(38% 0.0254 251.25)",
+          "oklch(49% 0.0254 251.25)",
+          "oklch(61% 0.0254 251.25)",
+          "oklch(72% 0.0254 251.25)",
+          "oklch(84% 0.0254 251.25)",
+          "oklch(95% 0.0254 251.25)"
+        ]
+      },
+      "filter-text": {
+        "role": "neutral",
+        "displayName": "Filter Text",
+        "tonalRamp": [
+          "oklch(15% 0.0182 253.36)",
+          "oklch(26% 0.0182 253.36)",
+          "oklch(38% 0.0182 253.36)",
+          "oklch(49% 0.0182 253.36)",
+          "oklch(61% 0.0182 253.36)",
+          "oklch(72% 0.0182 253.36)",
+          "oklch(84% 0.0182 253.36)",
+          "oklch(95% 0.0182 253.36)"
+        ]
+      },
+      "filter-hover": {
+        "role": "neutral",
+        "displayName": "Filter Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0394 249.03)",
+          "oklch(26% 0.0394 249.03)",
+          "oklch(38% 0.0394 249.03)",
+          "oklch(49% 0.0394 249.03)",
+          "oklch(61% 0.0394 249.03)",
+          "oklch(72% 0.0394 249.03)",
+          "oklch(84% 0.0394 249.03)",
+          "oklch(95% 0.0394 249.03)"
+        ]
+      },
+      "row-alt": {
+        "role": "neutral",
+        "displayName": "Row Alt",
+        "tonalRamp": [
+          "oklch(15% 0.0257 251.31)",
+          "oklch(26% 0.0257 251.31)",
+          "oklch(38% 0.0257 251.31)",
+          "oklch(49% 0.0257 251.31)",
+          "oklch(61% 0.0257 251.31)",
+          "oklch(72% 0.0257 251.31)",
+          "oklch(84% 0.0257 251.31)",
+          "oklch(95% 0.0257 251.31)"
+        ]
+      },
+      "row-hover": {
+        "role": "neutral",
+        "displayName": "Row Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0375 250.60)",
+          "oklch(26% 0.0375 250.60)",
+          "oklch(38% 0.0375 250.60)",
+          "oklch(49% 0.0375 250.60)",
+          "oklch(61% 0.0375 250.60)",
+          "oklch(72% 0.0375 250.60)",
+          "oklch(84% 0.0375 250.60)",
+          "oklch(95% 0.0375 250.60)"
+        ]
+      },
+      "reading-surface": {
+        "role": "neutral",
+        "displayName": "Reading Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0182 234.80)",
+          "oklch(26% 0.0182 234.80)",
+          "oklch(38% 0.0182 234.80)",
+          "oklch(49% 0.0182 234.80)",
+          "oklch(61% 0.0182 234.80)",
+          "oklch(72% 0.0182 234.80)",
+          "oklch(84% 0.0182 234.80)",
+          "oklch(95% 0.0182 234.80)"
+        ]
+      },
+      "reading-preview": {
+        "role": "neutral",
+        "displayName": "Reading Preview",
+        "tonalRamp": [
+          "oklch(15% 0.0185 245.32)",
+          "oklch(26% 0.0185 245.32)",
+          "oklch(38% 0.0185 245.32)",
+          "oklch(49% 0.0185 245.32)",
+          "oklch(61% 0.0185 245.32)",
+          "oklch(72% 0.0185 245.32)",
+          "oklch(84% 0.0185 245.32)",
+          "oklch(95% 0.0185 245.32)"
+        ]
+      },
+      "reading-hover": {
+        "role": "neutral",
+        "displayName": "Reading Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0251 246.57)",
+          "oklch(26% 0.0251 246.57)",
+          "oklch(38% 0.0251 246.57)",
+          "oklch(49% 0.0251 246.57)",
+          "oklch(61% 0.0251 246.57)",
+          "oklch(72% 0.0251 246.57)",
+          "oklch(84% 0.0251 246.57)",
+          "oklch(95% 0.0251 246.57)"
+        ]
+      },
+      "guide-note": {
+        "role": "neutral",
+        "displayName": "Guide Note",
+        "tonalRamp": [
+          "oklch(15% 0.0276 244.72)",
+          "oklch(26% 0.0276 244.72)",
+          "oklch(38% 0.0276 244.72)",
+          "oklch(49% 0.0276 244.72)",
+          "oklch(61% 0.0276 244.72)",
+          "oklch(72% 0.0276 244.72)",
+          "oklch(84% 0.0276 244.72)",
+          "oklch(95% 0.0276 244.72)"
+        ]
+      },
+      "guide-details": {
+        "role": "neutral",
+        "displayName": "Guide Details",
+        "tonalRamp": [
+          "oklch(15% 0.0263 248.96)",
+          "oklch(26% 0.0263 248.96)",
+          "oklch(38% 0.0263 248.96)",
+          "oklch(49% 0.0263 248.96)",
+          "oklch(61% 0.0263 248.96)",
+          "oklch(72% 0.0263 248.96)",
+          "oklch(84% 0.0263 248.96)",
+          "oklch(95% 0.0263 248.96)"
+        ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Legionstitel",
-        "purpose": "Hero-Titel mit Cinzel."
+        "purpose": "Zweizeiliger Hero; clamp(64px,7.5vw,96px)/.98, bis 960px 76px, bis 700px clamp(48px,13vw,72px)/1.02."
+      },
+      "headline": {
+        "displayName": "Abschnittstitel",
+        "purpose": "Cinzel clamp(26px,2.5vw,36px)/1.25. Guide-H2 bleibt 28px/1.3."
+      },
+      "title": {
+        "displayName": "Thementitel",
+        "purpose": "Source Sans 3 22px/1.25, mobil 21px; Einstiegstitel 23px/1.25."
       },
       "body": {
         "displayName": "Lesetext",
-        "purpose": "Guide-Fließtext und Arbeitsstimme."
+        "purpose": "Guide 18px/1.75; Beschreibungen 17–18px, Hero 21px/1.55 beziehungsweise mobil 19px."
+      },
+      "label": {
+        "displayName": "Metadaten",
+        "purpose": "15px für Metadaten und Ergebniszähler; Filter 16px, Suchlabel 20px/600."
       }
     },
     "shadows": [],
@@ -180,15 +416,19 @@
     "breakpoints": [
       {
         "name": "mobile",
-        "value": "640px"
+        "value": "700px"
       },
       {
-        "name": "tablet",
+        "name": "tablet-content",
         "value": "960px"
       },
       {
-        "name": "wide",
-        "value": "1600px"
+        "name": "compact-nav-search-start",
+        "value": "768px"
+      },
+      {
+        "name": "compact-nav-search-end",
+        "value": "1100px"
       }
     ]
   },
@@ -198,16 +438,8 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "Goldene Hauptaktion.",
-      "html": "<a class=\"ds-primary\" href=\"#guide\">Dein Einstieg in AION 2 →</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;min-height:48px;background:#d7b777;color:#10151c;padding:12px 22px;border-radius:5px;font:600 16px \"Source Sans 3\",sans-serif;text-decoration:none;transition:background .2s}.ds-primary:hover{background:#ecd5a4} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
-    },
-    {
-      "name": "Textaktion",
-      "kind": "button",
-      "refersTo": "button-text",
-      "description": "Leiser ergänzender Weg.",
-      "html": "<a class=\"ds-text\" href=\"#themen\">Guides entdecken ↓</a>",
-      "css": ".ds-text{display:inline-flex;align-items:center;min-height:48px;color:#e4e8ee;font:17px \"Source Sans 3\",sans-serif;text-decoration:none}.ds-text:hover{color:#ecd5a4} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+      "html": "<a class=\"ds-primary\" href=\"#themen\">Guides ansehen →</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;min-height:48px;background:#d7b777;color:#10151c;padding:12px 22px;border-radius:5px;font:600 17px/1.4 \"Source Sans 3\",sans-serif;text-decoration:none;transition:background .2s}.ds-primary:hover{background:#ecd5a4} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
     },
     {
       "name": "Themenfilter",
@@ -215,33 +447,49 @@
       "refersTo": "filter",
       "description": "Filterknopf mit sichtbarem Auswahlzustand.",
       "html": "<button class=\"ds-filter\" aria-pressed=\"false\">Kampf &amp; Klassen</button>",
-      "css": ".ds-filter{font:16px \"Source Sans 3\",sans-serif;cursor:pointer;border-radius:5px;padding:10px 16px;background:transparent;color:#b4bdc9;border:1px solid #2c3948;min-height:44px}.ds-filter:hover{color:#f0eee7;border-color:#8190a0}.ds-filter[aria-pressed=true]{background:#d7b777;color:#10151c;border-color:#d7b777} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
-    },
-    {
-      "name": "Themenkarte",
-      "kind": "card",
-      "refersTo": "topic-card",
-      "description": "Ganzflächiger Themenlink.",
-      "html": "<a class=\"ds-card\" href=\"#guide\"><strong>Dein Einstieg</strong><p>Grundlagen für deinen nächsten Schritt.</p><span>Thema öffnen →</span></a>",
-      "css": ".ds-card{display:flex;flex-direction:column;padding:28px;min-height:250px;background:#121b25;border-radius:12px;color:#f0eee7;text-decoration:none;font-family:\"Source Sans 3\",sans-serif;transition:background .2s}.ds-card:hover{background:#1b2836}.ds-card strong{font-size:22px;line-height:1.3}.ds-card p{font-size:17px;line-height:1.6;color:#b4bdc9;margin-top:10px}.ds-card span{color:#d7b777;font-size:15px;padding-top:24px;margin-top:auto} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+      "css": ".ds-filter{font:16px \"Source Sans 3\",sans-serif;cursor:pointer;border-radius:5px;padding:10px 15px;background:#18222d;color:#c4cdd8;border:0;min-height:44px}.ds-filter:hover{color:#f0eee7;background:#293b4d}.ds-filter[aria-pressed=true]{background:#d7b777;color:#10151c;border-color:#d7b777} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
     },
     {
       "name": "Routineverweis",
       "kind": "nav",
       "refersTo": "button-text",
       "description": "Ruhige Linkzeile für wiederkehrende Aufgaben.",
-      "html": "<a class=\"ds-routine\" href=\"#routine\"><small>Tägliche Routine</small><span>Daily-Aufgaben ↗</span></a>",
-      "css": ".ds-routine{display:flex;flex-direction:column;padding:20px 0;border-bottom:1px solid #2c3948;gap:7px;text-decoration:none;font-family:\"Source Sans 3\",sans-serif}.ds-routine small{color:#b4bdc9;font-size:15px}.ds-routine span{color:#f0eee7;font-size:21px}.ds-routine:hover span{color:#d7b777} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+      "html": "<a class=\"ds-routine\" href=\"#routine\"><span>Daily &amp; Weekly</span><small>Aufladungen, Wochenlimits und Reset-Zeiten nachschlagen.</small></a>",
+      "css": ".ds-routine{display:flex;flex-direction:column;padding:8px 0;gap:12px;text-decoration:none;font-family:\"Source Sans 3\",sans-serif}.ds-routine small{color:#b4bdc9;font-size:18px;line-height:1.6}.ds-routine span{color:#d7b777;font-size:22px}.ds-routine:hover span{color:#d7b777} :focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Themenzeile",
+      "kind": "card",
+      "refersTo": "topic-row",
+      "description": "Ganzflächiger Link in der redaktionellen Themenliste.",
+      "html": "<a class=\"ds-row\" href=\"#guide\"><div><h3>Arkana</h3><p>Das Thema und seine Guides öffnen.</p></div><span>→</span></a>",
+      "css": ".ds-row{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 28px;background:#121b25;border-radius:8px;color:#f0eee7;text-decoration:none;font-family:\"Source Sans 3\",sans-serif;transition:background .2s}.ds-row:hover{background:#213142}.ds-row h3{font-size:22px;line-height:1.25;margin:0}.ds-row p{font-size:17px;line-height:1.5;color:#b4bdc9;margin:6px 0 0}.ds-row span{color:#d7b777}:focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Themensuche",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Beschriftete Suche in der Themenliste.",
+      "html": "<label class=\"ds-search\">Welches Thema suchst du?<input type=\"search\" placeholder=\"Zum Beispiel Arkana oder Pets …\"></label>",
+      "css": ".ds-search{display:block;color:#f0eee7;font:600 20px \"Source Sans 3\",sans-serif}.ds-search input{display:block;width:100%;margin-top:14px;min-height:60px;padding:4px 16px;border:0;border-radius:6px;background:#192531;color:#f0eee7;font:18px \"Source Sans 3\",sans-serif}.ds-search input::placeholder{color:#aebbc9}.ds-search input:hover{background:#213142}:focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Einstiegsweg",
+      "kind": "card",
+      "refersTo": "entry-cool",
+      "description": "Breiter Einstieg mit konkreter Aufgabe.",
+      "html": "<a class=\"ds-entry\" href=\"#guide\"><div><h3>Neu in AION 2</h3><p>Hauptquests, Freischaltungen und Ausrüstung beim Leveln.</p></div><span>→</span></a>",
+      "css": ".ds-entry{display:flex;align-items:center;gap:22px;padding:30px;background:#172631;border-radius:12px;text-decoration:none;font-family:\"Source Sans 3\",sans-serif;transition:background .2s}.ds-entry:hover{background:#203645}.ds-entry h3{font-size:23px;line-height:1.25;color:#f0eee7;margin:0}.ds-entry p{font-size:17px;line-height:1.55;color:#c0c9d3;margin:9px 0 0}.ds-entry span{color:#d7b777;margin-left:auto}:focus-visible{outline:2px solid #ecd5a4;outline-offset:5px} @media(prefers-reduced-motion:reduce){*{transition:none!important}}"
     }
   ],
   "narrative": {
     "northStar": "Nächtlicher Legionsatlas",
-    "overview": "Ein nächtlicher Legionsatlas: atmosphärisch im Einstieg, präzise in der Orientierung und ruhig beim Lesen. Dunkle blaue Flächen, elfenbeinfarbene Schrift und sparsam eingesetztes Gold verbinden die Academy mit Voidborn. Die originale Fantasy-Zitadelle trägt die Stimmung; sie ist kein Beleg für Spielmechaniken.\n\nDie Website ist eine technische Vorschau vor der Discord-Migration. Hinweisflächen und Guide-Platzhalter kennzeichnen diesen Stand sichtbar. Das System übernimmt VitePress-Leseführung und lokale Suche, während die Startseite zwei Einstiegswege, filterbare Themen und zurückhaltende Routineverweise anbietet.",
+    "overview": "Ein nächtlicher Legionsatlas: atmosphärisch im Einstieg, präzise in der Orientierung und ruhig beim Lesen. Dunkle blaue Flächen, elfenbeinfarbene Schrift und sparsam eingesetztes Gold verbinden die Academy mit Voidborn. Die originale Fantasy-Zitadelle trägt die Stimmung; sie ist kein Beleg für Spielmechaniken.\n\nDie Website ist eine Vorschau vor der Discord-Migration. Ein kurzer Hinweis macht den Stand sichtbar. Zwei Einstiegswege, eine durchsuchbare Themenliste, eine ausgearbeitete Beispielseite und Routineverweise führen durch die Academy. Die deutschen Texte sprechen Spieler direkt an und benennen konkrete Aufgaben.",
     "keyCharacteristics": [
       "Nächtliche Flächen mit klarer Lesbarkeit",
       "Cinzel als Akzent, Source Sans 3 als Arbeitsstimme",
       "Gold für Orientierung und ausgewählte Aktionen",
-      "Tonal geschichtete Karten ohne schwebende Effekte"
+      "Tonale Flächen und klare Themenzeilen ohne schwebende Effekte"
     ],
     "rules": [
       {
