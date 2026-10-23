@@ -40,34 +40,16 @@ content:
         label: Prüfstatus
         type: select
         required: true
-        description: |
-          **Markdown-Legende für den Inhalt**
-
-          **Direkt im Editor:** In einer leeren Zeile `/` tippen → Bild (Image), Tabelle (Table), Überschrift, Liste oder Zitat auswählen.
-
-          **Klappbox** – in „Source“ einfügen:
-
-          ```md
-          ::: details Titel der Klappbox
-
-          Hier steht der ausklappbare Text.
-          :::
-          ```
-
-          **Infobox** – in „Source“ einfügen:
-
-          ```md
-          ::: info Gut zu wissen
-
-          Hier steht dein Hinweis.
-          :::
-          ```
-
-          Statt `info` gehen auch `tip` (Tipp), `warning` (Warnung) und `danger` (wichtige Warnung).
-
-          **Text und Links:** `**fett**` · `*kursiv*` · `[Linktext](https://beispiel.de)` · `[Pets-Guide](./pets)`
-
-          Jede `:::`-Begrenzung steht in einer eigenen Zeile. Im CMS bleiben die Box-Markierungen sichtbar; auf der Website erscheinen die fertigen Boxen. Keine HTML-Tags `<details>` oder `<summary>` verwenden.
+        description: >-
+          MARKDOWN-LEGENDE · ↵ bedeutet eine neue Zeile.
+          MENÜ: In einer leeren Zeile / tippen → Bilder, Tabellen, Überschriften, Listen und Zitate.
+          KLAPPBOX: ::: details Titel ↵ Inhalt ↵ :::
+          INFOBOX: ::: info Titel ↵ Hinweistext ↵ :::
+          VARIANTEN: tip = Tipp · warning = Warnung · danger = wichtige Warnung.
+          TEXT: **fett** · *kursiv* · [Linktext](https://beispiel.de) · [Pets-Guide](./pets).
+          Boxen in Source einfügen; jede :::-Begrenzung steht in einer eigenen Zeile.
+          Im CMS sieht man die Markierungen, auf der Website die fertigen Boxen.
+          Keine HTML-Tags details/summary verwenden.
         options:
           values:
             - label: Guide folgt
