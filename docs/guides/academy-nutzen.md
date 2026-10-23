@@ -1,12 +1,12 @@
 ---
 title: Den passenden Guide finden
-description: So sind die Guides, Spielwerte und Empfehlungen in der Voidborn Academy aufgeteilt.
+description: So sind die Guides, Spielwerte und Empfehlungen in der Voidborn
+  Academy aufgeteilt.
 author: Voidborn Academy
 status: published
 review: help
-updated: '2026-10-23'
+updated: 2026-10-23
 ---
-
 # Den passenden Guide finden
 
 Du suchst eine Route fürs Leveln, willst deinen Gearscore verbessern oder ein einzelnes System verstehen? Die Academy ist nach diesen Fragen aufgeteilt.
@@ -17,15 +17,17 @@ Die Themen sind bereits angelegt. Die Beiträge aus unserer Discord-Academy werd
 
 ## Wo du anfangen kannst
 
+
 | Du möchtest … | Passender Bereich |
-| --- | --- |
+| ------------------------------------ | -------------------------------------- |
 | einen neuen Charakter leveln | [Leveling](./leveling) |
 | deinen Gearscore erhöhen | [Gearscore-Progression](./progression) |
 | Arkana oder Seelenbindung verstehen | [Ausrüstung](./ausruestung) |
 | Pet-Werte vergleichen | [Pets & Spezieskenntnis](./pets) |
 | wiederkehrende Aufgaben nachschlagen | [Daily & Weekly](./checklisten) |
 
-Du kannst auf der Startseite nach einem Thema suchen und den Bereich eingrenzen. Die Lupe in der Navigation durchsucht zusätzlich den Text aller Seiten.
+
+Du kannst auf der Startseite nach einem Thema suchen und den Bereich eingrenzen. Mit der Lupe oben durchsuchst du den Text aller Guides.
 
 ## Angaben richtig einordnen
 
@@ -33,12 +35,11 @@ Bei Spielwerten sollen Quelle, Spielversion und Region stehen. Eine Zahl aus ein
 
 Empfehlungen der Academy werden als solche bezeichnet. Das betrifft zum Beispiel die Frage, ab welchem Pet-Wert wir einen Roll behalten würden. Diese Empfehlung ist etwas anderes als der mögliche Min-/Max-Wert im Spiel.
 
-<details>
-<summary>Was bedeutet „Guide folgt“?</summary>
+### Was bedeutet „Guide folgt“?
 
 Die Seite zeigt bisher nur, welche Inhalte dort vorgesehen sind. Der vollständige Beitrag ist noch nicht übernommen. Du solltest daraus keine konkreten Spielwerte oder Build-Empfehlungen ableiten.
 
-</details>
+
 
 ## Bilder und Quellen
 
