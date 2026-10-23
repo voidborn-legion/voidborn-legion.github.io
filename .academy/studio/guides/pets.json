@@ -177,7 +177,28 @@
       "history": []
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment:c25405b4-9b15-492a-a45a-25461195febb",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Der damit verbundene Titel für fünf Bretter auf Stufe 10 ist im Global-Client noch zu bestätigen.",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "c48aed3dfd8b466ae1e65b0f87c987e65993900c",
+        "baseBlobSha": "7f210e28cbdc5860f82d9c45a7289a6024f5148e"
+      },
+      "body": "Bitte den zugehörigen Titel im aktuellen EU-Client bestätigen. Die Aussage bleibt bis dahin ungeprüft.",
+      "authorId": "local-owner",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-23T14:00:04Z",
+      "updatedAt": "2026-10-23T14:00:04Z",
+      "history": []
+    }
+  ],
   "tasks": [
     {
       "id": "task:pets-eu-values",
