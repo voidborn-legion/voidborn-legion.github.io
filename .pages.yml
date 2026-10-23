@@ -54,6 +54,34 @@ content:
         label: Quellen
         type: object
         list: true
+        description: |
+          **Markdown-Legende für den Inhalt**
+
+          **Direkt im Editor:** In einer leeren Zeile `/` tippen → Bild (Image), Tabelle (Table), Überschrift, Liste oder Zitat auswählen.
+
+          **Klappbox** – in „Source“ einfügen:
+
+          ```md
+          ::: details Titel der Klappbox
+
+          Hier steht der ausklappbare Text.
+          :::
+          ```
+
+          **Infobox** – in „Source“ einfügen:
+
+          ```md
+          ::: info Gut zu wissen
+
+          Hier steht dein Hinweis.
+          :::
+          ```
+
+          Statt `info` gehen auch `tip` (Tipp), `warning` (Warnung) und `danger` (wichtige Warnung).
+
+          **Text und Links:** `**fett**` · `*kursiv*` · `[Linktext](https://beispiel.de)` · `[Pets-Guide](./pets)`
+
+          Jede `:::`-Begrenzung steht in einer eigenen Zeile. Im CMS bleiben die Box-Markierungen sichtbar; auf der Website erscheinen die fertigen Boxen. Keine HTML-Tags `<details>` oder `<summary>` verwenden.
         fields:
           - name: title
             label: Titel
@@ -64,7 +92,6 @@ content:
       - name: body
         label: Inhalt
         type: rich-text
-        description: 'Klappbox: In Source eine Zeile „::: details Titel“, darunter den Inhalt und zum Abschluss eine eigene Zeile „:::“ einfügen. Im Editor bleiben diese Markierungen sichtbar; die Website zeigt die fertige Klappbox. Keine HTML-Tags details/summary verwenden.'
   - name: categories
     label: Themen
     type: file
