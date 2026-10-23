@@ -40,16 +40,7 @@ content:
         label: Prüfstatus
         type: select
         required: true
-        description: >-
-          MARKDOWN-LEGENDE · ↵ bedeutet eine neue Zeile.
-          MENÜ: In einer leeren Zeile / tippen → Bilder, Tabellen, Überschriften, Listen und Zitate.
-          KLAPPBOX: ::: details Titel ↵ Inhalt ↵ :::
-          INFOBOX: ::: info Titel ↵ Hinweistext ↵ :::
-          VARIANTEN: tip = Tipp · warning = Warnung · danger = wichtige Warnung.
-          TEXT: **fett** · *kursiv* · [Linktext](https://beispiel.de) · [Pets-Guide](./pets).
-          Boxen in Source einfügen; jede :::-Begrenzung steht in einer eigenen Zeile.
-          Im CMS sieht man die Markierungen, auf der Website die fertigen Boxen.
-          Keine HTML-Tags details/summary verwenden.
+        description: 'Bilder und Tabellen: Im Inhalt auf Editor wechseln und in einer leeren Zeile / tippen. Klappboxen und Infoboxen: Links unter „Editor-Hilfe“ findest du Anleitungen und Kopiervorlagen.'
         options:
           values:
             - label: Guide folgt
@@ -74,6 +65,18 @@ content:
       - name: body
         label: Inhalt
         type: rich-text
+  - name: editor-help
+    label: Editor-Hilfe
+    type: file
+    path: .academy/editor-help.md
+    format: yaml-frontmatter
+    fields:
+      - name: body
+        label: Anleitung und Kopiervorlagen
+        type: rich-text
+        readonly: true
+        options:
+          switcher: false
   - name: categories
     label: Themen
     type: file
