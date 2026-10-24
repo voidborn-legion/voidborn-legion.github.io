@@ -75,7 +75,7 @@ export async function callTool(name,args,ctx){
   const url=new URL(input.file.download_url);
   // Never fetch arbitrary model-supplied URLs, private hosts, or redirects.
   if(url.protocol!=='https:'||!(['files.oaiusercontent.com','oaiusercontent.com'].includes(url.hostname)||url.hostname.endsWith('.oaiusercontent.com'))||url.port||url.username||url.password)throw new Error('Keine freigegebene Chat-Dateiadresse.');
-  const r=await fetch(url,{redirect:'error',signal:AbortSignal.timeout(20000)});if(!r.ok)throw new Error('Chat-Datei ist nicht abrufbar.');
+  const r=await fetch(url,{redirect:'manual',signal:AbortSignal.timeout(20000)});if(r.status>=300&&r.status<400)throw new Error('Datei-Weiterleitungen sind nicht erlaubt.');if(!r.ok)throw new Error('Chat-Datei ist nicht abrufbar.');
   const reader=r.body.getReader();let size=0;const chunks=[];for(;;){const {value,done}=await reader.read();if(done)break;size+=value.length;if(size>2097152){await reader.cancel();throw new Error('Bild ist größer als 2 MiB.');}chunks.push(Buffer.from(value));}
   input.base64=Buffer.concat(chunks).toString('base64');delete input.file;
  }

@@ -42,7 +42,8 @@ export async function commitRemote(token,branch,expectedHead,files,message,baseT
  return commit.sha;
 }
 export async function remoteCommand(token,branch,input,actor,installation=false,prepared=null){
- await assertPermission(token);
+ // Installation credentials are already repository-scoped; user-token mode keeps the legacy check.
+ if(!installation)await assertPermission(token);
  const {repo,state,baseTree}=prepared||await remoteWorkspace(token,branch);
  if(state.head!==input.expectedHead)throw new Error('CONFLICT: Der Entwurf wurde inzwischen geändert.');
  if(input.op==='guide.restore'){

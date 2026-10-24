@@ -44,3 +44,20 @@ test('anonymous discovery exposes schemas only and a tool call returns the ChatG
  r=await rpc('tools/list');const listed=(await r.json()).result.tools;assert.equal(listed.length,35);assert.ok(listed.every(t=>t.securitySchemes[0].type==='oauth2'));assert.deepEqual(listed.find(t=>t.name==='academy_upload_image')._meta['openai/fileParams'],['file']);
  r=await rpc('tools/call',{name:'academy_get_access',arguments:{}});const result=(await r.json()).result;assert.equal(result.isError,true);assert.ok(result._meta['mcp/www_authenticate'][0].includes('error_description='));assert.ok(!JSON.stringify(result).includes('github:152614168'));
 });
+
+import {remoteCommand} from './github.mjs';
+test('repository-scoped installation writes do not require user-only push metadata; user-token mode still checks it',async()=>{
+ const original=globalThis.fetch;let calls=0;globalThis.fetch=async()=>{calls++;return new Response(JSON.stringify({permissions:{push:false}}),{headers:{'Content-Type':'application/json'}});};
+ try{
+  await assert.rejects(remoteCommand('synthetic','draft/studio-test',{expectedHead:'b'.repeat(40)},'github:123',true,{repo:{},state:{head:'a'.repeat(40)},baseTree:'a'.repeat(40)}),/CONFLICT/);assert.equal(calls,0);
+  await assert.rejects(remoteCommand('synthetic','draft/studio-test',{},'github:123'),/Kein Schreibzugriff/);assert.equal(calls,1);
+ }finally{globalThis.fetch=original;}
+});
+
+test('native file download uses Worker-compatible manual redirects and refuses redirected files before writing',async()=>{
+ const original=globalThis.fetch;let commits=0;let redirect=false;
+ globalThis.fetch=async(url,options)=>{assert.equal(options.redirect,'manual');return redirect?new Response(null,{status:302,headers:{Location:'https://evil.example/'}}):new Response(new Uint8Array([137,80,78,71,13,10,26,10]));};
+ const ctx={grant:{role:'administrator',overrides:{},guideIds:null},read:async()=>({guides:[{id:'guide:test'}],snapshot:{bundles:[{guideId:'guide:test',comments:[],tasks:[],assets:[],placeholders:[{id:'screenshot:test'}]}]}}),command:async input=>{commits++;assert.equal(input.file,undefined);assert.ok(input.base64);return {published:false};}};
+ const args={expectedHead:'a'.repeat(40),id:'screenshot:test',file:{download_url:'https://files.oaiusercontent.com/synthetic',file_id:'synthetic'},alt:'Test'};
+ try{await callTool('academy_upload_image',args,ctx);assert.equal(commits,1);redirect=true;await assert.rejects(callTool('academy_upload_image',args,ctx),/Weiterleitungen/);assert.equal(commits,1);}finally{globalThis.fetch=original;}
+});
