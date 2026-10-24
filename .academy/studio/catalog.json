@@ -135,6 +135,12 @@
       "path": "docs/guides/tools-overlays-discord-import.md",
       "categoryId": "category:tools",
       "lifecycle": "active"
+    },
+    {
+      "id": "guide:680d591a-f1d6-472f-a314-7eebb494f9c1",
+      "path": "docs/guides/engpaesse-discord-import.md",
+      "categoryId": "category:tipps",
+      "lifecycle": "active"
     }
   ]
 }
