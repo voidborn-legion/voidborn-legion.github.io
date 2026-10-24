@@ -47,6 +47,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:0adcc685-8783-4965-bb81-9e5811f64654",
+      "title": "Screenshot: Daily Dungeon",
+      "description": "Original-ID 0d9fb8a3-f6dc-40d1-994a-9da35d430de9; Quellbeitrag 9e1d8229-e268-4222-97b0-a127b67b6932. REDAKTION / SCREENSHOT: Daily-Dungeon-Auswahl mit Verstärkungsstein-Belohnung und Wochenkontingent. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `0d9fb8a3-f6dc-40d1-994a-9da35d430de9`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "aac18776824ccbb64b37c5683c1639a8aa4ed638",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
