@@ -609,7 +609,12 @@ Shop-Referenz: https://lum.gg/aion-2/guides/where-to-spend-abyss-points
 
 
 ::: info Originalbild noch nicht übertragen: Abyss-Shop – Preise
-Discord-Bild-ID: `169151ae-ee76-45f0-af4b-83ca6af78eb3`; Beitrag: `857341c6-4182-4328-aa9f-10adfe58a2fa`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `169151ae-ee76-45f0-af4b-83ca6af78eb3`
+
+![Abyss-Shop – Preise](/images/uploads/0b321129c8a883c0b387.jpg)
+
+Originalbild aus Discord-Studio, Beitrag 857341c6-4182-4328-aa9f-10adfe58a2fa
+; Beitrag: `857341c6-4182-4328-aa9f-10adfe58a2fa`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 
 :::
 
