@@ -141,6 +141,12 @@
       "path": "docs/guides/engpaesse-discord-import.md",
       "categoryId": "category:tipps",
       "lifecycle": "active"
+    },
+    {
+      "id": "guide:f00e8d22-5da1-4c0d-a9c2-0f449f75c4e3",
+      "path": "docs/guides/start-here-import.md",
+      "categoryId": "category:einstieg",
+      "lifecycle": "active"
     }
   ]
 }
