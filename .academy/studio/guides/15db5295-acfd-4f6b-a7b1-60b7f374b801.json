@@ -986,6 +986,26 @@
       "createdAt": "2026-10-24T11:50:03Z",
       "updatedAt": "2026-10-24T11:50:03Z",
       "history": []
+    },
+    {
+      "id": "comment:f828a2ba-2f59-4f2d-ac0c-7f89b77d171c",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:071c3236-c61f-4542-ac10-0a18f06dec32",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "299c334e23c94352bb6cf373f31759a743b705b8",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 68810900-b8a9-4fb4-9d23-1ab6096dfb2f | Autor Academy Editor | Datum 2026-10-23T10:56:31.629Z | Originalstatus offen | Quellbeitrag 071c3236-c61f-4542-ac10-0a18f06dec32]\nBestehende Progression-Kapitel neu ordnen, 2.100–2.500-Doppelungen zusammenführen, alle Freischaltgrenzen EU prüfen und Screenshots der Dungeon-Übersicht ergänzen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:50:11Z",
+      "updatedAt": "2026-10-24T11:50:11Z",
+      "history": []
     }
   ],
   "tasks": []
