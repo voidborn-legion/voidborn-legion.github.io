@@ -28,6 +28,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:36bade67-6efc-4c56-9fab-0adc8078d1ac",
+      "title": "Screenshot: Ausrüstung verstärken",
+      "description": "Original-ID f7c73bbb-4eee-4464-bf60-e7c9d0f02de4; Quellbeitrag c97d5b22-e44b-48a1-8460-ee1deafacb73. REDAKTION / SCREENSHOT: Verstärkungsfenster mit Kosten, Steinmenge und erwarteter GS-Änderung. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `f7c73bbb-4eee-4464-bf60-e7c9d0f02de4`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "abfab3455dc24da838695afe442b605df5161fce",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
