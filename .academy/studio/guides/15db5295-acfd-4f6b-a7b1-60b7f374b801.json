@@ -586,6 +586,26 @@
       "createdAt": "2026-10-24T11:45:53Z",
       "updatedAt": "2026-10-24T11:45:53Z",
       "history": []
+    },
+    {
+      "id": "comment:bd4e3237-3718-4671-9506-1d41f6c0dc78",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:c1ceac56-9c7a-4c79-a927-843b1b08df6b",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "28f9deb2c063d344f0af1aad07c29ec16b0166b0",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 318ef015-826c-40fc-99cb-56f62449c56a | Autor Academy Editor | Datum 2026-10-21T18:45:33.556Z | Originalstatus offen | Quellbeitrag c1ceac56-9c7a-4c79-a927-843b1b08df6b]\nTranszendenz-Bossreferenzen: https://aion2.vi.ki/dungeon-guides (Deus Research Base, Shattered Arkanis) und https://aion2-guides.info/en/dungeons/ . Für unsere Bosskarten noch exakte S-Rang-Routen, Gegnerzahl und Boss-Screenshots ergänzen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:46:20Z",
+      "updatedAt": "2026-10-24T11:46:20Z",
+      "history": []
     }
   ],
   "tasks": []
