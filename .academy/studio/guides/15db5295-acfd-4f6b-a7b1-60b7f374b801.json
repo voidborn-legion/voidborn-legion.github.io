@@ -314,6 +314,26 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "comment:71b454ee-86fa-4e9f-9b75-1e95daff5edf",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:f1406616-a6f2-4a4a-8507-ed6202beb4bb",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "f83b0a5eaba8acf1c72fc16c59ced4b3a0882979",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 45d97e8e-313f-41ca-9f18-accec4947f78 | Autor Academy Editor | erstellt 2026-10-21T15:23:59.798Z | Originalstatus erledigt | Quellbeitrag f1406616-a6f2-4a4a-8507-ed6202beb4bb]\nGLOBAL VERIFIZIEREN: Der bisherige Text nennt pro versiegeltem Dungeon im gegnerischen Gebiet 2.500 Verstärkungssteine, 15.000 gebundene Kina und 1.000 Abysspunkte. Bitte im aktuellen Client an einem Dungeon prüfen; Belohnungen können sich durch Updates ändern.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:42:40Z",
+      "updatedAt": "2026-10-24T11:42:40Z",
+      "history": []
     }
   ],
   "tasks": []
