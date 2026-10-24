@@ -107,6 +107,26 @@
       "createdAt": "2026-10-24T11:50:55Z",
       "updatedAt": "2026-10-24T11:50:55Z",
       "history": []
+    },
+    {
+      "id": "comment:583bf988-e9e4-4540-adda-98b95a6c7b14",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:b92ca64f-28a0-407a-aaaa-455efddbe79a",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "44e4efe2a50d1c1930aeabcc453b37bfa6c4de7d",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar 29f98bf5-8e0b-49cd-a352-6a19f1a1e989 | Autor Academy Editor | Datum 2026-10-22T00:08:17.525Z | Originalstatus offen | Quellbeitrag b92ca64f-28a0-407a-aaaa-455efddbe79a]\nPrüfen: Welche Verstärkungsstufen und Seelenbindungswerte werden bei der Vererbung auf 86er-Gear übertragen? Welche Bedingungen, Materialien und Verluste gibt es im EU-Client? Screenshot von der Vorschau ergänzen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:52:05Z",
+      "updatedAt": "2026-10-24T11:52:05Z",
+      "history": []
     }
   ],
   "tasks": []
