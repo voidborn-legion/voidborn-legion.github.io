@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:4636ec18-c3ba-4ddd-b1aa-57c73b009690",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/studio-pets-workspace",
+    "commitSha": "a1936dbf98c234bf86627b941806522118f93d1d",
+    "blobSha": "e5551893bed0dfe2706b3ac7b05f7f47139bf893"
+  },
+  "sections": [],
+  "assets": [],
+  "placeholders": [
+    {
+      "id": "screenshot:61473939-bd55-4eef-b787-74c3ac09025c",
+      "title": "Questlog Hidden Cube und DPS-Overlay",
+      "description": "Originalplatzhalter 3d015288-0b77-4496-b31c-74e5a8d1fa16 (Discord-Beitrag c58cf380-02cb-4879-add0-6568add1746d). Screenshot(s): Hidden-Cube-Warnung im Spiel, Einstellungsansicht des Questlog-Overlays und kompaktes Kampf-Layout. Bei Bedarf mehrere Bilder ergänzen. Originaldatei fehlt.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Screenshot fehlt: Questlog Hidden Cube und DPS-Overlay",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "a1936dbf98c234bf86627b941806522118f93d1d",
+        "baseBlobSha": "e5551893bed0dfe2706b3ac7b05f7f47139bf893"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    }
+  ],
+  "comments": [],
+  "tasks": []
+}
