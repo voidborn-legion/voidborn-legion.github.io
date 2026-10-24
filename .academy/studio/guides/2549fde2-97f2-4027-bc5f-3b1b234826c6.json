@@ -28,6 +28,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:209713d1-ee6d-4444-9eb8-4990d68756d8",
+      "title": "Screenshot-Platzhalter",
+      "description": "Original-ID 2de9322f-7382-4f63-b6a7-3a332577bab7; Quellbeitrag b632014c-d5c4-40fa-b750-383fde2e3e8b. REDAKTION / SCREENSHOT: Vorherigen Abschnitt lesen und passenden Global-Screenshot für die dort erklärte Mechanik erstellen; Platzhaltername danach konkretisieren. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `2de9322f-7382-4f63-b6a7-3a332577bab7`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "a582512219fe57106202ee8a4a284b5050e68aab",
+        "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
