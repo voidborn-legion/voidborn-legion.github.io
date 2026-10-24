@@ -85,6 +85,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:f286ba4f-2691-45f3-8245-8cbeb100de2e",
+      "title": "Screenshot Monolith",
+      "description": "Original-ID c6c82bd9-4cda-4a18-89fe-2875e00dd6fc; Quellbeitrag 2294da2c-08d3-43a0-93e7-fe9097e94ee0. REDAKTION / SCREENSHOT: Monolith mit Federabgabe und Fortschrittsanzeige zeigen; benötigte Menge sichtbar. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `c6c82bd9-4cda-4a18-89fe-2875e00dd6fc`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "37c6c511f3ef686c7c486df664f031de961fdff2",
+        "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
