@@ -153,6 +153,12 @@
       "path": "docs/guides/leveling-import.md",
       "categoryId": "category:leveling",
       "lifecycle": "active"
+    },
+    {
+      "id": "guide:15db5295-acfd-4f6b-a7b1-60b7f374b801",
+      "path": "docs/guides/progression-import.md",
+      "categoryId": "category:progression",
+      "lifecycle": "active"
     }
   ]
 }
