@@ -218,6 +218,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:b0ed9968-0f94-4264-a5de-1c9ca61fe8e1",
+      "title": "Feuertempel/Grimhorn: Beutelisten und Ausrüstungs-Transfer",
+      "description": "Original-ID 9e7b975e-14af-4a1b-a54e-6f5dd2de6535; Quellbeitrag 0e229ce4-2978-41a4-a8c7-4b9a2fddaf1e. REDAKTION / SCREENSHOT: Feuertempel und Grimmhorn-Beutelisten, garantierte Belohnung sowie Vererbungs-Vorschau; lieber mehrere klare Screenshots. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `9e7b975e-14af-4a1b-a54e-6f5dd2de6535`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "f51e3be168010fab16a3aac2ba5cd5968cf984e2",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
