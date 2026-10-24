@@ -146,6 +146,26 @@
       "createdAt": "2026-10-24T11:53:22Z",
       "updatedAt": "2026-10-24T11:53:22Z",
       "history": []
+    },
+    {
+      "id": "comment:77dfb190-9aab-40ac-9872-1c2fe6cc2db2",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:a7acc64e-49fe-4010-ab99-6095b85363a6",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "27ce5039bdcc2ecf2fc807a462ebbc44ec30ef93",
+        "baseBlobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+      },
+      "body": "[Discord-Originalkommentar d899e771-71d6-4352-aab5-3f4412163db9 | Autor Academy Editor | Datum 2026-10-22T14:33:09.991Z | Originalstatus offen | Quellbeitrag a7acc64e-49fe-4010-ab99-6095b85363a6]\nDiscord-Veröffentlichung: Echte Beitragslinks zu den fünf Detail-Checklisten ergänzen. Studio-Links werden nicht exportiert.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:54:19Z",
+      "updatedAt": "2026-10-24T11:54:19Z",
+      "history": []
     }
   ],
   "tasks": []
