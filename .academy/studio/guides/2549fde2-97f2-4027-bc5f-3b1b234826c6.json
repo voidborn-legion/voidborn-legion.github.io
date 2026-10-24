@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:2549fde2-97f2-4027-bc5f-3b1b234826c6",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/studio-pets-workspace",
+    "commitSha": "2ee15fc8b648f1b5702416dea0cffffd5eb6c8c3",
+    "blobSha": "6355ebacf25652354c47fb197695d94935012c64"
+  },
+  "sections": [],
+  "assets": [],
+  "placeholders": [
+    {
+      "id": "screenshot:8803c01e-7997-4a08-8fb1-9ea12e693eaf",
+      "title": "Screenshot: Aufstiegsleiste und Voraussetzungen",
+      "description": "Original-ID 615f1476-4188-41e2-a5f1-c1e83158e37c; Quellbeitrag 72db274d-7e0e-4923-899a-bbe53d11b4ff. REDAKTION / SCREENSHOT: Aufstiegs-/Fortschrittsanzeige mit konkreten Anforderungen zeigen; Text gut lesbar. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `615f1476-4188-41e2-a5f1-c1e83158e37c`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "2ee15fc8b648f1b5702416dea0cffffd5eb6c8c3",
+        "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    }
+  ],
+  "comments": [],
+  "tasks": []
+}
