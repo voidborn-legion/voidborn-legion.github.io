@@ -204,6 +204,26 @@
       "createdAt": "2026-10-23T14:00:04Z",
       "updatedAt": "2026-10-23T14:01:20Z",
       "history": []
+    },
+    {
+      "id": "comment:b8c64337-9022-4442-a1c3-a933ace63366",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Alle Zahlen benötigen einen Abgleich mit dem aktuellen EU-Client.",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "eec0b9fffdcce204a6a9178f94497f99dda6ba97",
+        "baseBlobSha": "d1bb742d7d2681d162a7caa9d0c30eaa3e8cb399"
+      },
+      "body": "[Import aus Discord-Studio | Originalkommentar a8765dbc-6870-44c0-95bb-5af116750e7e | Autor: Academy Editor | 2026-10-23T10:56:20.824Z | Status: offen]\nMin-/Max-Werte und Behalten-Schwellen mit EU-Client verifizieren. Academy-Stoppschwellen sind redaktionelle Empfehlungen, keine Spielmechanik.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T10:40:41Z",
+      "updatedAt": "2026-10-24T10:40:41Z",
+      "history": []
     }
   ],
   "tasks": [
