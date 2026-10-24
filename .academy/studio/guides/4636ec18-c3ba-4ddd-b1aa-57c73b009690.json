@@ -30,6 +30,27 @@
       "history": []
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment:59b62f0f-a210-4a8a-bb88-1e96c3b57d21",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "# Tools & Overlays – AION 2 Global",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "0adb5d57f73c94fa9a71f29af94a82e0504e289b",
+        "baseBlobSha": "e5551893bed0dfe2706b3ac7b05f7f47139bf893"
+      },
+      "body": "[Discord-Originalkommentar 548f4d00-e835-4255-aff0-9e2028af98d2 | Autor Academy Editor | Datum 2026-10-23T10:56:33.569Z | Originalstatus offen | Quellbeitrag fa666382-8944-4ff0-b461-783702c5e2f2]\nScreenshots: Questlog Overlay-Konfiguration Hidden Cube, DPS-Meter und kampfbedingte Sichtbarkeit. Installationsschritte und Privacy-Hinweise auf Aktualität prüfen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:55:15Z",
+      "updatedAt": "2026-10-24T11:55:15Z",
+      "history": []
+    }
+  ],
   "tasks": []
 }
