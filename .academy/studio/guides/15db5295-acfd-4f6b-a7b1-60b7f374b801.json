@@ -351,6 +351,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:757ec099-d26b-469a-8bb0-9c22d761f578",
+      "title": "Konvertierung Offenbarungsamulett",
+      "description": "Originalbild aus Discord Studio, Quell-Bild-ID adbefc1d-3861-4884-86a2-a054c1525fa6, Quellbeitrag 07398320-0c5f-4bfb-a34a-8a1b238a4569. Echte Originaldatei wird importiert. Motiv/Quelle gemäß Discord-Studio, kein Ersatzbild.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `adbefc1d-3861-4884-86a2-a054c1525fa6`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "76ab1f6028c547056ebc0ca50a4a0fc4cf630f2e",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [
