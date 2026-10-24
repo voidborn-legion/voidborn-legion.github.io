@@ -8,7 +8,17 @@
     "blobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
   },
   "sections": [],
-  "assets": [],
+  "assets": [
+    {
+      "id": "asset:fc286039-e3c5-4ad1-ac53-771e79e4455c",
+      "path": "docs/public/images/uploads/6b1048f8a6d40bac0b29.png",
+      "alt": "Synthetisches Testpixel – kein Spielinhalt",
+      "caption": "Technischer Upload-Test",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "6b1048f8a6d40bac0b2954c18fefa40c4ea7a96120fc2e54b7317c0e43c2bbec"
+    }
+  ],
   "placeholders": [
     {
       "id": "screenshot:e157e85b-6096-4e82-a1ed-fbd7c9b8de10",
@@ -17,17 +27,25 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "Diese eindeutige Testpassage dient zur Prüfung von Kommentaren und Screenshots.",
+        "quote": "![Synthetisches Testpixel – kein Spielinhalt](/images/uploads/6b1048f8a6d40bac0b29.png)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "6330938c63252636e78314ca41bb2b7f39f970f9",
         "baseBlobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:fc286039-e3c5-4ad1-ac53-771e79e4455c",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:c58d4660-0762-4c8a-a08e-033bfb671722",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T03:29:43Z",
+          "note": ""
+        }
+      ]
     }
   ],
   "comments": [

@@ -13,6 +13,11 @@ Dies ist ausschließlich ein technischer Test, kein AION-Guide.
 
 Diese eindeutige Testpassage dient zur Prüfung von Kommentaren und Screenshots.
 
+![Synthetisches Testpixel – kein Spielinhalt](/images/uploads/6b1048f8a6d40bac0b29.png)
+
+Technischer Upload-Test
+
+
 ::: details Test-Klappbox
 Dieser Inhalt muss erhalten bleiben.
 :::
