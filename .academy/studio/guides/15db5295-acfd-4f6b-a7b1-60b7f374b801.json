@@ -66,6 +66,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:a00e3d0c-6e82-4abc-8c7a-f3b5df4c7e01",
+      "title": "Screenshot: Raumzeit-Riss",
+      "description": "Original-ID 5f98d2fc-ceb1-4d02-a764-617390a00f53; Quellbeitrag cdfc2a4b-fb91-4e5e-bb54-8fe5f6887a2e. REDAKTION / SCREENSHOT: Riss-Kartenmarker, Zugangsbedingung und Timer sichtbar. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `5f98d2fc-ceb1-4d02-a764-617390a00f53`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "fe85e6905a292bd5b96ff53f6e6348c9522850f0",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
