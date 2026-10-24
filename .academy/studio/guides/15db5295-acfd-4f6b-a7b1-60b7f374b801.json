@@ -786,6 +786,26 @@
       "createdAt": "2026-10-24T11:48:17Z",
       "updatedAt": "2026-10-24T11:48:17Z",
       "history": []
+    },
+    {
+      "id": "comment:575ec024-071d-4557-b195-c4590b2e58a2",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:649e435c-e0c0-447f-9898-c333acb97eac",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "b2a07bc5d01c13630a95340fd8ea705bee932ab0",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 6a2e268d-7111-4a67-803b-0505eb5b11d0 | Autor Academy Editor | Datum 2026-10-22T07:15:13.273Z | Originalstatus offen | Quellbeitrag 649e435c-e0c0-447f-9898-c333acb97eac]\nReview: 86er Rüstung vs. 3 Garantie-Tickets für Nuakum-Schützer anhand EU-Screenshots und Kosten prüfen. Nach 28 Abholungen direktes Rüstungsteil vs. Voucher; bei 1 Rüstungsteil + 3 Tickets vier Zyklen. Konkrete Dropchancen nicht mit bedingten Loot-Tabellen-Prozenten verwechseln. Ergänzen: Crafting-Alternative (Drachenlord), Set-/Seelenbindungsqualität vs. bloßes GS.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:48:44Z",
+      "updatedAt": "2026-10-24T11:48:44Z",
+      "history": []
     }
   ],
   "tasks": []
