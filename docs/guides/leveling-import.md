@@ -249,7 +249,12 @@ Die Leveling-Checkliste des Kantors. Wähle auf der Website immer deine eigene K
 
 
 ::: info Originalbild noch nicht übertragen: grafik.jpg
-Discord-Bild-ID: `19032f86-b7e3-4b35-8ad4-c98c5ad9d7f0`; Beitrag: `b51bb37b-11f3-416b-8b57-a1c7c8579858`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `19032f86-b7e3-4b35-8ad4-c98c5ad9d7f0`
+
+![Leveling – Originalgrafik 2](/images/uploads/5ede14728084fd997cef.jpg)
+
+Originalbild aus Discord-Studio, Beitrag b51bb37b-11f3-416b-8b57-a1c7c8579858
+; Beitrag: `b51bb37b-11f3-416b-8b57-a1c7c8579858`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 
 :::
 
