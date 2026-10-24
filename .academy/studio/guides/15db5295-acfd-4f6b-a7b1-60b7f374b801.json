@@ -53,6 +53,15 @@
       "sourceIds": [],
       "rights": "",
       "sha256": "0b321129c8a883c0b387c6ad8eb30268348aaabb840a086c07157f33a6beb8ea"
+    },
+    {
+      "id": "asset:f363632a-b32a-4f4c-8db2-eeede1aa39cf",
+      "path": "docs/public/images/uploads/0b321129c8a883c0b387.jpg",
+      "alt": "Abyss-Shop – Preise",
+      "caption": "Originalbild aus Discord-Studio, Beitrag 857341c6-4182-4328-aa9f-10adfe58a2fa",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "0b321129c8a883c0b387c6ad8eb30268348aaabb840a086c07157f33a6beb8ea"
     }
   ],
   "placeholders": [
@@ -426,7 +435,7 @@
         "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
       },
       "status": "ready",
-      "assetId": "asset:fadf22f7-034e-48e1-b7e7-c5d152dd025b",
+      "assetId": "asset:f363632a-b32a-4f4c-8db2-eeede1aa39cf",
       "sourceIds": [],
       "history": [
         {
@@ -434,6 +443,13 @@
           "action": "image-uploaded",
           "actorId": "github:152614168",
           "at": "2026-10-24T13:29:47Z",
+          "note": ""
+        },
+        {
+          "id": "event:b876d680-51af-46c0-8622-a87c5e0c5ac2",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T13:30:06Z",
           "note": ""
         }
       ]
