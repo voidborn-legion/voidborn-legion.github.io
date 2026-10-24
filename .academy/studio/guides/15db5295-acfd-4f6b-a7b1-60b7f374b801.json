@@ -886,6 +886,26 @@
       "createdAt": "2026-10-24T11:49:19Z",
       "updatedAt": "2026-10-24T11:49:19Z",
       "history": []
+    },
+    {
+      "id": "comment:e04d560f-d949-4a98-8d0f-de99ad52a04c",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:b6673a9a-3308-4ba1-a939-dc5743c11f2b",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "96ab215dcbeaef7751020b0502664af0ccda9637",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 678081ae-95ac-4525-898f-7b8992494202 | Autor Academy Editor | Datum 2026-10-22T07:36:18.043Z | Originalstatus offen | Quellbeitrag b6673a9a-3308-4ba1-a939-dc5743c11f2b]\nKORREKTUR nach EU-Client-Screenshots 22.10.: Transzendenz ★2 Zersplitterter Arkanis / Boss Talisra der Leere zeigt NUR Spiegel und Pergament (Lebenskraft/Magie), Forschungsbasis Deus / Boss Atiel NUR Glocke und Kompass. KEIN Kelch in diesen beiden Boss-Lootlisten. Vorherige Behauptung 'Kelch kann in ★2 grundsätzlich droppen' nicht belegt und im Guide entfernen. Noch die anderen Bosse / vollständigen ★2-Lootlisten prüfen. Goldenen Kelch über Veredelung daher als sinnvolle gezielte Alternative herausstellen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:49:28Z",
+      "updatedAt": "2026-10-24T11:49:28Z",
+      "history": []
     }
   ],
   "tasks": []
