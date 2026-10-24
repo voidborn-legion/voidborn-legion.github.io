@@ -466,6 +466,26 @@
       "createdAt": "2026-10-24T11:44:46Z",
       "updatedAt": "2026-10-24T11:44:46Z",
       "history": []
+    },
+    {
+      "id": "comment:1760f459-2470-46a5-9c46-f9f69ba769c6",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:649e435c-e0c0-447f-9898-c333acb97eac",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "01193a2ab97a3d6ded268f741ad409cecf5ad6c3",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar eebd252e-ba06-4d1e-963f-4f2f6dcc12fd | Autor Academy Editor | Datum 2026-10-21T18:41:36.137Z | Originalstatus offen | Quellbeitrag 649e435c-e0c0-447f-9898-c333acb97eac]\nBoss-Kurzguides für Feuertempel und Grimhorn ergänzen. Feuertempel: Kromedes Feuerwände, Debuff-Reinigung; Grimhorn: Kugelmechanik, markierter Spieler, Schlag durch die Kugel lenken. Screenshots und Video-Zeitmarken aus Global-Client prüfen. Referenz https://couga54.github.io/aion2-guides/en/dungeons/",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:44:53Z",
+      "updatedAt": "2026-10-24T11:44:53Z",
+      "history": []
     }
   ],
   "tasks": []
