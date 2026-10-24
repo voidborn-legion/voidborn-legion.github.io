@@ -199,6 +199,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:8912d276-c559-451f-a79e-067c1254917f",
+      "title": "Transzendenz ★2: Karten und Belohnungen",
+      "description": "Original-ID dadbe71f-0291-4160-83bd-e64d98ac8059; Quellbeitrag 74fcebd5-0553-4362-935b-db248a700ff3. REDAKTION / SCREENSHOT: ★2-Auswahl mit möglichen Karten und Dropgruppen, EU-Stand angeben. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `dadbe71f-0291-4160-83bd-e64d98ac8059`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "6e0f7c893bbda7552a0fd787621e2fb04dae2967",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
