@@ -21,9 +21,10 @@ test('MCP OAuth rejects unknown redirects and uses browser-bound PKCE and single
  await assert.rejects(mcpGithubCallback(new Request(base+'/auth/callback?state='+state+'&code=fake'),env),/anderer Browser/);
  const original=globalThis.fetch;globalThis.fetch=async u=>new Response(JSON.stringify(String(u).includes('access_token')?{access_token:'synthetic'}:{id:123,login:'synthetic-owner'}),{headers:{'Content-Type':'application/json'}});
  try{r=await mcpGithubCallback(new Request(base+'/auth/callback?state='+state+'&code=fake',{headers:{Cookie:cookie}}),env);}finally{globalThis.fetch=original;}
+ assert.equal(r.headers.get('Referrer-Policy'),'same-origin');
  const html=await r.text();assert.ok(!html.includes('synthetic-provider-token'));const consent=/name="consent" value="([a-f0-9]+)"/.exec(html)[1];
  const form=new URLSearchParams({consent,approve:'yes'});
- await assert.rejects(oauthRoute(new Request(base+'/mcp-oauth/consent',{method:'POST',headers:{Origin:'https://evil.example',Cookie:cookie},body:form}),env));
+ for(const origin of ['https://evil.example','null',''])await assert.rejects(oauthRoute(new Request(base+'/mcp-oauth/consent',{method:'POST',headers:{...(origin?{Origin:origin}:{}),Cookie:cookie},body:form}),env),/Ungültiger Absender/);
  r=await oauthRoute(new Request(base+'/mcp-oauth/consent',{method:'POST',headers:{Origin:base,Cookie:cookie},body:form}),env);const redirect=new URL(r.headers.get('Location'));assert.equal(redirect.searchParams.get('iss'),base);assert.equal(redirect.searchParams.get('state'),'synthetic-state');
  const tokenForm=new URLSearchParams({grant_type:'authorization_code',code:redirect.searchParams.get('code'),client_id:client.client_id,redirect_uri:client.redirect_uris[0],resource:base+'/mcp',code_verifier:'b'.repeat(64)});
  r=await oauthRoute(new Request(base+'/mcp-oauth/token',{method:'POST',body:tokenForm}),env);assert.equal(r.status,400);
