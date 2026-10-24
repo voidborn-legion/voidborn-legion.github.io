@@ -267,6 +267,26 @@
       "createdAt": "2026-10-24T11:54:30Z",
       "updatedAt": "2026-10-24T11:54:30Z",
       "history": []
+    },
+    {
+      "id": "comment:478cc7dd-754b-4fd1-9f4a-48a1396a77eb",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:9956e763-6136-40ef-a48d-4e32d145be72",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "36ca5afb5a7fb0ac72e068a198bf67ac75dea753",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar a5a98422-d60f-4b9c-bcfd-6b7341510d2f | Autor Academy Editor | Datum 2026-10-22T14:36:30.510Z | Originalstatus offen | Quellbeitrag 9956e763-6136-40ef-a48d-4e32d145be72]\nAUDIT – AUSBAU: Konkrete Erfolgs-Tierliste nach Aufwand/Belohnung fehlt noch. Draupnir ist nur der erste verifizierte Fall; weitere kurze Erfolge mit Kina, Steinen, Titeln und Sammlungsobjekten ergänzen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:54:44Z",
+      "updatedAt": "2026-10-24T11:54:44Z",
+      "history": []
     }
   ],
   "tasks": []
