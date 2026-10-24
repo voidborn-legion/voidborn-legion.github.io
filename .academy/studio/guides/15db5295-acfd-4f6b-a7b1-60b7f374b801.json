@@ -706,6 +706,26 @@
       "createdAt": "2026-10-24T11:47:49Z",
       "updatedAt": "2026-10-24T11:47:49Z",
       "history": []
+    },
+    {
+      "id": "comment:43ef960d-6958-4296-bb37-f4f05d713785",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:36a3f861-5c8d-42ba-9e51-988443da0dba",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "b9afd23ba1187b7c6b34d21b9e5a2263554fbfc9",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar b80eef3a-243b-4231-8f33-eae1034f6677 | Autor Academy Editor | Datum 2026-10-21T23:57:47.155Z | Originalstatus offen | Quellbeitrag 36a3f861-5c8d-42ba-9e51-988443da0dba]\nOffen: eigenen kurzen Grundlagenabschnitt zu Arkana ergänzen (Slots, Sets, Kartenfarben, GS, Herstellung, Extraktion, Skillboni, Materialien). Ascensus-Ritus-Erfolg im EU-Client prüfen: Nutzer berichtet 4.000 Punkte bei ca. 10:30 Restzeit und drei Kristalle aus Erfolgsbelohnung. Auch Saisonshop-Kosten 25.000 sowie Extraktionserträge mit Screenshots bestätigen. Nicht ohne Prüfung als allgemeingültige Formel darstellen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:47:56Z",
+      "updatedAt": "2026-10-24T11:47:56Z",
+      "history": []
     }
   ],
   "tasks": []
