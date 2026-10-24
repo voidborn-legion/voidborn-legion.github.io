@@ -159,6 +159,12 @@
       "path": "docs/guides/progression-import.md",
       "categoryId": "category:progression",
       "lifecycle": "active"
+    },
+    {
+      "id": "guide:c15f1f3b-73a0-4136-8f89-b8b21ef5db94",
+      "path": "docs/guides/spielsysteme-import.md",
+      "categoryId": "category:ausruestung",
+      "lifecycle": "active"
     }
   ]
 }
