@@ -66,6 +66,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:436df3ea-9508-4b00-9df8-581b40b94c78",
+      "title": "Wakayashi Seelenbindung Prioritäten",
+      "description": "Original-ID 7fa4712c-669b-4cf2-9952-e4f0612f656f; Quellbeitrag daf5a50a-ce5d-41f3-a4f6-e93d1e611126. Screenshot der vollständigen Slot-Tabelle mit lesbaren deutschen Attributen; Quelle und Stand nennen. Alternativ eigene Tabelle für Website aufbauen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `7fa4712c-669b-4cf2-9952-e4f0612f656f`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "69da491e85a251f47379e777837f82695fc68e78",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
