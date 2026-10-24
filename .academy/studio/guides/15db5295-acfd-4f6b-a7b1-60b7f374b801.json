@@ -806,6 +806,26 @@
       "createdAt": "2026-10-24T11:48:44Z",
       "updatedAt": "2026-10-24T11:48:44Z",
       "history": []
+    },
+    {
+      "id": "comment:7bf15735-031e-41ce-851a-26dc503d11ee",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:a84bcc9a-2d0b-4d43-8e6b-8692964aa427",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "ad4d5035043e949381e916337f8e7ef1311b986f",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 5b71c6e0-b5ec-47e2-b1b4-65fb4e7501dd | Autor Academy Editor | Datum 2026-10-22T07:15:15.605Z | Originalstatus offen | Quellbeitrag a84bcc9a-2d0b-4d43-8e6b-8692964aa427]\nReview: ★3-Farmempfehlung, ★4-Freischaltung bei 2500 und benötigte Vorstufen anhand aktueller EU-Global-Anzeige prüfen. Die Roadmap soll nur bis 2500 reichen; zukünftige Inhalte separat als Ausblick markieren.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:48:51Z",
+      "updatedAt": "2026-10-24T11:48:51Z",
+      "history": []
     }
   ],
   "tasks": []
