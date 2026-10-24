@@ -93,7 +93,7 @@
       },
       "body": "TECHNISCHER TEST: Kommentar und Textverankerung prüfen; kein fachlicher Korrekturhinweis.",
       "authorId": "github:152614168",
-      "status": "open",
+      "status": "done",
       "replies": [
         {
           "id": "reply:7b092b8c-9573-4569-a49c-81e2f33ee5b9",
@@ -103,8 +103,16 @@
         }
       ],
       "createdAt": "2026-10-24T03:28:00Z",
-      "updatedAt": "2026-10-24T03:31:38Z",
-      "history": []
+      "updatedAt": "2026-10-24T03:32:03Z",
+      "history": [
+        {
+          "id": "event:a1adbe32-7fc2-40bb-89ad-c17df538c1f2",
+          "action": "comment-status-changed",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T03:32:03Z",
+          "note": ""
+        }
+      ]
     }
   ],
   "tasks": [
