@@ -129,6 +129,12 @@
       "path": "docs/guides/daily-weekly-discord-import.md",
       "categoryId": "category:checklisten",
       "lifecycle": "active"
+    },
+    {
+      "id": "guide:4636ec18-c3ba-4ddd-b1aa-57c73b009690",
+      "path": "docs/guides/tools-overlays-discord-import.md",
+      "categoryId": "category:tools",
+      "lifecycle": "active"
     }
   ]
 }
