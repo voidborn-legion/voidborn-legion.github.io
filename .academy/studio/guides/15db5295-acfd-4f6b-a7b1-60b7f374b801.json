@@ -866,6 +866,26 @@
       "createdAt": "2026-10-24T11:49:08Z",
       "updatedAt": "2026-10-24T11:49:08Z",
       "history": []
+    },
+    {
+      "id": "comment:62698d99-109c-4336-8235-2a40c43ac191",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:b6673a9a-3308-4ba1-a939-dc5743c11f2b",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "708fa77b292c1992cce0478c8b10e423dd74a8ea",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 0f355449-3408-4030-8ef6-4461c2c7609c | Autor Academy Editor | Datum 2026-10-22T07:34:37.562Z | Originalstatus offen | Quellbeitrag b6673a9a-3308-4ba1-a939-dc5743c11f2b]\nReview mit EU-Client: In der aktuellen aion2-guides.info-Progression stehen für ★2 Shattered Arkanis (Kelch/Pergament/Spiegel) und Deus Research Base (Kelch/Kompass/Glocke); Kelch kann also dort droppen. Veredelung mit 5 Mysteriösen Kristallen und frei wählbarem Skill bestätigt in Quelle. Noch offen: Ist die Wahl von zwei Skills für 15 Kristalle aktuell korrekt? Goldene Kelch-Veredelung vs. zufälliger Drop für Spieler mit wenig Ressourcen vergleichen. Alte Kommentare mit 'Kelch nicht dropbar' entsprechend korrigieren.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:49:19Z",
+      "updatedAt": "2026-10-24T11:49:19Z",
+      "history": []
     }
   ],
   "tasks": []
