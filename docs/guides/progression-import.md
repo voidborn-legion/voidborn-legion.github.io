@@ -264,7 +264,12 @@ Gekaufte Kristalle unter **U → Daevanion** einsetzen. Preise und Limits könne
 
 
 ::: info Originalbild noch nicht übertragen: Albtraum-Shop – Preise
-Discord-Bild-ID: `58d024b6-0821-4941-8599-e22333cda093`; Beitrag: `0a15a66b-4e68-4176-8bec-293165ebde2d`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `58d024b6-0821-4941-8599-e22333cda093`
+
+![Albtraum-Shop – Preise](/images/uploads/a558eabf7e613d7a385a.jpg)
+
+Originalbild aus Discord-Studio, Beitrag 0a15a66b-4e68-4176-8bec-293165ebde2d
+; Beitrag: `0a15a66b-4e68-4176-8bec-293165ebde2d`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 
 :::
 

@@ -35,6 +35,15 @@
       "sourceIds": [],
       "rights": "",
       "sha256": "55acaeb248d285dec53e37c5db797f41ec565a4434a6a2c786003e9f86cc3a1c"
+    },
+    {
+      "id": "asset:855deb53-2b30-45b2-8e67-74865a4db72e",
+      "path": "docs/public/images/uploads/a558eabf7e613d7a385a.jpg",
+      "alt": "Albtraum-Shop – Preise",
+      "caption": "Originalbild aus Discord-Studio, Beitrag 0a15a66b-4e68-4176-8bec-293165ebde2d",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "a558eabf7e613d7a385a0def588adfb8b2c28cadd6274de3fd00f33314025f9b"
     }
   ],
   "placeholders": [
@@ -373,17 +382,25 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "Discord-Bild-ID: `58d024b6-0821-4941-8599-e22333cda093`",
+        "quote": "![Albtraum-Shop – Preise](/images/uploads/a558eabf7e613d7a385a.jpg)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "993c48b8ebb8038e716508003e456b5be89d4dcf",
         "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:855deb53-2b30-45b2-8e67-74865a4db72e",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:3994c514-2a24-45cf-b8a6-e1111ae29e10",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T13:29:34Z",
+          "note": ""
+        }
+      ]
     },
     {
       "id": "screenshot:4a993930-8900-4e12-be98-03d3248ea315",
