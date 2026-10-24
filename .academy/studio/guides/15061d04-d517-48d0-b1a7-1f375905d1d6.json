@@ -30,6 +30,26 @@
       "createdAt": "2026-10-24T11:54:03Z",
       "updatedAt": "2026-10-24T11:54:03Z",
       "history": []
+    },
+    {
+      "id": "comment:c3cc0728-9a7c-436e-bbe1-88ca449d559d",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "# Daily & Weekly – Was wann erledigen?",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "5a96015e256af588c5dfabcc93bac3818eed6b74",
+        "baseBlobSha": "dcf504ed57359ab23cbc1306ccd05ca1cb00c6ef"
+      },
+      "body": "[Discord-Originalkommentar 5bc8a0d2-99e2-4fb4-90b5-0306ab8b3dfa | Autor Academy Editor | Datum 2026-10-22T14:32:53.045Z | Originalstatus offen | Quellbeitrag fba87f26-dc7b-4065-b6cf-976f9c257002]\nREDAKTION: Gemeinsames Eroberung/Transzendenz-Limit nicht abgeholter Kubusbelohnungen ergänzen; bei 0/10 Zugang gesperrt. Screenshot aus Draupnir-Lobby einsetzen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:54:10Z",
+      "updatedAt": "2026-10-24T11:54:10Z",
+      "history": []
     }
   ],
   "tasks": []
