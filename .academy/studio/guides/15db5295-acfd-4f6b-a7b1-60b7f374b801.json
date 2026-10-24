@@ -646,6 +646,26 @@
       "createdAt": "2026-10-24T11:47:05Z",
       "updatedAt": "2026-10-24T11:47:05Z",
       "history": []
+    },
+    {
+      "id": "comment:f5668ec6-e98a-497d-8bb3-eb2d60f594f0",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:9ff03c9a-a7ba-4591-9f16-2dcb7624e368",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "3d81db4cd9aea5977ea837921a68d308072a7b6d",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 9a179071-efac-47bf-8666-b9b25f74c8ac | Autor Academy Editor | Datum 2026-10-21T21:53:44.794Z | Originalstatus offen | Quellbeitrag 9ff03c9a-a7ba-4591-9f16-2dcb7624e368]\nKorrektur anhand der Screenshots aus dem Global-Client: Die vorher genannten 0,424 % / 0,845 % für Vakron-Schützer und 0,431 % / 0,860 % für Urugugu-Waffen sind nicht durch diese Ingame-Anzeige gedeckt und dürfen nicht als bestätigte Dropchancen stehen bleiben. Anzeige „Mögliche Belohnung“: Vakrons Schützer 5,650245 %, Brustpanzer 8,474529 %; bei Urugugu die einzelnen Aulamus-Waffen jeweils 5,747434 %, Halskette 13,792476 %, Ohrringe 17,240595 %. Das sind die in der Belohnungsübersicht angezeigten Werte; bitte nicht zusätzlich zu einer Kubus-Gesamtchance hochrechnen, solange die genaue Berechnungslogik der drei Zufallswürfe nicht separat belegt ist.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:47:12Z",
+      "updatedAt": "2026-10-24T11:47:12Z",
+      "history": []
     }
   ],
   "tasks": []
