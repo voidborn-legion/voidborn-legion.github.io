@@ -17,6 +17,15 @@
       "sourceIds": [],
       "rights": "",
       "sha256": "6b1048f8a6d40bac0b2954c18fefa40c4ea7a96120fc2e54b7317c0e43c2bbec"
+    },
+    {
+      "id": "asset:5c26dc1e-feef-4b78-81e6-ad89983ff66f",
+      "path": "docs/public/images/uploads/6b1048f8a6d40bac0b29.png",
+      "alt": "Synthetisches Testpixel – ausgetauschte Version",
+      "caption": "Ausgetauschte Bildunterschrift im Funktionstest",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "6b1048f8a6d40bac0b2954c18fefa40c4ea7a96120fc2e54b7317c0e43c2bbec"
     }
   ],
   "placeholders": [
@@ -27,7 +36,7 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "![Synthetisches Testpixel – kein Spielinhalt](/images/uploads/6b1048f8a6d40bac0b29.png)",
+        "quote": "![Synthetisches Testpixel – ausgetauschte Version](/images/uploads/6b1048f8a6d40bac0b29.png)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
@@ -35,7 +44,7 @@
         "baseBlobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
       },
       "status": "ready",
-      "assetId": "asset:fc286039-e3c5-4ad1-ac53-771e79e4455c",
+      "assetId": "asset:5c26dc1e-feef-4b78-81e6-ad89983ff66f",
       "sourceIds": [],
       "history": [
         {
@@ -43,6 +52,13 @@
           "action": "image-uploaded",
           "actorId": "github:152614168",
           "at": "2026-10-24T03:29:43Z",
+          "note": ""
+        },
+        {
+          "id": "event:611406d9-8079-4aa8-b95e-8f7629cd9498",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T03:30:38Z",
           "note": ""
         }
       ]
