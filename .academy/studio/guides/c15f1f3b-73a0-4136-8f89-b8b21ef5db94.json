@@ -307,6 +307,26 @@
       "createdAt": "2026-10-24T11:55:02Z",
       "updatedAt": "2026-10-24T11:55:02Z",
       "history": []
+    },
+    {
+      "id": "comment:1df1c36b-eb9b-4728-83b7-d4acf01d2c0b",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:cb0c316a-5ffd-436a-b14d-6a7e0cd6f2b6",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "3b89a1411ed606512fa3dc97ff7ebb040320b1ca",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar e76957ff-41ef-4482-aa69-ac690b5aaa29 | Autor Academy Editor | Datum 2026-10-23T10:56:29.668Z | Originalstatus offen | Quellbeitrag cb0c316a-5ffd-436a-b14d-6a7e0cd6f2b6]\nWakayashi Slot-Prioritäten nach Klasse und PvE/PvP validieren. Screenshot oder verlinkte Referenztabelle ergänzen; Ring-Skilllisten nicht pauschalisieren.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:55:09Z",
+      "updatedAt": "2026-10-24T11:55:09Z",
+      "history": []
     }
   ],
   "tasks": []
