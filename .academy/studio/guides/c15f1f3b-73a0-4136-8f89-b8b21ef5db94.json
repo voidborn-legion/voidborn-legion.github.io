@@ -207,6 +207,26 @@
       "createdAt": "2026-10-24T11:52:36Z",
       "updatedAt": "2026-10-24T11:52:36Z",
       "history": []
+    },
+    {
+      "id": "comment:c26221b6-4229-430d-9246-bb55caf735b4",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:2c43938c-e649-4fb4-a73d-31263ed1e3ea",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "c04e1eae197d308cbe068b4a01a5ac8fea77fb71",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar 23dc1e67-d583-4ab8-a128-d37d8a503845 | Autor Academy Editor | Datum 2026-10-22T07:15:21.166Z | Originalstatus offen | Quellbeitrag 2c43938c-e649-4fb4-a73d-31263ed1e3ea]\nNoch offen: universelle vs. klassenspezifische Stat-Prioritäten; PvE vs. PvP, Waffe/Schützer/Ringe mit aktiven Skilllinien, andere Slots mit passiven. Consonance/Seelenbindungs-Neuwürfe, Lock-Kosten, Übertragung und Item-Linienanzahl anhand Global-Guide und UI prüfen. Keine generische Best-in-Slot-Liste für alle Klassen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:52:44Z",
+      "updatedAt": "2026-10-24T11:52:44Z",
+      "history": []
     }
   ],
   "tasks": []
