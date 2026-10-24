@@ -180,6 +180,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:69655962-6cd1-48db-9441-605957fd79a2",
+      "title": "Transzendenz ★1: Arkana-Slots und erste Karten",
+      "description": "Original-ID e5c7e1a4-6d97-4f88-8871-3e662d075c5e; Quellbeitrag d58dab82-46db-4021-abb6-62c813a62ec3. REDAKTION / SCREENSHOT: Fünf Arkana-Slots und ★1-Belohnungsfenster; Quellen und Upgrade-Effekt sichtbar. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `e5c7e1a4-6d97-4f88-8871-3e662d075c5e`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "b5bcbddace6b5577fb5dd278fa3e904e079110eb",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
