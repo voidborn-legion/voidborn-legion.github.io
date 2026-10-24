@@ -275,6 +275,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:20a7ac63-1341-4711-95fd-0d96cd723188",
+      "title": "Shugofesta-Shop – Preise",
+      "description": "Originalbild aus Discord Studio, Quell-Bild-ID 8bf2f0f1-6e21-498c-b641-5c3d0dd33c90, Quellbeitrag ea9b3e0f-9f39-4a1d-9727-61842f054eda. Echte Originaldatei wird importiert. Motiv/Quelle gemäß Discord-Studio, kein Ersatzbild.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `8bf2f0f1-6e21-498c-b641-5c3d0dd33c90`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "20b61d6f562ef3f584fb79ab4bd028803d8b07c5",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [
