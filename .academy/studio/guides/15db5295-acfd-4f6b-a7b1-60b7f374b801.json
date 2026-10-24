@@ -606,6 +606,26 @@
       "createdAt": "2026-10-24T11:46:20Z",
       "updatedAt": "2026-10-24T11:46:20Z",
       "history": []
+    },
+    {
+      "id": "comment:6db4f33d-1a42-4c04-88d7-7da805588a8d",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:36a3f861-5c8d-42ba-9e51-988443da0dba",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "14b13738afb83de0f14bbf93311e441ee47261a6",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 32aabb17-e1b8-48a6-a3e7-c9eb249b7287 | Autor Academy Editor | Datum 2026-10-21T18:45:35.668Z | Originalstatus offen | Quellbeitrag 36a3f861-5c8d-42ba-9e51-988443da0dba]\nAscensus-Belohnungen sind im Beitrag ergänzt. Noch offen: 4.000-Punkte-Erfolgsprämie (Herstellungsmaterial), Zeitvorgabe 10:30, Extraktionsmenge, Saisonshoppreis 25.000 und goldener Kelch. Bitte Global-Screenshots von Erfolg, Schmiede und Shop vergleichen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:46:58Z",
+      "updatedAt": "2026-10-24T11:46:58Z",
+      "history": []
     }
   ],
   "tasks": []
