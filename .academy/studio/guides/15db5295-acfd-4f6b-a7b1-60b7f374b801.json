@@ -142,6 +142,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:b8be317d-c4e4-4f7f-bb45-a461905070a7",
+      "title": "Screenshot: Manasteine und Seelensteine",
+      "description": "Original-ID 1b23b185-010b-4c53-8b18-87aaba45584a; Quellbeitrag d1bd476f-842d-40af-8584-523aa4f8159b. REDAKTION / SCREENSHOT: Manastein- und Seelenstein-Slots mit Attributen und Materialkosten. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `1b23b185-010b-4c53-8b18-87aaba45584a`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "8608186a057d1fcc926b830fa36db3132b5f053a",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
