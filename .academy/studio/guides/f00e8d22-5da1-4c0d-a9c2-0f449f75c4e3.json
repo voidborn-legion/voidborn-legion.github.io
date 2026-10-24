@@ -30,6 +30,26 @@
       "createdAt": "2026-10-24T11:52:51Z",
       "updatedAt": "2026-10-24T11:52:51Z",
       "history": []
+    },
+    {
+      "id": "comment:84fc0620-54fd-4d6e-8b63-654901909615",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:6cda5de5-3b8e-4612-8e08-e5432d081c9f",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "f599f6a2e404a3c84865e6f21455113d249fbc47",
+        "baseBlobSha": "49567fb70119d4c64fc374cc811f221b3d994922"
+      },
+      "body": "[Discord-Originalkommentar ba78ebbf-54d6-4848-b299-01e4498bfc46 | Autor Academy Editor | Datum 2026-10-22T14:32:26.359Z | Originalstatus offen | Quellbeitrag 6cda5de5-3b8e-4612-8e08-e5432d081c9f]\nDISCORD-LINKS: Nach Veröffentlichung echte Beitragslinks für Leveling, Progression, Bottlenecks, Systeme und Daily/Weekly ergänzen. Studio-Links werden nicht exportiert.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:52:59Z",
+      "updatedAt": "2026-10-24T11:52:59Z",
+      "history": []
     }
   ],
   "tasks": []
