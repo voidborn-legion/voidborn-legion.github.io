@@ -926,6 +926,26 @@
       "createdAt": "2026-10-24T11:49:40Z",
       "updatedAt": "2026-10-24T11:49:40Z",
       "history": []
+    },
+    {
+      "id": "comment:d3775714-81b3-410f-91c9-6c97815b7630",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:063c52b0-2ce0-461e-97ee-b981bede7b03",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "de2de61927391ea660acd283f20d9a6ff5ac2af5",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 2a1f6e79-2b97-4558-9a6c-1d812ae46ce3 | Autor Academy Editor | Datum 2026-10-22T14:32:32.127Z | Originalstatus offen | Quellbeitrag 063c52b0-2ce0-461e-97ee-b981bede7b03]\nDISCORD-LINKS: Als Hub nutzen; nach Veröffentlichung Jump-Links für GS-Meilensteine, Bottlenecks und Systemguides eintragen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:49:48Z",
+      "updatedAt": "2026-10-24T11:49:48Z",
+      "history": []
     }
   ],
   "tasks": []
