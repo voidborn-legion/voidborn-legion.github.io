@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:f00e8d22-5da1-4c0d-a9c2-0f449f75c4e3",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/studio-pets-workspace",
+    "commitSha": "0ad1e4de7b8aa6e62e7d027ab093c7a0b2431293",
+    "blobSha": "49567fb70119d4c64fc374cc811f221b3d994922"
+  },
+  "sections": [],
+  "assets": [],
+  "placeholders": [],
+  "comments": [
+    {
+      "id": "comment:086afdb6-1822-437d-aa83-73c6fe9c569b",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:6cda5de5-3b8e-4612-8e08-e5432d081c9f",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "0ad1e4de7b8aa6e62e7d027ab093c7a0b2431293",
+        "baseBlobSha": "49567fb70119d4c64fc374cc811f221b3d994922"
+      },
+      "body": "[Discord-Originalkommentar da3da57f-5b5e-468c-af59-1b994020275c | Autor Academy Editor | Datum 2026-10-22T14:32:14.372Z | Originalstatus offen | Quellbeitrag 6cda5de5-3b8e-4612-8e08-e5432d081c9f]\nDISCORD-VERLINKUNG: Nach Veröffentlichung echte Discord-Beitragslinks für Leveling, Progression, Bottlenecks, Spielsysteme und Daily/Weekly in diesen Einstieg eintragen. Studio-interne Links werden NICHT in den Discord-Export übernommen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:52:51Z",
+      "updatedAt": "2026-10-24T11:52:51Z",
+      "history": []
+    }
+  ],
+  "tasks": []
+}
