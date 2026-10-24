@@ -237,6 +237,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:cfb0097a-6eac-4cf1-ac32-579f191ba103",
+      "title": "Transzendenz ★3: Freischaltung und Belohnungen",
+      "description": "Original-ID 2417c9a1-d000-449a-855e-d42025a8a917; Quellbeitrag 40675b06-38ee-4d84-9a14-5c0472804da5. REDAKTION / SCREENSHOT: ★3/★4-Belohnungsfenster im selben Layout vergleichen; Gold-Gruppenprozente und Gral-Pool zeigen. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `2417c9a1-d000-449a-855e-d42025a8a917`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "cd509cca5d50e50d2dc9bf1e7ae4a96352b18495",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
