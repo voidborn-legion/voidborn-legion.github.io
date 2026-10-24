@@ -142,6 +142,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:53d8a8d9-721b-40e8-a214-9ffa61953822",
+      "title": "Leveling – Originalgrafik 2",
+      "description": "Originalbild aus Discord Studio, Quell-Bild-ID 19032f86-b7e3-4b35-8ad4-c98c5ad9d7f0, Quellbeitrag b51bb37b-11f3-416b-8b57-a1c7c8579858. Echte Originaldatei wird importiert. Motiv/Quelle gemäß Discord-Studio, kein Ersatzbild.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `19032f86-b7e3-4b35-8ad4-c98c5ad9d7f0`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "a41b04d0103e9da008f0fc402ba1a0879f8ec9ac",
+        "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [
