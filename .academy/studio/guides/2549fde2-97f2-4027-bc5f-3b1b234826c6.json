@@ -26,6 +26,15 @@
       "sourceIds": [],
       "rights": "",
       "sha256": "5ede14728084fd997ceff81892c7f505ba543b5019717a123b1dc44e02b1f6ab"
+    },
+    {
+      "id": "asset:8384ce17-9cba-49db-b4fe-ef46e04ef82d",
+      "path": "docs/public/images/uploads/4b01f2e30e56677fcfd0.jpg",
+      "alt": "Leveling – Originalgrafik 3",
+      "caption": "Originalbild aus Discord-Studio, Beitrag 384ca3bb-ae0b-4f4f-95b1-eed6b94af255",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "4b01f2e30e56677fcfd065022889ca9466b26ba65c8ad893db5f1004e3b3a282"
     }
   ],
   "placeholders": [
@@ -204,17 +213,25 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "Discord-Bild-ID: `61fb63bb-395b-441e-bee3-4193dfb89a08`",
+        "quote": "![Leveling – Originalgrafik 3](/images/uploads/4b01f2e30e56677fcfd0.jpg)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "499c2b24ed6e3c51b0a22fb5b5f7b5019ee2ed6e",
         "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:8384ce17-9cba-49db-b4fe-ef46e04ef82d",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:013e0ad6-8876-499e-ab16-e744509b808b",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T13:28:41Z",
+          "note": ""
+        }
+      ]
     }
   ],
   "comments": [

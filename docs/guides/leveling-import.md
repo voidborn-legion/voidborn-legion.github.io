@@ -308,7 +308,12 @@ Ja, du kannst Daevanion-Knoten zurücksetzen und andere Routen ausprobieren. Daf
 
 
 ::: info Originalbild noch nicht übertragen: grafik.jpg
-Discord-Bild-ID: `61fb63bb-395b-441e-bee3-4193dfb89a08`; Beitrag: `384ca3bb-ae0b-4f4f-95b1-eed6b94af255`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `61fb63bb-395b-441e-bee3-4193dfb89a08`
+
+![Leveling – Originalgrafik 3](/images/uploads/4b01f2e30e56677fcfd0.jpg)
+
+Originalbild aus Discord-Studio, Beitrag 384ca3bb-ae0b-4f4f-95b1-eed6b94af255
+; Beitrag: `384ca3bb-ae0b-4f4f-95b1-eed6b94af255`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 
 :::
 
