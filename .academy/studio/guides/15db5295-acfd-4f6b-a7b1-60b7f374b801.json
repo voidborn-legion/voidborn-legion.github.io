@@ -486,6 +486,26 @@
       "createdAt": "2026-10-24T11:44:53Z",
       "updatedAt": "2026-10-24T11:44:53Z",
       "history": []
+    },
+    {
+      "id": "comment:69c596bd-79c8-475e-83e0-680ddbb7fc81",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:c1ceac56-9c7a-4c79-a927-843b1b08df6b",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "f1be3a9f611bbaa0006a4fa1f83009056a3e9ff3",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 2323fbd8-41f9-4e3c-bb02-b9337c9c37e8 | Autor Academy Editor | Datum 2026-10-21T18:41:42.680Z | Originalstatus offen | Quellbeitrag c1ceac56-9c7a-4c79-a927-843b1b08df6b]\nEigene Boss-Kurzguides für Transzendenz ★1/★2 erstellen: welche Bosse, Punkteanforderungen, Wipe-Mechaniken, Gruppenzuweisung und Video-Zeitmarken. Referenz https://couga54.github.io/aion2-guides/en/dungeons/",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:45:00Z",
+      "updatedAt": "2026-10-24T11:45:00Z",
+      "history": []
     }
   ],
   "tasks": []
