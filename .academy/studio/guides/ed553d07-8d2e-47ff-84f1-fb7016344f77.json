@@ -94,9 +94,16 @@
       "body": "TECHNISCHER TEST: Kommentar und Textverankerung prüfen; kein fachlicher Korrekturhinweis.",
       "authorId": "github:152614168",
       "status": "open",
-      "replies": [],
+      "replies": [
+        {
+          "id": "reply:7b092b8c-9573-4569-a49c-81e2f33ee5b9",
+          "authorId": "github:152614168",
+          "body": "TECHNISCHER TEST erfolgreich: Antwort gehört zum selben Kommentar.",
+          "createdAt": "2026-10-24T03:31:38Z"
+        }
+      ],
       "createdAt": "2026-10-24T03:28:00Z",
-      "updatedAt": "2026-10-24T03:28:00Z",
+      "updatedAt": "2026-10-24T03:31:38Z",
       "history": []
     }
   ],
