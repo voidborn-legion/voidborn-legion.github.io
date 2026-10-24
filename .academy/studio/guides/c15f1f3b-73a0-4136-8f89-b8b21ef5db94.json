@@ -227,6 +227,26 @@
       "createdAt": "2026-10-24T11:52:44Z",
       "updatedAt": "2026-10-24T11:52:44Z",
       "history": []
+    },
+    {
+      "id": "comment:5f6f0da4-e084-4ab4-bf68-fda103340ea3",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:ff15b4fb-678c-492e-be99-655588fce0a4",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "defebfe74e4101d80bbb33aefeeb304d31b9b0a1",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar 4e57fdc5-91fe-4930-ae26-2956286a4e93 | Autor Academy Editor | Datum 2026-10-22T14:32:34.833Z | Originalstatus offen | Quellbeitrag ff15b4fb-678c-492e-be99-655588fce0a4]\nDISCORD-LINKS: Echte Discord-Jump-Links zu Arkana, Vererbung, Seelenbindung, Erfolge, Pantheon und Bottlenecks ergänzen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:53:13Z",
+      "updatedAt": "2026-10-24T11:53:13Z",
+      "history": []
     }
   ],
   "tasks": []
