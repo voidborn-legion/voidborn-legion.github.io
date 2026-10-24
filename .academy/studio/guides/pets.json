@@ -264,6 +264,26 @@
       "createdAt": "2026-10-24T10:41:10Z",
       "updatedAt": "2026-10-24T10:41:10Z",
       "history": []
+    },
+    {
+      "id": "comment:8f3546be-738f-4eb0-ab66-76d57dbfe991",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "**1.000 Seelenkristalle je Kubus**",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "bb620f6c7e500b197a38a2bce1f4bb80d8177961",
+        "baseBlobSha": "d1bb742d7d2681d162a7caa9d0c30eaa3e8cb399"
+      },
+      "body": "[Import aus Discord-Studio | Originalkommentar fcd39fd3-f244-4535-828f-4c0531aacb57 | Autor: Academy Editor | 2026-10-23T10:56:27.378Z | Status: offen]\n1.000 Seelenkristalle je Kubus und konkrete Questlog-Einstellungen anhand Global/EU-Screenshot überprüfen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T10:41:17Z",
+      "updatedAt": "2026-10-24T10:41:17Z",
+      "history": []
     }
   ],
   "tasks": [
