@@ -7,7 +7,7 @@ const now = () => new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
 const requireText = (s, label, max = 5000) => { if (typeof s !== 'string' || !s.trim() || s.length > max) throw new Error(`${label} fehlt oder ist zu lang.`); return s.trim(); };
 const slug = s => { if (!/^[a-z0-9][a-z0-9-]{1,60}$/.test(s)) throw new Error('Bitte einen kurzen Namen aus Kleinbuchstaben, Zahlen und Bindestrichen verwenden.'); return s; };
 const replaceScreenshot=(body,quote,image,caption='')=>{
- const blocks=[...body.matchAll(/^(:{3,}) info [^\n]*\n/gm)].map(start=>{const rest=body.slice(start.index+start[0].length);const end=new RegExp(`^${start[1]}[ \\t]*$`,'m').exec(rest);return end?body.slice(start.index,start.index+start[0].length+end.index+end[0].length):null;}).filter(Boolean).filter(block=>block.includes(quote)).sort((a,b)=>a.length-b.length);
+ const blocks=[...body.matchAll(/^(:{3,}) info [^\n]*\n/gm)].map(start=>{const rest=body.slice(start.index+start[0].length);const end=new RegExp(`^${start[1]}[ \\t]*$`,'m').exec(rest);return end?body.slice(start.index,start.index+start[0].length+end.index+end[0].length):null;}).filter(Boolean).filter(block=>/^:{3,} info Screenshot fehlt:/m.test(block)&&block.includes(quote)).sort((a,b)=>a.length-b.length);
  const insertion=`\n\n${image}\n\n${caption}\n`;
  return blocks.length?body.replace(blocks[0],insertion):body.replace(quote,quote+insertion);
 };
@@ -110,7 +110,8 @@ export function runCommand(repo, input, actorId = 'local-owner') {
       const image=`![${asset.alt.replace(/[\[\]\n]/g,'')}](/${asset.path.slice('docs/public/'.length)})`;
       if(target.body.split(image).length!==2)throw new Error('Bildstelle ist nicht eindeutig.');
       const marker=`<!-- academy-screenshot:${p.id} -->`,box=`::: info Screenshot fehlt: ${p.title.replace(/[\r\n]/g,' ')}\n\n${p.description}\n\n${marker}\n\n:::`;
-      files[target.path]=matter.stringify(target.body.replace(image,box),{...target.frontmatter,status:'draft'});
+      const existingBlock=image+(asset.caption?`\n\n${asset.caption}`:'');
+      files[target.path]=matter.stringify(target.body.replace(target.body.includes(existingBlock)?existingBlock:image,()=>box),{...target.frontmatter,status:'draft'});
       p.assetId=null;p.status='missing';p.anchor={...p.anchor,quote:marker};p.history.push(event('image-restored-to-placeholder'));break;
     }
     case 'screenshot.details': {
@@ -171,6 +172,7 @@ export function runCommand(repo, input, actorId = 'local-owner') {
     case 'screenshot.reuse': {
       const b = snapshot.bundles.find(b => b.placeholders.some(p => p.id === input.id)); if (!b) throw new Error('Platzhalter nicht gefunden.');
       const p = b.placeholders.find(p => p.id === input.id);
+      if(p.assetId)throw new Error('Das Bild ist bereits zugeordnet. Zum Austausch bitte eine neue Bilddatei hochladen oder zuerst zum Platzhalter zurücksetzen.');
       const asset = snapshot.bundles.flatMap(b => b.assets).find(a => a.id === input.assetId); if (!asset) throw new Error('Bild nicht gefunden.');
       const target = state.guides.find(g => g.id === b.guideId);
       if (resolveAnchor(p.anchor, target.body, target.blobSha).state === 'stale') throw new Error('Textstelle fehlt.');
@@ -192,15 +194,16 @@ export function runCommand(repo, input, actorId = 'local-owner') {
       const jpg = bytes[0] === 255 && bytes[1] === 216 && bytes[2] === 255;
       const webp = bytes.subarray(0,4).toString() === 'RIFF' && bytes.subarray(8,12).toString() === 'WEBP';
       if (!png && !jpg && !webp) throw new Error('Bitte PNG, JPEG oder WebP verwenden.');
-      let replaceQuote=p.anchor.quote;
-      if(p.assetId){const old=snapshot.bundles.flatMap(b=>b.assets).find(a=>a.id===p.assetId);replaceQuote=`![${old.alt.replace(/[\[\]\n]/g,'')}](/${old.path.slice('docs/public/'.length)})`;}
+      let replaceQuote=p.anchor.quote,replaceCaption='';
+      if(p.assetId){const old=snapshot.bundles.flatMap(b=>b.assets).find(a=>a.id===p.assetId);replaceCaption=old.caption;replaceQuote=`![${old.alt.replace(/[\[\]\n]/g,'')}](/${old.path.slice('docs/public/'.length)})`;}
       if(target.body.split(replaceQuote).length!==2)throw new Error('Bildstelle fehlt oder ist nicht eindeutig.');
       const hash = createHash('sha256').update(bytes).digest('hex'); const path = `docs/public/images/uploads/${hash.slice(0,20)}.${png ? 'png' : jpg ? 'jpg' : 'webp'}`;
       const asset = { id: uid('asset'), path, alt: requireText(input.alt, 'Bildbeschreibung', 500), caption: typeof input.caption === 'string' ? input.caption.slice(0,1000) : '', sourceIds: [], rights: '', sha256: hash };
       snapshot = assignAsset(snapshot, p.id, asset, event('image-uploaded'));
       const updated = snapshot.bundles.find(x => x.guideId === b.guideId).placeholders.find(x => x.id === p.id);
       const image = `![${asset.alt.replace(/[\[\]\n]/g, '')}](/${path.slice('docs/public/'.length)})`;
-      const body = p.assetId?target.body.replace(replaceQuote,image):replaceScreenshot(target.body,replaceQuote,image,asset.caption);
+      const oldBlock=replaceQuote+(replaceCaption?`\n\n${replaceCaption}`:'');
+      const body = p.assetId?target.body.replace(target.body.includes(oldBlock)?oldBlock:replaceQuote,()=>image+(asset.caption?`\n\n${asset.caption}`:'')):replaceScreenshot(target.body,replaceQuote,image,asset.caption);
       files[target.path] = matter.stringify(body, { ...target.frontmatter, status: 'draft', updated: now().slice(0,10) });
       files[path] = bytes; updated.status = 'ready';updated.anchor={...updated.anchor,quote:image}; break;
     }

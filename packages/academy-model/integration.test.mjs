@@ -41,6 +41,8 @@ test('real Git transactions share browser/manager data, reject conflicts and pre
   assert.equal(s.dashboard.missingScreenshots.length,4);
   send({op:'screenshot.upload',id:placeholder.id,alt:'Replacement pixel',caption:'Replacement caption',base64:'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII='});
   assert.ok(s.guides.find(g=>g.id==='guide:pets').body.includes('Replacement pixel'));
+  assert.ok(s.guides.find(g=>g.id==='guide:pets').body.includes('Replacement caption'));
+  assert.ok(!s.guides.find(g=>g.id==='guide:pets').body.includes('Test fixture'));
   send({op:'screenshot.restore',id:placeholder.id});
   assert.equal(s.snapshot.bundles[0].placeholders[0].assetId,null);
   assert.ok(s.guides.find(g=>g.id==='guide:pets').body.includes('Screenshot fehlt: Pet-Sammlung'));
