@@ -167,6 +167,26 @@
       "createdAt": "2026-10-24T11:52:20Z",
       "updatedAt": "2026-10-24T11:52:20Z",
       "history": []
+    },
+    {
+      "id": "comment:15f1da61-a374-469a-bfec-713e7b30ba57",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:25967de2-fa00-4562-b787-dc4dd676ba3c",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "726cb11b431db0931054c08a6034d4db1b0c83dc",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar fefdc6d2-a79d-4d71-b5aa-37c52fd247e2 | Autor Academy Editor | Datum 2026-10-22T07:12:36.912Z | Originalstatus offen | Quellbeitrag 25967de2-fa00-4562-b787-dc4dd676ba3c]\nGlobal-Quellenabgleich: Bitte 'Tier Score' überall in 'Gearscore (GS)' korrigieren. Skillpunkte bis 10 + vier klassische Daevanion-Boards bis +4 = 14; darüber Arkana und Seelenbindungen. Arkana-Slots nach aktiven/passiven Skills differenzieren: Kelch/Waage beide, Pergament/Kompass aktive, Glocke/Spiegel passive, Sanduhr/Schlüssel keine Skilllinien. Quellen: https://aion.xtopolis.com/progression/skill-levels/ und https://aion2.gg/guides/chanter-pve-build. Kartenseltenheit und genaue GS-Werte im EU-Client prüfen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:52:28Z",
+      "updatedAt": "2026-10-24T11:52:28Z",
+      "history": []
     }
   ],
   "tasks": []
