@@ -258,6 +258,27 @@
       "history": []
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment:5d62554a-f8e6-4a76-bc26-5821777a9f49",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:d17ca8fa-8cc8-4b5f-87ff-d1a3873333b8",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "8569acc9e276d170ab6286996f5c1609c20f97f5",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 2ad59366-c756-4654-a5f8-739180011658 | Autor Academy Editor | erstellt 2026-10-21T15:23:55.601Z | Originalstatus erledigt | Quellbeitrag d17ca8fa-8cc8-4b5f-87ff-d1a3873333b8]\nGLOBAL VERIFIZIEREN: Sind die 14 wöchentlichen Durchläufe und die Bezeichnung Daeva-Bioforschungsbasis im aktuellen Client korrekt? Screenshot von Zähler und Reset-Anzeige prüfen. Der Reset 07:00 UTC ist extern belegt: https://daevaguides.com/de/guides/daily-weekly-checklist/index.html",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:42:03Z",
+      "updatedAt": "2026-10-24T11:42:03Z",
+      "history": []
+    }
+  ],
   "tasks": []
 }
