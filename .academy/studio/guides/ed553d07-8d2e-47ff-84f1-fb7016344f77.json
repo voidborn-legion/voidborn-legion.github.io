@@ -43,8 +43,8 @@
         "baseCommitSha": "6330938c63252636e78314ca41bb2b7f39f970f9",
         "baseBlobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:fc286039-e3c5-4ad1-ac53-771e79e4455c",
       "sourceIds": [],
       "history": [
         {
@@ -66,6 +66,13 @@
           "action": "image-restored-to-placeholder",
           "actorId": "github:152614168",
           "at": "2026-10-24T03:30:54Z",
+          "note": ""
+        },
+        {
+          "id": "event:dad52b53-473d-46a6-8441-4cc57508ded7",
+          "action": "image-reused",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T03:31:10Z",
           "note": ""
         }
       ]
