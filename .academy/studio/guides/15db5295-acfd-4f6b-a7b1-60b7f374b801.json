@@ -966,6 +966,26 @@
       "createdAt": "2026-10-24T11:49:56Z",
       "updatedAt": "2026-10-24T11:49:56Z",
       "history": []
+    },
+    {
+      "id": "comment:fe4024e7-16aa-4fac-8672-40f724d56475",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:063c52b0-2ce0-461e-97ee-b981bede7b03",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "0518c022e14f4731e6bb3d8192aeb1a63ab2e3ae",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 75296629-4ebb-4206-bebf-c04385162630 | Autor Academy Editor | Datum 2026-10-22T14:36:24.310Z | Originalstatus offen | Quellbeitrag 063c52b0-2ce0-461e-97ee-b981bede7b03]\nAUDIT – REIHENFOLGE: Shugo/Albtraum-Shops stehen vor der ersten 1.000-GS-Etappe. Für die Discord-Endfassung Einstieg und GS-Meilensteine zuerst, danach optionale Systeme/Shop-Vertiefungen verlinken. Doppelte 2.100–2.500-GS-Abschnitte zusammenführen oder klar als Basis + Spezialfall kennzeichnen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:50:03Z",
+      "updatedAt": "2026-10-24T11:50:03Z",
+      "history": []
     }
   ],
   "tasks": []
