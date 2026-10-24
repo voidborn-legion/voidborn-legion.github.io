@@ -80,6 +80,44 @@ export function runCommand(repo, input, actorId = 'local-owner') {
       snapshot.catalog.guides.push({ id, path, categoryId: input.categoryId || null, lifecycle: 'active' });
       files[path] = matter.stringify(`# ${requireText(input.title, 'Titel', 160)}\n\n`, { title: input.title, author: 'Voidborn Academy', status: 'draft', review: 'pending', updated: now().slice(0, 10) }); break;
     }
+    case 'guide.assign': {
+      needGuide(); if(input.categoryId!==null&&!snapshot.catalog.categories.some(c=>c.id===input.categoryId))throw new Error('Thema nicht gefunden.');
+      snapshot.catalog.guides.find(g=>g.id===guide.id).categoryId=input.categoryId;break;
+    }
+    case 'guide.reorder': {
+      if(!Array.isArray(input.ids)||input.ids.length!==snapshot.catalog.guides.length||new Set(input.ids).size!==input.ids.length||input.ids.some(id=>!snapshot.catalog.guides.some(g=>g.id===id)))throw new Error('Ungültige Guidereihenfolge.');
+      snapshot.catalog.guides=input.ids.map(id=>snapshot.catalog.guides.find(g=>g.id===id));break;
+    }
+    case 'category.create': {
+      const name=slug(input.slug);if(snapshot.catalog.categories.some(c=>c.slug===name))throw new Error('Thema existiert bereits.');
+      snapshot.catalog.categories.push({id:uid('category'),slug:name});
+      files['data/categories.json']=json([...state.categories,{slug:name,title:requireText(input.title,'Thema',160),description:typeof input.description==='string'?input.description.slice(0,1000):'',group:'start',icon:'compass',keywords:''}]);break;
+    }
+    case 'category.rename': {
+      const c=snapshot.catalog.categories.find(c=>c.id===input.categoryId);if(!c)throw new Error('Thema nicht gefunden.');
+      files['data/categories.json']=json(state.categories.map(x=>x.slug===c.slug?{...x,title:requireText(input.title,'Thema',160)}:x));break;
+    }
+    case 'source.save': {
+      if(typeof input.url!=='string'||!/^https:\/\/[^\s]+$/.test(input.url))throw new Error('Ungültige Quellenadresse.');
+      const old=input.id?snapshot.sources.find(x=>x.id===input.id):null;if(input.id&&!old)throw new Error('Quelle nicht gefunden.');
+      const value={id:old?.id||uid('source'),title:requireText(input.title,'Quellentitel',200),url:input.url,checkedAt:null};
+      if(old)Object.assign(old,value);else snapshot.sources.push(value);files['data/sources.json']=json(snapshot.sources);break;
+    }
+    case 'screenshot.restore': {
+      const b=snapshot.bundles.find(b=>b.placeholders.some(p=>p.id===input.id));const p=b?.placeholders.find(p=>p.id===input.id);
+      if(!p||!p.assetId)throw new Error('Kein Bild zum Zurücksetzen vorhanden.');
+      const target=state.guides.find(g=>g.id===b.guideId),asset=snapshot.bundles.flatMap(b=>b.assets).find(a=>a.id===p.assetId);
+      const image=`![${asset.alt.replace(/[\[\]\n]/g,'')}](/${asset.path.slice('docs/public/'.length)})`;
+      if(target.body.split(image).length!==2)throw new Error('Bildstelle ist nicht eindeutig.');
+      const marker=`<!-- academy-screenshot:${p.id} -->`,box=`::: info Screenshot fehlt: ${p.title.replace(/[\r\n]/g,' ')}\n\n${p.description}\n\n${marker}\n\n:::`;
+      files[target.path]=matter.stringify(target.body.replace(image,box),{...target.frontmatter,status:'draft'});
+      p.assetId=null;p.status='missing';p.anchor={...p.anchor,quote:marker};p.history.push(event('image-restored-to-placeholder'));break;
+    }
+    case 'screenshot.details': {
+      const p=snapshot.bundles.flatMap(b=>b.placeholders).find(p=>p.id===input.id);if(!p)throw new Error('Platzhalter nicht gefunden.');
+      if(input.title!==undefined)p.title=requireText(input.title,'Bildtitel',160);
+      if(input.description!==undefined)p.description=requireText(input.description,'Bildbeschreibung');p.history.push(event('screenshot-details-changed'));break;
+    }
     case 'guide.archive': needGuide(); snapshot.catalog.guides.find(g => g.id === guide.id).lifecycle = input.archived === false ? 'active' : 'archived'; break;
     case 'guide.move': {
       needGuide(); const name = slug(input.slug); const nextPath = `docs/guides/${name}.md`;
@@ -154,26 +192,28 @@ export function runCommand(repo, input, actorId = 'local-owner') {
       const jpg = bytes[0] === 255 && bytes[1] === 216 && bytes[2] === 255;
       const webp = bytes.subarray(0,4).toString() === 'RIFF' && bytes.subarray(8,12).toString() === 'WEBP';
       if (!png && !jpg && !webp) throw new Error('Bitte PNG, JPEG oder WebP verwenden.');
-      if (resolveAnchor(p.anchor, target.body, target.blobSha).state === 'stale') throw new Error('Zielstelle fehlt. Bitte den Platzhalter neu zuordnen.');
+      let replaceQuote=p.anchor.quote;
+      if(p.assetId){const old=snapshot.bundles.flatMap(b=>b.assets).find(a=>a.id===p.assetId);replaceQuote=`![${old.alt.replace(/[\[\]\n]/g,'')}](/${old.path.slice('docs/public/'.length)})`;}
+      if(target.body.split(replaceQuote).length!==2)throw new Error('Bildstelle fehlt oder ist nicht eindeutig.');
       const hash = createHash('sha256').update(bytes).digest('hex'); const path = `docs/public/images/uploads/${hash.slice(0,20)}.${png ? 'png' : jpg ? 'jpg' : 'webp'}`;
-      const asset = { id: `asset:${hash.slice(0,24)}`, path, alt: requireText(input.alt, 'Bildbeschreibung', 500), caption: typeof input.caption === 'string' ? input.caption.slice(0,1000) : '', sourceIds: [], rights: '', sha256: hash };
+      const asset = { id: uid('asset'), path, alt: requireText(input.alt, 'Bildbeschreibung', 500), caption: typeof input.caption === 'string' ? input.caption.slice(0,1000) : '', sourceIds: [], rights: '', sha256: hash };
       snapshot = assignAsset(snapshot, p.id, asset, event('image-uploaded'));
       const updated = snapshot.bundles.find(x => x.guideId === b.guideId).placeholders.find(x => x.id === p.id);
       const image = `![${asset.alt.replace(/[\[\]\n]/g, '')}](/${path.slice('docs/public/'.length)})`;
-      const body = replaceScreenshot(target.body,p.anchor.quote,image,asset.caption);
+      const body = p.assetId?target.body.replace(replaceQuote,image):replaceScreenshot(target.body,replaceQuote,image,asset.caption);
       files[target.path] = matter.stringify(body, { ...target.frontmatter, status: 'draft', updated: now().slice(0,10) });
-      files[path] = bytes; updated.status = 'ready'; break;
+      files[path] = bytes; updated.status = 'ready';updated.anchor={...updated.anchor,quote:image}; break;
     }
     case 'game.save': snapshot.gameValues = input.records.map(record=>({...record,publication:'draft'})); break;
     default: throw new Error('Unbekannte Studio-Aktion.');
   }
   validateSnapshot(snapshot);
-  files['.academy/studio/catalog.json'] = json(snapshot.catalog);
-  files['data/game/pets.json'] = json({ schemaVersion: 1, records: snapshot.gameValues });
+  if(JSON.stringify(snapshot.catalog)!==JSON.stringify(state.snapshot.catalog))files['.academy/studio/catalog.json'] = json(snapshot.catalog);
+  if(JSON.stringify(snapshot.gameValues)!==JSON.stringify(state.snapshot.gameValues))files['data/game/pets.json'] = json({ schemaVersion: 1, records: snapshot.gameValues });
   for (const b of snapshot.bundles) {
     const existing = state.snapshot.bundles.find(old => old.guideId === b.guideId);
     const file = existing ? repo.list('.academy/studio/guides', state.head).find(p => JSON.parse(repo.read(p, state.head)).guideId === b.guideId) : `.academy/studio/guides/${b.guideId.split(':')[1]}.json`;
-    files[file] = json(b);
+    if(!existing||JSON.stringify(existing)!==JSON.stringify(b))files[file] = json(b);
   }
   repo.commit(state.head, files, `Studio: ${input.op}`);
   return readWorkspace(repo);

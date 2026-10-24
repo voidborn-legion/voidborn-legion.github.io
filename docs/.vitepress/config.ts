@@ -34,7 +34,6 @@ export default defineConfig({
       { text: 'Progression', link: '/guides/progression' },
       { text: 'Pets & Spezies', link: '/guides/pets' },
       { text: 'Checklisten', link: '/guides/checklisten' },
-      { text: 'Studio', link: 'https://voidborn-legion.github.io/studio/', target: '_blank', rel: 'noopener' }
     ],
     sidebar: [{ text: 'Guides', items: [{ text: 'Übersicht', link: '/guides/' }, { text: 'So nutzt du die Academy', link: '/guides/academy-nutzen' }, ...categories.map(c => ({ text: c.title, link: `/guides/${c.slug}` }))] }],
     search: { provider: 'local', options: { locales: { root: { translations: { button: { buttonText: 'Academy durchsuchen', buttonAriaLabel: 'Academy durchsuchen' }, modal: { noResultsText: 'Keine passenden Guides gefunden.', resetButtonTitle: 'Suche zurücksetzen', backButtonTitle: 'Suche schließen', displayDetails: 'Details anzeigen', footer: { selectText: 'öffnen', navigateText: 'navigieren', closeText: 'schließen' } } } } } } },

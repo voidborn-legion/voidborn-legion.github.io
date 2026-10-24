@@ -4,6 +4,7 @@
   "compatibility_date": "2026-10-23",
   "compatibility_flags": ["nodejs_compat"],
   "vars": {
+    "OWNER_GITHUB_ID": "REPLACE_WITH_OWNER_NUMERIC_GITHUB_ID",
     "STUDIO_ORIGIN": "https://voidborn-legion.github.io",
     "DRAFT_BRANCH": "draft/studio-pets-workspace"
   },

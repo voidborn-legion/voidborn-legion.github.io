@@ -1,0 +1,15 @@
+# Academy Manager service 0.3
+
+The Studio HTTP API and `/mcp` share the draft command layer and the server-side authorization policy. Only the fixed Academy repository and `draft/` or `dev/` branches are writable. No publishing endpoint exists.
+
+Before deployment, apply `schema.sql` and the additive `migration-manager.sql` to D1. Configure the numeric `OWNER_GITHUB_ID` explicitly; no first-login administrator or email matching is used. Secrets are `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`, `TOKEN_KEY`, `GITHUB_APP_ID`, `GITHUB_INSTALLATION_ID`, and `GITHUB_PRIVATE_KEY` (PKCS8 PEM). Store these as Worker secrets, never in this repository. The GitHub App installation must be restricted to the Academy repository with contents write and metadata read.
+
+`/mcp` is a stateless Streamable HTTP MCP endpoint with OAuth authorization-code + S256 PKCE. Discovery is at `/.well-known/oauth-protected-resource/mcp` and `/.well-known/oauth-authorization-server`. Registration accepts only exact callback URLs from `MCP_REDIRECT_URIS`; the default is the stable ChatGPT callback `https://chatgpt.com/connector_platform_oauth_redirect`. Issuer identification is included. No wildcard redirect or arbitrary identity metadata URL fetch is allowed. Codes and browser consent are single-use and browser-bound. Access tokens expire after one hour; refresh tokens are not implemented. A user must reconnect after expiry. Rights are reloaded for every authenticated operation.
+
+The owner can list and update GitHub subject grants using the administrator tools. Grants support role templates, boolean permission overrides, a guide-ID scope, suspension and optimistic revisions. `author` is a contributor template; it does not automatically imply ownership of newly created guides. Use explicit guide scopes for restricted authors. UI user administration, Discord sign-in, email invitations and account linking remain future work. The current website login is still the Studio-specific GitHub login, not a completed public player-profile login.
+
+Comments, tasks, guides and images are still stored in a PUBLIC GitHub repository. Role filtering protects the service, not the underlying public Git history. Authentication, grants and grant audit records are in D1. Do not migrate confidential colleague feedback into the repository.
+
+Native image inputs declare `openai/fileParams`. The server accepts provider-hosted HTTPS `oaiusercontent.com` file references only, rejects redirects and limits downloads to 2 MiB. PNG/JPEG/WebP signatures are checked by the shared command layer. Pixel editing uses the host's image editor followed by replacement, not a fabricated server image-edit operation.
+
+Verification: `npm run studio:test`, `npm run studio:check`, and `npm run build:release` with the actual API origin. Tests simulate the OAuth authorization/consent/exchange flow against SQLite and exercise grant revocation and real Git draft image replacement/restoration. Live host login and native attachment transfer must additionally be checked after connecting the plugin; a saved plugin release alone is not evidence of these host flows.

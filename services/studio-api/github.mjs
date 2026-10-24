@@ -41,9 +41,9 @@ export async function commitRemote(token,branch,expectedHead,files,message,baseT
  if(!response.ok)throw new Error('CONFLICT: Der Branch konnte nicht aktualisiert werden. Bitte neu laden; nicht automatisch wiederholen.');
  return commit.sha;
 }
-export async function remoteCommand(token,branch,input,actor){
+export async function remoteCommand(token,branch,input,actor,installation=false,prepared=null){
  await assertPermission(token);
- const {repo,state,baseTree}=await remoteWorkspace(token,branch);
+ const {repo,state,baseTree}=prepared||await remoteWorkspace(token,branch);
  if(state.head!==input.expectedHead)throw new Error('CONFLICT: Der Entwurf wurde inzwischen geändert.');
  if(input.op==='guide.restore'){
   const guide=state.guides.find(g=>g.id===input.guideId);if(!guide)throw new Error('Guide nicht gefunden.');
@@ -70,4 +70,13 @@ export async function diffRemote(token,branch,guideId,before){
 export async function historyRemote(token,branch,guideId){
  const {state}=await remoteWorkspace(token,branch);const guide=state.guides.find(g=>g.id===guideId);if(!guide)throw new Error('Guide nicht gefunden.');
  return (await gh(token,`/commits?sha=${encodeURIComponent(branch)}&path=${encodeURIComponent(guide.path)}&per_page=12`)).map(c=>({sha:c.sha,time:Date.parse(c.commit.author.date)/1000,message:c.commit.message.split('\n')[0]}));
+}
+
+export async function readImageRemote(token,asset,head){
+ if(!/^docs\/public\/images\/[a-zA-Z0-9/_.-]+$/.test(asset.path)||asset.path.includes('..')||!/^[a-f0-9]{40}$/.test(head))throw new Error('Ungültiges Bildziel.');
+ const result=await gh(token,`/contents/${asset.path}?ref=${head}`);
+ if(result.type!=='file'||result.encoding!=='base64'||result.size>2097152)throw new Error('Bild ist nicht direkt lesbar.');
+ const data=result.content.replace(/\s/g,'');const bytes=Buffer.from(data,'base64');
+ const mimeType=bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]))?'image/png':bytes[0]===255&&bytes[1]===216?'image/jpeg':bytes.subarray(0,4).toString()==='RIFF'&&bytes.subarray(8,12).toString()==='WEBP'?'image/webp':null;
+ if(!mimeType)throw new Error('Unbekanntes Bildformat.');return {data,mimeType};
 }

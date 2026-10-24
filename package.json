@@ -8,7 +8,7 @@
     "build:release": "node scripts/build-release.mjs",
     "preview": "vitepress preview docs --host 127.0.0.1",
     "studio:check": "node scripts/studio-check.mjs",
-    "studio:test": "node --test packages/academy-model/*.test.mjs studio/editor.test.mjs services/studio-api/security.test.mjs",
+    "studio:test": "node --test packages/academy-model/*.test.mjs studio/editor.test.mjs services/studio-api/*.test.mjs",
     "studio:dev": "vite --config studio/vite.config.mjs",
     "studio:api": "node scripts/studio-server.mjs",
     "studio:build": "vite build --config studio/vite.config.mjs",
