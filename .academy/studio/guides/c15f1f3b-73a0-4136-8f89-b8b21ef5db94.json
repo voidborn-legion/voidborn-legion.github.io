@@ -87,6 +87,27 @@
       "history": []
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment:27454e17-ca7f-472b-887e-ad91ca3fbe43",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:048c5606-4362-487e-ac61-3cdbeffefb63",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "ffa2627eeb5c6edc9c88c88a81be37ab87941a0d",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar 66217809-4b6a-4339-b8ab-c3fce098c0ed | Autor Academy Editor | Datum 2026-10-22T00:08:15.862Z | Originalstatus offen | Quellbeitrag 048c5606-4362-487e-ac61-3cdbeffefb63]\nEU-Client prüfen: Ascensus-Ritus 4.000 Punkte und ca. 10:30 Restzeit, Erfolgsquest mit 3 Kristallen; Extraktionsmaterial und Shoppreis 25.000; genaue goldene Herstellungskosten und garantierte Skillwahl mit Screenshots abgleichen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:50:55Z",
+      "updatedAt": "2026-10-24T11:50:55Z",
+      "history": []
+    }
+  ],
   "tasks": []
 }
