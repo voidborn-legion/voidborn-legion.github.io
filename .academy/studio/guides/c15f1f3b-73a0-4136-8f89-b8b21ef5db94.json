@@ -187,6 +187,26 @@
       "createdAt": "2026-10-24T11:52:28Z",
       "updatedAt": "2026-10-24T11:52:28Z",
       "history": []
+    },
+    {
+      "id": "comment:9f284afe-9333-43e1-b0ed-998ad12e59f1",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:25967de2-fa00-4562-b787-dc4dd676ba3c",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "ea5d2c873943d1da1a2249de7c706394525dde35",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar c948d335-d44f-4971-8c44-ca50fc4be845 | Autor Academy Editor | Datum 2026-10-22T07:15:02.354Z | Originalstatus offen | Quellbeitrag 25967de2-fa00-4562-b787-dc4dd676ba3c]\nWICHTIGE KORREKTUR zur früheren Kommentarannahme: Laut EU-geprüftem https://aion2.gg/guides/arcana-system-explained sind derzeit genau FÜNF Arkana-Slots live: Kelch, Pergament, Kompass, Glocke, Spiegel. Waage/Schlüssel/Sanduhr etc. nur Platzhalter im Client, nicht ausrüstbar! GS pro Karte: grau 20, grün 40, blau 60, gold 80 (+1 je Aufwertung). Aktive Skillpools: Pergament/Kompass; passive: Glocke/Spiegel; Kelch alle. Alte Aussagen mit weiteren Slots entfernen. Für Kantor Build-Daten bevorzugt unseren etablierten aion2-guides.info-Guide mit EU-Screenshots prüfen; Wakayashi nur als Zweitmeinung.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:52:36Z",
+      "updatedAt": "2026-10-24T11:52:36Z",
+      "history": []
     }
   ],
   "tasks": []
