@@ -332,6 +332,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:4a993930-8900-4e12-be98-03d3248ea315",
+      "title": "Abyss-Shop – Preise",
+      "description": "Originalbild aus Discord Studio, Quell-Bild-ID 169151ae-ee76-45f0-af4b-83ca6af78eb3, Quellbeitrag 857341c6-4182-4328-aa9f-10adfe58a2fa. Echte Originaldatei wird importiert. Motiv/Quelle gemäß Discord-Studio, kein Ersatzbild.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `169151ae-ee76-45f0-af4b-83ca6af78eb3`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "d1f3347db0928187d44a4d313192edfb1de03ae1",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [
