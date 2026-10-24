@@ -156,13 +156,13 @@ Warum sie wichtig sind:
 
 
 
-::: info Originalbild noch nicht übertragen: grafik.jpg
+::: info Originalbild importiert: grafik.jpg
 Discord-Bild-ID: `8e22c057-ce79-4b44-8555-a47a64ad9934`
 
 ![Originalgrafik aus dem Leveling-Guide im Discord Studio](/images/uploads/0c8fab516ce89370f07c.jpg)
 
 Originalbild aus Discord-Studio, Beitrag 6697535b-4992-47f2-a873-57e73388e992
-; Beitrag: `6697535b-4992-47f2-a873-57e73388e992`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+; Beitrag: `6697535b-4992-47f2-a873-57e73388e992`. Originalbild im Academy Studio hinterlegt.
 
 :::
 
@@ -248,13 +248,13 @@ Die Leveling-Checkliste des Kantors. Wähle auf der Website immer deine eigene K
 
 
 
-::: info Originalbild noch nicht übertragen: grafik.jpg
+::: info Originalbild importiert: grafik.jpg
 Discord-Bild-ID: `19032f86-b7e3-4b35-8ad4-c98c5ad9d7f0`
 
 ![Leveling – Originalgrafik 2](/images/uploads/5ede14728084fd997cef.jpg)
 
 Originalbild aus Discord-Studio, Beitrag b51bb37b-11f3-416b-8b57-a1c7c8579858
-; Beitrag: `b51bb37b-11f3-416b-8b57-a1c7c8579858`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+; Beitrag: `b51bb37b-11f3-416b-8b57-a1c7c8579858`. Originalbild im Academy Studio hinterlegt.
 
 :::
 
@@ -307,13 +307,13 @@ Ja, du kannst Daevanion-Knoten zurücksetzen und andere Routen ausprobieren. Daf
 
 
 
-::: info Originalbild noch nicht übertragen: grafik.jpg
+::: info Originalbild importiert: grafik.jpg
 Discord-Bild-ID: `61fb63bb-395b-441e-bee3-4193dfb89a08`
 
 ![Leveling – Originalgrafik 3](/images/uploads/4b01f2e30e56677fcfd0.jpg)
 
 Originalbild aus Discord-Studio, Beitrag 384ca3bb-ae0b-4f4f-95b1-eed6b94af255
-; Beitrag: `384ca3bb-ae0b-4f4f-95b1-eed6b94af255`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+; Beitrag: `384ca3bb-ae0b-4f4f-95b1-eed6b94af255`. Originalbild im Academy Studio hinterlegt.
 
 :::
 
