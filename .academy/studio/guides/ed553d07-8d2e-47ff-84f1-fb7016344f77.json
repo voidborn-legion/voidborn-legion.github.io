@@ -43,7 +43,7 @@
         "baseCommitSha": "6330938c63252636e78314ca41bb2b7f39f970f9",
         "baseBlobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
       },
-      "status": "ready",
+      "status": "archived",
       "assetId": "asset:fc286039-e3c5-4ad1-ac53-771e79e4455c",
       "sourceIds": [],
       "history": [
@@ -73,6 +73,13 @@
           "action": "image-reused",
           "actorId": "github:152614168",
           "at": "2026-10-24T03:31:10Z",
+          "note": ""
+        },
+        {
+          "id": "event:6fd73f90-f3f1-4012-b4d8-02089ef05f3b",
+          "action": "screenshot-archived",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T03:32:14Z",
           "note": ""
         }
       ]
