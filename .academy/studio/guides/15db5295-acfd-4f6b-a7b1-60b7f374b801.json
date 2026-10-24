@@ -294,6 +294,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:a4e74cd6-237a-47a7-a5d4-4fcc2aae763f",
+      "title": "Albtraum – Versuchslimit und tägliche Aufladung",
+      "description": "Originalbild aus Discord Studio, Quell-Bild-ID 245a924b-b2b6-473d-8a6a-e541830be82d, Quellbeitrag 6a8afb85-ca35-4ce8-bc7c-6aaadf3f255d. Echte Originaldatei wird importiert. Motiv/Quelle gemäß Discord-Studio, kein Ersatzbild.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `245a924b-b2b6-473d-8a6a-e541830be82d`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "9c9926b01095af698f6418ffd70ff284f398ee93",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [
