@@ -357,11 +357,19 @@
       },
       "body": "[Discord-Originalkommentar 1a19c25d-33b9-43cf-82ef-3f8eb9cfd201 | Autor Academy Editor | erstellt 2026-10-21T15:24:01.653Z | Originalstatus erledigt | Quellbeitrag a229917a-a6fc-4972-ac5a-c1484214bbc3]\nGLOBAL VERIFIZIEREN: Die tatsächliche Menübezeichnung für die Gürtel-/Amulett-Umwandlung (Konvertierung oder Substanzumwandlung/Alt+H) sowie Gold +0 nach der Konvertierung im Client prüfen. Referenz: https://raidrelay.com/aion-2-gear-score-guide",
       "authorId": "github:152614168",
-      "status": "open",
+      "status": "done",
       "replies": [],
       "createdAt": "2026-10-24T11:42:57Z",
-      "updatedAt": "2026-10-24T11:42:57Z",
-      "history": []
+      "updatedAt": "2026-10-24T11:43:08Z",
+      "history": [
+        {
+          "id": "event:3f4c9b51-a95f-4f58-906b-eb00137d95ad",
+          "action": "comment-status-changed",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T11:43:08Z",
+          "note": ""
+        }
+      ]
     }
   ],
   "tasks": []
