@@ -608,7 +608,7 @@ Shop-Referenz: https://lum.gg/aion-2/guides/where-to-spend-abyss-points
 
 
 
-::: info Originalbild noch nicht übertragen: Abyss-Shop – Preise
+::: info Originalbild importiert: Abyss-Shop – Preise
 Discord-Bild-ID: `169151ae-ee76-45f0-af4b-83ca6af78eb3`
 
 ![Abyss-Shop – Preise](/images/uploads/0b321129c8a883c0b387.jpg)
