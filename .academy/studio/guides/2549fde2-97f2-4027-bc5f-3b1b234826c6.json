@@ -104,6 +104,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:11e95874-2d66-4cba-bb3b-7c9991460df2",
+      "title": "Screenshot Charakterlager",
+      "description": "Original-ID 60added7-400d-4b89-ad34-4a4b3b3f7e42; Quellbeitrag 43c07538-0a0f-49e2-abef-c9dab4e74e37. REDAKTION / SCREENSHOT: Charakterlager/Ausrüstungsmenü mit Beispiel-Item und Upgrade-Option zeigen. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `60added7-400d-4b89-ad34-4a4b3b3f7e42`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "5e9b52f5afb6123b124482768d03c562fe701431",
+        "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
