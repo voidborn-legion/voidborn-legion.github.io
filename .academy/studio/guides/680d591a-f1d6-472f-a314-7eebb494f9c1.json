@@ -66,6 +66,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:89588ea4-8c17-426b-b7f0-cb2855e16bbb",
+      "title": "CP: Titel, Pantheon und Stigma-Menü",
+      "description": "Original-ID 489d1241-27fb-493c-9c81-12b4cb3b64b0; Quellbeitrag 4d1c0a39-8269-4e7b-a1da-b9dd5198289b. Ein Bild mit Stigma-Fortschritt und Attributen oder CP-Tooltip. Optional zweites Bild mit Pantheon-Bonus. Zeigen, warum CP ohne GS-Zuwachs steigt.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `489d1241-27fb-493c-9c81-12b4cb3b64b0`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "fa2c56965adfe5a2d4be487ea2eebeb1c0016fbb",
+        "baseBlobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
