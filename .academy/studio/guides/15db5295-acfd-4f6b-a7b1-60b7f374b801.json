@@ -766,6 +766,26 @@
       "createdAt": "2026-10-24T11:48:09Z",
       "updatedAt": "2026-10-24T11:48:09Z",
       "history": []
+    },
+    {
+      "id": "comment:7792257d-65cb-4d96-9f51-cba3d7cf43d5",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:063c52b0-2ce0-461e-97ee-b981bede7b03",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "1c7c54e3d8745a834c8cd572bdad608a89c9d2ac",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar ff3c479b-1446-4a30-b9ef-44073c26e6f9 | Autor Academy Editor | Datum 2026-10-22T07:14:53.340Z | Originalstatus offen | Quellbeitrag 063c52b0-2ce0-461e-97ee-b981bede7b03]\nGESAMTREVIEW vor Veröffentlichung: Roadmap mit aktuellem https://aion2-guides.info/en/progression/ und https://lum.gg/aion-2/guides/gear-progression-guide abgleichen. Die alte couga54.github.io-Seite ist laut eigener Weiterleitung nicht mehr aktuell. Academy-interne Links sind NICHT exportierte Discord-Sprunglinks: reale Nachrichten-URLs für neue Kapitel ergänzen, sobald veröffentlicht. Intro ist mit 1538/2000 Zeichen knapp; Übersicht schlank halten. Quellen und konkrete Global/EU-Version pro kritischer Zahl dokumentieren. Keine unkritische Wakayashi-Empfehlung als einzige Klassenquelle.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:48:17Z",
+      "updatedAt": "2026-10-24T11:48:17Z",
+      "history": []
     }
   ],
   "tasks": []
