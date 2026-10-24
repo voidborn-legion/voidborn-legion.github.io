@@ -726,6 +726,26 @@
       "createdAt": "2026-10-24T11:47:56Z",
       "updatedAt": "2026-10-24T11:47:56Z",
       "history": []
+    },
+    {
+      "id": "comment:99e64725-093b-419e-aac0-28b1497d35a2",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:b6673a9a-3308-4ba1-a939-dc5743c11f2b",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "678327d07508486c435b0a7b7a4fb2b10e32f52c",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar b9b857be-f682-4637-9636-2b36de35bef1 | Autor Academy Editor | Datum 2026-10-22T07:12:42.442Z | Originalstatus offen | Quellbeitrag b6673a9a-3308-4ba1-a939-dc5743c11f2b]\nArkana ist laut Spielerfahrung DER Engpass 1.900→2.100 GS: Transzendenz ★2 für blaue Karten und gezielte erste goldene Kelch-Karte hervorheben. Noch prüfen: tatsächlicher GS je Kartenfarbe, Dropquellen des Kelchs, Veredelung mit 5 Steinen für eine gezielte Skilllinie bzw. 15 für zwei, ob sich teure gezielte Herstellung vor Transzendenz ★4 lohnt. In System-Guide verlinken, nicht komplette Erklärung hier duplizieren.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:48:03Z",
+      "updatedAt": "2026-10-24T11:48:03Z",
+      "history": []
     }
   ],
   "tasks": []
