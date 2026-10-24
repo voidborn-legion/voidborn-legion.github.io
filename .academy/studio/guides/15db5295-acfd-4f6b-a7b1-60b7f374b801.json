@@ -826,6 +826,26 @@
       "createdAt": "2026-10-24T11:48:51Z",
       "updatedAt": "2026-10-24T11:48:51Z",
       "history": []
+    },
+    {
+      "id": "comment:7b8af629-abac-405e-a471-ed762b05e9df",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:d54d3131-1368-4ab1-9f50-5b28cc2971e4",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "cae04b854d04f08486d50ca9b7c10806c80ca95e",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar ce3f0360-f8d8-4bf8-b285-825d099452df | Autor Academy Editor | Datum 2026-10-22T07:15:18.103Z | Originalstatus offen | Quellbeitrag d54d3131-1368-4ab1-9f50-5b28cc2971e4]\nReview: GS-Checkliste gegen aktuelle Gear-Route abgleichen: Arcana 1.900–2.100 als Hauptengpass, Gürtel/Amulett/Armbänder als Langzeit-Items, 86er Ausrüstung, Stigmas, Pets/Flügel für CP. Eindeutige Prioritäten und Verlinkungen auf Detailguides statt doppelte Erklärungen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:49:00Z",
+      "updatedAt": "2026-10-24T11:49:00Z",
+      "history": []
     }
   ],
   "tasks": []
