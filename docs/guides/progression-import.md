@@ -226,7 +226,12 @@ Albtraum ist eine **Solo-Bossaktivität** mit verschiedenen Schwierigkeitsstufen
 
 
 ::: info Originalbild noch nicht übertragen: Albtraum – Versuchslimit und tägliche Aufladung
-Discord-Bild-ID: `245a924b-b2b6-473d-8a6a-e541830be82d`; Beitrag: `6a8afb85-ca35-4ce8-bc7c-6aaadf3f255d`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `245a924b-b2b6-473d-8a6a-e541830be82d`
+
+![Albtraum – Versuchslimit und tägliche Aufladung](/images/uploads/55acaeb248d285dec53e.jpg)
+
+Originalbild aus Discord-Studio, Beitrag 6a8afb85-ca35-4ce8-bc7c-6aaadf3f255d
+; Beitrag: `6a8afb85-ca35-4ce8-bc7c-6aaadf3f255d`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 
 :::
 

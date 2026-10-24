@@ -26,6 +26,15 @@
       "sourceIds": [],
       "rights": "",
       "sha256": "102acecdeeceefe6a27f71e5d2b7bfd861fd980b07f5722fa3b2336d1028dc89"
+    },
+    {
+      "id": "asset:7ca9ecbc-8ea8-4837-9b5f-cd2ba1b2c232",
+      "path": "docs/public/images/uploads/55acaeb248d285dec53e.jpg",
+      "alt": "Albtraum – Versuchslimit und tägliche Aufladung",
+      "caption": "Originalbild aus Discord-Studio, Beitrag 6a8afb85-ca35-4ce8-bc7c-6aaadf3f255d",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "55acaeb248d285dec53e37c5db797f41ec565a4434a6a2c786003e9f86cc3a1c"
     }
   ],
   "placeholders": [
@@ -337,17 +346,25 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "Discord-Bild-ID: `245a924b-b2b6-473d-8a6a-e541830be82d`",
+        "quote": "![Albtraum – Versuchslimit und tägliche Aufladung](/images/uploads/55acaeb248d285dec53e.jpg)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "9c9926b01095af698f6418ffd70ff284f398ee93",
         "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:7ca9ecbc-8ea8-4837-9b5f-cd2ba1b2c232",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:08b1faa4-9f2c-49ab-b5bf-84565077281e",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T13:29:21Z",
+          "note": ""
+        }
+      ]
     },
     {
       "id": "screenshot:1333b384-ecf1-45b7-ae77-b32a2a09c72c",
