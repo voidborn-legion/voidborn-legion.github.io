@@ -9,9 +9,16 @@ export async function handleMcp(request,env){
  if(origin&&!['https://chatgpt.com',env.STUDIO_ORIGIN,env.API_ORIGIN].includes(origin))return json({error:'Origin not allowed'},403);
  if(request.method!=='POST')return new Response(null,{status:405,headers:{Allow:'POST'}});
  if(!request.headers.get('Content-Type')?.startsWith('application/json'))return json({error:'JSON required'},415);
- const raw=await request.text();if(raw.length>750000)return json({error:'Request too large'},413);
+ // Base64 expands a 2 MiB source to ~2.8 MiB. Bound the stream before parsing;
+ // only the dedicated image import may exceed the ordinary RPC request limit.
+ const maxRequest=2900000;
+ if(Number(request.headers.get('Content-Length')||0)>maxRequest)return json({error:'Request too large'},413);
+ const chunks=[];let length=0;
+ if(request.body){const reader=request.body.getReader();for(;;){const {done,value}=await reader.read();if(done)break;length+=value.byteLength;if(length>maxRequest){await reader.cancel();return json({error:'Request too large'},413);}chunks.push(Buffer.from(value));}}
+ const raw=Buffer.concat(chunks).toString('utf8');
  let input;try{input=JSON.parse(raw);}catch{return json({jsonrpc:'2.0',id:null,error:{code:-32700,message:'Parse error'}},400);}
  if(!input||Array.isArray(input)||input.jsonrpc!=='2.0'||typeof input.method!=='string')return json({jsonrpc:'2.0',id:null,error:{code:-32600,message:'Invalid request'}},400);
+ if(length>750000&&!(input.method==='tools/call'&&input.params?.name==='academy_import_image'))return json({error:'Request too large'},413);
  if(input.id===undefined){if(input.method==='notifications/initialized'||input.method==='notifications/cancelled')return new Response(null,{status:202});return json({error:'Unknown notification'},400);}
  const ok=result=>json({jsonrpc:'2.0',id:input.id,result});
  const fail=(code,message)=>json({jsonrpc:'2.0',id:input.id,error:{code,message}});

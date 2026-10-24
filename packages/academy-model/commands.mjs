@@ -1,5 +1,6 @@
 import { randomUUID, createHash } from 'node:crypto';
 import matter from 'gray-matter';
+import {decodeImageBase64} from './image-file.mjs';
 import { validateSnapshot, dashboard, resolveAnchor, addComment, replyToComment, setTaskStatus, assignAsset } from './index.mjs';
 const json = value => JSON.stringify(value, null, 2) + '\n';
 const uid = prefix => `${prefix}:${randomUUID()}`;
@@ -188,16 +189,11 @@ export function runCommand(repo, input, actorId = 'local-owner') {
     case 'screenshot.upload': {
       const b = snapshot.bundles.find(b => b.placeholders.some(p => p.id === input.id)); if (!b) throw new Error('Platzhalter nicht gefunden.');
       const p = b.placeholders.find(p => p.id === input.id); const target = state.guides.find(g => g.id === b.guideId);
-      if (!/^[a-zA-Z0-9+/]+=*$/.test(input.base64 || '')) throw new Error('Ungültige Bilddatei.');
-      const bytes = Buffer.from(input.base64, 'base64'); if (bytes.length > 2 * 1024 * 1024) throw new Error('Bild ist zu groß. Maximal 2 MB.');
-      const png = bytes.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10]));
-      const jpg = bytes[0] === 255 && bytes[1] === 216 && bytes[2] === 255;
-      const webp = bytes.subarray(0,4).toString() === 'RIFF' && bytes.subarray(8,12).toString() === 'WEBP';
-      if (!png && !jpg && !webp) throw new Error('Bitte PNG, JPEG oder WebP verwenden.');
+      const {bytes,extension}=decodeImageBase64(input.base64);
       let replaceQuote=p.anchor.quote,replaceCaption='';
       if(p.assetId){const old=snapshot.bundles.flatMap(b=>b.assets).find(a=>a.id===p.assetId);replaceCaption=old.caption;replaceQuote=`![${old.alt.replace(/[\[\]\n]/g,'')}](/${old.path.slice('docs/public/'.length)})`;}
       if(target.body.split(replaceQuote).length!==2)throw new Error('Bildstelle fehlt oder ist nicht eindeutig.');
-      const hash = createHash('sha256').update(bytes).digest('hex'); const path = `docs/public/images/uploads/${hash.slice(0,20)}.${png ? 'png' : jpg ? 'jpg' : 'webp'}`;
+      const hash = createHash('sha256').update(bytes).digest('hex'); const path = `docs/public/images/uploads/${hash.slice(0,20)}.${extension}`;
       const asset = { id: uid('asset'), path, alt: requireText(input.alt, 'Bildbeschreibung', 500), caption: typeof input.caption === 'string' ? input.caption.slice(0,1000) : '', sourceIds: [], rights: '', sha256: hash };
       snapshot = assignAsset(snapshot, p.id, asset, event('image-uploaded'));
       const updated = snapshot.bundles.find(x => x.guideId === b.guideId).placeholders.find(x => x.id === p.id);

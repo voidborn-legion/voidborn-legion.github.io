@@ -2,6 +2,7 @@
 import Ajv from 'ajv';
 import {authorizeCommand,requirePermission,visibleState} from './permissions.mjs';
 import {listGrants,saveGrant} from './grants.mjs';
+import {decodeImageBase64,MAX_IMAGE_BASE64} from '../../packages/academy-model/image-file.mjs';
 const str=(max=5000)=>({type:'string',minLength:1,maxLength:max});
 const guideId=str(100),id=str(100),head={type:'string',pattern:'^[a-f0-9]{40}$'},ids={type:'array',items:id,uniqueItems:true,maxItems:200};
 const schema=(properties,required=Object.keys(properties))=>({type:'object',properties,required,additionalProperties:false});
@@ -42,6 +43,7 @@ const commands=[
 ];
 for(const [name,desc,p,op,required] of commands)add(name,desc,{expectedHead:head,...p},op,['expectedHead',...(required||Object.keys(p))],true);
 add('upload_image','Fill a screenshot placeholder using a native chat file. PNG/JPEG/WebP up to 2 MiB. Never invent file references.',{expectedHead:head,id,file,alt:str(500),caption:{type:'string',maxLength:1000}},'screenshot.upload',['expectedHead','id','file','alt'],true);tools.at(-1)._meta={'openai/fileParams':['file']};
+add('import_image','Import original PNG/JPEG/WebP bytes as raw standard Base64 into an existing screenshot placeholder. Maximum decoded size 2 MiB. Use real source bytes, never invent data or URLs. Saves a draft and returns the image assignment.',{expectedHead:head,id,base64:str(MAX_IMAGE_BASE64),alt:str(500),caption:{type:'string',maxLength:1000}},'screenshot.upload',['expectedHead','id','base64','alt'],true);
 add('edit_passage','Replace one exact unique text passage while preserving the rest of the guide.',{expectedHead:head,guideId,quote:str(100000),replacement:{type:'string',maxLength:100000}},'passage',undefined,true);
 add('read_image','Return a stored Academy image as native image content for inspection.',{guideId,assetId:id},'image');
 add('list_users','Administrator only: read Academy grants. Does not expose login secrets.',{},'users');
@@ -71,7 +73,7 @@ export async function callTool(name,args,ctx){
  }
  const input={...args,op:tool.action};
  authorizeCommand(ctx.grant,input,state);
- if(input.op==='screenshot.upload'){
+ if(input.op==='screenshot.upload'&&name==='academy_upload_image'){
   const url=new URL(input.file.download_url);
   // Never fetch arbitrary model-supplied URLs, private hosts, or redirects.
   if(url.protocol!=='https:'||!(['files.oaiusercontent.com','oaiusercontent.com'].includes(url.hostname)||url.hostname.endsWith('.oaiusercontent.com'))||url.port||url.username||url.password)throw new Error('Keine freigegebene Chat-Dateiadresse.');
@@ -79,5 +81,6 @@ export async function callTool(name,args,ctx){
   const reader=r.body.getReader();let size=0;const chunks=[];for(;;){const {value,done}=await reader.read();if(done)break;size+=value.length;if(size>2097152){await reader.cancel();throw new Error('Bild ist größer als 2 MiB.');}chunks.push(Buffer.from(value));}
   input.base64=Buffer.concat(chunks).toString('base64');delete input.file;
  }
+ if(input.op==='screenshot.upload')decodeImageBase64(input.base64);
  return ctx.command(input);
 }

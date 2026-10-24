@@ -43,7 +43,7 @@ test('anonymous discovery exposes schemas only and a tool call returns the ChatG
  const env={API_ORIGIN:'https://api.example',DB:{prepare(){throw new Error('No database access permitted before authentication');}}};
  const rpc=async(method,params={})=>handleMcp(new Request(env.API_ORIGIN+'/mcp',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})}),env);
  let r=await rpc('initialize',{protocolVersion:'2025-06-18'});assert.equal(r.status,200);assert.equal((await r.json()).result.serverInfo.name,'voidborn-academy-manager');
- r=await rpc('tools/list');const listed=(await r.json()).result.tools;assert.equal(listed.length,35);assert.ok(listed.every(t=>t.securitySchemes[0].type==='oauth2'));assert.deepEqual(listed.find(t=>t.name==='academy_upload_image')._meta['openai/fileParams'],['file']);
+ r=await rpc('tools/list');const listed=(await r.json()).result.tools;assert.equal(listed.length,36);assert.ok(listed.every(t=>t.securitySchemes[0].type==='oauth2'));assert.deepEqual(listed.find(t=>t.name==='academy_upload_image')._meta['openai/fileParams'],['file']);assert.equal(listed.find(t=>t.name==='academy_import_image')._meta['openai/fileParams'],undefined);
  r=await rpc('tools/call',{name:'academy_get_access',arguments:{}});const result=(await r.json()).result;assert.equal(result.isError,true);assert.ok(result._meta['mcp/www_authenticate'][0].includes('error_description='));assert.ok(!JSON.stringify(result).includes('github:152614168'));
 });
 

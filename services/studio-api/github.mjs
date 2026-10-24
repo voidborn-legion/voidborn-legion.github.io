@@ -58,9 +58,17 @@ export async function remoteCommand(token,branch,input,actor,installation=false,
  runCommand({...repo,commit:(head,files,message)=>{plan={head,files,message};return head;}},input,actor);
  if(!plan)throw new Error('Kein speicherbarer Auftrag.');
  if(Object.keys(plan.files).length>20)throw new Error('Die Änderung betrifft zu viele Dateien für einen einzelnen Auftrag. Bitte in kleinere Änderungen aufteilen.');
+ let imageAssignment;
+ if(input.op==='screenshot.upload'){
+  const bundles=Object.entries(plan.files).filter(([path])=>path.startsWith('.academy/studio/guides/')&&path.endsWith('.json')).map(([,value])=>JSON.parse(value));
+  const bundle=bundles.find(b=>b.placeholders.some(p=>p.id===input.id)),placeholder=bundle?.placeholders.find(p=>p.id===input.id);
+  const asset=bundle?.assets.find(a=>a.id===placeholder?.assetId);
+  if(!asset)throw new Error('Bildzuordnung fehlt im Speicherauftrag.');
+  imageAssignment={guideId:bundle.guideId,placeholderId:placeholder.id,assetId:asset.id,asset};
+ }
  const commitSha=await commitRemote(token,branch,plan.head,plan.files,plan.message,baseTree);
  // State is fetched in a separate browser request to stay within free Worker subrequest limits.
- return {commitSha,published:false};
+ return {commitSha,published:false,...imageAssignment};
 }
 export async function diffRemote(token,branch,guideId,before){
  if(!/^[a-f0-9]{40}$/.test(before||''))throw new Error('Ungültige Version.');
