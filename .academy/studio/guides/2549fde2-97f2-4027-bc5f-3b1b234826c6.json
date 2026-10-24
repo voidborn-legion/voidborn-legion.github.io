@@ -47,6 +47,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:eee2718b-921f-4a3a-82b1-33f77df695d7",
+      "title": "Screenshot: Fähigkeiten-Makro-Editor (K)",
+      "description": "Original-ID b9cc8b33-e0b4-40e9-9598-e96b2291d493; Quellbeitrag cef7e899-6c11-497f-a6ba-71585d94c953. REDAKTION / SCREENSHOT: Makro-Editor öffnen, Beispielbelegung mit Reihenfolge und Makrotyp vollständig zeigen. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `b9cc8b33-e0b4-40e9-9598-e96b2291d493`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "772fcc3c0849ef0dedc8462761ecd30c7b61b4b4",
+        "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
