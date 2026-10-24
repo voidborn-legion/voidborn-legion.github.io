@@ -28,6 +28,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:2987b49e-8625-4331-bf52-465abdf49cd7",
+      "title": "Daily Dungeon: Verstärkungsstein-Belohnung",
+      "description": "Original-ID 66772bb8-25fa-41e2-b01a-43cbca526322; Quellbeitrag 19e56b2d-50a6-49d3-8769-2f102924a8f2. Belohnungsübersicht Daeva-Bioforschungsbasis mit Verstärkungssteinen und sichtbaren Voraussetzungen/Limit. Nicht einfach eine Dungeon-Lobby ohne Belohnungen fotografieren.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `66772bb8-25fa-41e2-b01a-43cbca526322`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "cfb91e75ceb202a2f1766aba19e1352c62439c10",
+        "baseBlobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
