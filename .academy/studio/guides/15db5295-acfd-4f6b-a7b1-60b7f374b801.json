@@ -313,6 +313,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:1333b384-ecf1-45b7-ae77-b32a2a09c72c",
+      "title": "Albtraum-Shop – Preise",
+      "description": "Originalbild aus Discord Studio, Quell-Bild-ID 58d024b6-0821-4941-8599-e22333cda093, Quellbeitrag 0a15a66b-4e68-4176-8bec-293165ebde2d. Echte Originaldatei wird importiert. Motiv/Quelle gemäß Discord-Studio, kein Ersatzbild.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `58d024b6-0821-4941-8599-e22333cda093`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "993c48b8ebb8038e716508003e456b5be89d4dcf",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [
