@@ -746,6 +746,26 @@
       "createdAt": "2026-10-24T11:48:03Z",
       "updatedAt": "2026-10-24T11:48:03Z",
       "history": []
+    },
+    {
+      "id": "comment:9567c90e-9d44-4dbd-a678-11a89aa45777",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:8b20e090-628f-4428-b394-2803ff10f54a",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "2f2a91ebcf2b0bcdecbeaed4731ae5168dc7588c",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar e729d92e-d812-4f29-9ecf-a6fccdee974b | Autor Academy Editor | Datum 2026-10-22T07:12:48.958Z | Originalstatus offen | Quellbeitrag 8b20e090-628f-4428-b394-2803ff10f54a]\nGuide-Lücke: 'Wie kommt ein Core-Skill von 14 auf 16/20?' als eigene Entscheidungshilfe ergänzen. 10 Skillpunkte + 4 klassische Boards, dann aktive Skilllinien auf Waffe/Schützer/Ringen sowie Arkana Kelch/Waage/Pergament/Kompass. Passive Skills auf Ohrringen/Halskette/Rüstung und anderen Arkana. Ariel-Board vom 21.10.2026 laut Global-Quellen reine PvE-Stats, keine Skillknoten, erst 2.600er Hard-Expeditionen. Kantor: Finsterbruch 16 zuerst, dann Wirbelschlag und weitere Kernskills nach Wakayashi. Quellen: https://aion.xtopolis.com/progression/skill-levels/ https://wakayashi.gg/aion2/aion-2-chanter-pve-guide-skills-rotation-makros-wichtige-tipps https://aion2t.com/news/53.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:48:09Z",
+      "updatedAt": "2026-10-24T11:48:09Z",
+      "history": []
     }
   ],
   "tasks": []
