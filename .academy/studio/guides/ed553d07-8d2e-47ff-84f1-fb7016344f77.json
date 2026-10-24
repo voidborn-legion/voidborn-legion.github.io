@@ -9,7 +9,27 @@
   },
   "sections": [],
   "assets": [],
-  "placeholders": [],
+  "placeholders": [
+    {
+      "id": "screenshot:e157e85b-6096-4e82-a1ed-fbd7c9b8de10",
+      "title": "TECHNISCHER TEST – synthetisches Pixelbild",
+      "description": "Nur Prüfung des Datei-Uploads. Kein Spielscreenshot, keine persönlichen Daten.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Diese eindeutige Testpassage dient zur Prüfung von Kommentaren und Screenshots.",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "6330938c63252636e78314ca41bb2b7f39f970f9",
+        "baseBlobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    }
+  ],
   "comments": [
     {
       "id": "comment:3769c717-0b93-43bc-bdac-9e91ba5e6da1",
