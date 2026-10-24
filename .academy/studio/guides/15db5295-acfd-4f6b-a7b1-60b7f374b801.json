@@ -566,6 +566,26 @@
       "createdAt": "2026-10-24T11:45:45Z",
       "updatedAt": "2026-10-24T11:45:45Z",
       "history": []
+    },
+    {
+      "id": "comment:1bda4995-6bad-49b8-97c3-dd4385135eea",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:649e435c-e0c0-447f-9898-c333acb97eac",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "d3b602238d5c062852e45b19caef1467881ce99b",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 8d9300d3-7c44-44a4-9941-626fbc993963 | Autor Academy Editor | Datum 2026-10-21T18:45:31.282Z | Originalstatus offen | Quellbeitrag 649e435c-e0c0-447f-9898-c333acb97eac]\nBoss-Referenzen gefunden: https://aion2-guides.info/en/dungeons/ und https://aion2.vi.ki/dungeon-guides . Enthalten Kromede-Feuerwände, Grimhorn-Kugel und Gruppenmechaniken. Eigene Kurztexte/Screenshots weiter offen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:45:53Z",
+      "updatedAt": "2026-10-24T11:45:53Z",
+      "history": []
     }
   ],
   "tasks": []
