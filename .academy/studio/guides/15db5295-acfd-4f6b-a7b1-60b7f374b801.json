@@ -426,6 +426,26 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "comment:8a80f333-a405-425c-8fb8-34949ada8511",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:063c52b0-2ce0-461e-97ee-b981bede7b03",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "1a1135e59efa8b4703b4d4e56a53620889509fd9",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 65f17f09-4552-4678-837b-c18307d51fc1 | Autor Academy Editor | Datum 2026-10-21T15:24:08.077Z | Originalstatus offen | Quellbeitrag 063c52b0-2ce0-461e-97ee-b981bede7b03]\nREDaktionell prüfen: Roadmap-Zwischenstufen und bestehende Discord-Sprunglinks nach dem nächsten Ausbau aktualisieren. Aktuelle Global-Quellen unterscheiden sich bei Transzendenz-Freischaltungen; erst beim jeweiligen Abschnitt festlegen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:44:40Z",
+      "updatedAt": "2026-10-24T11:44:40Z",
+      "history": []
     }
   ],
   "tasks": []
