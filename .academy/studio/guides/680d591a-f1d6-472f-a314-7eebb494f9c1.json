@@ -126,6 +126,26 @@
       "createdAt": "2026-10-24T11:53:06Z",
       "updatedAt": "2026-10-24T11:53:06Z",
       "history": []
+    },
+    {
+      "id": "comment:267bfa05-37e9-4eb1-84fa-6261581dadc6",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:7ce1151b-bc4c-43f5-9258-f1b923a1e914",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "918e2f647769b5105337b7d4f39a08b22622b796",
+        "baseBlobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+      },
+      "body": "[Discord-Originalkommentar 47e8b1ce-90a4-49bf-877d-07483177c8cb | Autor Academy Editor | Datum 2026-10-22T14:32:37.285Z | Originalstatus offen | Quellbeitrag 7ce1151b-bc4c-43f5-9258-f1b923a1e914]\nREDAKTION: Wochenreset, AP-Caps und Shoppreise im EU-Client prüfen; Korridor-Karte im Platzhalter ergänzen; Link zum Abyss-Guide setzen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:53:22Z",
+      "updatedAt": "2026-10-24T11:53:22Z",
+      "history": []
     }
   ],
   "tasks": []
