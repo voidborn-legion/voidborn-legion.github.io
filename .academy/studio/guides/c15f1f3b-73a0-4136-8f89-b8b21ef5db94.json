@@ -147,6 +147,26 @@
       "createdAt": "2026-10-24T11:52:13Z",
       "updatedAt": "2026-10-24T11:52:13Z",
       "history": []
+    },
+    {
+      "id": "comment:335d6202-cfad-45ac-8196-50f0663938ee",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:5315aec1-ee13-4e45-8da8-b43a9d5b4cd3",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "f5164feff124657f5768d6c9f83042e33f3fb2d8",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar efe6cff4-94cd-43ba-9f9e-810e5812eb08 | Autor Academy Editor | Datum 2026-10-22T00:08:20.227Z | Originalstatus offen | Quellbeitrag 5315aec1-ee13-4e45-8da8-b43a9d5b4cd3]\nNoch ergänzen: Pet-Leveling und Gattungsbonus konkret, Farmquellen, Materialien und Kosten; welche Boni zählen passiv und welche erfordern aktives Ausrüsten? EU-Client-Screenshots prüfen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:52:20Z",
+      "updatedAt": "2026-10-24T11:52:20Z",
+      "history": []
     }
   ],
   "tasks": []
