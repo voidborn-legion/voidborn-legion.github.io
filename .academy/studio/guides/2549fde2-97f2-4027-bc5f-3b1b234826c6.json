@@ -125,6 +125,27 @@
       "history": []
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment:f044de88-8e0b-46e2-8bb0-b9af79ef6061",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:72920529-2b39-4b62-91d9-23f822160392",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "1c8784aed8da07cd78d629cbc88e2155178c0f29",
+        "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
+      },
+      "body": "[Discord-Originalkommentar ce313e39-3fb2-4390-b06f-6e22d8746eb8 | Autor Academy Editor | Datum 2026-10-22T14:32:39.758Z | Originalstatus offen | Quellbeitrag 72920529-2b39-4b62-91d9-23f822160392]\nREDAKTION: Nummerierung 1–7 und eingeschobene unnummerierte Abschnitte im Leveling-Guide vereinheitlichen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:53:56Z",
+      "updatedAt": "2026-10-24T11:53:56Z",
+      "history": []
+    }
+  ],
   "tasks": []
 }
