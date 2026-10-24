@@ -47,6 +47,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:0085dc30-c5e0-4b14-92bf-650e75ef8ec9",
+      "title": "Pantheon: 17 Plätze und Bakarma-Statue",
+      "description": "Original-ID 06dcf239-1298-4365-a4bc-79a79f4554a4; Quellbeitrag 5e42a738-8525-4dac-af99-72e656b6f90c. Pantheon-Übersicht mit Koloss/Statuen/Gemälden sowie separat Tooltip der Bakarma-Statue mit exakten Attributen. Zwei Screenshots statt unleserlichem zusammengesetztem Bild.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `06dcf239-1298-4365-a4bc-79a79f4554a4`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "e614bde0a2a3483062a2eab2e8b047d5c3c7a9db",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
