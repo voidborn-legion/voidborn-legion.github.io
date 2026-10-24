@@ -85,6 +85,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:7cf82f84-8def-4fa1-9a01-123ac6c0fc6b",
+      "title": "Screenshot: Gegners Gebiet",
+      "description": "Original-ID ed2cf4e3-c580-4061-b110-c90a85dfa8e6; Quellbeitrag 15131c6f-669c-4942-a0c9-21514be80de4. REDAKTION / SCREENSHOT: Gegnerische Region: Karte, Questgeber und verbleibende Risszeit dokumentieren. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `ed2cf4e3-c580-4061-b110-c90a85dfa8e6`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "9afd2ffee2c5832cb8910e1a492a53a80699385c",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
