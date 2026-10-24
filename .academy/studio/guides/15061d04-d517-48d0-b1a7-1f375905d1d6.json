@@ -50,6 +50,26 @@
       "createdAt": "2026-10-24T11:54:10Z",
       "updatedAt": "2026-10-24T11:54:10Z",
       "history": []
+    },
+    {
+      "id": "comment:61938983-46c4-4d01-a7c6-80a725e3cb14",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "# Daily & Weekly – Was wann erledigen?",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "4f6d6273332f2d3acdb4c6ec97feedad6176d159",
+        "baseBlobSha": "dcf504ed57359ab23cbc1306ccd05ca1cb00c6ef"
+      },
+      "body": "[Discord-Originalkommentar 9cdbb3b0-049d-44ae-b344-998c88eabd15 | Autor Academy Editor | Datum 2026-10-22T14:36:27.974Z | Originalstatus offen | Quellbeitrag efb19988-ff9e-4cdd-8731-6bad5727acc3]\nAUDIT – RESET-PRÜFUNG: Daily-/Weekly-Caps, Eroberung/Transzendenz-Kubuslimit, Abyss-Zeit und Kinah-Farmlimit mit EU-Screenshots belegen; Reset-Zeitzonen einheitlich kennzeichnen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:54:38Z",
+      "updatedAt": "2026-10-24T11:54:38Z",
+      "history": []
     }
   ],
   "tasks": []
