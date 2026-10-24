@@ -506,6 +506,26 @@
       "createdAt": "2026-10-24T11:45:00Z",
       "updatedAt": "2026-10-24T11:45:00Z",
       "history": []
+    },
+    {
+      "id": "comment:04604185-5451-4c02-9da1-cd8c13d9d325",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:36a3f861-5c8d-42ba-9e51-988443da0dba",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "83bb882ad1992b035854450674a015546eb3cf75",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 55d51706-7913-42d1-b611-6df7aa881a68 | Autor Academy Editor | Datum 2026-10-21T18:41:48.580Z | Originalstatus offen | Quellbeitrag 36a3f861-5c8d-42ba-9e51-988443da0dba]\nGlobal-Prüfung offen: Name und Menge des Arkana-Herstellungsmaterials aus dem 4.000-Punkte-Erfolg, exakte 10:30-Zeitbedingung, Saisonshop-Angebot für 25.000 Punkte sowie goldener Kelch und mögliche Dropquellen. Screenshot aus Erfolg/Schmiede/Saisonshop benötigt.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:45:07Z",
+      "updatedAt": "2026-10-24T11:45:07Z",
+      "history": []
     }
   ],
   "tasks": []
