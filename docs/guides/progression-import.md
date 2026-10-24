@@ -145,13 +145,13 @@ Shugofesta bietet kurze Minispiele und eine eigene Währung. Die Platzierung bee
 
 
 
-::: info Originalbild noch nicht übertragen: Shugofesta – Schlüssellimit und tägliche Aufladung
+::: info Originalbild importiert: Shugofesta – Schlüssellimit und tägliche Aufladung
 Discord-Bild-ID: `974f2324-f2fe-47b6-8cfb-298447565765`
 
 ![Shugofesta – Schlüssellimit und tägliche Aufladung](/images/uploads/dffb107d597b0009ab04.jpg)
 
 Originalbild aus Discord-Studio, Beitrag e9ef3229-6f45-4669-a312-36d174b3a17f
-; Beitrag: `e9ef3229-6f45-4669-a312-36d174b3a17f`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+; Beitrag: `e9ef3229-6f45-4669-a312-36d174b3a17f`. Originalbild im Academy Studio hinterlegt.
 
 :::
 
@@ -188,13 +188,13 @@ Die ersten **20 Kristalle kosten zusammen nur 1.500**. Der Screenshot zeigt bere
 
 
 
-::: info Originalbild noch nicht übertragen: Shugofesta-Shop – Preise
+::: info Originalbild importiert: Shugofesta-Shop – Preise
 Discord-Bild-ID: `8bf2f0f1-6e21-498c-b641-5c3d0dd33c90`
 
 ![Shugofesta-Shop – Preise](/images/uploads/102acecdeeceefe6a27f.jpg)
 
 Originalbild aus Discord-Studio, Beitrag ea9b3e0f-9f39-4a1d-9727-61842f054eda – Im Global-Client die Daevanion-Kristalle in beiden Shops zeigen, möglichst mit Währung und Kaufpreis. Bei Bedarf zwei Screenshots verwenden.
-; Beitrag: `ea9b3e0f-9f39-4a1d-9727-61842f054eda`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+; Beitrag: `ea9b3e0f-9f39-4a1d-9727-61842f054eda`. Originalbild im Academy Studio hinterlegt.
 Im Global-Client die Daevanion-Kristalle in beiden Shops zeigen, möglichst mit Währung und Kaufpreis. Bei Bedarf zwei Screenshots verwenden.
 :::
 
@@ -225,13 +225,13 @@ Albtraum ist eine **Solo-Bossaktivität** mit verschiedenen Schwierigkeitsstufen
 
 
 
-::: info Originalbild noch nicht übertragen: Albtraum – Versuchslimit und tägliche Aufladung
+::: info Originalbild importiert: Albtraum – Versuchslimit und tägliche Aufladung
 Discord-Bild-ID: `245a924b-b2b6-473d-8a6a-e541830be82d`
 
 ![Albtraum – Versuchslimit und tägliche Aufladung](/images/uploads/55acaeb248d285dec53e.jpg)
 
 Originalbild aus Discord-Studio, Beitrag 6a8afb85-ca35-4ce8-bc7c-6aaadf3f255d
-; Beitrag: `6a8afb85-ca35-4ce8-bc7c-6aaadf3f255d`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+; Beitrag: `6a8afb85-ca35-4ce8-bc7c-6aaadf3f255d`. Originalbild im Academy Studio hinterlegt.
 
 :::
 
@@ -263,13 +263,13 @@ Gekaufte Kristalle unter **U → Daevanion** einsetzen. Preise und Limits könne
 
 
 
-::: info Originalbild noch nicht übertragen: Albtraum-Shop – Preise
+::: info Originalbild importiert: Albtraum-Shop – Preise
 Discord-Bild-ID: `58d024b6-0821-4941-8599-e22333cda093`
 
 ![Albtraum-Shop – Preise](/images/uploads/a558eabf7e613d7a385a.jpg)
 
 Originalbild aus Discord-Studio, Beitrag 0a15a66b-4e68-4176-8bec-293165ebde2d
-; Beitrag: `0a15a66b-4e68-4176-8bec-293165ebde2d`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+; Beitrag: `0a15a66b-4e68-4176-8bec-293165ebde2d`. Originalbild im Academy Studio hinterlegt.
 
 :::
 
@@ -654,13 +654,13 @@ Bei einer Umwandlung beginnt die Verstärkung der neuen Stufe erneut. Prüfe die
 
 
 
-::: info Originalbild noch nicht übertragen: Konvertierung Offenbarungsamulett
+::: info Originalbild importiert: Konvertierung Offenbarungsamulett
 Discord-Bild-ID: `adbefc1d-3861-4884-86a2-a054c1525fa6`
 
 ![Konvertierung Offenbarungsamulett](/images/uploads/993f484f12deb6775614.jpg)
 
 Originalbild aus Discord-Studio, Beitrag 07398320-0c5f-4bfb-a34a-8a1b238a4569 – Inventar mit abgelegtem Gürtel oder Amulett und Option Konvertierung zeigen; idealerweise Vorher-/Nachher-Stufe.
-; Beitrag: `07398320-0c5f-4bfb-a34a-8a1b238a4569`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+; Beitrag: `07398320-0c5f-4bfb-a34a-8a1b238a4569`. Originalbild im Academy Studio hinterlegt.
 Inventar mit abgelegtem Gürtel oder Amulett und Option Konvertierung zeigen; idealerweise Vorher-/Nachher-Stufe.
 :::
 
