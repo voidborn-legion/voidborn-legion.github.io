@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:c15f1f3b-73a0-4136-8f89-b8b21ef5db94",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/studio-pets-workspace",
+    "commitSha": "d1956550019d96437bf6f4f2690e45a5ac28a596",
+    "blobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+  },
+  "sections": [],
+  "assets": [],
+  "placeholders": [
+    {
+      "id": "screenshot:bdba80d1-44b0-484e-8606-6ece68806e19",
+      "title": "EU-Screenshot: Transzendenz ★4 Atiel – mögliche Belohnungen",
+      "description": "Original-ID 8bc37bc2-bb00-403e-982f-af0b69ae3f4d; Quellbeitrag a1119e3e-b7c7-43d7-81b3-0e9f6981e32f. REDAKTION / SCREENSHOT: EU-Client: ★4 Atiel-Belohnungsfenster, erste Goldgruppe und Einzelwahrscheinlichkeiten; Datum/Version notieren. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `8bc37bc2-bb00-403e-982f-af0b69ae3f4d`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "d1956550019d96437bf6f4f2690e45a5ac28a596",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    }
+  ],
+  "comments": [],
+  "tasks": []
+}
