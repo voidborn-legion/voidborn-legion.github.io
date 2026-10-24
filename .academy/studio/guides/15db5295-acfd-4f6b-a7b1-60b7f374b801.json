@@ -413,11 +413,19 @@
       },
       "body": "[Discord-Originalkommentar 5797f59b-1e85-4b9b-ac2a-51b5e9a4739c | Autor Academy Editor | erstellt 2026-10-21T15:24:05.744Z | Originalstatus erledigt | Quellbeitrag 6ae8bf6f-8eb5-472a-ad57-26bd16bc5aaa]\nGLOBAL VERIFIZIEREN: Nightmare-/Shugo-Shoppreise, Schlüssel- und Versuchslimits sowie Kaufprioritäten im aktuellen EU-Global-Client prüfen. Quellen weichen bei Schlüssellimits ab: https://aion2-guides.info/en/progression/ und https://daevaguides.com/de/guides/daily-weekly-checklist/index.html",
       "authorId": "github:152614168",
-      "status": "open",
+      "status": "done",
       "replies": [],
       "createdAt": "2026-10-24T11:43:39Z",
-      "updatedAt": "2026-10-24T11:43:39Z",
-      "history": []
+      "updatedAt": "2026-10-24T11:43:50Z",
+      "history": [
+        {
+          "id": "event:afcb3fb0-4d35-49db-9e28-9a57e8eefec8",
+          "action": "comment-status-changed",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T11:43:50Z",
+          "note": ""
+        }
+      ]
     }
   ],
   "tasks": []
