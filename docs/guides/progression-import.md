@@ -146,7 +146,12 @@ Shugofesta bietet kurze Minispiele und eine eigene Währung. Die Platzierung bee
 
 
 ::: info Originalbild noch nicht übertragen: Shugofesta – Schlüssellimit und tägliche Aufladung
-Discord-Bild-ID: `974f2324-f2fe-47b6-8cfb-298447565765`; Beitrag: `e9ef3229-6f45-4669-a312-36d174b3a17f`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `974f2324-f2fe-47b6-8cfb-298447565765`
+
+![Shugofesta – Schlüssellimit und tägliche Aufladung](/images/uploads/dffb107d597b0009ab04.jpg)
+
+Originalbild aus Discord-Studio, Beitrag e9ef3229-6f45-4669-a312-36d174b3a17f
+; Beitrag: `e9ef3229-6f45-4669-a312-36d174b3a17f`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 
 :::
 

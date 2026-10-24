@@ -8,7 +8,17 @@
     "blobSha": "367d2b58359db4b47da448961480a2003ea78778"
   },
   "sections": [],
-  "assets": [],
+  "assets": [
+    {
+      "id": "asset:a78493ea-365d-482f-9ed7-66ac940e2eef",
+      "path": "docs/public/images/uploads/dffb107d597b0009ab04.jpg",
+      "alt": "Shugofesta – Schlüssellimit und tägliche Aufladung",
+      "caption": "Originalbild aus Discord-Studio, Beitrag e9ef3229-6f45-4669-a312-36d174b3a17f",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "dffb107d597b0009ab045c800186da1a45708793d0510f6a6e4e9c7f4fee9c36"
+    }
+  ],
   "placeholders": [
     {
       "id": "screenshot:d5f8cca2-c9ca-4abc-8e7b-e50891c35225",
@@ -264,17 +274,25 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "Discord-Bild-ID: `974f2324-f2fe-47b6-8cfb-298447565765`",
+        "quote": "![Shugofesta – Schlüssellimit und tägliche Aufladung](/images/uploads/dffb107d597b0009ab04.jpg)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "5cddecbe597dac82c9c5a2edb23091aeb6551ee0",
         "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:a78493ea-365d-482f-9ed7-66ac940e2eef",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:d2973087-8877-42e9-94f6-89dd05bb9df0",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T13:28:54Z",
+          "note": ""
+        }
+      ]
     },
     {
       "id": "screenshot:20a7ac63-1341-4711-95fd-0d96cd723188",
