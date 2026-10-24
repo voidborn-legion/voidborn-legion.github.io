@@ -686,6 +686,26 @@
       "createdAt": "2026-10-24T11:47:42Z",
       "updatedAt": "2026-10-24T11:47:42Z",
       "history": []
+    },
+    {
+      "id": "comment:cc957338-2403-4856-bb1e-52692e0974e5",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:649e435c-e0c0-447f-9898-c333acb97eac",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "5b46e8b42c46d508ef70caec4ae9467f0db3620c",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 387d4009-dfbb-410d-9be3-58bac49ba6a7 | Autor Academy Editor | Datum 2026-10-21T23:57:40.948Z | Originalstatus offen | Quellbeitrag 649e435c-e0c0-447f-9898-c333acb97eac]\nOffene Entscheidungshilfe für garantierte Eroberungsbelohnungen ergänzen: Bei Grimmhorn 28 Abholungen je Zyklus im EU-Client noch prüfen. Ein direkt gewähltes Rüstungsteil plus drei Tickets für den Nuakum-Schützer wären vier Zyklen (=112 Abholungen), sofern kein früherer Drop. Dabei zwischen sofortigem GS-Gewinn durch fehlende 86er-Rüstung und langfristiger Absicherung des Schützers abwägen. Einmalige Erkundungsauswahl möglichst für den zuletzt fehlenden Slot aufheben. Kein pauschales 'immer zuerst Tickets' oder 'immer zuerst Rüstung' empfehlen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:47:49Z",
+      "updatedAt": "2026-10-24T11:47:49Z",
+      "history": []
     }
   ],
   "tasks": []
