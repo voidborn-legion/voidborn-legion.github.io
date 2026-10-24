@@ -123,6 +123,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:0854a3a3-87ae-4314-8603-be34691bf6c9",
+      "title": "Screenshot: Clash Runen",
+      "description": "Original-ID 1a04ae62-e27d-4f87-8456-630db3c58c8f; Quellbeitrag e1a34dbd-da85-4f81-ae1e-bfb544124476. REDAKTION / SCREENSHOT: Passenden Runen-/Gravur-Screenshot zeigen; Begriff Clash gegen Global-Client prüfen. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `1a04ae62-e27d-4f87-8456-630db3c58c8f`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "66e0b4770d14eb3611e1c3dbb4b79aa566e7a278",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
