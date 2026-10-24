@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:ed553d07-8d2e-47ff-84f1-fb7016344f77",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/studio-pets-workspace",
+    "commitSha": "baa25289b34bdf0ced3294cf10eff35f860c4df3",
+    "blobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
+  },
+  "sections": [],
+  "assets": [],
+  "placeholders": [],
+  "comments": [
+    {
+      "id": "comment:3769c717-0b93-43bc-bdac-9e91ba5e6da1",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Diese eindeutige Testpassage dient zur Prüfung von Kommentaren und Screenshots.",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "baa25289b34bdf0ced3294cf10eff35f860c4df3",
+        "baseBlobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
+      },
+      "body": "TECHNISCHER TEST: Kommentar und Textverankerung prüfen; kein fachlicher Korrekturhinweis.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T03:28:00Z",
+      "updatedAt": "2026-10-24T03:28:00Z",
+      "history": []
+    }
+  ],
+  "tasks": []
+}
