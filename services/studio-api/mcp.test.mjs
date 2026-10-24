@@ -5,11 +5,13 @@ function setup(){
  const sql=new DatabaseSync(':memory:');
  sql.exec(readFileSync(new URL('./schema.sql',import.meta.url),'utf8'));
  sql.exec(readFileSync(new URL('./migration-manager.sql',import.meta.url),'utf8'));
+ sql.exec(readFileSync(new URL('./migration-mcp-refresh.sql',import.meta.url),'utf8'));
  const DB={prepare(query){return {bind(...args){return {
   first:async()=>sql.prepare(query).get(...args)||null,
   run:async()=>sql.prepare(query).run(...args),
   all:async()=>({results:sql.prepare(query).all(...args)})
  };}};}};
+ DB.batch=async statements=>{sql.exec('BEGIN');try{const result=[];for(const s of statements){const r=await s.run();result.push({meta:{changes:Number(r.changes)}});}sql.exec('COMMIT');return result;}catch(e){sql.exec('ROLLBACK');throw e;}};
  return {DB,API_ORIGIN:'https://api.example',OWNER_GITHUB_ID:'123',GITHUB_CLIENT_ID:'fake',GITHUB_CLIENT_SECRET:'fake'};
 }
 test('MCP OAuth rejects unknown redirects and uses browser-bound PKCE and single-use codes',async()=>{
@@ -28,7 +30,7 @@ test('MCP OAuth rejects unknown redirects and uses browser-bound PKCE and single
  r=await oauthRoute(new Request(base+'/mcp-oauth/consent',{method:'POST',headers:{Origin:base,Cookie:cookie},body:form}),env);const redirect=new URL(r.headers.get('Location'));assert.equal(redirect.searchParams.get('iss'),base);assert.equal(redirect.searchParams.get('state'),'synthetic-state');
  const tokenForm=new URLSearchParams({grant_type:'authorization_code',code:redirect.searchParams.get('code'),client_id:client.client_id,redirect_uri:client.redirect_uris[0],resource:base+'/mcp',code_verifier:'b'.repeat(64)});
  r=await oauthRoute(new Request(base+'/mcp-oauth/token',{method:'POST',body:tokenForm}),env);assert.equal(r.status,400);
- tokenForm.set('code_verifier',verifier);r=await oauthRoute(new Request(base+'/mcp-oauth/token',{method:'POST',body:tokenForm}),env);const token=await r.json();assert.ok(token.access_token);
+ tokenForm.set('code_verifier',verifier);r=await oauthRoute(new Request(base+'/mcp-oauth/token',{method:'POST',body:tokenForm}),env);const token=await r.json();assert.ok(token.access_token);assert.ok(token.refresh_token);assert.notEqual(token.access_token,token.refresh_token);
  const identity=await mcpIdentity(new Request(base+'/mcp',{headers:{Authorization:'Bearer '+token.access_token}}),env);assert.equal(identity.actor,'github:123');
  r=await oauthRoute(new Request(base+'/mcp-oauth/token',{method:'POST',body:tokenForm}),env);assert.equal(r.status,400);
  await assert.rejects(mcpGithubCallback(new Request(base+'/auth/callback?state='+state+'&code=fake',{headers:{Cookie:cookie}}),env));

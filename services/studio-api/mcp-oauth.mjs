@@ -1,6 +1,7 @@
 import {randomSecret,digest,challenge} from './security.mjs';
 import {grantFor} from './grants.mjs';
 import {requirePermission} from './permissions.mjs';
+import {issueMcpTokens,refreshMcpTokens} from './mcp-refresh.mjs';
 const json=(value,status=200,headers={})=>new Response(JSON.stringify(value),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store',...headers}});
 const now=()=>Math.floor(Date.now()/1000);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -13,7 +14,7 @@ export function validateMcpAuthorization(input,client,env){
 export async function oauthRoute(request,env){
  const url=new URL(request.url),base=env.API_ORIGIN,resource=base+'/mcp';
  if(url.pathname==='/.well-known/oauth-protected-resource'||url.pathname==='/.well-known/oauth-protected-resource/mcp')return json({resource,authorization_servers:[base],scopes_supported:['academy'],bearer_methods_supported:['header']});
- if(url.pathname==='/.well-known/oauth-authorization-server')return json({issuer:base,authorization_endpoint:base+'/mcp-oauth/authorize',token_endpoint:base+'/mcp-oauth/token',registration_endpoint:base+'/mcp-oauth/register',response_types_supported:['code'],grant_types_supported:['authorization_code'],token_endpoint_auth_methods_supported:['none'],code_challenge_methods_supported:['S256'],scopes_supported:['academy'],authorization_response_iss_parameter_supported:true});
+ if(url.pathname==='/.well-known/oauth-authorization-server')return json({issuer:base,authorization_endpoint:base+'/mcp-oauth/authorize',token_endpoint:base+'/mcp-oauth/token',registration_endpoint:base+'/mcp-oauth/register',response_types_supported:['code'],grant_types_supported:['authorization_code','refresh_token'],token_endpoint_auth_methods_supported:['none'],code_challenge_methods_supported:['S256'],scopes_supported:['academy'],authorization_response_iss_parameter_supported:true});
  if(!url.pathname.startsWith('/mcp-oauth/'))return null;
  if(request.method!=='OPTIONS'){
   const key='mcp:'+await digest(request.headers.get('CF-Connecting-IP')||'unknown')+':'+Math.floor(Date.now()/60000);
@@ -27,7 +28,7 @@ export async function oauthRoute(request,env){
   const allowed=(env.MCP_REDIRECT_URIS||'https://chatgpt.com/connector_platform_oauth_redirect').split(',');
   if(!Array.isArray(redirects)||redirects.length!==1||!allowed.includes(redirects[0])||(input.token_endpoint_auth_method&&input.token_endpoint_auth_method!=='none'))return json({error:'invalid_client_metadata'},400);
   const client=randomSecret();await env.DB.prepare('INSERT INTO mcp_clients(id,redirect_uri,expires) VALUES(?,?,?)').bind(client,redirects[0],now()+86400*365).run();
-  return json({client_id:client,redirect_uris:redirects,token_endpoint_auth_method:'none',grant_types:['authorization_code'],response_types:['code']},201);
+  return json({client_id:client,redirect_uris:redirects,token_endpoint_auth_method:'none',grant_types:['authorization_code','refresh_token'],response_types:['code']},201);
  }
  if(url.pathname==='/mcp-oauth/authorize'&&request.method==='GET'){
   const i=Object.fromEntries(url.searchParams);const c=await env.DB.prepare('SELECT * FROM mcp_clients WHERE id=? AND expires>?').bind(i.client_id,now()).first();validateMcpAuthorization(i,c,env);
@@ -50,13 +51,13 @@ export async function oauthRoute(request,env){
  }
  if(url.pathname==='/mcp-oauth/token'&&request.method==='POST'){
   const i=Object.fromEntries(await request.formData());
+  if(i.grant_type==='refresh_token')return refreshMcpTokens(env,i);
   if(i.grant_type!=='authorization_code'||typeof i.code!=='string'||!/^[-._~a-zA-Z0-9]{43,128}$/.test(i.code_verifier||''))return json({error:'invalid_grant'},400);
   const row=await env.DB.prepare('SELECT * FROM mcp_codes WHERE id=? AND expires>?').bind(await digest(i.code),now()).first();
   if(!row||row.client_id!==i.client_id||row.redirect_uri!==i.redirect_uri||row.resource!==i.resource||await challenge(i.code_verifier)!==row.challenge)return json({error:'invalid_grant'},400);
   requirePermission(await grantFor(env,row.actor),'draft.read');
   const used=await env.DB.prepare('DELETE FROM mcp_codes WHERE id=? RETURNING id').bind(await digest(i.code)).first();if(!used)return json({error:'invalid_grant'},400);
-  const token=randomSecret();await env.DB.prepare('INSERT INTO mcp_tokens(id,client_id,resource,scope,actor,expires) VALUES(?,?,?,?,?,?)').bind(await digest(token),row.client_id,row.resource,row.scope,row.actor,now()+3600).run();
-  return json({access_token:token,token_type:'Bearer',expires_in:3600,scope:'academy'});
+  return issueMcpTokens(env,row);
  }
  return json({error:'not_found'},404);
 }
@@ -73,4 +74,10 @@ export async function mcpGithubCallback(request,env){
  const secret=randomSecret();await env.DB.prepare('INSERT INTO mcp_consents(id,request_json,actor,expires) VALUES(?,?,?,?)').bind(await digest(secret),JSON.stringify(row),actor,now()+300).run();
  return page(`<h1>Academy mit ChatGPT verbinden</h1><p>Angemeldet als <strong>${esc(user.login)}</strong>.</p><p>ChatGPT darf mit deinen Academy-Rechten arbeiten. Deine Rolle: <strong>${esc(grant.role)}</strong>. Rechte können jederzeit entzogen werden.</p><p><small>Guides, Bilder, Kommentare und Aufgaben werden im öffentlichen GitHub-Repository gespeichert. Benutzerrechte und Anmeldedaten bleiben geschützt.</small></p><form method="post" action="/mcp-oauth/consent"><input type="hidden" name="consent" value="${secret}"><button name="approve" value="yes">Verbindung erlauben</button> <button name="approve" value="no">Abbrechen</button></form>`);
 }
-export async function mcpIdentity(request,env){const bearer=/^Bearer ([a-f0-9]{64})$/.exec(request.headers.get('Authorization')||'');if(!bearer)return null;const row=await env.DB.prepare('SELECT * FROM mcp_tokens WHERE id=? AND expires>?').bind(await digest(bearer[1]),now()).first();return row?.resource===env.API_ORIGIN+'/mcp'&&row.scope==='academy'?row:null;}
+export async function mcpIdentity(request,env){
+ const bearer=/^Bearer ([a-f0-9]{64})$/.exec(request.headers.get('Authorization')||'');if(!bearer)return null;
+ const id=await digest(bearer[1]),row=await env.DB.prepare('SELECT * FROM mcp_tokens WHERE id=? AND expires>?').bind(id,now()).first();
+ if(row?.resource!==env.API_ORIGIN+'/mcp'||row.scope!=='academy')return null;
+ const link=await env.DB.prepare('SELECT s.revoked,s.expires FROM mcp_token_sessions t LEFT JOIN mcp_refresh_sessions s ON s.id=t.session_id WHERE t.id=?').bind(id).first();
+ return link&&(link.revoked!==0||link.expires<=now())?null:row;
+}

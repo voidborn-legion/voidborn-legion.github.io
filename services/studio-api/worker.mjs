@@ -69,5 +69,5 @@ export default {async fetch(request,env){
  }catch(error){return reply({error:error.message},error.status||(error.message.includes('CONFLICT')?409:400),cors);}
 },async scheduled(event,env,ctx){
  if(!env.DB)return;
- ctx.waitUntil(env.DB.batch(['oauth_states','login_tickets','sessions','rate_limits','mcp_clients','mcp_requests','mcp_consents','mcp_codes','mcp_tokens'].map(table=>env.DB.prepare(`DELETE FROM ${table} WHERE expires<=?`).bind(age(0)))));
+ ctx.waitUntil(env.DB.batch(['oauth_states','login_tickets','sessions','rate_limits','mcp_clients','mcp_requests','mcp_consents','mcp_codes','mcp_tokens','mcp_refresh_sessions','mcp_refresh_history','mcp_token_sessions'].map(table=>env.DB.prepare(`DELETE FROM ${table} WHERE expires<=?`).bind(age(0)))));
 }};
