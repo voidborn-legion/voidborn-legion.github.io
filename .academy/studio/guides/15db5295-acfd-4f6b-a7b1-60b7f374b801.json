@@ -370,6 +370,26 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "comment:b0424e74-f6fc-48a1-843a-7693b046cab8",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:4a1b4be5-c80c-4382-a5de-0469a5a92091",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "0dad34fd03b4a177c31dd0c601cff8d617864978",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar dd870976-d6d5-4d3d-89b1-e29217dc3474 | Autor Academy Editor | erstellt 2026-10-21T15:24:03.476Z | Originalstatus erledigt | Quellbeitrag 4a1b4be5-c80c-4382-a5de-0469a5a92091]\nGLOBAL VERIFIZIEREN: Clash-Runen-GS. RaidRelay Global Client v31 nennt +40 GS je Rune, andere Guides nennen abweichende Werte. Bitte im Charakterfenster mit/ohne Rune prüfen. Außerdem prüfen, ob Fehlschlagrisiko bereits ab +2 besteht.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:43:18Z",
+      "updatedAt": "2026-10-24T11:43:18Z",
+      "history": []
     }
   ],
   "tasks": []
