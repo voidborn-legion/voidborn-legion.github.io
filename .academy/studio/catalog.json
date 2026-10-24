@@ -147,6 +147,12 @@
       "path": "docs/guides/start-here-import.md",
       "categoryId": "category:einstieg",
       "lifecycle": "active"
+    },
+    {
+      "id": "guide:2549fde2-97f2-4027-bc5f-3b1b234826c6",
+      "path": "docs/guides/leveling-import.md",
+      "categoryId": "category:leveling",
+      "lifecycle": "active"
     }
   ]
 }
