@@ -17,6 +17,15 @@
       "sourceIds": [],
       "rights": "",
       "sha256": "dffb107d597b0009ab045c800186da1a45708793d0510f6a6e4e9c7f4fee9c36"
+    },
+    {
+      "id": "asset:a475df18-3c02-42ce-8d92-b00019f96bb3",
+      "path": "docs/public/images/uploads/102acecdeeceefe6a27f.jpg",
+      "alt": "Shugofesta-Shop – Preise",
+      "caption": "Originalbild aus Discord-Studio, Beitrag ea9b3e0f-9f39-4a1d-9727-61842f054eda – Im Global-Client die Daevanion-Kristalle in beiden Shops zeigen, möglichst mit Währung und Kaufpreis. Bei Bedarf zwei Screenshots verwenden.",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "102acecdeeceefe6a27f71e5d2b7bfd861fd980b07f5722fa3b2336d1028dc89"
     }
   ],
   "placeholders": [
@@ -301,17 +310,25 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "Discord-Bild-ID: `8bf2f0f1-6e21-498c-b641-5c3d0dd33c90`",
+        "quote": "![Shugofesta-Shop – Preise](/images/uploads/102acecdeeceefe6a27f.jpg)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "20b61d6f562ef3f584fb79ab4bd028803d8b07c5",
         "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:a475df18-3c02-42ce-8d92-b00019f96bb3",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:7c72863f-5988-4fd2-88a4-edc019eb2ef6",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T13:29:08Z",
+          "note": ""
+        }
+      ]
     },
     {
       "id": "screenshot:a4e74cd6-237a-47a7-a5d4-4fcc2aae763f",

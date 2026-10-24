@@ -189,7 +189,12 @@ Die ersten **20 Kristalle kosten zusammen nur 1.500**. Der Screenshot zeigt bere
 
 
 ::: info Originalbild noch nicht übertragen: Shugofesta-Shop – Preise
-Discord-Bild-ID: `8bf2f0f1-6e21-498c-b641-5c3d0dd33c90`; Beitrag: `ea9b3e0f-9f39-4a1d-9727-61842f054eda`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `8bf2f0f1-6e21-498c-b641-5c3d0dd33c90`
+
+![Shugofesta-Shop – Preise](/images/uploads/102acecdeeceefe6a27f.jpg)
+
+Originalbild aus Discord-Studio, Beitrag ea9b3e0f-9f39-4a1d-9727-61842f054eda – Im Global-Client die Daevanion-Kristalle in beiden Shops zeigen, möglichst mit Währung und Kaufpreis. Bei Bedarf zwei Screenshots verwenden.
+; Beitrag: `ea9b3e0f-9f39-4a1d-9727-61842f054eda`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 Im Global-Client die Daevanion-Kristalle in beiden Shops zeigen, möglichst mit Währung und Kaufpreis. Bei Bedarf zwei Screenshots verwenden.
 :::
 
