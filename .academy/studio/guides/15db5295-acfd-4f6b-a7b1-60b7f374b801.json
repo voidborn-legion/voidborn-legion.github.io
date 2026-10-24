@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:15db5295-acfd-4f6b-a7b1-60b7f374b801",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/studio-pets-workspace",
+    "commitSha": "212d30f473cbf49b59744625f538c8d9bb40dc0e",
+    "blobSha": "367d2b58359db4b47da448961480a2003ea78778"
+  },
+  "sections": [],
+  "assets": [],
+  "placeholders": [
+    {
+      "id": "screenshot:d5f8cca2-c9ca-4abc-8e7b-e50891c35225",
+      "title": "Screenshot: Regionsquests und Karte",
+      "description": "Original-ID 1c80ca03-573c-4cc2-8245-0f21013ebb6a; Quellbeitrag fe5bdd94-3393-4f59-bd05-49605919bf88. REDAKTION / SCREENSHOT: Karte mit Regionsquests und relevanten Questmarkierungen, keine reine Landschaftsaufnahme. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `1c80ca03-573c-4cc2-8245-0f21013ebb6a`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "212d30f473cbf49b59744625f538c8d9bb40dc0e",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    }
+  ],
+  "comments": [],
+  "tasks": []
+}
