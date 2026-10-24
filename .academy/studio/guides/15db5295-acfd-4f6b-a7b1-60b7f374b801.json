@@ -546,6 +546,26 @@
       "createdAt": "2026-10-24T11:45:34Z",
       "updatedAt": "2026-10-24T11:45:34Z",
       "history": []
+    },
+    {
+      "id": "comment:47ca1b8b-79d1-4c89-8e91-1f56cfc8b627",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:9ff03c9a-a7ba-4591-9f16-2dcb7624e368",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "21cc5ee5171e0422b059aee825beaebdad7f8833",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 0d4dd3a1-73bd-49ec-a3b5-7dfa12d14707 | Autor Academy Editor | Datum 2026-10-21T18:45:29.242Z | Originalstatus offen | Quellbeitrag 9ff03c9a-a7ba-4591-9f16-2dcb7624e368]\nReferenz für Vakron/Urugugu und weitere Bosse: https://aion2-guides.info/en/dungeons/ ; Global-Videos und einzelne Mechaniken auch https://aion2.vi.ki/dungeon-guides . Noch offen: exakte Drop-Prozente, Kina je Run, Ticketpreis und Auswahltruhen anhand des aktuellen Global-Clients.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:45:45Z",
+      "updatedAt": "2026-10-24T11:45:45Z",
+      "history": []
     }
   ],
   "tasks": []
