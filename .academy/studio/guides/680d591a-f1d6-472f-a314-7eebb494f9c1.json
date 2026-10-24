@@ -106,6 +106,27 @@
       "history": []
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment:2ec1ac6b-2308-40a5-af44-5ae4398a77b5",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:a7acc64e-49fe-4010-ab99-6095b85363a6",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "041267d5c346b84f010fe302f5df9e1b01388944",
+        "baseBlobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+      },
+      "body": "[Discord-Originalkommentar 0cff0281-3231-4978-a4de-3e6e303efa17 | Autor Academy Editor | Datum 2026-10-22T14:32:29.468Z | Originalstatus offen | Quellbeitrag a7acc64e-49fe-4010-ab99-6095b85363a6]\nDISCORD-LINKS: Nach Veröffentlichung Jump-Links zu Kina, Steinen, GS, CP und AP eintragen; Studio-Links sind bereits vorhanden, werden aber nicht exportiert.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:53:06Z",
+      "updatedAt": "2026-10-24T11:53:06Z",
+      "history": []
+    }
+  ],
   "tasks": []
 }
