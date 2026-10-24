@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:15061d04-d517-48d0-b1a7-1f375905d1d6",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/studio-pets-workspace",
+    "commitSha": "1d764004ad90c25f45b9963aa5a329bf4ff9e189",
+    "blobSha": "dcf504ed57359ab23cbc1306ccd05ca1cb00c6ef"
+  },
+  "sections": [],
+  "assets": [],
+  "placeholders": [],
+  "comments": [
+    {
+      "id": "comment:f0ce0de5-90f9-48ab-9e5b-57d10aa2b239",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "# Daily & Weekly – Was wann erledigen?",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "1d764004ad90c25f45b9963aa5a329bf4ff9e189",
+        "baseBlobSha": "dcf504ed57359ab23cbc1306ccd05ca1cb00c6ef"
+      },
+      "body": "[Discord-Originalkommentar e05ef8e7-3c34-44ee-a2e8-7e8053ab4edb | Autor Academy Editor | Datum 2026-10-22T14:32:48.189Z | Originalstatus offen | Quellbeitrag 926a1c0d-2cc2-48a9-a5c4-2168684a4546]\nREDAKTION: 1.000.000-Kinah-Erhaltlimit und täglicher Reset 09:00 im EU-Client belegt. Anrechenbare Einnahmearten noch prüfen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:54:03Z",
+      "updatedAt": "2026-10-24T11:54:03Z",
+      "history": []
+    }
+  ],
+  "tasks": []
+}
