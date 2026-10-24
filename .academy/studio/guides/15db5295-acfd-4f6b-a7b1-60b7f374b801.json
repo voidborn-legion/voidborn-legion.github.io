@@ -161,6 +161,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:d9f80c46-f8b4-42d3-af66-76b8a0ffc3db",
+      "title": "Vakron/Urugugu: Freischaltung und Beuteliste",
+      "description": "Original-ID 1025dbb8-557c-4d84-8e2a-648efaf5af3d; Quellbeitrag 91f446c3-819b-46b0-874f-2c39036ffd5a. REDAKTION / SCREENSHOT: Beutelisten von Vakron und Urugugu sowie Freischalt-GS; zwei Bilder falls Text sonst zu klein. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `1025dbb8-557c-4d84-8e2a-648efaf5af3d`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "ac45aa5d0118085f561082fcd587c7f4c8f59f6f",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
