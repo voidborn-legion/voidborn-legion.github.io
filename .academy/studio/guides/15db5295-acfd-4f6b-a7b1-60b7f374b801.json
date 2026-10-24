@@ -946,6 +946,26 @@
       "createdAt": "2026-10-24T11:49:48Z",
       "updatedAt": "2026-10-24T11:49:48Z",
       "history": []
+    },
+    {
+      "id": "comment:24d2ab4d-6758-4c67-8d42-1755d4b7e8da",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:649e435c-e0c0-447f-9898-c333acb97eac",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "f2ccf48243d05f06faa1ea6d6ac90ffc31b90885",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar bd6fd1b7-18ea-46d6-bf74-b2f8f2d2aeb6 | Autor Academy Editor | Datum 2026-10-22T14:32:42.404Z | Originalstatus offen | Quellbeitrag 649e435c-e0c0-447f-9898-c333acb97eac]\nREDAKTION: Grimmhornhöhle-Schreibweise, Loot und Auswahlbelohnungen gegen EU-Client prüfen. Bild zur 86er-Auswahl und Vererbung ergänzen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:49:56Z",
+      "updatedAt": "2026-10-24T11:49:56Z",
+      "history": []
     }
   ],
   "tasks": []
