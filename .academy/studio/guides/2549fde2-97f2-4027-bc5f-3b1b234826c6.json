@@ -8,7 +8,17 @@
     "blobSha": "6355ebacf25652354c47fb197695d94935012c64"
   },
   "sections": [],
-  "assets": [],
+  "assets": [
+    {
+      "id": "asset:acf1a99b-4145-4bf6-9092-dde527105a30",
+      "path": "docs/public/images/uploads/0c8fab516ce89370f07c.jpg",
+      "alt": "Originalgrafik aus dem Leveling-Guide im Discord Studio",
+      "caption": "Originalbild aus Discord-Studio, Beitrag 6697535b-4992-47f2-a873-57e73388e992",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "0c8fab516ce89370f07ce939394f4c4030e403887d8eda3e4b9856c9c8445bf6"
+    }
+  ],
   "placeholders": [
     {
       "id": "screenshot:8803c01e-7997-4a08-8fb1-9ea12e693eaf",
@@ -131,17 +141,25 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "Discord-Bild-ID: `8e22c057-ce79-4b44-8555-a47a64ad9934`",
+        "quote": "![Originalgrafik aus dem Leveling-Guide im Discord Studio](/images/uploads/0c8fab516ce89370f07c.jpg)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "afa886e7b3180c8d752c8d3f9ccb0c3b038284fc",
         "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:acf1a99b-4145-4bf6-9092-dde527105a30",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:f51a39b9-2061-42e8-82d5-cf3f633729d0",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T13:28:02Z",
+          "note": ""
+        }
+      ]
     },
     {
       "id": "screenshot:53d8a8d9-721b-40e8-a214-9ffa61953822",

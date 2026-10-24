@@ -157,7 +157,12 @@ Warum sie wichtig sind:
 
 
 ::: info Originalbild noch nicht übertragen: grafik.jpg
-Discord-Bild-ID: `8e22c057-ce79-4b44-8555-a47a64ad9934`; Beitrag: `6697535b-4992-47f2-a873-57e73388e992`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `8e22c057-ce79-4b44-8555-a47a64ad9934`
+
+![Originalgrafik aus dem Leveling-Guide im Discord Studio](/images/uploads/0c8fab516ce89370f07c.jpg)
+
+Originalbild aus Discord-Studio, Beitrag 6697535b-4992-47f2-a873-57e73388e992
+; Beitrag: `6697535b-4992-47f2-a873-57e73388e992`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 
 :::
 
