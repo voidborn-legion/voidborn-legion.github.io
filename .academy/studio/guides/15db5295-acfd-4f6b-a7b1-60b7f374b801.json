@@ -626,6 +626,26 @@
       "createdAt": "2026-10-24T11:46:58Z",
       "updatedAt": "2026-10-24T11:46:58Z",
       "history": []
+    },
+    {
+      "id": "comment:20e8ebac-a426-42f5-9455-81d98f7ee572",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:9ff03c9a-a7ba-4591-9f16-2dcb7624e368",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "677671afa538f2ba69954308f0b6ba3d55e19fcd",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 954bb546-84c4-4e2e-aa80-78c6cae181f7 | Autor Academy Editor | Datum 2026-10-21T20:31:14.239Z | Originalstatus offen | Quellbeitrag 9ff03c9a-a7ba-4591-9f16-2dcb7624e368]\nGeprüft anhand Global-Clientdaten (21.10.2026): 300.000 Kina pro vollständiger Eroberungs-Kubusabholung (40 Od-Energie); Vakron-Schützer 0,424 % Endboss / rechnerisch 0,845 % kompletter Kubus; Urugugu-Waffe eines bestimmten Typs 0,431 % / rechnerisch 0,860 %. Alle 21 Abholungen eine garantierte Auswahl (Gutschein oder ausgewählte Ausrüstung). Zwei passende Gutscheine für gezielte Umwandlung; Vakron-Schützer laut Community 1,5 Mio. Kina, Urugugu-Waffentruhe erfordert zusätzlich unpassende Aulamus-Waffe und 1,5 Mio. Kina. Wichtig: Erkundungs-Auswahltruhe erst NACH Eroberungs-Farming für fehlenden Slot, nicht davor. Quellen: https://raidrelay.com/aion-2-conquest-guide ; https://aion2codex.com/de/guides/wrong-weapon-drops ; https://www.playaion2.de/aion-2-level-45-endgame-guide/",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:47:05Z",
+      "updatedAt": "2026-10-24T11:47:05Z",
+      "history": []
     }
   ],
   "tasks": []
