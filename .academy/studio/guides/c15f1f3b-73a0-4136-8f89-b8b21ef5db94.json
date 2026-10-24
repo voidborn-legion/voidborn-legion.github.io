@@ -287,6 +287,26 @@
       "createdAt": "2026-10-24T11:54:44Z",
       "updatedAt": "2026-10-24T11:54:44Z",
       "history": []
+    },
+    {
+      "id": "comment:61a4957a-73dc-40c3-9c7b-0f27a533f365",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:4be6d07f-d0e6-4549-9a59-0af555186b08",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "05c683cdfb2ff18967dbd41d8dc900d52e39a1d5",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar 09b4d162-2dc0-4f29-9a5e-daea5a30b1ad | Autor Academy Editor | Datum 2026-10-22T14:36:33.669Z | Originalstatus offen | Quellbeitrag 4be6d07f-d0e6-4549-9a59-0af555186b08]\nAUDIT – AUSBAU: Vollständige Fundortliste für 4 Statuen, 12 Gemälde, 1 Koloss und genaue Attributboni fehlen. Nicht mit Erfolgs-Guide vermischen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:55:02Z",
+      "updatedAt": "2026-10-24T11:55:02Z",
+      "history": []
     }
   ],
   "tasks": []
