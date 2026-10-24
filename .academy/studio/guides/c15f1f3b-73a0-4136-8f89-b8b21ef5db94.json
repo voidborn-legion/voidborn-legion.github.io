@@ -28,6 +28,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:cf72166f-8b9f-4f06-9fac-6404f1f1a745",
+      "title": "Draupnir-Erfolg 10 Abschlüsse",
+      "description": "Original-ID fee77bae-d2ee-45d6-9ecd-c2e3c88cde5a; Quellbeitrag 2018ec4d-31f3-4e6e-a1e0-34f5a4b41d59. Erfolgsmenü mit vollständiger Stufenreihe 1/3/5/10 und sichtbarer Bakarma-Statue. Aktuellen Fortschritt anzeigen; für Discord eigene Charakternamen ggf. verdecken.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `fee77bae-d2ee-45d6-9ecd-c2e3c88cde5a`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "a5de7b8210e39a95f489408eb972888117e4d511",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
