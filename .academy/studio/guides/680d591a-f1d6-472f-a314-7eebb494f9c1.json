@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "guide:680d591a-f1d6-472f-a314-7eebb494f9c1",
+  "visibility": "public",
+  "document": {
+    "ref": "draft/studio-pets-workspace",
+    "commitSha": "affd53ee88a54d641498ca8318ad444316ddafdd",
+    "blobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+  },
+  "sections": [],
+  "assets": [],
+  "placeholders": [
+    {
+      "id": "screenshot:c2d434af-699f-4517-9ae9-d85b7c7b39b8",
+      "title": "Silentium: NPC-Verkaufspreis und Menge",
+      "description": "Original-ID 3d6b3545-b08f-4d54-adec-504d33d80ea3; Quellbeitrag 96f96609-dcc6-4178-88f9-35598b94554e. Screenshot im Global/EU-Client: Inventar mit Silentium-Stack und Verkaufsfenster beim Gemischtwarenhändler. 5.000 Kina pro Stück sichtbar, übrige Iteminfos nicht verdecken. Für Discord nach dem Kina-Beitrag einfügen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `3d6b3545-b08f-4d54-adec-504d33d80ea3`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "affd53ee88a54d641498ca8318ad444316ddafdd",
+        "baseBlobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
+    }
+  ],
+  "comments": [],
+  "tasks": []
+}
