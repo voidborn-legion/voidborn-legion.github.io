@@ -13,9 +13,13 @@ Dies ist ausschließlich ein technischer Test, kein AION-Guide.
 
 Diese eindeutige Testpassage dient zur Prüfung von Kommentaren und Screenshots.
 
-![Synthetisches Testpixel – ausgetauschte Version](/images/uploads/6b1048f8a6d40bac0b29.png)
+::: info Screenshot fehlt: TECHNISCHER TEST – synthetisches Pixelbild
 
-Ausgetauschte Bildunterschrift im Funktionstest
+Nur Prüfung des Datei-Uploads. Kein Spielscreenshot, keine persönlichen Daten.
+
+<!-- academy-screenshot:screenshot:e157e85b-6096-4e82-a1ed-fbd7c9b8de10 -->
+
+:::
 
 
 ::: details Test-Klappbox

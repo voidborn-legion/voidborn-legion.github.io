@@ -36,15 +36,15 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "![Synthetisches Testpixel – ausgetauschte Version](/images/uploads/6b1048f8a6d40bac0b29.png)",
+        "quote": "<!-- academy-screenshot:screenshot:e157e85b-6096-4e82-a1ed-fbd7c9b8de10 -->",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "6330938c63252636e78314ca41bb2b7f39f970f9",
         "baseBlobSha": "912521e5615c6aceaa9f884927c9e5d1d1b4a8ed"
       },
-      "status": "ready",
-      "assetId": "asset:5c26dc1e-feef-4b78-81e6-ad89983ff66f",
+      "status": "missing",
+      "assetId": null,
       "sourceIds": [],
       "history": [
         {
@@ -59,6 +59,13 @@
           "action": "image-uploaded",
           "actorId": "github:152614168",
           "at": "2026-10-24T03:30:38Z",
+          "note": ""
+        },
+        {
+          "id": "event:5ced4814-2ed8-4b04-86e1-630730698b4b",
+          "action": "image-restored-to-placeholder",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T03:30:54Z",
           "note": ""
         }
       ]
