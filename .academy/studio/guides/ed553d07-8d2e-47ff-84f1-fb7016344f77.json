@@ -52,5 +52,15 @@
       "history": []
     }
   ],
-  "tasks": []
+  "tasks": [
+    {
+      "id": "task:93f67bfc-f877-4dc3-a9ed-f8fc09829c2b",
+      "title": "TECHNISCHER TEST: Upload und Rücklesen prüfen",
+      "anchor": null,
+      "status": "open",
+      "kind": "general",
+      "sourceIds": [],
+      "history": []
+    }
+  ]
 }
