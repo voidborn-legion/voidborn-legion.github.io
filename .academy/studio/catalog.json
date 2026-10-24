@@ -165,6 +165,12 @@
       "path": "docs/guides/spielsysteme-import.md",
       "categoryId": "category:ausruestung",
       "lifecycle": "active"
+    },
+    {
+      "id": "guide:55333c8d-fee5-408c-be93-c8cc3767d18b",
+      "path": "docs/guides/leveling-archiv-import.md",
+      "categoryId": "category:leveling",
+      "lifecycle": "active"
     }
   ]
 }
