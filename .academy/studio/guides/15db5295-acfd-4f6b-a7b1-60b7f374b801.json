@@ -286,6 +286,26 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "comment:8d13e8d9-81ef-4a3e-8846-63296f5f64ed",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:53cc522e-1a46-4744-b0df-9e9a3e119b64",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "13ae4c79a7840dc55ff95c8f2e7cf3c4da82c27d",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar e48f9fc0-412e-4597-b6dc-122ffdeac487 | Autor Academy Editor | erstellt 2026-10-21T15:23:57.645Z | Originalstatus erledigt | Quellbeitrag 53cc522e-1a46-4744-b0df-9e9a3e119b64]\nGLOBAL VERIFIZIEREN: Questlog-Varianten widersprechen sich teils zur Portal-Öffnungsdauer (5 vs. 10 Minuten) und Uhrzeitdarstellung. Aktueller Global-Timer nennt 10 Minuten: https://questlog.gg/aion-2/spacetime-rift . Bitte im EU-Global-Client kontrollieren.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:42:22Z",
+      "updatedAt": "2026-10-24T11:42:22Z",
+      "history": []
     }
   ],
   "tasks": []
