@@ -127,6 +127,26 @@
       "createdAt": "2026-10-24T11:52:05Z",
       "updatedAt": "2026-10-24T11:52:05Z",
       "history": []
+    },
+    {
+      "id": "comment:1cd21bdc-b7e9-40f3-a24a-5de66e5a063c",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:8f077d82-a65c-4353-9c40-9f0514fca45a",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "8394f274df75e1c623e1a9a9e7abab1045cc2dd4",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar c25858c2-b1ae-4f26-944e-69330b2f2da2 | Autor Academy Editor | Datum 2026-10-22T00:08:19.013Z | Originalstatus offen | Quellbeitrag 8f077d82-a65c-4353-9c40-9f0514fca45a]\nNoch fachlich zu trennen: Manasteine vs. Seelensteine, genaue deutsche Menünamen, Einsetzen/Entfernen, Materialquellen und Rückgewinnungsregeln im EU-Client. Bis zur Bestätigung keine konkreten Kosten nennen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:52:13Z",
+      "updatedAt": "2026-10-24T11:52:13Z",
+      "history": []
     }
   ],
   "tasks": []
