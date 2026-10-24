@@ -244,6 +244,26 @@
       "createdAt": "2026-10-24T10:41:04Z",
       "updatedAt": "2026-10-24T10:41:04Z",
       "history": []
+    },
+    {
+      "id": "comment:671929a5-aa8d-4fd2-b8a4-66aab34cbbe9",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Für diese Rollen gibt es **noch keine bestätigten neun-Slot-Tabellen oder Slot-4-Stoppschwellen**.",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "33727775b97766d4bb96db6c1a11bec25495e60c",
+        "baseBlobSha": "d1bb742d7d2681d162a7caa9d0c30eaa3e8cb399"
+      },
+      "body": "[Import aus Discord-Studio | Originalkommentar edabc9e3-5511-4e4a-8dfb-8b9399402688 | Autor: Academy Editor | 2026-10-23T10:56:24.265Z | Status: offen]\nOffen: separate Rollen-Tabellen Tank (Templer), Heal (Kleriker) und Kantor Support/PvP. Nicht ungeprüft die DPS-Stoppschwellen übernehmen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T10:41:10Z",
+      "updatedAt": "2026-10-24T10:41:10Z",
+      "history": []
     }
   ],
   "tasks": [
