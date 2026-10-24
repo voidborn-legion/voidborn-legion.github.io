@@ -526,6 +526,26 @@
       "createdAt": "2026-10-24T11:45:07Z",
       "updatedAt": "2026-10-24T11:45:07Z",
       "history": []
+    },
+    {
+      "id": "comment:e4a2e20c-f3a0-4764-9731-69feea870cbd",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:063c52b0-2ce0-461e-97ee-b981bede7b03",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "9fa8c2eb51534fe76bdd00d4ee6365bc4205c279",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar efd72327-5a4d-4246-b8b8-d438f2e68496 | Autor Academy Editor | Datum 2026-10-21T18:45:27.268Z | Originalstatus offen | Quellbeitrag 063c52b0-2ce0-461e-97ee-b981bede7b03]\nRoadmap-Abgleich: neue Transzendenz-Stufen stimmen mit Global 1600/1900/2200/2500 überein. Die zwei vorhandenen Discord-Sprunglinks auf tatsächliche Zielbeiträge prüfen. Quelle https://lum.gg/aion-2/guides/transcendence-dungeons",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:45:34Z",
+      "updatedAt": "2026-10-24T11:45:34Z",
+      "history": []
     }
   ],
   "tasks": []
