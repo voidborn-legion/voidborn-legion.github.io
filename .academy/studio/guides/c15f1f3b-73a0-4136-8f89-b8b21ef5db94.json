@@ -247,6 +247,26 @@
       "createdAt": "2026-10-24T11:53:13Z",
       "updatedAt": "2026-10-24T11:53:13Z",
       "history": []
+    },
+    {
+      "id": "comment:9cc705ba-5455-4c9f-8d81-05009c1c9bcc",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:ff15b4fb-678c-492e-be99-655588fce0a4",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "b6eae043511c7730db11dd3d5da2997d74b1cac4",
+        "baseBlobSha": "a602bcb1b57fdeb052488b0a261851b762584339"
+      },
+      "body": "[Discord-Originalkommentar 6b0ca19a-25e6-4f08-adf2-86d8d8cf723a | Autor Academy Editor | Datum 2026-10-22T14:36:20.908Z | Originalstatus offen | Quellbeitrag ff15b4fb-678c-492e-be99-655588fce0a4]\nAUDIT – NOCH FEHLEN: eigenständiger Daevanion-Guide, Stigma-/Skill-Progression je Klasse, Shopvergleich aller Währungen, Ausrüstungstickets, vollständige Pantheon-Quellen. Bestehende Beiträge zuerst fachlich verifizieren, dann neue Themen anlegen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:54:30Z",
+      "updatedAt": "2026-10-24T11:54:30Z",
+      "history": []
     }
   ],
   "tasks": []
