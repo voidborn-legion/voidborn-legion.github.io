@@ -120,10 +120,18 @@
       "id": "task:93f67bfc-f877-4dc3-a9ed-f8fc09829c2b",
       "title": "TECHNISCHER TEST: Upload und Rücklesen prüfen",
       "anchor": null,
-      "status": "open",
+      "status": "done",
       "kind": "general",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:08b70c20-9b02-4e17-ac6a-b277671539d1",
+          "action": "task-status-changed",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T03:32:08Z",
+          "note": ""
+        }
+      ]
     }
   ]
 }
