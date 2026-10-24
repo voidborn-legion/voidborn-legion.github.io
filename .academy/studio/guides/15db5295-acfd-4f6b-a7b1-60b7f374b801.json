@@ -104,6 +104,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:8fda9002-9c8d-4749-b235-0ff0ec5e7491",
+      "title": "Screenshot: Gearscore und Daevanion",
+      "description": "Original-ID f580f6dc-ed26-42ff-b3eb-fcda2e4a6352; Quellbeitrag 759876da-6b50-4e85-9ca2-c246b5f21265. REDAKTION / SCREENSHOT: Charakterübersicht mit GS und Daevanion-Brett als nachvollziehbares Beispiel. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `f580f6dc-ed26-42ff-b3eb-fcda2e4a6352`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "473ec81a3df3097b7d7f587db5ee00ca54b2a2fb",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
