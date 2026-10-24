@@ -47,7 +47,8 @@ add('read_image','Return a stored Academy image as native image content for insp
 add('list_users','Administrator only: read Academy grants. Does not expose login secrets.',{},'users');
 add('set_user_access','Administrator only: set rights for a verified GitHub user ID, with revision protection. No new identity provider is implied.',{subject:str(100),expectedRevision:{type:'integer',minimum:0},grant:{type:'object'}},'grant',undefined,true);
 const ajv=new Ajv({allErrors:true,strict:false});const validators=new Map(tools.map(t=>[t.name,ajv.compile(t.inputSchema)]));
-export const toolDefinitions=tools.map(({action,...t})=>t);
+const securitySchemes=[{type:'oauth2',scopes:['academy']}];
+export const toolDefinitions=tools.map(({action,...t})=>({...t,securitySchemes,_meta:{...t._meta,securitySchemes}}));
 export async function callTool(name,args,ctx){
  const tool=tools.find(t=>t.name===name);if(!tool)throw new Error('Unbekanntes Academy-Werkzeug.');
  if(!validators.get(name)(args))throw new Error('Ungültige Werkzeugparameter.');
