@@ -224,6 +224,26 @@
       "createdAt": "2026-10-24T10:40:41Z",
       "updatedAt": "2026-10-24T10:40:41Z",
       "history": []
+    },
+    {
+      "id": "comment:2380e528-93a2-4d77-9229-86d4077e389c",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Insbesondere die Krit-Wertebereiche, LP-Prozentwerte und die exakten deutschen Bezeichnungen müssen überprüft werden.",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "a2e6fa9fd633471ffe4be480fcd0c3c6e824f36e",
+        "baseBlobSha": "d1bb742d7d2681d162a7caa9d0c30eaa3e8cb399"
+      },
+      "body": "[Import aus Discord-Studio | Originalkommentar bf563709-5904-49ee-b59d-889b031ea537 | Autor: Academy Editor | 2026-10-23T10:56:22.629Z | Status: offen]\nKritischer Treffer: Wertebereich fehlt noch. Ebenso genaue deutsche Bezeichnungen und Werte für LP%-Rolls und spezielle Schadensresistenz prüfen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T10:41:04Z",
+      "updatedAt": "2026-10-24T10:41:04Z",
+      "history": []
     }
   ],
   "tasks": [
