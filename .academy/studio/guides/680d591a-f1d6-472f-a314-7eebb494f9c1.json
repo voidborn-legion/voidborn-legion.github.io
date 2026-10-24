@@ -47,6 +47,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:85de2c4c-4959-4d3f-82b8-82b81907d751",
+      "title": "GS: Ausrüstung und Arkana vor/nach Upgrade",
+      "description": "Original-ID 640fbfe3-6899-46de-9683-396c4041c694; Quellbeitrag 50e7ddcd-7bbd-4189-9843-834e569dc7cf. Zwei vergleichbare Bilder: schwacher Gearslot + GS vor Wechsel und Ausrüstung/GS nach Vererbung. Tooltip mit Itemstufe und GS gut lesbar. Keine fremden Charakternamen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `640fbfe3-6899-46de-9683-396c4041c694`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "a7d45db2129806bf5ca199b7f0187d493486f7da",
+        "baseBlobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
