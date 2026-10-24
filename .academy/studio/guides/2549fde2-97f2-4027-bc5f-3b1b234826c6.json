@@ -66,6 +66,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:71de3ced-b1b8-483e-adff-1f73dc086b4f",
+      "title": "Screenshot: Tastenbelegung Fähigkeiten-Makro",
+      "description": "Original-ID f4b059fa-cb1c-4aa0-9bab-a28d2fb81829; Quellbeitrag 30cec269-9351-49c1-9d6a-fb7306b9469b. REDAKTION / SCREENSHOT: Tastenbelegung für Fähigkeitsmakro zeigen, Suchbegriff und belegte Taste markieren. Nach Einfügen vor Discord-Export Lesbarkeit und Version prüfen.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `f4b059fa-cb1c-4aa0-9bab-a28d2fb81829`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "75cd09eac5a414173781d90d2e815927d80cdce3",
+        "baseBlobSha": "6355ebacf25652354c47fb197695d94935012c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
