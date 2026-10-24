@@ -7,7 +7,7 @@ updated: '2026-10-24'
 ---
 # Technischer Funktionstest
 
-Dies ist ausschließlich ein technischer Test, kein AION-Guide.
+Dies ist ein vorübergehend bearbeiteter technischer Test, kein AION-Guide.
 
 ## Teststelle
 
