@@ -846,6 +846,26 @@
       "createdAt": "2026-10-24T11:49:00Z",
       "updatedAt": "2026-10-24T11:49:00Z",
       "history": []
+    },
+    {
+      "id": "comment:15300e0a-e624-4675-a513-1154f4a863f9",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "discord-source-message:063c52b0-2ce0-461e-97ee-b981bede7b03",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "59403af289ff2425899a48d35fe5776acff2aef0",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "body": "[Discord-Originalkommentar 5147ff73-660f-4bb2-b172-019b885ea0a5 | Autor Academy Editor | Datum 2026-10-22T07:28:20.891Z | Originalstatus offen | Quellbeitrag 063c52b0-2ce0-461e-97ee-b981bede7b03]\nNeue Referenz für Review: https://daevaguides.com/de/index.html und Charakter-Check https://daevaguides.com/de/postac/index.html. Tool (Beta) nutzt öffentliche NCSOFT Character Info für Skills/Stigmen/Daevanion/Gear und priorisierte Aufgaben; Skillpunkte werden teilweise geschätzt, Charakterdaten können verzögert sein. Startseite Datenstand 08.10.2026 – gegen 21.10. Ariel-/Skill-Update und aktuellen aion2-guides.info abgleichen. Als ergänzende Diagnose/Tools-Link aufnehmen, NICHT ungeprüft Empfehlungen kopieren. Nutzer beobachtet teilweise unstimmige Empfehlungen.",
+      "authorId": "github:152614168",
+      "status": "open",
+      "replies": [],
+      "createdAt": "2026-10-24T11:49:08Z",
+      "updatedAt": "2026-10-24T11:49:08Z",
+      "history": []
     }
   ],
   "tasks": []
