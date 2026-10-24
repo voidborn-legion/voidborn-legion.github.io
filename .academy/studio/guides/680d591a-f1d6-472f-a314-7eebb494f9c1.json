@@ -85,6 +85,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:07997428-83f4-49da-9591-30cdf2f0e92b",
+      "title": "Abyss: Artefakt/Korridor und AP-Shop",
+      "description": "Original-ID 69f9c302-a72f-4572-affa-329f6de94550; Quellbeitrag 49c1c2c5-9c9a-4ef1-9d76-97f39ee935c2. Karte der unteren Ebene mit drei Artefakten und Korridor-Eingang. Optional separater AP-Shop-Screenshot mit Stigma-Splitter-Preis, Kaufgrenze und Reset. Global-Version und Stand notieren.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `69f9c302-a72f-4572-affa-329f6de94550`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "27f1a431c87b0446051bb6ba394980243e967902",
+        "baseBlobSha": "2002816d0d845b7137ed937f2ece7a9061499c64"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [],
