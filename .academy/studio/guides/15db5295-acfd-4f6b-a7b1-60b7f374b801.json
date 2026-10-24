@@ -256,6 +256,25 @@
       "assetId": null,
       "sourceIds": [],
       "history": []
+    },
+    {
+      "id": "screenshot:7d9ac8a5-c84d-462e-a818-96788163f0ac",
+      "title": "Shugofesta – Schlüssellimit und tägliche Aufladung",
+      "description": "Originalbild aus Discord Studio, Quell-Bild-ID 974f2324-f2fe-47b6-8cfb-298447565765, Quellbeitrag e9ef3229-6f45-4669-a312-36d174b3a17f. Echte Originaldatei wird importiert. Motiv/Quelle gemäß Discord-Studio, kein Ersatzbild.",
+      "anchor": {
+        "kind": "text",
+        "sectionId": null,
+        "quote": "Discord-Bild-ID: `974f2324-f2fe-47b6-8cfb-298447565765`",
+        "prefix": "",
+        "suffix": "",
+        "targetId": null,
+        "baseCommitSha": "5cddecbe597dac82c9c5a2edb23091aeb6551ee0",
+        "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
+      },
+      "status": "missing",
+      "assetId": null,
+      "sourceIds": [],
+      "history": []
     }
   ],
   "comments": [
