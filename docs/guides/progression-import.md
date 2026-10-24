@@ -655,7 +655,12 @@ Bei einer Umwandlung beginnt die Verstärkung der neuen Stufe erneut. Prüfe die
 
 
 ::: info Originalbild noch nicht übertragen: Konvertierung Offenbarungsamulett
-Discord-Bild-ID: `adbefc1d-3861-4884-86a2-a054c1525fa6`; Beitrag: `07398320-0c5f-4bfb-a34a-8a1b238a4569`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
+Discord-Bild-ID: `adbefc1d-3861-4884-86a2-a054c1525fa6`
+
+![Konvertierung Offenbarungsamulett](/images/uploads/993f484f12deb6775614.jpg)
+
+Originalbild aus Discord-Studio, Beitrag 07398320-0c5f-4bfb-a34a-8a1b238a4569 – Inventar mit abgelegtem Gürtel oder Amulett und Option Konvertierung zeigen; idealerweise Vorher-/Nachher-Stufe.
+; Beitrag: `07398320-0c5f-4bfb-a34a-8a1b238a4569`. Originalbild ist im Quellsystem vorhanden, benötigt noch echte Bildbytes für die Übertragung.
 Inventar mit abgelegtem Gürtel oder Amulett und Option Konvertierung zeigen; idealerweise Vorher-/Nachher-Stufe.
 :::
 

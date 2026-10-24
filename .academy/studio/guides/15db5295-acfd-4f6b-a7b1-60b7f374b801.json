@@ -62,6 +62,15 @@
       "sourceIds": [],
       "rights": "",
       "sha256": "0b321129c8a883c0b387c6ad8eb30268348aaabb840a086c07157f33a6beb8ea"
+    },
+    {
+      "id": "asset:bf908f8e-fac6-4ecb-b0a6-92b321cc8289",
+      "path": "docs/public/images/uploads/993f484f12deb6775614.jpg",
+      "alt": "Konvertierung Offenbarungsamulett",
+      "caption": "Originalbild aus Discord-Studio, Beitrag 07398320-0c5f-4bfb-a34a-8a1b238a4569 – Inventar mit abgelegtem Gürtel oder Amulett und Option Konvertierung zeigen; idealerweise Vorher-/Nachher-Stufe.",
+      "sourceIds": [],
+      "rights": "",
+      "sha256": "993f484f12deb67756148bfa2550fa513e1faac8a4fbafa8b3cc9de8b9dd67e7"
     }
   ],
   "placeholders": [
@@ -461,17 +470,25 @@
       "anchor": {
         "kind": "text",
         "sectionId": null,
-        "quote": "Discord-Bild-ID: `adbefc1d-3861-4884-86a2-a054c1525fa6`",
+        "quote": "![Konvertierung Offenbarungsamulett](/images/uploads/993f484f12deb6775614.jpg)",
         "prefix": "",
         "suffix": "",
         "targetId": null,
         "baseCommitSha": "76ab1f6028c547056ebc0ca50a4a0fc4cf630f2e",
         "baseBlobSha": "367d2b58359db4b47da448961480a2003ea78778"
       },
-      "status": "missing",
-      "assetId": null,
+      "status": "ready",
+      "assetId": "asset:bf908f8e-fac6-4ecb-b0a6-92b321cc8289",
       "sourceIds": [],
-      "history": []
+      "history": [
+        {
+          "id": "event:91c7dfba-3b8d-4cbe-924e-414eef0212aa",
+          "action": "image-uploaded",
+          "actorId": "github:152614168",
+          "at": "2026-10-24T13:30:21Z",
+          "note": ""
+        }
+      ]
     }
   ],
   "comments": [
