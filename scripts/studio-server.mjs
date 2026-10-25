@@ -1,11 +1,12 @@
 // Local development gateway only. Never deploy this process as a public API.
 import { createServer } from 'node:http';
 import {readFileSync} from 'node:fs';
+import {roles} from '../services/studio-api/permissions.mjs';
 import { LocalGitRepository } from '../packages/academy-model/git-local.mjs';
 import { initializeWorkspace, readWorkspace, runCommand } from '../packages/academy-model/commands.mjs';
 const repo = new LocalGitRepository(process.cwd(),process.env.STUDIO_LOCAL_BRANCH||'draft/studio-pets-workspace');
 if(process.env.STUDIO_LOCAL_BASE)repo.initialize(process.env.STUDIO_LOCAL_BASE);
-function localState(){const state=readWorkspace(repo);const ref=repo.git(['rev-parse','origin/main']).trim();state.publication={head:ref,receipt:{},files:Object.fromEntries(repo.git(['ls-tree','-r',ref]).trim().split('\n').map(line=>{const [meta,path]=line.split('\t');return [path,meta.split(' ')[2]];}))};return state;}
+function localState(){const state=readWorkspace(repo);state.permissions=[...roles.editor];const ref=repo.git(['rev-parse','origin/main']).trim();state.publication={head:ref,receipt:{},files:Object.fromEntries(repo.git(['ls-tree','-r',ref]).trim().split('\n').map(line=>{const [meta,path]=line.split('\t');return [path,meta.split(' ')[2]];}))};return state;}
 const origin = 'http://127.0.0.1:4180';
 const server = createServer(async (req, res) => {
   res.setHeader('Cache-Control', 'no-store'); res.setHeader('X-Content-Type-Options', 'nosniff');

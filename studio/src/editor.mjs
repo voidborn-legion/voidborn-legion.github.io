@@ -41,3 +41,9 @@ export function extensions(imageSource = src => src) {
   const StudioImage=Image.extend({renderHTML({HTMLAttributes}){return ['img',{...HTMLAttributes,src:imageSource(HTMLAttributes.src)}];}});
   return [StarterKit.configure({ heading: { levels: [1,2,3] }, link: { openOnClick: false, protocols: ['https', 'http'] } }), TableKit.configure({ table: { resizable: false } }), StudioImage.configure({ allowBase64: false }), TaskList, TaskItem.configure({ nested: true }), AcademyBox, AcademyScreenshot, Markdown];
 }
+
+// Tiptap emits an update by default even when only access rights change.
+// Such UI updates must never create an unsaved document or block navigation.
+export function setEditorAccess(editor, editable) {
+  editor?.setEditable(editable, false);
+}

@@ -5,7 +5,7 @@ import { LayoutDashboard, BookOpen, Image, MessageSquare, ListChecks, Database, 
 import ContentLibrary from './ContentLibrary.vue';
 import SiteSettings from './SiteSettings.vue';
 import ReleaseReview from './ReleaseReview.vue';
-import { extensions } from './editor.mjs';
+import { extensions, setEditorAccess } from './editor.mjs';
 import { findEditorTarget, validateImageFile } from './targets.mjs';
 const nav = [{id:'dashboard',title:'Übersicht',icon:LayoutDashboard},{id:'guides',title:'Beiträge',icon:BookOpen},{id:'review',title:'Freigaben',icon:Check},{id:'site',title:'Website',icon:LayoutDashboard},{id:'users',title:'Benutzer & Rechte',icon:ListChecks},{id:'screenshots',title:'Medien',icon:Image},{id:'comments',title:'Kommentare',icon:MessageSquare},{id:'tasks',title:'Offene Aufgaben',icon:ListChecks},{id:'versions',title:'Versionen',icon:History}];
 const page = ref('dashboard'), state = ref(null), loading = ref(true), busy = ref(false), error = ref(''), notice = ref(''), query = ref(''), category = ref(''), chosen = ref('guide:pets'), dirty = ref(false), sourceMode = ref(false), source = ref(''), title = ref(''), dialog = ref(null), form = ref({}), diff = ref(''), includeDone = ref(false);
@@ -34,7 +34,7 @@ const allAssets = computed(()=>state.value?.snapshot.bundles.flatMap(b=>b.assets
 const label = s=>({missing:'Bild fehlt','needs-review':'Bitte prüfen',ready:'Vorhanden',archived:'Archiviert',open:'Offen','in-progress':'In Bearbeitung',done:'Erledigt',draft:'Entwurf',published:'Veröffentlicht',pending:'Noch prüfen',orientation:'Guide folgt',help:'Website-Hilfe',verified:'Geprüft',unverified:'Unbestätigt',conflicting:'Widersprüchlich'}[s]||s);
 const guideTitle = id=>state.value?.guides.find(g=>g.id===id)?.title||id;
 const matches = text=>!query.value||text.toLowerCase().includes(query.value.toLowerCase());
-const editor = useEditor({ extensions: extensions(imageSource), content: '', onUpdate:()=>{dirty.value=true;}, editorProps:{attributes:{'aria-label':'Guide-Inhalt',class:'guide-document'}} });
+const editor = useEditor({ extensions: extensions(imageSource), content: '', onUpdate:({transaction})=>{if(transaction.docChanged)dirty.value=true;}, editorProps:{attributes:{'aria-label':'Guide-Inhalt',class:'guide-document'}} });
 async function api(path, body) {
   const response=await fetch(apiOrigin+'/api/'+path,{method:body?'POST':'GET',headers:{...(body?{'Content-Type':'application/json'}:{}),...(session.value?{Authorization:'Bearer '+session.value}:{})},body:body?JSON.stringify(body):undefined});
   const result=await response.json(); if(!response.ok){const failure=new Error(result.error||'Die Verbindung ist fehlgeschlagen.');failure.status=response.status;throw failure;} return result;
@@ -57,7 +57,7 @@ async function signIn(){
  popup.location=apiOrigin+'/auth/start?challenge='+encodeURIComponent(challenge);
 }
 async function command(data){busy.value=true;error.value='';try{const saved=await api('command',{...data,expectedHead:state.value.head});state.value=saved.commitSha?await api('state'):saved;notice.value='Als Entwurf gespeichert. Nichts veröffentlicht.';return true;}catch(e){error.value=e.message;return false;}finally{busy.value=false;}}
-function setPage(id){if(dirty.value||siteDirty.value){error.value='Dein Text ist noch nicht gespeichert. Speichere ihn zuerst oder wähle „Änderungen verwerfen“.';return;}page.value=id;editOpen.value=false;if(id==='users')loadUsers();query.value='';diff.value='';location.hash=id;nextTick(()=>window.scrollTo({top:0,behavior:'instant'}));}
+function setPage(id){if(dirty.value||siteDirty.value){error.value='Dein Text ist noch nicht gespeichert. Speichere ihn zuerst oder wähle „Änderungen verwerfen“.';return;}error.value='';page.value=id;editOpen.value=false;if(id==='users')loadUsers();query.value='';diff.value='';location.hash=id;nextTick(()=>window.scrollTo({top:0,behavior:'instant'}));}
 async function openGuide(id){if(siteDirty.value||(dirty.value&&id!==chosen.value)){error.value='Bitte zuerst den aktuellen Text speichern.';return;}chosen.value=id;editOpen.value=true;page.value='guides';await nextTick();resetEditor();window.scrollTo({top:0,behavior:'instant'});}
 function resetEditor(){if(!selected.value||!editor.value)return;title.value=selected.value.title;source.value=selected.value.body;editor.value.commands.setContent(source.value,{contentType:'markdown',emitUpdate:false});dirty.value=false;}
 function switchMode(){if(sourceMode.value){editor.value.commands.setContent(source.value,{contentType:'markdown',emitUpdate:false});}else{source.value=dirty.value?editor.value.getMarkdown():selected.value.body;}sourceMode.value=!sourceMode.value;}
@@ -105,8 +105,8 @@ function trapDialog(event){if(!dialog.value)return;if(event.key==='Escape'){even
 function unload(event){if(dirty.value||siteDirty.value){event.preventDefault();event.returnValue='';}}
 onMounted(()=>{load();window.addEventListener('beforeunload',unload);window.addEventListener('keydown',trapDialog);});
 onBeforeUnmount(()=>{window.removeEventListener('beforeunload',unload);window.removeEventListener('keydown',trapDialog);});
-watch(()=>editor.value,()=>{editor.value?.setEditable(allowed('guide.edit'));if(selected.value)resetEditor();});
-watch(()=>state.value?.permissions,()=>editor.value?.setEditable(allowed('guide.edit')));
+watch(()=>editor.value,()=>{setEditorAccess(editor.value,allowed('guide.edit'));if(selected.value)resetEditor();});
+watch(()=>state.value?.permissions,()=>setEditorAccess(editor.value,allowed('guide.edit')));
 watch(()=>selected.value?.id,()=>{if(!dirty.value)nextTick(resetEditor);});
 watch(guideList,list=>{if(editOpen.value&&page.value==='guides'&&!dirty.value&&list.length&&!list.some(g=>g.id===chosen.value))openGuide(list[0].id);});
 watch([page,chosen],()=>{if(page.value==='versions')loadVersions();});

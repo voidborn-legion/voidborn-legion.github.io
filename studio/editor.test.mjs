@@ -2,8 +2,23 @@ import test from 'node:test';import assert from 'node:assert/strict';import {exe
 import {MarkdownManager} from '@tiptap/markdown';import {extensions} from './src/editor.mjs';
 import {getSchema} from '@tiptap/core';
 import {findEditorTarget,validateImageFile} from './src/targets.mjs';
+import {Editor} from '@tiptap/core';
+import {setEditorAccess} from './src/editor.mjs';
 const manager=new MarkdownManager({extensions:extensions()});
 const count=(node,type)=>Number(node.type===type)+(node.content||[]).reduce((n,c)=>n+count(c,type),0);
+
+test('loading or refreshing permissions never emits a document update; real typing still does',()=>{
+ const updates=[];
+ const editor=new Editor({element:null,extensions:extensions(),content:{type:'doc',content:[{type:'paragraph'}]},onUpdate:event=>updates.push(event.transaction.docChanged)});
+ try{
+  // Reproduce the dependency behavior responsible for the dashboard lock.
+  editor.setEditable(true);assert.deepEqual(updates,[false]);updates.length=0;
+  setEditorAccess(editor,false);setEditorAccess(editor,true);setEditorAccess(editor,true);
+  assert.deepEqual(updates,[]);
+  editor.commands.insertContent({type:'text',text:'An actual edit'});
+  assert.deepEqual(updates,[true]);
+ }finally{editor.destroy();}
+});
 test('the real Pets draft preserves boxes, tables, tasks and source IDs through the visual editor',()=>{
  const input=matter(execFileSync('git',['show','09919b170c8aadffa6ae67856efce23265e62ecd:docs/guides/pets.md'],{encoding:'utf8'})).content;
  const before=manager.parse(input),output=manager.serialize(before),after=manager.parse(output);
