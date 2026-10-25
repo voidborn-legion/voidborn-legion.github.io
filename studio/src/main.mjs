@@ -5,3 +5,5 @@ import '@fontsource/source-sans-3/600.css';
 import '@fontsource/cinzel/600.css';
 import './style.css';
 createApp(App).mount('#app');
+
+import './studio-red.css';

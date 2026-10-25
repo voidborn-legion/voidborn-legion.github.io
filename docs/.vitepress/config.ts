@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitepress'
-import categories from '../../data/categories.json'
 import { readFileSync, readdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { join } from 'node:path'
+import site from '../../data/site.json'
 
 const docsRoot = fileURLToPath(new URL('../', import.meta.url))
+const redesignPreview = process.env.ACADEMY_REDESIGN_PREVIEW === '1'
 function findDrafts(folder: string): string[] {
   return readdirSync(folder, { withFileTypes: true }).flatMap(entry => {
     if (entry.name.startsWith('.')) return []
@@ -12,7 +13,8 @@ function findDrafts(folder: string): string[] {
     if (entry.isDirectory()) return findDrafts(path)
     if (!entry.name.endsWith('.md')) return []
     const frontmatter = /^---\r?\n([\s\S]*?)\r?\n---/.exec(readFileSync(path,'utf8'))?.[1] || ''
-    return /^status:\s*['"]?draft['"]?\s*$/m.test(frontmatter) ? [path.slice(docsRoot.length).replaceAll('\\','/')] : []
+    const relative = path.slice(docsRoot.length).replaceAll('\\','/')
+    return /^status:\s*['"]?draft['"]?\s*$/m.test(frontmatter) && !(redesignPreview && relative === 'redaktion/ausruestung.md') ? [relative] : []
   })
 }
 
@@ -25,17 +27,14 @@ export default defineConfig({
   appearance: 'force-dark',
   lastUpdated: true,
   srcExclude: findDrafts(docsRoot),
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/crest.svg' }], ['meta', { name: 'theme-color', content: '#0b1017' }]],
+  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/voidborn-mark.svg' }], ['meta', { name: 'theme-color', content: '#0b0c0e' }]],
   themeConfig: {
-    logo: '/crest.svg',
-    siteTitle: 'VOIDBORN',
-    nav: [
-      { text: 'Academy', link: '/guides/' },
-      { text: 'Progression', link: '/guides/progression' },
-      { text: 'Pets & Spezies', link: '/guides/pets' },
-      { text: 'Checklisten', link: '/guides/checklisten' },
-    ],
-    sidebar: [{ text: 'Guides', items: [{ text: 'Übersicht', link: '/guides/' }, { text: 'So nutzt du die Academy', link: '/guides/academy-nutzen' }, ...categories.map(c => ({ text: c.title, link: `/guides/${c.slug}` }))] }],
+    redesignPreview,
+    site,
+    logo: '/voidborn-mark.svg',
+    siteTitle: site.brand,
+    nav: site.navigation,
+    sidebar: false,
     search: { provider: 'local', options: { locales: { root: { translations: { button: { buttonText: 'Academy durchsuchen', buttonAriaLabel: 'Academy durchsuchen' }, modal: { noResultsText: 'Keine passenden Guides gefunden.', resetButtonTitle: 'Suche zurücksetzen', backButtonTitle: 'Suche schließen', displayDetails: 'Details anzeigen', footer: { selectText: 'öffnen', navigateText: 'navigieren', closeText: 'schließen' } } } } } } },
     outline: { label: 'Auf dieser Seite', level: [2, 3] },
     docFooter: { prev: 'Vorheriger Guide', next: 'Nächster Guide' },
@@ -43,9 +42,9 @@ export default defineConfig({
     returnToTopLabel: 'Nach oben',
     darkModeSwitchLabel: 'Darstellung',
     lastUpdated: { text: 'Aktualisiert' },
-    footer: { message: 'Ein unabhängiges Fanprojekt der Voidborn-Legion. Nicht mit NCSOFT verbunden.', copyright: 'AION 2 und zugehörige Marken gehören ihren jeweiligen Rechteinhabern.' }
+    footer: site.footer
   },
   transformPageData(page) {
-    if (page.frontmatter.status === 'draft') throw new Error(`Unveröffentlichter Entwurf im öffentlichen Build: ${page.relativePath}`)
+    if (page.frontmatter.status === 'draft' && !(redesignPreview && page.relativePath === 'redaktion/ausruestung.md')) throw new Error(`Unveröffentlichter Entwurf im öffentlichen Build: ${page.relativePath}`)
   }
 })

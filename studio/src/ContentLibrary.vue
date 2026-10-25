@@ -1,0 +1,16 @@
+<script setup>
+import {computed,ref} from 'vue';
+import {Search,ArrowUpRight,BookOpen} from '@lucide/vue';
+const props=defineProps({state:Object,reviewOnly:Boolean});const emit=defineEmits(['open']);
+const query=ref(''),filter=ref('all'),topic=ref('');
+function status(g){const live=props.state.publication;if(!live)return 'unknown';if(!live.files[g.path])return 'draft';return [live.files[g.path],live.receipt?.[g.path]].includes(g.blobSha)?'online':'changed';}
+const labels={draft:'Noch nicht veröffentlicht',online:'Online · aktuell',changed:'Online · Änderungen im Entwurf',unknown:'Online-Stand nicht verfügbar'};
+const items=computed(()=>props.state.guides.filter(g=>(props.reviewOnly?g.lifecycle!=='archived'&&!!g.frontmatter.reviewRequest&&status(g)!=='online':filter.value==='archived'?g.lifecycle==='archived':g.lifecycle!=='archived')&&(!query.value||g.title.toLocaleLowerCase().includes(query.value.toLocaleLowerCase()))&&(!topic.value||g.categoryId===topic.value)&&(filter.value==='all'||filter.value==='archived'||filter.value==='review'?filter.value!=='review'||!!g.frontmatter.reviewRequest&&status(g)!=='online':status(g)===filter.value)));
+const topicName=g=>{const c=props.state.snapshot.catalog.categories.find(c=>c.id===g.categoryId);return props.state.categories.find(x=>x.slug===c?.slug)?.title||'Ohne Thema';};
+</script>
+<template>
+ <div class="library-tools"><label class="search-field"><Search :size="18"/><input v-model="query" placeholder="Beitrag suchen" aria-label="Beitrag suchen"></label><label>Thema<select v-model="topic"><option value="">Alle Themen</option><option v-for="c in state.snapshot.catalog.categories" :value="c.id">{{state.categories.find(x=>x.slug===c.slug)?.title||c.slug}}</option></select></label></div>
+ <div v-if="!reviewOnly" class="status-tabs" role="group" aria-label="Beiträge filtern"><button v-for="f in [{id:'all',text:'Alle Beiträge'},{id:'draft',text:'Nur Entwürfe'},{id:'changed',text:'Änderungen offen'},{id:'online',text:'Online'},{id:'review',text:'Zur Freigabe'},{id:'archived',text:'Archiv'}]" :aria-pressed="filter===f.id" @click="filter=f.id">{{f.text}}</button></div>
+ <div class="library-list"><div class="library-columns"><span>Beitrag / Thema</span><span>Veröffentlichung</span><span>Redaktion</span></div><button v-for="g in items" :key="g.id" class="library-row" @click="emit('open',g.id)"><span><strong>{{g.title}}</strong><small>{{topicName(g)}}</small></span><span class="publication-state" :data-state="status(g)">{{labels[status(g)]}}<small v-if="g.lifecycle==='archived'">Im Studio archiviert</small></span><span>{{g.frontmatter.reviewRequest&&status(g)!=='online'?'Freigabe angefragt':g.review==='pending'?'Fachliche Prüfung offen':'Keine Freigabe angefragt'}}<ArrowUpRight :size="16"/></span></button><div v-if="!items.length" class="empty"><BookOpen :size="28"/><h2>{{reviewOnly?'Keine Freigaben angefragt':'Keine passenden Beiträge'}}</h2><p>{{reviewOnly?'Gespeicherte Beiträge lassen sich im Editor zur Freigabe einreichen.':'Ändere die Suche oder den Filter.'}}</p></div></div>
+ <p class="muted library-explanation">„Online“ bezieht sich auf den Veröffentlichungsbranch. Nach dem Veröffentlichen baut GitHub die Website neu auf. „Entwurf speichern“ ändert die öffentliche Fassung nicht.</p>
+</template>

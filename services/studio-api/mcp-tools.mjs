@@ -16,9 +16,14 @@ add('list_comments','Read colleague feedback separately from screenshot notes. F
 add('list_screenshots','Read screenshots and missing placeholders, their notes, and asset metadata.',{guideId},'screenshots',[]);
 add('list_tasks','Read open and completed editorial tasks.',{guideId},'tasks',[]);
 add('list_sources','Read source references; no automatic claim of verification.',{},'sources');
+add('read_site','Read draft homepage text, image and navigation. These settings are not the published website.',{},'site');
+add('publication_status','Read the main publication branch revision and per-file versions. A main commit still requires a successful Pages build before it is live.',{},'publication');
+add('import_site_image','Import real PNG/JPEG/WebP bytes, up to 2 MiB, as the draft homepage image. No publication.',{expectedHead:head,base64:str(MAX_IMAGE_BASE64),alt:{type:'string',maxLength:500}},'site.image',undefined,true);
 add('guide_history','Read previous versions of one permitted guide.',{guideId},'history');
 add('guide_diff','Compare a previous immutable revision with the current guide.',{guideId,before:head},'diff');
 const commands=[
+ ['save_site','Save validated homepage, navigation and footer settings as a draft. Read site and current revision first.',{site:{type:'object'}},'site.save'],
+ ['submit_guide','Submit the exact saved draft for administrator review. Does not publish.',{guideId},'guide.submit'],
  ['save_guide','Replace a guide body with exact Markdown. Preserves frontmatter and saves a draft.',{guideId,title:str(160),body:{type:'string',maxLength:500000}},'guide.save'],
  ['create_guide','Create a new draft guide; optionally assign its topic.',{slug:str(61),title:str(160),categoryId:{anyOf:[id,{type:'null'}]}},'guide.create',['slug','title']],
  ['rename_guide_file','Rename a guide file and repair known relative links.',{guideId,slug:str(61)},'guide.move'],
@@ -64,6 +69,8 @@ export async function callTool(name,args,ctx){
  if(tool.action==='read')return {head:state.head,guide:visible.guides.find(g=>g.id===args.guideId),bundle:visible.snapshot.bundles.find(b=>b.guideId===args.guideId)||null};
  if(['comments','screenshots','tasks'].includes(tool.action)){const field={comments:'comments',screenshots:'placeholders',tasks:'tasks'}[tool.action];return {head:state.head,items:visible.snapshot.bundles.filter(b=>!args.guideId||b.guideId===args.guideId).flatMap(b=>b[field].map(i=>({...i,guideId:b.guideId}))),...(field==='placeholders'?{assets:visible.snapshot.bundles.flatMap(b=>b.assets)}:{})};}
  if(tool.action==='sources')return {head:state.head,sources:visible.snapshot.sources};
+ if(tool.action==='publication'){if(ctx.grant.guideIds!==null&&ctx.grant.guideIds!==undefined)throw new Error('Veröffentlichungsübersicht benötigt globalen Zugriff.');return ctx.publication();}
+ if(tool.action==='site'){if(ctx.grant.guideIds!==null&&ctx.grant.guideIds!==undefined)throw new Error('Seiteneinstellungen benötigen globalen Zugriff.');return {head:state.head,site:state.site,published:false};}
  if(tool.action==='history')return ctx.history(args.guideId);
  if(tool.action==='diff')return ctx.diff(args.guideId,args.before);
  if(tool.action==='image'){const asset=visible.snapshot.bundles.find(b=>b.guideId===args.guideId)?.assets.find(a=>a.id===args.assetId);if(!asset)throw new Error('Bild nicht freigegeben.');return ctx.image(asset,state.head);}

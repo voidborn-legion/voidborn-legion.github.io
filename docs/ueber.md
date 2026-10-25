@@ -12,11 +12,11 @@ Hier entsteht die Website zu unserer AION 2 Academy im Discord. Wir wollen die G
 
 ## Was du hier schon findest
 
-Du kannst die Themenstruktur, Suche und [eine Beispielseite](/guides/academy-nutzen) ausprobieren. Die Spielguides selbst liegen bisher im Discord und sind hier noch nicht übernommen.
+Du kannst die Themenstruktur, Suche und [eine Beispielseite](/guides/academy-nutzen) ausprobieren. Die importierten Spielguides werden im Academy Studio überarbeitet. Auf der öffentlichen Website stehen noch nicht alle vollständigen Beiträge.
 
 ## Was als Nächstes folgt
 
-Wir übernehmen die Beiträge mit ihren Bildern und Quellen. Offene Fragen prüfen wir vor der Veröffentlichung. Empfehlungen der Academy werden als Empfehlungen gekennzeichnet.
+Wir bereiten die importierten Beiträge mit ihren Bildern und Quellen für die Website auf. Offene Fragen prüfen wir vor der Veröffentlichung. Empfehlungen der Academy werden als Empfehlungen gekennzeichnet.
 
 Die vorhandene Discord-Academy bleibt währenddessen erhalten.
 

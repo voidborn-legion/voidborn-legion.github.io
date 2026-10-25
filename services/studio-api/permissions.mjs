@@ -1,11 +1,11 @@
 // Shared authorization policy for Studio HTTP actions and Academy MCP tools.
 // Never derive privileges from a display name, unverified email or repository visibility.
-export const permissions = ['draft.read','comment.write','comment.moderate','guide.create','guide.edit','guide.organize','guide.archive','image.write','task.write','version.restore','source.write','user.manage'];
+export const permissions = ['draft.read','comment.write','comment.moderate','guide.create','guide.edit','guide.organize','guide.archive','image.write','task.write','version.restore','source.write','site.edit','content.publish','user.manage'];
 export const roles = {
  player: [], reader: ['draft.read'],
  commentator: ['draft.read','comment.write'],
  author: ['draft.read','comment.write','guide.create','guide.edit','image.write','task.write'],
- editor: permissions.filter(p=>p!=='user.manage'), administrator: [...permissions]
+ editor: permissions.filter(p=>!['user.manage','content.publish'].includes(p)), administrator: [...permissions]
 };
 export function normalizeGrant(input) {
  if(!input || !Object.hasOwn(roles,input.role))throw new Error('Unknown role');
@@ -22,6 +22,7 @@ export function can(grant,permission,guideId=null) {
 }
 export function requirePermission(grant,permission,guideId=null){if(!can(grant,permission,guideId)){const error=new Error('Für diese Aktion fehlt die Academy-Berechtigung.');error.status=403;throw error;}}
 export const commandPermissions={
+ 'site.save':'site.edit','site.image':'site.edit','guide.submit':'guide.edit',
  'guide.save':'guide.edit','guide.create':'guide.create','guide.archive':'guide.archive','guide.move':'guide.organize','guide.assign':'guide.organize','guide.reorder':'guide.organize','guide.restore':'version.restore','guide.migrate-tasks':'task.write',
  'comment.add':'comment.write','comment.reply':'comment.write','comment.status':'comment.moderate',
  'task.add':'task.write','task.status':'task.write',
@@ -29,13 +30,14 @@ export const commandPermissions={
  'category.create':'guide.organize','category.rename':'guide.organize','category.reorder':'guide.organize','source.save':'source.write'
 };
 export function commandGuideIds(input,state){
- if(input.guideId)return [input.guideId];
  if(input.id){const b=state.snapshot.bundles.find(b=>[...b.comments,...b.tasks,...b.placeholders,...b.assets].some(x=>x.id===input.id));if(b)return [b.guideId];throw new Error('Zielobjekt nicht gefunden.');}
+ if(input.guideId)return [input.guideId];
  return [];
 }
 export function authorizeCommand(grant,input,state){
  const permission=commandPermissions[input.op];if(!permission)throw new Error('Aktion ist nicht für den Academy-Dienst freigegeben.');
  requirePermission(grant,permission);
+ if(['site.save','site.image','category.create','category.rename','category.reorder','guide.reorder','source.save'].includes(input.op)&&grant.guideIds!==null&&grant.guideIds!==undefined)throw new Error('Diese Aktion benötigt Zugriff auf die gesamte Academy.');
  if(input.op==='screenshot.reuse'){const source=state.snapshot.bundles.find(b=>b.assets.some(a=>a.id===input.assetId));if(!source)throw new Error('Bild nicht gefunden.');requirePermission(grant,'draft.read',source.guideId);}
  const ids=commandGuideIds(input,state);for(const id of ids)requirePermission(grant,permission,id);
  // Whole-catalog actions and creating guides are deliberately unavailable to scoped grants.
@@ -50,5 +52,6 @@ export function visibleState(state,grant){
   const collect=(field,predicate)=>out.snapshot.bundles.flatMap(b=>b[field].filter(predicate).map(i=>({...i,guideId:b.guideId,document:b.document})));
   out.dashboard={missingScreenshots:collect('placeholders',p=>['missing','needs-review'].includes(p.status)),openComments:collect('comments',c=>c.status!=='done'),openTasks:collect('tasks',t=>t.status!=='done')};
  }
+ if(grant.guideIds!==null&&grant.guideIds!==undefined){delete out.site;delete out.publication;}
  out.permissions=permissions.filter(p=>can(grant,p));out.studioAccess=true;return out;
 }

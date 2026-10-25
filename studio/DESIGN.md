@@ -2,20 +2,20 @@
 name: Voidborn Academy Studio
 description: Redaktionelle Arbeitsfläche im nächtlichen Legionsatlas
 colors:
-  gold: "#d7b777"
-  gold-hover: "#ebd1a0"
-  night: "#0c1118"
-  navigation: "#101720"
-  surface: "#121a24"
-  raised: "#18222d"
-  ivory: "#eeeae2"
-  muted: "#adb8c6"
-  line: "#293341"
+  gold: "#ed7869"
+  gold-hover: "#f29b8f"
+  night: "#0b0c0e"
+  navigation: "#101113"
+  surface: "#141517"
+  raised: "#1a1b1e"
+  ivory: "#eeece7"
+  muted: "#b7b5b4"
+  line: "#2a2b2e"
   action-ink: "#151b22"
-  field: "#141e29"
-  field-border: "#414d5c"
-  selected: "#29271f"
-  selected-text: "#f0d7a4"
+  field: "#141517"
+  field-border: "#48494d"
+  selected: "#291a19"
+  selected-text: "#f29b8f"
   warning: "#29251e"
   warning-text: "#e5cb9d"
   error: "#312020"
@@ -153,3 +153,12 @@ Die ergänzten Arbeitskonventionen wurden aus dem Quelltext erfasst. Eine erneut
 - Don't eine Veröffentlichung oder freigeschaltete GitHub-Anmeldung suggerieren, wenn sie nicht verfügbar ist.
 - Don't ungeprüfte Spielwerte als bestätigt darstellen.
 - Don't Cinzel für Arbeitsinhalte verwenden oder die öffentliche Website aus diesem Dokument umgestalten.
+
+
+## Bestätigte Überarbeitung vom 25. Oktober 2026
+
+Das freigegebene rote Voidborn-Theme der öffentlichen Website ist die gemeinsame visuelle Autorität. Diese Entscheidung ersetzt die früheren Gold-/Nachtatlas-Vorgaben oben. Cinzel kennzeichnet die Marke und Dokumenttitel; die übrige Arbeitsoberfläche verwendet Source Sans 3. Hauptnavigation 228px, Inhaltsbereich bis 1560px; unter 1180px eine schmalere Navigation, unter 760px eine horizontal scrollende Navigationsreihe.
+
+Beiträge öffnen zuerst als durchsuchbare Liste. Der Veröffentlichungsbranch und sein Build sind vom gespeicherten Entwurf und von der fachlichen Prüfung getrennt. Erst das Öffnen eines Beitrags zeigt den bestehenden Tiptap-Editor mit visueller Ansicht, Markdown, Tabellen, Boxen und Bildplatzhaltern. Kommentare sind optional aufklappbar. Versionen bleiben eigenständig erreichbar.
+
+Website verwaltet Startseitenbild, Texte, Navigation und Footer über validierte gemeinsame Einstellungen. Vorschau und Veröffentlichung sind eigene Schritte. Content-Publishing ist ein Adminrecht; Einreichen benötigt Bearbeitungsrecht. Benutzerverwaltung bleibt geschützt und nutzt bestehende GitHub-Grants. Keine Änderung an Discord-/E-Mail-Anmeldung.

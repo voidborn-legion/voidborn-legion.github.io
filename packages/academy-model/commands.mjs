@@ -1,6 +1,7 @@
 import { randomUUID, createHash } from 'node:crypto';
 import matter from 'gray-matter';
 import {decodeImageBase64} from './image-file.mjs';
+import {defaultSite,sitePath,validateSite} from './site.mjs';
 import { validateSnapshot, dashboard, resolveAnchor, addComment, replyToComment, setTaskStatus, assignAsset } from './index.mjs';
 const json = value => JSON.stringify(value, null, 2) + '\n';
 const uid = prefix => `${prefix}:${randomUUID()}`;
@@ -21,7 +22,8 @@ export function readWorkspace(repo) {
     const raw = repo.read(guide.path, head); const { data, content } = matter(raw);
     return { ...guide, title: data.title || guide.id, status: data.status, review: data.review, body: content, frontmatter: data, blobSha: repo.blob(guide.path, head), versions: repo.history(guide.path) };
   });
-  return { head, branch: repo.branch, snapshot, categories, guides, dashboard: dashboard(snapshot), mode: 'local-only', publishEnabled: false };
+  const site=repo.list('data',head).includes(sitePath)?validateSite(read(sitePath)):structuredClone(defaultSite);
+  return { head, branch: repo.branch, snapshot, categories, guides, site, dashboard: dashboard(snapshot), mode: 'local-only', publishEnabled: false };
 }
 export function initializeWorkspace(repo) {
   const head = repo.initialize();
@@ -54,6 +56,17 @@ export function runCommand(repo, input, actorId = 'local-owner') {
     return value;
   };
   switch (input.op) {
+    case 'site.save': files[sitePath]=json(validateSite(input.site)); break;
+    case 'site.image': {
+      const {bytes,extension}=decodeImageBase64(input.base64);
+      const hash=createHash('sha256').update(bytes).digest('hex').slice(0,20),path=`docs/public/images/uploads/${hash}.${extension}`;
+      const site=structuredClone(state.site);site.home.image='/'+path.slice('docs/public/'.length);site.home.imageAlt=typeof input.alt==='string'?input.alt.slice(0,500):'';
+      files[path]=bytes;files[sitePath]=json(validateSite(site));break;
+    }
+    case 'guide.submit': {
+      needGuide(); if(guide.lifecycle==='archived')throw new Error('Archivierte Beiträge können nicht eingereicht werden.');
+      files[guide.path]=matter.stringify(guide.body,{...guide.frontmatter,status:'draft',reviewRequest:{at:now(),actor:actorId}});break;
+    }
     case 'guide.migrate-tasks': {
       needGuide();const b=bundleFor();
       const legacy=/\n## Redaktionelle Prüfliste\n([\s\S]*?)(?=\n## |$)/.exec(guide.body);
@@ -72,7 +85,7 @@ export function runCommand(repo, input, actorId = 'local-owner') {
     }
     case 'guide.save': {
       needGuide(); if (typeof input.body !== 'string' || input.body.length > 500000) throw new Error('Ungültiger Guide-Text.');
-      const metadata = { ...guide.frontmatter, title: requireText(input.title, 'Titel', 160), updated: now().slice(0, 10), status: 'draft' };
+      const metadata = { ...guide.frontmatter, title: requireText(input.title, 'Titel', 160), updated: now().slice(0, 10), status: 'draft',reviewRequest:null };
       files[guide.path] = matter.stringify(input.body, metadata); break;
     }
     case 'guide.create': {
@@ -205,6 +218,9 @@ export function runCommand(repo, input, actorId = 'local-owner') {
     }
     case 'game.save': snapshot.gameValues = input.records.map(record=>({...record,publication:'draft'})); break;
     default: throw new Error('Unbekannte Studio-Aktion.');
+  }
+  if(input.op!=='guide.submit')for(const path of Object.keys(files).filter(p=>p.startsWith('docs/guides/')&&p.endsWith('.md')&&files[p]!==null)){
+    const doc=matter(files[path]);if(doc.data.reviewRequest){doc.data.reviewRequest=null;files[path]=matter.stringify(doc.content,doc.data);}
   }
   validateSnapshot(snapshot);
   if(JSON.stringify(snapshot.catalog)!==JSON.stringify(state.snapshot.catalog))files['.academy/studio/catalog.json'] = json(snapshot.catalog);

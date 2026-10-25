@@ -1,10 +1,10 @@
 import {oauthRoute,mcpGithubCallback} from './mcp-oauth.mjs';
 import {handleMcp} from './mcp.mjs';
-import {grantFor} from './grants.mjs';
+import {grantFor,listGrants,saveGrant} from './grants.mjs';
 import {authorizeCommand,visibleState,requirePermission} from './permissions.mjs';
 import {installationToken} from './github-app.mjs';
 import { randomSecret,digest,challenge,seal,open,validateOrigin,validateBranch } from './security.mjs';
-import { assertPermission,remoteWorkspace,remoteCommand,historyRemote,diffRemote } from './github.mjs';
+import { assertPermission,remoteWorkspace,remoteCommand,historyRemote,diffRemote,publicationRemote,publishRemote } from './github.mjs';
 const age=seconds=>Math.floor(Date.now()/1000)+seconds;
 const reply=(value,status=200,headers={})=>new Response(JSON.stringify(value),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff',...headers}});
 const ready=env=>{if(!env.DB||!env.GITHUB_CLIENT_ID||!env.GITHUB_CLIENT_SECRET||!env.TOKEN_KEY||!env.STUDIO_ORIGIN||!env.API_ORIGIN)throw new Error('Studio-Anmeldung ist noch nicht eingerichtet.');validateBranch(env.DRAFT_BRANCH);};
@@ -55,7 +55,14 @@ export default {async fetch(request,env){
   const grant=await grantFor(env,session.actor);
   requirePermission(grant,'draft.read');
   const token=await installationToken(env);
-  if(url.pathname==='/api/state'&&request.method==='GET'){return reply(visibleState((await remoteWorkspace(token,env.DRAFT_BRANCH)).state,grant),200,cors);}
+  if(url.pathname==='/api/state'&&request.method==='GET'){const state=(await remoteWorkspace(token,env.DRAFT_BRANCH)).state;state.publication=await publicationRemote(token);state.publishEnabled=true;return reply(visibleState(state,grant),200,cors);}
+  if(url.pathname==='/api/users'&&request.method==='GET')return reply({users:await listGrants(env,session.actor)},200,cors);
+  if(url.pathname==='/api/users'&&request.method==='POST'){requirePermission(grant,'user.manage');if(!request.headers.get('Content-Type')?.startsWith('application/json'))throw new Error('JSON erforderlich.');return reply(await saveGrant(env,session.actor,await request.json()),200,cors);}
+  if(url.pathname==='/api/publish'&&request.method==='POST'){
+   requirePermission(grant,'content.publish');if(grant.guideIds!==null&&grant.guideIds!==undefined)throw new Error('Veröffentlichen benötigt globalen Zugriff.');
+   if(!request.headers.get('Content-Type')?.startsWith('application/json'))throw new Error('JSON erforderlich.');
+   return reply(await publishRemote(token,env.DRAFT_BRANCH,await request.json(),session.actor),200,cors);
+  }
   if(url.pathname==='/api/history'&&request.method==='GET'){requirePermission(grant,'draft.read',url.searchParams.get('guide'));return reply({versions:await historyRemote(token,env.DRAFT_BRANCH,url.searchParams.get('guide'))},200,cors);}
   if(url.pathname==='/api/diff'&&request.method==='GET'){requirePermission(grant,'draft.read',url.searchParams.get('guide'));return reply({diff:await diffRemote(token,env.DRAFT_BRANCH,url.searchParams.get('guide'),url.searchParams.get('before'))},200,cors);}
   if(url.pathname==='/api/command'&&request.method==='POST'){
