@@ -28,7 +28,6 @@ Dieser Guide begleitet dich bis Level 45 und erklärt die wichtigsten Spielsyste
 
 💡 **Unser Tipp:** Beide Guides sind Orientierungshilfen. Vergleiche die Vorschläge und probiere aus, was sich mit deiner Klasse gut spielt. Bei Fragen helfen Mentoren und andere Mitglieder in unserer **Q&A-Section**.
 
-*Die Screenshots und weitere Details ergänzen wir nach und nach.*
 
 ## 🗺️ 1 | HAUPTQUESTS & NEBENQUESTS
 **Gelbe Quests – Hauptgeschichte**
@@ -71,7 +70,7 @@ Shugofesta wird bereits während des Levelns relevant (je nach Storyfortschritt 
 • Ist der Speicher voll, gehen weitere Aufladungen verloren.
 • Bei niedriger Stufe kann es sinnvoll sein, Schlüssel für bessere spätere Belohnungen aufzuheben – **aber rechtzeitig Platz schaffen**, bevor du das Cap erreichst.
 
-🎯 Schau regelmäßig auf deinen Schlüsselvorrat. Den Ablauf, Shop und die Preisstaffeln findest du im **📈・progression-guide**. Eine Reset-Checkliste gibt es in **📅・daily-weekly-checkliste**.
+🎯 Schau regelmäßig auf deinen Schlüsselvorrat. Den Ablauf, Shop und die Preisstaffeln findest du im **📈・progression-guide**. Eine Reset-Checkliste gibt es in **[Daily & Weekly](./checklisten)**.
 
 ## 🏰 WÄHREND DES LEVELNS | DAILY DUNGEONS
 
@@ -82,7 +81,7 @@ Die Daily Dungeons kannst du schon **vor Level 45** freischalten. Sie liefern un
 • **Wichtig:** Vor dem **Wochenreset am Mittwoch** alle verbleibenden Durchläufe nutzen, die sonst verfallen würden – auch wenn deine Punktzahl noch nicht optimal ist.
 • Im Dungeonmenü siehst du deinen verbleibenden Zähler.
 
-💡 **Strategie:** Erst weiterleveln, dann mit besserem GS laufen – spätestens vor dem Reset aber die restlichen Versuche verbrauchen. Details im **📈・progression-guide**, Checkliste in **📅・daily-weekly-checkliste**.
+💡 **Strategie:** Erst weiterleveln, dann mit besserem GS laufen – spätestens vor dem Reset aber die restlichen Versuche verbrauchen. Details im **📈・progression-guide**, Checkliste in **[Daily & Weekly](./checklisten)**.
 
 ## ❓ 2 | VERSIEGELTE DUNGEONS & GARNISONEN
 Beide Aktivitäten erscheinen auf der Weltkarte zunächst als **Fragezeichen**. Nach ihrer Entdeckung werden unterschiedliche Symbole angezeigt.
@@ -337,4 +336,3 @@ Wir erklären unter anderem:
 Schreib in die **Q&A-Section** der Gilde. Unsere Mentoren und andere Mitglieder helfen dir gerne bei Fragen zu deiner Klasse oder Progression.
 
 *Guide für AION 2 Global · Stand: Oktober 2026*
-*Weitere Inhalte und Screenshots werden ergänzt.*
