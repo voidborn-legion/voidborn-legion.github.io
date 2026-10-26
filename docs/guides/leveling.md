@@ -264,7 +264,7 @@ Weitere anschauliche Beispiele: https://wakayashi.gg/aion2#class-guides
 Die vollständige PvE-Optimierung behandeln wir später im **Progression-Guide**.
 
 **FRAGEN ZU DEINER KLASSE ODER HOTBAR?**
-Schreib einfach in unsere **Q&A-Section** auf Discord. Ein Mentor oder andere Gildenmitglieder helfen dir gerne dabei, eine Belegung zu finden, die zu deiner Klasse und Spielweise passt.
+Bei Fragen zu deiner Belegung kannst du dich mit anderen Spielern deiner Klasse austauschen. Vergleiche dabei immer die Anforderungen von PvE und PvP.
 
 ## 🪽 6 | FEDERN & MONOLITH
 
