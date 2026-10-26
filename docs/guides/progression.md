@@ -11,13 +11,13 @@ reviewRequest: null
 Hier erfährst du, wie du deinen **Gearscore (GS)** erhöhst und neue Inhalte freischaltest.
 
 **ZUERST: WIEDERKEHRENDE AKTIVITÄTEN**
-Direkt nach dieser Übersicht findest du **Shugofesta** und **Albtraum** samt Shops und Screenshots. Sie stehen bewusst vor der GS-Roadmap: Die Vorräte laden sich täglich auf und sollten nicht dauerhaft am Cap liegen. **Shugofesta beginnt bereits während des Levelns**; siehe auch **📖・leveling-guide**. Alle Reset-Aufgaben stehen in **📅・daily-weekly-checkliste**.
+Direkt nach dieser Übersicht findest du **Shugofesta** und **Albtraum** samt Shops und Screenshots. Sie stehen bewusst vor der GS-Roadmap: Die Vorräte laden sich täglich auf und sollten nicht dauerhaft am Cap liegen. **Shugofesta beginnt bereits während des Levelns**; siehe auch **[Leveling](./leveling)**. Alle Reset-Aufgaben stehen in **[Daily & Weekly](./checklisten)**.
 
 ## 🗺️ PROGRESSION-ROADMAP
-**[45 → 1.000 GS](https://discord.com/channels/1561797013379751996/1562407310544871505/1562410380049907723)**
+**45 → 1.000 GS**
 Story, Regionsquests, Daily Dungeons, Verstärkung und Riss-Quests
 
-**[1.000 → 1.400 GS](https://discord.com/channels/1561797013379751996/1562407310544871505/1562417739702730785)**
+**1.000 → 1.400 GS**
 Abyss, Draupnir, Gürtel & Amulett und Ausrüstungsverbesserungen
 
 **WEITERE KAPITEL IN DIESEM GUIDE**
@@ -446,7 +446,7 @@ Prüfe diese Schritte der Reihe nach, bevor du teure Verstärkungen erzwingst.
 • Fehlende GS anschließend über Gravuren und zusätzliche Daevanion-Kristalle ausgleichen.
 
 **4 | WIEDERKEHRENDE BELOHNUNGEN**
-**Shugofesta** und **Albtraum** bieten zusätzliche Materialien und Kristalle. Ihre Anleitungen stehen bewusst **am Anfang dieses Progression-Guides**, damit du tägliche Aufladungen nicht übersiehst. Für Reset-Prioritäten siehe **📅・daily-weekly-checkliste**.
+**Shugofesta** und **Albtraum** bieten zusätzliche Materialien und Kristalle. Ihre Anleitungen stehen bewusst **am Anfang dieses Progression-Guides**, damit du tägliche Aufladungen nicht übersiehst. Für Reset-Prioritäten siehe **[Daily & Weekly](./checklisten)**.
 
 💡 **Od-Energie:** Möglichst für die Eroberungen ab 1.400 GS aufheben. Wenn dein Vorrat ans Limit stößt, lieber sinnvoll ausgeben, statt Regeneration zu verschenken.
 
@@ -683,7 +683,7 @@ Belohnungsübersicht: https://aion2.gaming.tools/de/activities/group-9001
 ☐ Transzendenz ★4 freischalten.
 ☐ Weitere Optimierung erst im nächsten Guide-Abschnitt.
 
-💡 **Vor jedem Wochenreset:** Verbleibende Dungeonläufe, Od-Energie, Abyss-Zeit und tägliche Vorräte in **📅・daily-weekly-checkliste** prüfen.
+💡 **Vor jedem Wochenreset:** Verbleibende Dungeonläufe, Od-Energie, Abyss-Zeit und tägliche Vorräte in **[Daily & Weekly](./checklisten)** prüfen.
 
 ## 🔍 GS-CHECK | HAST DU ALLES AUSGESCHÖPFT?
 
@@ -776,4 +776,4 @@ Arkana-Droppools: https://lum.gg/aion-2/guides/transcendence-dungeons
 
 **Diese Übersicht ist die geplante Kapitelstruktur, kein Ersatz für die bereits ausführlichen Einzelkapitel.** Überlappende 2.100–2.500-Abschnitte später zusammenführen und sämtliche Freischaltgrenzen im Global-Client prüfen.
 
-Quellen für die redaktionelle Prüfung: https://aion2-guides.info/en/progression/ · Wakayashi · Global-Client.
+
