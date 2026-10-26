@@ -1,6 +1,6 @@
 import matter from 'gray-matter';
 import {digest} from './security.mjs';
-import {remoteWorkspace,publicationRemote,checkPublicLinks,gh} from './github.mjs';
+import {remoteWorkspace,publicationRemote,checkPublicLinks,gh,readTextBlobs} from './github.mjs';
 import {validateSite} from '../../packages/academy-model/site.mjs';
 const repo='voidborn-legion/voidborn-legion.github.io',base=`https://api.github.com/repos/${repo}`;
 export function publicationTargets(values){
@@ -9,12 +9,15 @@ export function publicationTargets(values){
 }
 async function stage(token,branch,values,adapters={}){
  const targets=publicationTargets(values),workspace=await (adapters.workspace||remoteWorkspace)(token,branch),state=workspace.state,live=await (adapters.publication||publicationRemote)(token);
- const draftCommit=await gh(token,`/git/commits/${state.head}`),tree=await gh(token,`/git/trees/${draftCommit.tree.sha}?recursive=1`);
- if(tree.truncated)throw new Error('Entwurfsbaum ist unvollständig.');
- const draft=Object.fromEntries(tree.tree.filter(x=>x.type==='blob'&&x.mode==='100644').map(x=>[x.path,x.sha]));
- const read=async(path,files=draft)=>{if(!files[path])throw new Error('Datei fehlt: '+path);const b=await gh(token,`/git/blobs/${files[path]}`);return Buffer.from(b.content.replace(/\s/g,''),'base64').toString('utf8');};
+ let draft=workspace.files;
+ if(!draft){const draftCommit=await gh(token,`/git/commits/${state.head}`),tree=await gh(token,`/git/trees/${draftCommit.tree.sha}?recursive=1`);if(tree.truncated)throw new Error('Entwurfsbaum ist unvollständig.');draft=Object.fromEntries(tree.tree.filter(x=>x.type==='blob'&&x.mode==='100644').map(x=>[x.path,x.sha]));}
+ const reads=new Map();
+ const read=async(path,files=draft)=>{if(!files[path])throw new Error('Datei fehlt: '+path);if(files===draft&&workspace.repo){try{return workspace.repo.read(path,state.head);}catch{}}
+  if(reads.has(files[path]))return reads.get(files[path]);const b=await gh(token,`/git/blobs/${files[path]}`),text=Buffer.from(b.content.replace(/\s/g,''),'base64').toString('utf8');reads.set(files[path],text);return text;};
  const catalog=JSON.parse(await read('.academy/studio/catalog.json')),publicCatalog=JSON.parse(await read('.academy/studio/catalog.json',live.files));
  const selected=targets.filter(t=>t!=='site').map(id=>{const g=state.guides.find(g=>g.id===id&&g.lifecycle!=='archived');if(!g||!/^docs\/guides\/[a-z0-9/-]+\.md$/.test(g.path)||g.path.includes('..'))throw new Error('Aktiver Beitrag nicht gefunden: '+id);return g;});
+ const publicPaths=[...new Set([...selected.map(g=>g.path),...(selected.length?['data/categories.json']:[]),...(targets.includes('site')?['data/site.json']:[])])].filter(path=>live.files[path]);
+ const publicText=await readTextBlobs(token,publicPaths.map(path=>({path,sha:live.files[path]})));for(const [path,text] of publicText)reads.set(live.files[path],text);
  const prospective={...live.files,...Object.fromEntries(selected.map(g=>[g.path,draft[g.path]]))},files=[],documents=[],warnings=[],receipt={...live.receipt};
  const put=(path,content,sha)=>{const existing=files.find(f=>f.path===path);if(existing){if(existing.content!==content||existing.sha!==sha)throw new Error('Widersprüchliche Dateien: '+path);return;}files.push({path,...(content===undefined?{sha}:{content})});};
  for(const g of selected){
@@ -43,7 +46,9 @@ export async function preparePublication(token,branch,targets,adapters){return (
 export async function publishSelection(token,branch,input,actor,adapters){
  const staged=await stage(token,branch,input.targets,adapters),p=staged.preview;
  if(p.expectedHead!==input.expectedHead||p.expectedPublicHead!==input.expectedPublicHead||p.previewHash!==input.previewHash)throw new Error('CONFLICT: Auswahl, Entwurf oder Online-Stand verändert. Vorschau neu erstellen.');
- const files=[];for(const file of staged.files){const sha=file.sha||(await gh(token,'/git/blobs',{content:file.content,encoding:'utf-8'})).sha;files.push({path:file.path,mode:'100644',type:'blob',sha});}
+ // Git's tree endpoint accepts UTF-8 contents directly. All selected documents
+ // are written in one request instead of another subrequest for every blob.
+ const files=staged.files.map(file=>({path:file.path,mode:'100644',type:'blob',...(file.sha?{sha:file.sha}:{content:file.content})}));
  const tree=await gh(token,'/git/trees',{base_tree:staged.live.tree,tree:files}),commit=await gh(token,'/git/commits',{message:`Academy: ${p.targets.length} geprüfte Veröffentlichungsziele (${actor})`,tree:tree.sha,parents:[p.expectedPublicHead]});
  const result=await fetch(base+'/git/refs/heads/main',{method:'PATCH',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json','Content-Type':'application/json','User-Agent':'Voidborn-Academy'},body:JSON.stringify({sha:commit.sha,force:false})});
  if(!result.ok)throw new Error('CONFLICT: Online-Stand verändert; nichts überschrieben.');

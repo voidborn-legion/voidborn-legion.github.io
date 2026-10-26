@@ -10,6 +10,22 @@ export async function gh(token,path,body){
  const data=await result.json();if(!result.ok)throw new Error(`GitHub ${result.status}: ${data.message||'Request failed'}`);return data;
 }
 export async function assertPermission(token){const data=await gh(token,'');if(!data.permissions?.push)throw new Error('Kein Schreibzugriff auf das Academy-Repository.');return data;}
+// Fetch immutable text blobs in groups. One REST request per file exhausted a
+// Free Worker's 50-subrequest budget before publication could update its ref.
+export async function readTextBlobs(token,entries){
+ const result=new Map();
+ if(!token||entries.length<8){for(const entry of entries){const b=await gh(token,`/git/blobs/${entry.sha}`);result.set(entry.path,Buffer.from(b.content.replace(/\s/g,''),'base64').toString('utf8'));}return result;}
+ const unique=[...new Map(entries.map(e=>[e.sha,e])).values()],bySha=new Map();
+ for(let offset=0;offset<unique.length;offset+=20){
+  const group=unique.slice(offset,offset+20);
+  if(group.some(e=>!/^[a-f0-9]{40}$/.test(e.sha)))throw new Error('Ungültige Dateirevision.');
+  const fields=group.map((e,i)=>`f${i}: object(oid: ${JSON.stringify(e.sha)}) { ... on Blob { oid text isBinary isTruncated byteSize } }`).join('\n');
+  const response=await fetch('https://api.github.com/graphql',{method:'POST',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json','User-Agent':'Voidborn-Academy-Studio','Content-Type':'application/json'},body:JSON.stringify({query:`query { repository(owner: "voidborn-legion", name: "voidborn-legion.github.io") { ${fields} } }`})});
+  const value=await response.json();if(!response.ok||value.errors?.length||!value.data?.repository)throw new Error('Academy-Dateien konnten nicht gebündelt gelesen werden.');
+  for(let i=0;i<group.length;i++){const blob=value.data.repository['f'+i];if(!blob||blob.oid!==group[i].sha||blob.isBinary||blob.isTruncated||typeof blob.text!=='string'||blob.byteSize>2_000_000||Buffer.byteLength(blob.text,'utf8')!==blob.byteSize)throw new Error('Academy-Dateiversion fehlt oder ist unvollständig.');bySha.set(blob.oid,blob.text);}
+ }
+ for(const entry of entries)result.set(entry.path,bySha.get(entry.sha));return result;
+}
 export async function remoteWorkspace(token,branch){
  if(!allowedBranch(branch))throw new Error('Nur Entwicklungs- oder Entwurfsbranches erlaubt.');
  const head=(await gh(token,`/git/ref/heads/${branch.split('/').map(encodeURIComponent).join('/')}`)).object.sha;
@@ -18,15 +34,11 @@ export async function remoteWorkspace(token,branch){
  const entries=new Map(tree.tree.filter(e=>e.type==='blob'&&e.mode==='100644').map(e=>[e.path,e]));
  const paths=[...entries.keys()].filter(p=>p==='.academy/studio/catalog.json'||p.startsWith('.academy/studio/guides/')||p==='data/site.json'||p==='data/sources.json'||p==='data/categories.json'||p==='data/game/pets.json'||p.startsWith('docs/guides/'));
  if(paths.length>120)throw new Error('Zu viele Guide-Dateien für einen einzelnen Ladevorgang.');
- const cache=new Map();
- // Bounded concurrency; no visitor credentials leave this request-scoped object.
- for(let offset=0;offset<paths.length;offset+=6){await Promise.all(paths.slice(offset,offset+6).map(async path=>{
-  const blob=await gh(token,`/git/blobs/${entries.get(path).sha}`);cache.set(path,Buffer.from(blob.content.replace(/\n/g,''),'base64').toString('utf8'));
- }));}
+ const cache=await readTextBlobs(token,paths.map(path=>entries.get(path)));
  const histories=new Map(); // Loaded lazily for the one selected guide, not N GitHub requests per screen.
  const repo={branch,head:()=>head,read:(path,ref=head)=>{if(ref!==head||!cache.has(path))throw new Error('Dateiversion ist nicht geladen.');return cache.get(path);},list:prefix=>[...cache.keys()].filter(p=>p.startsWith(prefix)),blob:path=>entries.get(path)?.sha,history:path=>histories.get(path)||[]};
  const state=readWorkspace(repo);state.mode='github';
- return {repo,state,baseTree:commit.tree.sha};
+ return {repo,state,baseTree:commit.tree.sha,files:Object.fromEntries([...entries].map(([path,e])=>[path,e.sha]))};
 }
 export async function commitRemote(token,branch,expectedHead,files,message,baseTree){
  if(!allowedBranch(branch))throw new Error('Veröffentlichung ist in diesem Dienst gesperrt.');
