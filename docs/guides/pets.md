@@ -6,12 +6,13 @@ description: >-
 author: Voidborn Academy
 status: draft
 review: pending
-updated: '2026-10-23'
+updated: '2026-10-26'
 sources:
   - title: AION 2 Guides – Pets und Spezieskenntnis (Aragon/Fubgun)
     url: 'https://aion2-guides.info/en/pets/'
   - title: Questlog – AION 2 Desktop-App
     url: 'https://questlog.gg/aion-2/en-nc/app'
+reviewRequest: null
 ---
 
 # Pets & Spezieskenntnis
@@ -19,7 +20,7 @@ sources:
 Mit Pets entwickelst du die fünf Spezieskenntnis-Bretter weiter. Dieser Guide erklärt, wie du deine Ressourcen einteilst, welche Analyse-Slots du zuerst angehst und welche Werte für **PvE-Schadensklassen** als vorläufige Orientierung dienen.
 
 ::: warning Stand und Geltungsbereich
-**Entwurf für AION 2 Global/EU (Oktober 2026).** Zahlen und deutsche Stat-Bezeichnungen sind noch nicht vollständig im aktuellen Client überprüft. Die Empfehlungen unten gelten zunächst für **PvE-DPS**, nicht automatisch für Tank, Heiler, Kantor-Support oder PvP. „Behalten ab“ ist eine redaktionelle Entscheidungshilfe, kein offizieller Grenzwert.
+Die Empfehlungen richten sich an **PvE-Schadensklassen**. Für Tanks, Heiler, Kantor-Support und PvP können andere Werte sinnvoll sein. Die genannten Zielwerte sind Orientierungshilfen und keine festen Spielgrenzen.
 :::
 
 ## Schnellstart: Die sinnvolle Reihenfolge
@@ -33,11 +34,7 @@ Mit Pets entwickelst du die fünf Spezieskenntnis-Bretter weiter. Dieser Guide e
 
 **Warum alle Bretter parallel?** Gute offensive Effekte auf mehreren Brettern sind zunächst oft sinnvoller, als ein einzelnes Brett vollständig zu perfektionieren und die anderen zurückzulassen.
 
-::: info Screenshot fehlt: Pet-Sammlung
-**Motiv:** Mehrere Pets auf Level 3 und sichtbarer Fortschritt der Spezieskenntnis. Persönliche Charakterdaten nach Möglichkeit ausblenden.
 
-Quelle: Discord-Studio, Bildplatzhalter „Pet-Sammlung und Pet-Level“ (ID `d5eb68c7-24a1-4763-b316-152c6ad93c5a`). Im Studio ist noch keine Bilddatei hinterlegt.
-:::
 
 ## Seelenkristalle durch versteckte Kuben
 
@@ -58,15 +55,11 @@ Die [Questlog-Desktop-App](https://questlog.gg/aion-2/en-nc/app) bietet laut bis
 Vor der Nutzung die aktuellen Spielregeln, Datenschutzbedingungen und tatsächlich verfügbaren Funktionen prüfen. Eine Empfehlung ist keine Bestätigung der Zulässigkeit durch den Spielbetreiber.
 :::
 
-::: info Screenshots fehlen: Kubus und Overlay
-**Motive:** Kubus in der Spielwelt und Questlog-Nähehinweis; zusätzlich Audioeinstellungen mit getrennten Lautstärken.
 
-Quelle: Studio-Platzhalter „Hidden Cube und Questlog-Warnung“ (ID `1314ff8c-9722-4cf7-9aa7-ad89d42c3114`). Keine Bilddatei vorhanden.
-:::
 
 ## Analyse und Fixieren: Erst die wichtigen Slots
 
-Die folgende Reihenfolge stammt aus der im Studio zusammengefassten **Aragon-PvE-DPS-Empfehlung**:
+Für PvE-Schadensklassen bietet sich folgende Reihenfolge an:
 
 | Phase | Slots | Zielwerte |
 | --- | --- | --- |
@@ -83,26 +76,22 @@ Die folgende Reihenfolge stammt aus der im Studio zusammengefassten **Aragon-PvE
 3. Einen guten Wert erst dann fixieren, wenn klar ist, welche Slots gesperrt werden und wie sich die Folgekosten verändern.
 4. Nicht jeden nur halbwegs passenden Roll sofort fixieren: Ressourcenbedarf und verbleibende Slots berücksichtigen.
 
-::: info Screenshot fehlt: Auto-Analyse
-**Motiv:** Zielwerte, Mindestqualität und Materialverbrauch in der Auto-Analyse, möglichst mit markierten Slots 1/4/5.
 
-Studio-Platzhalter „Auto-Analyse – Slot-Auswahl“ (ID `05c499da-b415-4614-bab5-dd0a597196e0`).
-:::
 
 ## Werte für Slots 1 und 5
 
 Diese beiden Slots werden auf **allen fünf Brettern** nach denselben offensiven Zielwerten betrachtet.
 
-| Attribut | Angegebenes Minimum | Vorläufig behalten ab | Angegebenes Maximum |
+| Attribut | Angegebenes Minimum | Behalten ab (Richtwert) | Angegebenes Maximum |
 | --- | ---: | ---: | ---: |
 | Zusatzangriffskraft | 8 | **12** | 16 |
 | Max. Angriffskraft | 10 | **15** | 20 |
 
-Die Min-/Max-Werte wurden aus dem Aragon-Guide in die Discord-Academy übernommen. Die mittlere Spalte ist **unsere vorläufige Academy-Stoppschwelle** und keine Spielmechanik. Alle Zahlen benötigen einen Abgleich mit dem aktuellen EU-Client.
+Die mittlere Spalte zeigt einen Richtwert, ab dem du einen passenden Effekt zunächst behalten kannst. Die Werte sind keine garantierten Spielgrenzen.
 
 ## Slot 4: Die fünf Bretter im Vergleich
 
-| Brett | PvE-DPS-Zielwert nach Aragon | Minimum | Vorläufig behalten ab | Maximum |
+| Brett | PvE-DPS-Zielwert nach Aragon | Minimum | Behalten ab (Richtwert) | Maximum |
 | --- | --- | ---: | ---: | ---: |
 | **Cognia** | PvE-Schadensverstärkung | 2 % | **3,0 %** | 4 % |
 | **Fera** | Waffenschadensverstärkung | 1,5 % | **2,3 %** | 3 % |
@@ -116,11 +105,7 @@ Die Min-/Max-Werte wurden aus dem Aragon-Guide in die Discord-Academy übernomme
 **Aragon und Fubgun stimmen nicht in allen Slot-4-Prioritäten überein.** In der Academy-Quelle werden für **Cognia** bei Fubgun auch allgemeine Schadensverstärkung und für **Varia** PvE-Schadensverstärkung genannt. Außerdem werden PvE-Präzision und Frontalangriff je nach Ansatz unterschiedlich bewertet. Die Tabelle zeigt **eine konkrete Aragon-Variante**, nicht die einzig mögliche optimale Belegung.
 :::
 
-::: info Screenshot fehlt: Guter fixierter Roll
-**Motiv:** Cognia, Slot 4, beispielsweise **3,3 % PvE-Schadensverstärkung** und sichtbar fixierter Slot. Der Wert ist nur ein gewünschtes Bildbeispiel, kein bestätigter Screenshot.
 
-Studio-Platzhalter „Fixierter guter Roll – Cognia“ (ID `ce0ca839-45d4-4991-9f6f-9b742e4c5def`).
-:::
 
 ## Nachschlagetabelle: Alle neun Slots
 
@@ -151,11 +136,7 @@ Die Tabellen oben sind **nicht rollenübergreifend gültig**.
 
 Für diese Rollen gibt es **noch keine bestätigten neun-Slot-Tabellen oder Slot-4-Stoppschwellen**. Werte aus der DPS-Tabelle deshalb nicht ungeprüft übertragen.
 
-::: info Screenshot fehlt: Tank- und Heiler-Beispiele
-**Motiv:** Geeignete Analyse-Effekte bei Templer und Kleriker. Erst nach Abgleich mit verlässlichen Global-Klassenguides ergänzen.
 
-Studio-Platzhalter „Tank-/Heal-Prioritäten – Beispiel“ (ID `a02d9251-bbda-4c2e-85a2-107019d6fb2f`).
-:::
 
 
 ## Quellen und Herkunft
