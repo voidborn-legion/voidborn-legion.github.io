@@ -9,7 +9,7 @@ reviewRequest: null
 # Daily & Weekly – Was wann erledigen?
 
 ::: info Hinweis
-Die Angaben beziehen sich auf den Global-/EU-Client. Einzelne Limits und Reset-Zeiten können sich durch Updates ändern. Maßgeblich sind die aktuellen Zähler im Spiel.
+Einzelne Aktivitäten können eigene Reset-Zeiten haben. Prüfe dafür den Countdown im Spiel.
 :::
 
 Dieser Guide ist deine **Reset-Checkliste** – egal ob du noch levelst oder bereits im Endgame bist. Ausführliche Erklärungen findest du im [Leveling-Guide](./leveling) und in der [Gearscore-Progression](./progression).
@@ -33,7 +33,7 @@ Ein täglicher Login bedeutet nicht, dass du jede Aktivität sofort erledigen mu
 
 **Abyss (ab Level 45 / 1.000 GS):** Wochenzeit von **7 Stunden** sowie machbare Schriftrollenquests prüfen. Heimatregion: **12 Schriftrollen/Woche**; Abyss-Händler: bis zu **5 je Sorte**.
 
-**Mittwoch: Wochenreset** (**07:00 UTC**, in Deutschland 09:00 MESZ / 08:00 MEZ; bei abweichenden Ingame-Countdowns gilt der Spielclient). Vorher Zähler und Restversuche kontrollieren. Events und einzelne Shops können eigene Resetregeln haben.
+**Wochenreset:** Mittwoch um **9:00 Uhr (Sommerzeit)** bzw. **8:00 Uhr (Winterzeit)**. Vorher Zähler und Restversuche kontrollieren. Events und einzelne Shops können eigene Resetregeln haben.
 
 ### Priorität kurz vor Reset
 
