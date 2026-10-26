@@ -4,9 +4,9 @@ import {validateSite} from '../../packages/academy-model/site.mjs';
 const REPO='voidborn-legion/voidborn-legion.github.io';
 const BASE=`https://api.github.com/repos/${REPO}`;
 const allowedBranch=b=>/^(?:draft|dev)\/[a-zA-Z0-9/_-]+$/.test(b)&&!b.includes('..');
-async function gh(token,path,body){
+export async function gh(token,path,body){
  if(path!==''&&!path.startsWith('/'))throw new Error('Invalid GitHub path');
- const result=await fetch(BASE+path,{method:body?'POST':'GET',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'Voidborn-Academy-Studio','Content-Type':'application/json'},body:body?JSON.stringify(body):undefined});
+ const result=await fetch(BASE+path,{method:body?'POST':'GET',headers:{...(token?{Authorization:`Bearer ${token}`}:{ }),Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'Voidborn-Academy-Studio','Content-Type':'application/json'},body:body?JSON.stringify(body):undefined});
  const data=await result.json();if(!result.ok)throw new Error(`GitHub ${result.status}: ${data.message||'Request failed'}`);return data;
 }
 export async function assertPermission(token){const data=await gh(token,'');if(!data.permissions?.push)throw new Error('Kein Schreibzugriff auf das Academy-Repository.');return data;}

@@ -17,7 +17,9 @@ add('list_screenshots','Read screenshots and missing placeholders, their notes, 
 add('list_tasks','Read open and completed editorial tasks.',{guideId},'tasks',[]);
 add('list_sources','Read source references; no automatic claim of verification.',{},'sources');
 add('read_site','Read draft homepage text, image and navigation. These settings are not the published website.',{},'site');
-add('publication_status','Read the main publication branch revision and per-file versions. A main commit still requires a successful Pages build before it is live.',{},'publication');
+add('prepare_publication','Administrator only: preview the exact selected guides/site, differences, images and unresolved editorial notes. Does not publish.',{targets:{type:'array',items:id,minItems:1,maxItems:50,uniqueItems:true}},'prepare-publication');
+add('publish','Administrator only: publish ONLY an explicitly approved immutable preview selection. Does not by itself confirm the website build.',{targets:{type:'array',items:id,minItems:1,maxItems:50,uniqueItems:true},expectedHead:head,expectedPublicHead:head,previewHash:{type:'string',pattern:'^[a-f0-9]{64}$'}},'publish',undefined,true);
+add('publication_status','Read the main publication branch revision and per-file versions. A main commit still requires a successful Pages build before it is live.',{commitSha:head},'publication',[]);
 add('import_site_image','Import real PNG/JPEG/WebP bytes, up to 2 MiB, as the draft homepage image. No publication.',{expectedHead:head,base64:str(MAX_IMAGE_BASE64),alt:{type:'string',maxLength:500}},'site.image',undefined,true);
 add('guide_history','Read previous versions of one permitted guide.',{guideId},'history');
 add('guide_diff','Compare a previous immutable revision with the current guide.',{guideId,before:head},'diff');
@@ -69,7 +71,8 @@ export async function callTool(name,args,ctx){
  if(tool.action==='read')return {head:state.head,guide:visible.guides.find(g=>g.id===args.guideId),bundle:visible.snapshot.bundles.find(b=>b.guideId===args.guideId)||null};
  if(['comments','screenshots','tasks'].includes(tool.action)){const field={comments:'comments',screenshots:'placeholders',tasks:'tasks'}[tool.action];return {head:state.head,items:visible.snapshot.bundles.filter(b=>!args.guideId||b.guideId===args.guideId).flatMap(b=>b[field].map(i=>({...i,guideId:b.guideId}))),...(field==='placeholders'?{assets:visible.snapshot.bundles.flatMap(b=>b.assets)}:{})};}
  if(tool.action==='sources')return {head:state.head,sources:visible.snapshot.sources};
- if(tool.action==='publication'){if(ctx.grant.guideIds!==null&&ctx.grant.guideIds!==undefined)throw new Error('Veröffentlichungsübersicht benötigt globalen Zugriff.');return ctx.publication();}
+ if(tool.action==='publication'){if(ctx.grant.guideIds!==null&&ctx.grant.guideIds!==undefined)throw new Error('Veröffentlichungsübersicht benötigt globalen Zugriff.');return ctx.publication(args.commitSha);}
+ if(['prepare-publication','publish'].includes(tool.action)){requirePermission(ctx.grant,'content.publish');if(ctx.grant.role!=='administrator'||ctx.grant.guideIds!=null)throw new Error('Veröffentlichen benötigt globalen Administratorzugriff.');return tool.action==='publish'?ctx.publish(args):ctx.preparePublication(args.targets);}
  if(tool.action==='site'){if(ctx.grant.guideIds!==null&&ctx.grant.guideIds!==undefined)throw new Error('Seiteneinstellungen benötigen globalen Zugriff.');return {head:state.head,site:state.site,published:false};}
  if(tool.action==='history')return ctx.history(args.guideId);
  if(tool.action==='diff')return ctx.diff(args.guideId,args.before);
