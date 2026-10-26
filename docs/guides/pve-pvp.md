@@ -1,25 +1,34 @@
 ---
 title: PvE & PvP
 author: Voidborn Academy
-status: published
+status: draft
 review: orientation
-updated: '2026-10-23'
+updated: '2026-10-26'
+reviewRequest: null
 ---
-
 # PvE & PvP
 
-Unterschiede bei Rollen, Builds und benötigten Werten.
+PvE und PvP stellen unterschiedliche Anforderungen an deinen Charakter. Nutze deshalb eigene Presets für Fähigkeiten, Stigmas und nach Möglichkeit Ausrüstung.
 
-::: info Dieser Guide kommt noch
-Der Beitrag liegt bisher in unserer Discord-Academy. Wir übernehmen ihn mit den dazugehörigen Bildern und prüfen die Angaben vor der Veröffentlichung.
-:::
+## PvE: Schaden und Mechaniken
 
-## Geplante Inhalte
+Im PvE zählt, dass du über längere Kämpfe zuverlässig Schaden verursachst oder deine Gruppenrolle erfüllst. Priorisiere Fähigkeiten, die du in deiner Rotation häufig einsetzt. Plane Heilung und defensive Effekte für Bossmechaniken ein.
 
-- PvE- und PvP-Builds auseinanderhalten
-- Werte für Schaden, Heilung und Überleben
-- Verweise auf die jeweiligen Klassenguides
+Achte bei Ausrüstung auf passende Schadenswerte, Skillboni und Seteffekte. **Gearscore** hilft bei Zugängen, bildet aber die tatsächliche Kampfstärke nicht vollständig ab.
 
-## Bis dahin
+## PvP: Kontrolle und Überleben
 
-In der [Themenübersicht](./) findest du die anderen Bereiche. [So ist die Academy aufgebaut](./academy-nutzen).
+Im PvP gewinnen Bewegung, Unterbrechungen, Kontrolleffekte und defensive Reaktionen an Bedeutung. Halte Befreiungen, Schutzfähigkeiten und Heilung auf schnell erreichbaren Tasten.
+
+Investiere nicht ausschließlich in Schaden: Ein Build muss auch gegnerische Kontrolle und Burst-Phasen überstehen. Teste deine Presets in realen Kämpfen und passe sie an deine Klasse und Rolle an.
+
+## Zwei Presets statt eines Kompromisses
+
+- **PvE-Preset:** Rotation, Boss-Schaden und Gruppenunterstützung.
+- **PvP-Preset:** Kontrolle, Beweglichkeit, defensive Fähigkeiten und gezielter Burst.
+
+## Weiterführende Guides
+
+- [Klassen & Builds](./klassen)
+- [Ausrüstung & Seelenbindung](./ausruestung)
+- [Gearscore-Progression](./progression)
