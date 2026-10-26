@@ -14,8 +14,10 @@ Hier erfährst du, wie du deinen **Gearscore (GS)** erhöhst und neue Inhalte fr
 Direkt nach dieser Übersicht findest du **Shugofesta** und **Albtraum** samt Shops und Screenshots. Sie stehen bewusst vor der GS-Roadmap: Die Vorräte laden sich täglich auf und sollten nicht dauerhaft am Cap liegen. **Shugofesta beginnt bereits während des Levelns**; siehe auch **📖・leveling-guide**. Alle Reset-Aufgaben stehen in **📅・daily-weekly-checkliste**.
 
 ## 🗺️ PROGRESSION-ROADMAP
+**[45 → 1.000 GS](https://discord.com/channels/1561797013379751996/1562407310544871505/1562410380049907723)**
 Story, Regionsquests, Daily Dungeons, Verstärkung und Riss-Quests
 
+**[1.000 → 1.400 GS](https://discord.com/channels/1561797013379751996/1562407310544871505/1562417739702730785)**
 Abyss, Draupnir, Gürtel & Amulett und Ausrüstungsverbesserungen
 
 **WEITERE KAPITEL IN DIESEM GUIDE**
@@ -29,31 +31,6 @@ Abyss, Draupnir, Gürtel & Amulett und Ausrüstungsverbesserungen
 💡 Klicke auf die verlinkten GS-Stufen, um zu den vorhandenen Beiträgen zu springen. Die neuen Kapitel bis 2.500 GS findest du weiter unten; die nächsten Stufen ergänzen wir später.
 
 Quelle: https://aion2-guides.info/en/progression/
-
-
-**Interne Quellverweise (Zielanker noch abzugleichen):**
-- 1.400–1.600 GS · Vakron & Urugugu: 
-- Level 45–1.000 GS: 
-- Bis 1.400 GS: 
-- Garantierte Belohnungen & Tickets: 
-- 1.600–1.900 GS · Transzendenz ★1: 
-- 1.900–2.100 GS · Transzendenz ★2: 
-- Ascensus-Ritus & goldene Arkana: 
-- 2.100–2.500 GS · Feuertempel & Grimmhorn: 
-- Combat Power & Stigmas: 
-- Pets & Flügel: 
-- Transzendenz ★3 / ★4: 
-- Checkliste bis 2.500 GS: 
-- Wann GS, CP, Pets & Gear-Optimierung priorisieren?: 
-- Spielsysteme & Optimierung · Übersicht: 
-- Arkana-System · Grundlagen: 
-- Goldene Arkana · Herstellung: 
-- Verstärkung & Vererbung: 
-- Seelenbindung: 
-- Manasteine & Seelensteine: 
-- Pets & Flügel · Details: 
-- GS oder Combat Power?: 
-- Progression-Bottlenecks: Kina, Steine, GS und CP: 
 
 ## 🧭 WANN WELCHES SYSTEM PRIORISIEREN?
 
@@ -116,6 +93,8 @@ Shugofesta bietet kurze Minispiele und eine eigene Währung. Die Platzierung bee
 
 💡 **21 ist das Speicherlimit, kein wöchentliches Kontingent.** Drei tägliche Aufladungen entsprechen rechnerisch 21 Schlüsseln in sieben Tagen, wenn du Platz im Vorrat schaffst.
 
+![Shugofesta – Schlüssellimit und tägliche Aufladung](/images/uploads/dffb107d597b0009ab04.jpg)
+
 ## 🛒 SHUGOFESTA | FESTIVAL-SHOP
 
 **Daevanion-Kristalle haben Staffelpreise.** Die nächste Stufe wird nach dem Ausverkauf der vorherigen freigeschaltet:
@@ -139,6 +118,8 @@ Die ersten **20 Kristalle kosten zusammen nur 1.500**. Der Screenshot zeigt bere
 
 💡 Kristalle anschließend unter **U → Daevanion** einsetzen. Preise und Limits entsprechen dem Global-Screenshot und können sich ändern.
 
+![Shugofesta-Shop – Preise](/images/uploads/102acecdeeceefe6a27f.jpg)
+
 ## 🌙 ALBTRAUM | VERSUCHE & BOSSE
 
 Albtraum ist eine **Solo-Bossaktivität** mit verschiedenen Schwierigkeitsstufen. Die Belohnungen kannst du unter anderem im Albtraum-Tauschshop verwenden.
@@ -155,6 +136,8 @@ Albtraum ist eine **Solo-Bossaktivität** mit verschiedenen Schwierigkeitsstufen
 4. Nutze die Versuche regelmäßig, bevor der Vorrat voll ist.
 
 💡 Du musst nicht den schwersten Boss erzwingen: Eine zuverlässig abgeschlossene Stufe bringt mehr als ständige erfolglose Versuche.
+
+![Albtraum – Versuchslimit und tägliche Aufladung](/images/uploads/55acaeb248d285dec53e.jpg)
 
 ## 🛒 ALBTRAUM | TAUSCHSHOP
 
@@ -173,6 +156,8 @@ Mit der Albtraumwährung kannst du wichtige Fortschrittsmaterialien kaufen.
 **WICHTIG:** Das Abyss-Daevanion-Board enthält überwiegend PvP-Boni. Kristalle erhöhen zwar deinen GS, sind aber nicht automatisch die beste Wahl für PvE-Schaden. Der Screenshot zeigt bereits ausverkaufte Kristalle.
 
 Gekaufte Kristalle unter **U → Daevanion** einsetzen. Preise und Limits können sich mit Updates ändern.
+
+![Albtraum-Shop – Preise](/images/uploads/a558eabf7e613d7a385a.jpg)
 
 ## 🗺️ 1 | VON LEVEL 45 AUF 1.000 GS
 
@@ -408,6 +393,8 @@ Die AP-Preise steigen nach bestimmten Kaufmengen:
 
 Shop-Referenz: https://lum.gg/aion-2/guides/where-to-spend-abyss-points
 
+![Abyss-Shop – Preise](/images/uploads/0b321129c8a883c0b387.jpg)
+
 ## ✨ GÜRTEL & AMULETT AUFWERTEN
 
 Gürtel und Offenbarungsamulett begleiten dich lange. Ihre Verbesserung lohnt sich besonders, weil du sie nicht sofort durch Dungeon-Drops ersetzt.
@@ -433,6 +420,8 @@ Bei einer Umwandlung beginnt die Verstärkung der neuen Stufe erneut. Prüfe die
 **Gold +0** ist bereits ein großer GS-Schritt. **Gold +10** ist ein längerfristiges Ausbauziel, **keine Voraussetzung für 1.400 GS**.
 
 💡 Erst günstigere GS-Quellen ausschöpfen; Gold +10 nicht erzwingen, wenn dir Kina und Steine für wichtigere Upgrades fehlen.
+
+![Konvertierung Offenbarungsamulett](/images/uploads/993f484f12deb6775614.jpg)
 
 ## 📈 DIR FEHLEN NOCH GS BIS 1.400?
 
@@ -565,11 +554,6 @@ Ab **1.600 GS** kannst du **Transzendenz ★1** betreten. Hier bekommst du deine
 
 🎯 **Ziel: 2.100 GS** für Feuertempel und Grimhorn.
 
-
-**Interne Quellverweise (Zielanker noch abzugleichen):**
-- Arkana-Grundlagen: 
-- Goldene Arkana herstellen: 
-
 ## 🏆 ASCENSUS-RITUS | BELOHNUNGEN & GOLDENE ARKANA
 
 Der **Ascensus-Ritus** ist eine Solo-Herausforderung mit Punktewertung. Du hast **3 Versuche pro Woche**, geteilt zwischen den Varianten. Höhere Schwierigkeit und mehr Punkte bringen bessere Belohnungen.
@@ -618,10 +602,6 @@ Belohnungsübersicht: https://aion2.gaming.tools/de/activities/group-9001
 
 🎯 **Ziel: 2.500 GS und Zugang zu Transzendenz ★4.**
 
-
-**Interne Quellverweise (Zielanker noch abzugleichen):**
-- Dropchancen & vollständige Runs: 
-
 ## ⚔️ AB 2.100 GS | COMBAT POWER & STIGMAS
 
 **Gearscore (GS)** öffnet neue Inhalte. **Combat Power (CP)** hilft dir, die tatsächliche Kampfstärke weiterzuentwickeln. Ab etwa **2.100 GS** solltest du deshalb nicht nur GS, sondern auch Skills, Stigmas und deren nächste Stufen im Blick behalten.
@@ -658,10 +638,6 @@ Belohnungsübersicht: https://aion2.gaming.tools/de/activities/group-9001
 
 💡 **Wichtig:** Passive CP-Boni sind nicht automatisch zusätzliche GS. Sammeln lohnt sich trotzdem für deine tatsächliche Kampfstärke.
 
-
-**Interne Quellverweise (Zielanker noch abzugleichen):**
-- Pet-Guide: 
-
 ## ⭐ 2.200 → 2.500 GS | AUSRÜSTUNG VOR ★3
 
 **Priorität: Feuertempel und Grimmhornhöhle farmen.** Ersetze ältere Ausrüstung schrittweise durch Stufe-86-Teile und nutze die garantierten Belohnungen. Prüfe danach, wie viel GS bis 2.500 fehlt.
@@ -679,10 +655,6 @@ Belohnungsübersicht: https://aion2.gaming.tools/de/activities/group-9001
 4. Bei **2.500 GS** ★4 für goldene Arkana priorisieren.
 
 🎯 Ziel: **2.500 GS**, dann Transzendenz ★4.
-
-
-**Interne Quellverweise (Zielanker noch abzugleichen):**
-- Arkana-Dropchancen ★3/★4: 
 
 ## 🎯 CHECKLISTE | DEIN WEG ZU 2.500 GS
 
@@ -771,10 +743,6 @@ Nicht jeder Fortschritt erhöht direkt den **GS**. Gerade für **Combat Power (C
 
 Titelübersicht: https://aion2-guide.wiki/guides/titles-guide
 
-
-**Interne Quellverweise (Zielanker noch abzugleichen):**
-- Erfolge & Pantheon – verpasste Upgrades: 
-
 ## 🃏 TRANSZENDENZ | WELCHEN DUNGEON FARMEN?
 
 Die beiden Transzendenz-Dungeons haben **unterschiedliche Arkana-Droppools**. Laufe beide, damit du alle fünf Kartenplätze sinnvoll ausrüsten kannst.
@@ -795,8 +763,6 @@ Die beiden Transzendenz-Dungeons haben **unterschiedliche Arkana-Droppools**. La
 **ACHTUNG:** Ein Dungeonabschluss und das Einfordern einer Belohnung sind nicht dasselbe. Prüfe deine Od-Energie und den Belohnungszähler vor dem Öffnen der Truhe.
 
 Arkana-Droppools: https://lum.gg/aion-2/guides/transcendence-dungeons
-
-## 🧭 REDAKTIONELLE PROGRESSIONSROUTE | AKTUELLER GS → NÄCHSTES ZIEL
 
 **Wichtig:** Der GS im Kapiteltitel ist das ZIEL, nicht die Voraussetzung für alle genannten Aktivitäten.
 
