@@ -30,10 +30,6 @@ Dieser Guide begleitet dich bis Level 45 und erklärt die wichtigsten Spielsyste
 
 *Die Screenshots und weitere Details ergänzen wir nach und nach.*
 
-
-**Interne Quellverweise (Zielanker noch abzugleichen):**
-- Nach Level 45: Progression: 
-
 ## 🗺️ 1 | HAUPTQUESTS & NEBENQUESTS
 **Gelbe Quests – Hauptgeschichte**
 
@@ -114,6 +110,8 @@ Warum sie wichtig sind:
 
 **Die Karten-Symbole findest du im folgenden Bild.**
 
+![Leveling – Spielansicht](/images/uploads/0c8fab516ce89370f07c.jpg)
+
 ## ⚔️ 3 | SKILLS & STIGMAS
 
 Deine Fähigkeiten werden beim Leveln immer wichtiger. Du musst aber nicht sofort eine perfekte Endgame-Skillung haben.
@@ -171,6 +169,8 @@ Weitere Skilllevel erhältst du später unter anderem über **Arkana-Karten und 
 **BEISPIEL AUF DEM NÄCHSTEN BILD**
 Die Leveling-Checkliste des Kantors. Wähle auf der Website immer deine eigene Klasse.
 
+![Leveling – Spielansicht 2](/images/uploads/5ede14728084fd997cef.jpg)
+
 *Beispiel: Leveling-Checkliste des Kantors.*
 
 Wähle deine eigene Klasse, öffne den Tab „Leveling“ und arbeite die Schritte der Reihe nach ab. Erledigte Aufgaben kannst du direkt abhaken.
@@ -205,6 +205,8 @@ Wähle deine eigene Klasse, öffne den Tab „Leveling“ und arbeite die Schrit
 Ja, du kannst Daevanion-Knoten zurücksetzen und andere Routen ausprobieren. Dafür können **Kina-Kosten** anfallen. Prüfe den angezeigten Betrag vor dem Zurücksetzen.
 
 💡 **Tipp:** Die Routen sind langfristige Ziele. Während des Levelns wirst du noch nicht genügend Kristalle besitzen, um alles direkt freizuschalten.
+
+![Leveling – Spielansicht 3](/images/uploads/4b01f2e30e56677fcfd0.jpg)
 
 *Beispiel: Daevanion-Board des Kantors (Quelle: aion2-guides.info).*
 
@@ -336,8 +338,3 @@ Schreib in die **Q&A-Section** der Gilde. Unsere Mentoren und andere Mitglieder 
 
 *Guide für AION 2 Global · Stand: Oktober 2026*
 *Weitere Inhalte und Screenshots werden ergänzt.*
-
-
-**Interne Quellverweise (Zielanker noch abzugleichen):**
-- Pets und Flügel: Details: 
-- Tägliche Checkliste:
