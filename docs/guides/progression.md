@@ -441,7 +441,7 @@ Prüfe diese Schritte der Reihe nach, bevor du teure Verstärkungen erzwingst.
 
 **2 | SCHMUCK, RUNEN & DRAUPNIR**
 • Sind wirklich alle Ausrüstungs- und Runenplätze belegt?
-• Beide **Clash-Runen** ausrüsten und zunächst nur auf +1 bringen.
+• Beide **Runen des Zusammenstoßes** aus den Nebenquest-Truhen ausrüsten und nur auf **+1** verstärken. Eine Rune auf +0 bringt **40 GS**, auf +1 **41 GS**: zwei Runen auf +1 ergeben zusammen **82 GS**. Der Versuch auf +2 hat nur **80 % Erfolgschance** und kann bei Fehlschlag die Rune zerstören. Mindestens eine Ersatzrune behalten; höhere Stufen nur mit Ersatzkopien riskieren.
 • Draupnir-Erkundung/Eroberung für passende goldene Ausrüstung und garantierte Belohnungen prüfen.
 • Garantierte **Auswahltruhen** möglichst erst öffnen, wenn klar ist, welches Teil noch fehlt.
 
