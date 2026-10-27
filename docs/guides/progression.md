@@ -446,10 +446,12 @@ Prüfe diese Schritte der Reihe nach, bevor du teure Verstärkungen erzwingst.
 • **Goldene Ausrüstung auf +10** verstärken, sofern die Materialien reichen.
 • **Gürtel und Amulett sind teure Langzeit-Upgrades.** Die Aufwertung kostet viel Kina und Materialien. Für den Sprung auf **1.400 GS** daher **nicht priorisieren**: erst günstige Verstärkungen, Manasteine und einmalige Belohnungen ausschöpfen. Gürtel und Amulett später schrittweise ausbauen.
 
-**4 | MANASTEINE – EINFACHER GS-SCHUB**
-• **Jeden verfügbaren Manasteinplatz belegen.** Auch ein einfacher erster Wurf bringt bereits viel Gearscore.
-• Für den Weg auf 1.400 GS zunächst **einmal rollen**, statt teure perfekte Werte anzustreben.
-• Die gezielte Optimierung der Manasteinwerte kannst du später angehen.
+**4 | MANASTEINE – GROSSER GS-HEBEL (UNBEDINGT PRÜFEN!)**
+• **Noch keine Manasteine eingesetzt? Dann zuerst alle verfügbaren Plätze belegen.** Gerade bei frischer Level-45-Ausrüstung kann das viele fehlende GS auf einmal bringen.
+• Starte mit **günstigen Steinen und einem ersten Wurf pro Platz**. Perfekte Attribute sind für den Zugang zu 1.400 GS noch nicht nötig.
+• **Danach den Gearscore erneut prüfen:** Vielleicht reicht der Zuwachs bereits für den nächsten Dungeon, ohne weitere teure Verstärkungen.
+• Erst anschließend passende Attribute und bessere Manastein-Effekte gezielt optimieren. Die genaue GS-Wirkung hängt von den tatsächlich erzielten Effekten ab; **nicht pauschal vier GS je Gegenstand annehmen**.
+• Nicht jeder Gegenstand besitzt gleich viele Plätze. Im Ausrüstungsmenü die tatsächlich verfügbaren und belegten Plätze kontrollieren.
 
 **5 | DAILY DUNGEONS & RISS**
 • **Daily Dungeons** für Verstärkungssteine und weitere Belohnungen nutzen.
