@@ -3,7 +3,7 @@ title: Gearscore-Progression
 author: Voidborn Academy
 status: draft
 review: orientation
-updated: '2026-10-26'
+updated: '2026-10-27'
 reviewRequest: null
 ---
 # Gearscore-Progression
@@ -18,7 +18,7 @@ Direkt nach dieser Übersicht findest du **Shugofesta** und **Albtraum** samt Sh
 Story, Regionsquests, Daily Dungeons, Verstärkung und Riss-Quests
 
 **1.000 → 1.400 GS**
-Abyss, Draupnir, Gürtel & Amulett und Ausrüstungsverbesserungen
+Alle versiegelten Dungeons und Garnisonen (Heimatkarte und Riss), Daily Dungeons, Manasteine in jedem Slot sowie gezielte Verstärkungen: Blau +5, Gold +10 und Armband des Befreiers +10.
 
 **WEITERE KAPITEL IN DIESEM GUIDE**
 • **1.400 → 1.600 GS:** Vakron und Uruguguschlucht
@@ -429,7 +429,8 @@ Prüfe diese Schritte der Reihe nach, bevor du teure Verstärkungen erzwingst.
 
 **1 | FEHLENDE EINMALIGE BELOHNUNGEN**
 • Hauptgeschichte im Abyss und offene Regionsquests abschließen.
-• Eigene **versiegelte Dungeons** und Garnisonen nachholen.
+• **Alle versiegelten Dungeons und Garnisonen** auf deiner eigenen Karte abschließen.
+• Im **Raumzeit-Riss** auch die versiegelten Dungeons und Garnisonen im gegnerischen Gebiet erledigen. Plane dafür mehrere Rissöffnungen ein, falls nötig.
 • Monolith der Heimatregion abschließen und **Abyss-Federn** sammeln.
 • Erhaltene **Daevanion-Kristalle** im passenden Board einsetzen – auch PvP-Board-Knoten können GS bringen.
 
@@ -439,13 +440,23 @@ Prüfe diese Schritte der Reihe nach, bevor du teure Verstärkungen erzwingst.
 • Draupnir-Erkundung/Eroberung für passende goldene Ausrüstung und garantierte Belohnungen prüfen.
 • Garantierte **Auswahltruhen** möglichst erst öffnen, wenn klar ist, welches Teil noch fehlt.
 
-**3 | GÜNSTIGE UPGRADES**
-• Story-Waffe gezielt verstärken.
-• Übergangsausrüstung zunächst ungefähr auf +5 bringen.
+**3 | AUSRÜSTUNG VERSTÄRKEN**
+• **Blaue Ausrüstung auf +5** verstärken. Höhere Stufen lohnen sich bei kurzlebigen Übergangsteilen meist nicht.
+• **Ausnahme: Armband des Befreiers auf +10** verstärken, da du es noch lange tragen kannst.
+• **Goldene Ausrüstung auf +10** verstärken, sofern die Materialien reichen.
 • Gürtel und Amulett weiter konvertieren.
+
+**4 | MANASTEINE – EINFACHER GS-SCHUB**
+• **Jeden verfügbaren Manasteinplatz belegen.** Auch ein einfacher erster Wurf bringt bereits viel Gearscore.
+• Für den Weg auf 1.400 GS zunächst **einmal rollen**, statt teure perfekte Werte anzustreben.
+• Die gezielte Optimierung der Manasteinwerte kannst du später angehen.
+
+**5 | DAILY DUNGEONS & RISS**
+• **Daily Dungeons** für Verstärkungssteine und weitere Belohnungen nutzen.
+• Prüfe, ob du **alle versiegelten Dungeons und Garnisonen** in der Heimatregion und im Riss erledigt hast.
 • Fehlende GS anschließend über Gravuren und zusätzliche Daevanion-Kristalle ausgleichen.
 
-**4 | WIEDERKEHRENDE BELOHNUNGEN**
+**6 | WIEDERKEHRENDE BELOHNUNGEN**
 **Shugofesta** und **Albtraum** bieten zusätzliche Materialien und Kristalle. Ihre Anleitungen stehen bewusst **am Anfang dieses Progression-Guides**, damit du tägliche Aufladungen nicht übersiehst. Für Reset-Prioritäten siehe **[Daily & Weekly](./checklisten)**.
 
 💡 **Od-Energie:** Möglichst für die Eroberungen ab 1.400 GS aufheben. Wenn dein Vorrat ans Limit stößt, lieber sinnvoll ausgeben, statt Regeneration zu verschenken.
