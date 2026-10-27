@@ -117,6 +117,12 @@
       "path": "docs/guides/tools.md",
       "categoryId": "category:tools",
       "lifecycle": "active"
+    },
+    {
+      "id": "guide:0e8de402-3808-44d8-8a41-b4d470e8674a",
+      "path": "docs/guides/shops-kaufprioritaeten.md",
+      "categoryId": "category:tipps",
+      "lifecycle": "active"
     }
   ]
 }
