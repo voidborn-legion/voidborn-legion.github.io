@@ -207,6 +207,11 @@ Nicht benötigte goldene Ausrüstung nicht vorschnell zerlegen: Sie kann später
 **WOHER STEINE?**
 Unter anderem aus Daily Dungeons und Aktivitäten im gegnerischen Gebiet über den Raumzeit-Riss.
 
+**TIPP FÜR ZWEITCHARAKTERE: VERSTÄRKUNGSSTEINE DES MAINS NUTZEN**
+Wenn du bereits einen Main-Charakter mit Verstärkungssteinen hast, prüfe bei Dungeon-Drops deines Zweitcharakters, ob sie **über das Charakterlager übertragbar** sind. Lege das geeignete Ausrüstungsteil ins Charakterlager, nimm es mit dem Main heraus und **verstärke es dort mit den Ressourcen des Mains**. Anschließend legst du das Teil zurück, damit dein Zweitcharakter es ausrüsten kann.
+
+⚠️ **Nur für Zweitcharaktere mit vorhandenem Main.** Prüfe vorab die Lagerfähigkeit und ob Verstärkung oder Bindung die Rückübertragung einschränkt. Für deinen **ersten Main** funktioniert dieser Ressourcen-Umweg nicht; hier bleiben Daily Dungeons, Quests und Aktivitäten die regulären Quellen.
+
 ## 🏰 DAILY DUNGEONS
 
 Daily Dungeons sind eine wichtige Quelle für **Verstärkungssteine**. Besonders interessant ist die **Daeva-Bioforschungsbasis**.
