@@ -511,6 +511,8 @@ Damit schaltest du die nächste Stufe frei: **Vakron-Himmelsinsel und Urugugusch
 
 **Gemeinsamer Fortschritt von Main und Zweitcharakter:** Bereits gesammelte **Pets und der gemeinsame Pet-Fortschritt** stehen auch dem Zweitcharakter zur Verfügung. Dadurch kann er schon früh von vorhandenen Pet-Boni profitieren und eine höhere **Combat Power (CP)** erreichen als ein neuer Account ohne diese Sammlung. **CP und Gearscore sind nicht dasselbe:** Für Dungeon-Freischaltungen weiterhin den tatsächlich angezeigten GS prüfen. Welche weiteren Systeme geteilt sind, jeweils im Spiel kontrollieren.
 
+**Federn synchronisieren statt erneut sammeln:** Hast du die Federn mit deinem Main bereits gesammelt, prüfe beim Zweitcharakter im **Kibelisk-Menü unten links** die Funktion zum **Synchronisieren der Federn**. Dadurch wird der bereits erreichte Sammelfortschritt übernommen; du musst die Federn nicht noch einmal einzeln ablaufen. Anschließend kannst du die entsprechenden **Monolith-/Resonanzstufen** in der Heimatwelt und im Abyss freischalten und die erhaltenen Belohnungen bzw. Boardpunkte nutzen. **Aktuelle Richtwerte:** Abyss bis Resonanzstufe **16**; Heimatwelt vermutlich bis **30** – die Obergrenze der Heimatwelt ist noch im aktuellen Client zu bestätigen. Prüfe nach der Synchronisierung, welche Stufen und Belohnungen tatsächlich freigeschaltet wurden.
+
 💡 **Wichtig:** Das ist ein nachvollziehbarer Praxisweg, keine feste Pflicht-Reihenfolge. Wenn du die 1.400 GS schon früher erreichst, kannst du direkt mit **Vakron und Uruguguschlucht** weitermachen. Die noch offenen Riss-Dungeons lohnen sich trotzdem für Materialien.
 
 ## 🏝️ 1.400 → 1.600 GS | VAKRON & URUGUGU
