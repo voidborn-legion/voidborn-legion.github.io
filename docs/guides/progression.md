@@ -37,7 +37,7 @@ Quelle: https://aion2-guides.info/en/progression/
 **GS öffnet neue Inhalte. Combat Power (CP) misst deine Kampfstärke.** Beide sind wichtig, aber nicht immer gleichzeitig das beste Farmziel.
 
 **LEVEL 45 → 1.400 GS**
-• Zuerst Zugangs-GS: Quests, Daevanion, Gürtel/Amulett, Runen, passende Ausrüstung und günstige Verstärkungen.
+• Zuerst Zugangs-GS: Quests, Daevanion, Runen, passende Ausrüstung, Manasteine und günstige Verstärkungen. Gürtel und Amulett wegen der hohen Kosten langfristig einplanen.
 • Pets unterwegs sammeln: Besitzboni bleiben passiv aktiv, auch wenn das Pet nicht ausgerüstet ist.
 
 **1.400 → 2.100 GS**
@@ -786,7 +786,7 @@ Arkana-Droppools: https://lum.gg/aion-2/guides/transcendence-dungeons
 **Wichtig:** Der GS im Kapiteltitel ist das ZIEL, nicht die Voraussetzung für alle genannten Aktivitäten.
 
 • **45 → 1.000:** Story, Regionalquests, Daevanion, erste Ausrüstung/Verstärkungen.
-• **1.000 → 1.400:** Abyss, Daily Dungeons, Gürtel/Amulett, einfache GS-Quellen.
+• **1.000 → 1.400:** Daily Dungeons, Manasteine, günstige Verstärkungen sowie versiegelte Dungeons und Garnisonen in Heimatregion und Riss. Gürtel und Amulett als langfristige Upgrades einplanen.
 • **1.400 → 1.600:** Vakron, Urugugu, gezielte Upgrades.
 • **1.600 → 1.900:** Transzendenz ★1 und Arkana.
 • **1.900 → 2.100:** **Transzendenz ★2** und Arkana-Optimierung.
