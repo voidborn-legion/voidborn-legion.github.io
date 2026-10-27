@@ -814,7 +814,13 @@ Arkana-Droppools: https://lum.gg/aion-2/guides/transcendence-dungeons
 • **1.600 → 1.900:** Transzendenz ★1 und Arkana.
 • **1.900 → 2.100:** **Transzendenz ★2** und Arkana-Optimierung.
 • **2.100 → 2.500:** **Feuertempel, Grimmhornhöhle**, 86er-Ausrüstung, Vererbung.
-• **2.500 → 2.800:** weitere Transzendenz-/Ausrüstungsoptimierung, Ludra-Vorbereitung.
+• **2.500 → 2.600:** Transzendenz ★4 (ab 2.500 GS), Arkana und Ausrüstung gezielt optimieren; die schweren Expeditionen sind erst ab 2.600 GS zugänglich.
+• **2.600 → 2.800:** **Kraohöhle und Draupnir – Schwierig** (Global seit 21.10.2026). Voraussetzung **2.600 GS**; Boss-Raserei nach **4 Minuten**, maximal **3 Wiederbelebungen pro Spieler**. Als Belohnungen gibt es unter anderem **Ariel-Fragmente (gebunden)**, **Stein der Weisen: Offenbarung (gebunden)**, Herstellungsmaterialien und mehr Kinah. Die Fragmente sind je Dungeon unterschiedlich: **100 Fragmente → 1 Daevanion-Kristall: Ariel (gebunden)** über **Konvertierung > Spezial > Daevanion**; bis zu **30 Umwandlungen je Dungeon und Charakter**. Das neue **Ariel-Daevanion-Brett** ist damit eine zusätzliche Fortschrittsquelle. Die schweren Dungeons sind keine Abkürzung *zu* 2.600 GS, sondern werden erst danach freigeschaltet.
+• **2.800 → 3.000:** **Ludra Normal ab 2.800 GS**, **Ludra Schwierig ab 3.000 GS**. Beide Schwierigkeitsgrade sind für **4. November 2026 angekündigt** und zum Stand 27.10.2026 noch nicht verfügbar. Zwischen 2.800 und 3.000 GS weiterhin Ausrüstung, Arkana, Verstärkungen und Daevanion optimieren; neue Ludra-Drops und Strategien erst nach Release als bestätigt darstellen.
+
+**Quellen (Global):** https://new.wikily.gg/de/aion-2/patches/notice-patch-notes-oct-20-pdt-oct-21-cest · https://steamcommunity.com/app/3393110/allnews
+
+**Redaktioneller Hinweis:** Diese Roadmap ist noch eine Übergangsübersicht im bestehenden langen Guide. Die neue Unterseitenstruktur wird separat mit dem Website-Team konzipiert.
 
 **Diese Übersicht ist die geplante Kapitelstruktur, kein Ersatz für die bereits ausführlichen Einzelkapitel.** Überlappende 2.100–2.500-Abschnitte später zusammenführen und sämtliche Freischaltgrenzen im Global-Client prüfen.
 
