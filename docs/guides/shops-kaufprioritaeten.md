@@ -87,6 +87,12 @@ Die oben ergänzten **Shoppreise, Kaufgrenzen, englischen Itemidentitäten und S
 - [Garderoben- und Sammelsystem](https://aion2.akunito.com/en/systems/character-systems/)
 - [Seelenbindung/Transfer](https://lum.gg/aion-2/guides/how-to-transfer-gear-enhancements)
 
+## Garderoben-Skins: Nutzen und Kosten abwägen
+
+Die Garderobe gewährt passive, kumulierbare Sammlungsboni. Einzelne Prozentanzeigen dürfen aber nicht automatisch als gleich hoher Bonus auf den gesamten Charakterangriff interpretiert werden. Laut Community-Diskussion unter dem verlinkten Shop-Video beziehen sich Schmuckboni möglicherweise nur auf die jeweiligen Schmuckwerte. Der genaue Effekt ist noch zu prüfen.
+
+Skins beim Schwarz-Wolken-Händler kosten Kinah. Auch das Kombinieren höherer Skin-Qualitäten verursacht Kosten. Deshalb günstige oder ohnehin erspielte Skins mitnehmen, aber teure Käufe und das schnelle Erreichen des 700-Skins-Titels nicht vor Stigmas, Dungeon-Zugängen oder größeren Ausrüstungs-Upgrades erzwingen. Die Hinweise stammen aus Spielerkommentaren, unter anderem von @saschaberger7201; sie sind keine bestätigte Schadensberechnung.
+
 ## 🔎 Noch im deutschen Global-Client prüfen
 
 - Exakte deutsche Namen der Kunstwerke, Statue, Flügel, Kristalle und Shopreiter.
