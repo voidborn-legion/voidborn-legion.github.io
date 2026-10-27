@@ -444,7 +444,7 @@ Prüfe diese Schritte der Reihe nach, bevor du teure Verstärkungen erzwingst.
 • **Blaue Ausrüstung auf +5** verstärken. Höhere Stufen lohnen sich bei kurzlebigen Übergangsteilen meist nicht.
 • **Ausnahme: Armband des Befreiers auf +10** verstärken, da du es noch lange tragen kannst.
 • **Goldene Ausrüstung auf +10** verstärken, sofern die Materialien reichen.
-• Gürtel und Amulett weiter konvertieren.
+• **Gürtel und Amulett sind teure Langzeit-Upgrades.** Die Aufwertung kostet viel Kina und Materialien. Für den Sprung auf **1.400 GS** daher **nicht priorisieren**: erst günstige Verstärkungen, Manasteine und einmalige Belohnungen ausschöpfen. Gürtel und Amulett später schrittweise ausbauen.
 
 **4 | MANASTEINE – EINFACHER GS-SCHUB**
 • **Jeden verfügbaren Manasteinplatz belegen.** Auch ein einfacher erster Wurf bringt bereits viel Gearscore.
