@@ -488,6 +488,14 @@ Damit schaltest du die nächste Stufe frei: **Vakron-Himmelsinsel und Urugugusch
 
 💡 **Wichtig:** Gearscore ist eine Zugangsvoraussetzung, nicht automatisch ein Maß für deinen tatsächlichen Schaden. Achte später auch auf passende Attribute, Skills und Rotation.
 
+### Praxisbeispiel: Malyce auf Odar
+
+**Malyce** (Server **Odar**) hat am **27. Oktober 2026** den Meilenstein von **1.400 GS** überschritten und **1.446 GS** erreicht. Dieses Beispiel zeigt, dass die vorherige Checkliste für den Einstieg in den nächsten Progressionsabschnitt gedacht ist – nicht für perfekt optimierte Ausrüstung.
+
+Für den Weg bis 1.400 GS stehen günstige, breite Verbesserungen im Vordergrund: blaue Teile auf **+5**, das länger genutzte **Armband des Befreiers** und goldene Teile auf **+10**, einmalige Manasteinwürfe in allen verfügbaren Slots sowie Daily Dungeons, versiegelte Dungeons und Garnisonen auf der eigenen Karte und im Riss.
+
+**Nächster Schritt bei 1.446 GS:** Mit den verfügbaren Inhalten ab 1.400 GS gezielt Ausrüstung ersetzen und den Weg Richtung 1.600 GS vorbereiten. Der konkrete Ausrüstungsstand von Malyce ist hier nicht dokumentiert; einzelne Upgrades werden ihm deshalb nicht zugeschrieben.
+
 ## 🏝️ 1.400 → 1.600 GS | VAKRON & URUGUGU
 
 Ab **1.400 GS** werden **Vakron-Himmelsinsel** und **Uruguguschlucht** relevant. Hier farmst du deine ersten langfristig nutzbaren **goldenen Ausrüstungsteile**.
