@@ -509,6 +509,8 @@ Damit schaltest du die nächste Stufe frei: **Vakron-Himmelsinsel und Urugugusch
 
 **Nur beim Zweitcharakter:** Übertragbare Dungeon-Items lassen sich gegebenenfalls über das **Charakterlager** zum Main bringen, dort mit dessen Verstärkungssteinen aufwerten und anschließend zurückgeben. Vorher prüfen, ob die Gegenstände nach der Verstärkung weiterhin übertragbar sind.
 
+**Gemeinsamer Fortschritt von Main und Zweitcharakter:** Bereits gesammelte **Pets und der gemeinsame Pet-Fortschritt** stehen auch dem Zweitcharakter zur Verfügung. Dadurch kann er schon früh von vorhandenen Pet-Boni profitieren und eine höhere **Combat Power (CP)** erreichen als ein neuer Account ohne diese Sammlung. **CP und Gearscore sind nicht dasselbe:** Für Dungeon-Freischaltungen weiterhin den tatsächlich angezeigten GS prüfen. Welche weiteren Systeme geteilt sind, jeweils im Spiel kontrollieren.
+
 💡 **Wichtig:** Das ist ein nachvollziehbarer Praxisweg, keine feste Pflicht-Reihenfolge. Wenn du die 1.400 GS schon früher erreichst, kannst du direkt mit **Vakron und Uruguguschlucht** weitermachen. Die noch offenen Riss-Dungeons lohnen sich trotzdem für Materialien.
 
 ## 🏝️ 1.400 → 1.600 GS | VAKRON & URUGUGU
