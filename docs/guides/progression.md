@@ -495,13 +495,21 @@ Damit schaltest du die nächste Stufe frei: **Vakron-Himmelsinsel und Urugugusch
 
 💡 **Wichtig:** Gearscore ist eine Zugangsvoraussetzung, nicht automatisch ein Maß für deinen tatsächlichen Schaden. Achte später auch auf passende Attribute, Skills und Rotation.
 
-### Praxisbeispiel: Malyce auf Odar
+### Praxisbeispiel: Vom Level 45 zu 1.400+ GS (Zweitcharakter)
 
-**Malyce** (Server **Odar**) hat am **27. Oktober 2026** den Meilenstein von **1.400 GS** überschritten und **1.446 GS** erreicht. Dieses Beispiel zeigt, dass die vorherige Checkliste für den Einstieg in den nächsten Progressionsabschnitt gedacht ist – nicht für perfekt optimierte Ausrüstung.
+**Malyce**, Gladiator auf **Odar (EU)**, hat am **27. Oktober 2026** den Meilenstein von 1.400 GS erreicht. Ein damaliger Companion-Screenshot zeigte **1.449 GS**; das ist ein dokumentierter Zwischenstand, **kein live abgefragter Wert**. Die konkreten Ausrüstungsteile sind noch nicht über die NCSOFT-Abfrage bestätigt.
 
-Für den Weg bis 1.400 GS stehen günstige, breite Verbesserungen im Vordergrund: blaue Teile auf **+5**, das länger genutzte **Armband des Befreiers** und goldene Teile auf **+10**, einmalige Manasteinwürfe in allen verfügbaren Slots sowie Daily Dungeons, versiegelte Dungeons und Garnisonen auf der eigenen Karte und im Riss.
+**So lief der Einstieg tatsächlich ab:**
 
-**Nächster Schritt bei 1.446 GS:** Mit den verfügbaren Inhalten ab 1.400 GS gezielt Ausrüstung ersetzen und den Weg Richtung 1.600 GS vorbereiten. Der konkrete Ausrüstungsstand von Malyce ist hier nicht dokumentiert; einzelne Upgrades werden ihm deshalb nicht zugeschrieben.
+1. **Level 45 erreichen**, anschließend die noch offenen **Neben- und Regionsquests** sowie die **Riss-Questreihe** erledigen.
+2. **Draupnir mehrfach laufen** und sowohl normale Dungeon-Drops als auch die **garantierte Belohnung** mitnehmen. Bei Auswahlbelohnungen im Itemvergleich prüfen, welches Teil gegenüber dem ausgerüsteten Gegenstand **am meisten GS bringt**. Alternativ ein schwerer zu erhaltendes Teil mit niedriger Dropchance wählen, wenn die GS-Gewinne ähnlich sind.
+3. Erhaltene **goldene Ausrüstung gezielt verstärken**, **blaue Übergangsteile auf +5** bringen; das länger nutzbare **Armband des Befreiers** kann bis +10 sinnvoll sein.
+4. **Manasteine in alle verfügbaren Plätze einsetzen** und danach den GS erneut prüfen. Erst anschließend bessere Effekte und Attribute optimieren.
+5. **Versiegelte Dungeons und Garnisonen im Raumzeit-Riss** noch nachholen: Sie liefern zusätzliche Verstärkungssteine und Kina. **Dieser Schritt war beim dokumentierten GS-Stand noch offen**, nicht bereits abgeschlossen.
+
+**Nur beim Zweitcharakter:** Übertragbare Dungeon-Items lassen sich gegebenenfalls über das **Charakterlager** zum Main bringen, dort mit dessen Verstärkungssteinen aufwerten und anschließend zurückgeben. Vorher prüfen, ob die Gegenstände nach der Verstärkung weiterhin übertragbar sind.
+
+💡 **Wichtig:** Das ist ein nachvollziehbarer Praxisweg, keine feste Pflicht-Reihenfolge. Wenn du die 1.400 GS schon früher erreichst, kannst du direkt mit **Vakron und Uruguguschlucht** weitermachen. Die noch offenen Riss-Dungeons lohnen sich trotzdem für Materialien.
 
 ## 🏝️ 1.400 → 1.600 GS | VAKRON & URUGUGU
 
