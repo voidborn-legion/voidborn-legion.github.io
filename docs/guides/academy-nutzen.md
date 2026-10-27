@@ -1,18 +1,20 @@
 ---
 title: Den passenden Guide finden
-description: So sind die Guides, Spielwerte und Empfehlungen in der Voidborn
-  Academy aufgeteilt.
+description: >-
+  So sind die Guides, Spielwerte und Empfehlungen in der Voidborn Academy
+  aufgeteilt.
 author: Voidborn Academy
 status: published
 review: help
-updated: 2026-10-23
+updated: '2026-10-26'
+category: null
 ---
 # Den passenden Guide finden
 
 Du suchst eine Route fürs Leveln, willst deinen Gearscore verbessern oder ein einzelnes System verstehen? Die Academy ist nach diesen Fragen aufgeteilt.
 
 ::: info Die Spielguides folgen noch
-Die Themen sind bereits angelegt. Die Beiträge aus unserer Discord-Academy werden später mit ihren Bildern und Quellen übernommen.
+In der Academy findest du Guides zu Leveling, Progression, Ausrüstung, Aktivitäten und weiteren Spielsystemen. Die Beiträge werden regelmäßig ergänzt und aktualisiert.
 :::
 
 ## Wo du anfangen kannst
