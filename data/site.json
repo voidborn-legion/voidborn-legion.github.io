@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "brand": "VOIDBORN",
+  "navigation": [
+    {
+      "text": "Entdecken",
+      "link": "/"
+    },
+    {
+      "text": "Guides",
+      "link": "/guides/"
+    },
+    {
+      "text": "Klassen",
+      "link": "/guides/klassen.html"
+    },
+    {
+      "text": "Tools",
+      "link": "/guides/tools.html"
+    }
+  ],
+  "home": {
+    "title": "Was steht",
+    "emphasis": "bei dir an?",
+    "intro": "AION-2-Guides zu deinen Fragen im Spiel. Aus der Academy unserer Voidborn-Gilde.",
+    "image": "/images/voidborn-rift.png",
+    "imageAlt": "",
+    "actionText": "Guide suchen",
+    "topicsTitle": "Welches Thema suchst du?",
+    "searchPlaceholder": "Zum Beispiel: Arkana, Seelenbindung oder Leveln …",
+    "workNote": "Die Beiträge sind importiert und werden für die Website aufbereitet. Viele Themen-Seiten enthalten deshalb noch eine Übersicht statt des fertigen Guides.",
+    "featureTitle": "Ein neues Teil. Was behältst du?",
+    "featureText": "Verstärkung und Seelenbindung vor dem Wechsel vergleichen.",
+    "featureLink": "/guides/ausruestung.html",
+    "featureLabel": "Ausrüstung & Seelenbindung",
+    "featureNote": "Die vollständige Anleitung wird vorbereitet.",
+    "bottomTitle": "Vor dem nächsten Run",
+    "bottomText": "Aufladungen prüfen, Wochenziele planen oder einen Engpass nachschlagen.",
+    "bottomLinks": [
+      {
+        "text": "Daily & Weekly",
+        "link": "/guides/checklisten.html"
+      },
+      {
+        "text": "Kinah & Materialien",
+        "link": "/guides/tipps.html"
+      }
+    ]
+  },
+  "footer": {
+    "message": "Ein unabhängiges Fanprojekt der Voidborn-Legion. Nicht mit NCSOFT verbunden.",
+    "copyright": "AION 2 und zugehörige Marken gehören ihren jeweiligen Rechteinhabern."
+  }
+}
