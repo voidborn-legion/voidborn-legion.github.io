@@ -3,7 +3,7 @@ title: Ausrüstung & Seelenbindung
 author: Voidborn Academy
 status: draft
 review: orientation
-updated: '2026-10-26'
+updated: '2026-10-28'
 reviewRequest: null
 ---
 # Ausrüstung & Seelenbindung
@@ -87,7 +87,20 @@ Seelenbindung ergänzt Ausrüstung um zusätzliche Werte. Das kann deine **Comba
 
 ## 💎 MANASTEINE & SEELENSTEINE
 
-Zusätzliche Steine verbessern Ausrüstung beziehungsweise liefern Materialien für Fortschrittssysteme. Die genaue Verwendung hängt vom jeweiligen Gegenstand und Menü ab.
+**Manasteine** (Waffe und Rüstung) und **Seelensteine** (Schmuck) gravieren eine Attributzeile. Für den **Gearscore zählt die Farbe der tatsächlich erhaltenen Zeile**, nicht allein die Seltenheit des eingesetzten Steins.
+
+| Farbe der gravierten Attributzeile | GS pro Zeile |
+| --- | ---: |
+| Grau / gewöhnlich | **+1 GS** |
+| Grün / selten | **+2 GS** |
+| Blau / episch | **+3 GS** |
+| Gelb / einzigartig | **+4 GS** |
+
+**Rechenbeispiel:** Drei freie Plätze mit einer grauen, einer grünen und einer blauen Zeile ergeben zusammen **+6 GS**. Das gilt pro gravierter Zeile, nicht pauschal pro Ausrüstungsteil. Die mögliche Zeilenanzahl hängt von Gegenstand und Freischaltungen ab.
+
+**Für schnelle GS-Schwellen:** Erst freie Plätze günstig belegen; anschließend bei Bedarf grüne oder blaue Zeilen anstreben. Für den tatsächlichen Kampfnutzen sind die **Attribute** entscheidend – eine blaue, aber unpassende Zeile kann trotz höherem GS schlechter sein als ein grüner, passender Wert. Hochwertige Steine eher für langfristig genutzte Ausrüstung sparen.
+
+**Quellen (Global-GS-Berechnung):** [Corpus – Gear Score](https://corpus.gg/blog/aion-2/gear-score-guide), [Aion2.gg – Manastein-System](https://aion2.gg/guides/gear-upgrade-systems), [Aion 2 Maps – Manastones](https://aion2maps.com/guides/manastones/).
 
 **WAS IST WICHTIG?**
 • Nur Werte verwenden, die zu deiner Klasse und deinem Build passen.
