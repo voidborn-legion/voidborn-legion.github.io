@@ -3,7 +3,7 @@ title: Gearscore-Progression
 author: Voidborn Academy
 status: draft
 review: orientation
-updated: '2026-10-27'
+updated: '2026-10-28'
 reviewRequest: null
 ---
 # Gearscore-Progression
@@ -455,7 +455,9 @@ Prüfe diese Schritte der Reihe nach, bevor du teure Verstärkungen erzwingst.
 • **Noch keine Manasteine eingesetzt? Dann zuerst alle verfügbaren Plätze belegen.** Gerade bei frischer Level-45-Ausrüstung kann das viele fehlende GS auf einmal bringen.
 • Starte mit **günstigen Steinen und einem ersten Wurf pro Platz**. Perfekte Attribute sind für den Zugang zu 1.400 GS noch nicht nötig.
 • **Danach den Gearscore erneut prüfen:** Vielleicht reicht der Zuwachs bereits für den nächsten Dungeon, ohne weitere teure Verstärkungen.
-• Erst anschließend passende Attribute und bessere Manastein-Effekte gezielt optimieren. Die genaue GS-Wirkung hängt von den tatsächlich erzielten Effekten ab; **nicht pauschal vier GS je Gegenstand annehmen**.
+• **GS je gravierter Attributzeile:** **Grau +1, Grün +2, Blau +3, Gelb +4 GS**. Beispiel: zwei grüne und eine blaue Zeile ergeben **+7 GS**. Entscheidend ist die **Farbe der gewürfelten Zeile**, nicht die Farbe des eingesetzten Steins. Das gilt auch für Seelenstein-Zeilen am Schmuck.
+• Erst anschließend passende Attribute und bessere Manastein-Effekte optimieren. **Nicht pauschal +4 GS je Gegenstand annehmen**: Mehrere belegte Plätze addieren sich, aber die tatsächliche Farbe jeder Zeile zählt. Für Schaden und Heilung bleiben passende Werte wichtiger als GS allein.
+• Details und Quellen: [Ausrüstung & Seelenbindung – Manasteine und Seelensteine](./ausruestung#-manasteine--seelensteine).
 • Nicht jeder Gegenstand besitzt gleich viele Plätze. Im Ausrüstungsmenü die tatsächlich verfügbaren und belegten Plätze kontrollieren.
 
 **5 | DAILY DUNGEONS & RISS**
